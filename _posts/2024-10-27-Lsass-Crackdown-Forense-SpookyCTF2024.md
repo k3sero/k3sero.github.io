@@ -1,5 +1,5 @@
 ---
-title: Lsass-Crackdown - SpookyCTF2024
+title: Lsass Crackdown - SpookyCTF2024
 author: Kesero
 description: Reto Forense basado en un dump de un proceso LSASS.
 date: 2024-10-27 22:09:00 +0800
