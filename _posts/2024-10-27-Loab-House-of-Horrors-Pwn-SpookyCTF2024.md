@@ -360,8 +360,8 @@ Para hacerlo todo mucho más sencillo sin la necesidad de estar buscando en dire
 
 Por lo que realizamos un último prompt y obtenemos lo siguiente:
 
-┌──(kesero㉿kali)-[~]
-└─$ nc loabshouse.niccgetsspooky.xyz 1337
+    ┌──(kesero㉿kali)-[~]
+    └─$ nc loabshouse.niccgetsspooky.xyz 1337
 
         You have entered the house of horrors. You will be presented with a series of challenges.
         If you complete them all, you will be rewarded with the flag.
