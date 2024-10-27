@@ -26,7 +26,7 @@ It sounds like Loab is back and luring students into their trap. Thankfully Anna
 
 ## Archivos
 
-En este reto nos dan una serie de archvivos:
+En este reto nos dan una serie de archivos:
 
 - `files`: Carpeta que contiene el source code. (welcome.py y watchdog.py)
 - `nc loabshouse.niccgetsspooky.xyz 1337`: Conexion por netcat para interactuar con el servidor.
@@ -262,7 +262,7 @@ if __name__ == "__main__":
     main()
 ```
 
-Al analizar el código, a groso modo podemos observar que se trata de una pyjail, la cual, basándose en una seed hardcodeada en el código, obtiene una posible ruta del mapa `locations`. Este mapa cuenta con diversas rutas del sistema y es en una de ellas donde se guarda la flag. Nuestra misión es leer dicha flag utilizando los inputs del programa. ¿Sencillo, cierto? Antes de proporner una solución vamos a continuar analizando el código y podemos ver que existen una serie de restricciones.
+Al analizar el código, a groso modo podemos observar que se trata de una pyjail, la cual, basándose en una seed hardcodeada en el código, obtiene una posible ruta del mapa `locations`. Este mapa cuenta con diversas rutas del sistema y es en una de ellas donde se guarda la flag. Nuestra misión es leer dicha flag utilizando los inputs del programa. ¿Sencillo, cierto? Antes de proponer una solución vamos a continuar analizando el código y podemos ver que existen una serie de restricciones.
 
 ```python
 if any(char in response for char in [";", "&", "|", "`", "$", ">", "<"]):
@@ -310,7 +310,7 @@ Listo, podemos ver todo el contenido de archivos por parte del servidor, así qu
 
 Nota: Como tenemos capacidad de listar directorios y archivos, podemos listar los archivos en /bin y observar que `cat` y `less` están dentro.
 
-Para ello, como antes mencione que el propio input del usuario esta dentro de un `echo` por parte del servidor, tenemos que escapar de dicho echo para posteriormente poder ejecutar comandos arbitrarios por parte del usuario. Para conseguir ese cometido, simpelente si cerramos la sentencia `echo` con `;`, posteriormente tendremos vía libre para ejecutar comandos. Vamos a probarlo con un arhivo llamado `/root/supervisord.log` que se enecuentra en el servidor.
+Para ello, como antes mencione que el propio input del usuario esta dentro de un `echo` por parte del servidor, tenemos que escapar de dicho echo para posteriormente poder ejecutar comandos arbitrarios por parte del usuario. Para conseguir ese cometido, simplemente si cerramos la sentencia `echo` con `;`, posteriormente tendremos vía libre para ejecutar comandos. Vamos a probarlo con un arhivo llamado `/root/supervisord.log` que se encuentra en el servidor.
 
 
         ┌──(kesero㉿kali)-[~]

@@ -26,7 +26,7 @@ NICC is hot on the trail of bigfoot! He has been following a path equivalent to 
 
 ## Archivos
 
-En este reto nos dan ninguún archivo, solamente el enunciado.
+En este reto no nos dan ningún archivo, solamente el enunciado.
 
 Archivos utilizados en: [https://github.com/MaestroKesero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/Spookyctf2024/Tracking_The_Best](https://github.com/MaestroKesero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/Spookyctf2024/Tracking_The_Best)
 
@@ -36,7 +36,7 @@ Básicamente el enunciado nos dice que están investigando los escondites de Big
 
 Además se ha encontrado una de sus cuevas en el punto (26, 38) donde dentro hay referencias a cómics de Green Lantern, incluida una representación de Green Lantern con 13 anillos en los dedos. 
 
-Para obtener la flag, tenemos que encontrar el próximo escondite de Bigfoot, ¿Podremos encontralo?
+Para obtener la flag, tenemos que encontrar el próximo escondite de Bigfoot, ¿podremos encontrarlo?
 
 ## Solución
 

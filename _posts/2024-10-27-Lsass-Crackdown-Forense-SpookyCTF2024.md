@@ -43,18 +43,18 @@ En este reto básicamente tenemos un dumpeo de memoria proveniente de un equipo 
 
 En este caso voy a utilizar la herramienta [ypykatz](https://github.com/skelsec/pypykatz) la cual se encarga de descomponer dicho proceso LSASS en secciones acorde a la información que encuentra.
 
-Para instalar la herramienta simplemente utilice los siguientes comandos.
+Para instalar la herramienta simplemente utilicé los siguientes comandos.
 
         sudo apt install python3-pypykatz
         python3 -m venv venv  
         pip3 install minidump minikerberos aiowinreg msldap winacl
 
-Una vez tenemos la herramienta instalada, utilizando el siguiente comando, el cual nos arrojará un informe detallado de toda la información de dicho proceso (Dumpeo completo en archivos)
+Una vez tenemos la herramienta instalada, utilizando el siguiente comando nos arroja un informe detallado de toda la información de dicho proceso (Dumpeo completo en archivos)
 
         ┌──(kesero㉿kali)-[~]
         └─$ pypykatz lsa minidump dump.DMP
 
-Llegados a este punto, la clave para resovler el reto es filtrar de forma correcta por el hash NTLM correcto para obtener la contraseña de DR.Tom. Como tenemos un usuario que se llama igual que la corporación `Consortium` vamos a extraer el hash NTLM de dicho usuario.
+Llegados a este punto, la clave para resolver el reto es filtrar de forma correcta por el hash NTLM correcto para obtener la contraseña de DR.Tom. Como tenemos un usuario que se llama igual que la corporación `Consortium` vamos a extraer el hash NTLM de dicho usuario.
 
         FILE: ======== dump.DMP =======
         == LogonSession ==
