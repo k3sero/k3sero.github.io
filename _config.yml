@@ -23,13 +23,13 @@ description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://MaestroKesero.github.io"
+url: "https://k3sero.github.io"
 
 github:
-  username: MaestroKesero # change to your GitHub username
+  username: k3sero # change to your GitHub username
 
 twitter:
-  username: MaestroKesero # change to your Twitter username
+  username: k3sero # change to your Twitter username
 
 social: 
   # Change to your full name
@@ -39,10 +39,10 @@ social:
   links:
     # The first element serves as the copyright owner's link
     - https://beacons.ai/kesero # change to your Twitter homepage
-    - https://github.com/MaestroKesero # change to your GitHub homepage
+    - https://github.com/k3sero # change to your GitHub homepage
     # Uncomment below to add more social links
     - https://www.linkedin.com/in/carlos-mar%C3%ADn-rodr%C3%ADguez-670766263/
-    - https://www.instagram.com/maestrokesero/
+    - https://www.instagram.com/k3sero/
     - https://beacons.ai/kesero
 
 # Site Verification Settings
