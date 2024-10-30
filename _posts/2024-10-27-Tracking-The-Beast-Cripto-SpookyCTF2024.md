@@ -45,8 +45,8 @@ Básicamente, en este reto nos piden calcular el siguiente punto de la curva don
 Pero antes de comenzar, vamos a desglosar todos los datos que tenemos.
 
 1. Tenemos la curva elíptica \( y^2 = x^3 + 73x + 42 mod 251\), donde p = 251, a = 73 y b = 42
-2. Además tenemos un punto P (26, 38) dentro de la curva la curva.
-3. Por último, tenemos una pista (un tango guessy) la cual nos dice que en la cueva donde se encontró El Bigfoot, hay una referencia de una portada de cómic protagonizada por Linterna Verde con 13 anillos en los dedos.
+2. Además tenemos un punto P (26, 38) dentro de la curva.
+3. Por último, tenemos una pista (un tanto guessy) la cual nos dice que en la cueva donde se encontró El Bigfoot, hay una referencia de una portada de cómic protagonizada por Linterna Verde con 13 anillos en los dedos.
 
 Antes de continuar desarrollando la pista, vamos a observar los posibles puntos en los que puede estar escondido Bigfoot.
 
