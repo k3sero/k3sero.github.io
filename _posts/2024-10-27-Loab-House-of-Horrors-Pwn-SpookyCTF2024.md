@@ -9,7 +9,7 @@ pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/MaestroKesero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Pwn/Spookyctf2024/Loab_House_of_Horrors/Loab_House_of_Horrors.png?raw=true
+  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Pwn/Spookyctf2024/Loab_House_of_Horrors/Loab_House_of_Horrors.png?raw=true
   lqip: 
   alt: 
 comments: true
@@ -31,7 +31,7 @@ En este reto nos dan una serie de archivos:
 - `files`: Carpeta que contiene el source code. (welcome.py y watchdog.py)
 - `nc loabshouse.niccgetsspooky.xyz 1337`: Conexion por netcat para interactuar con el servidor.
 
-Archivos en: [https://github.com/MaestroKesero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Pwn/Spookyctf2024/Loab_House_of_Horrors](https://github.com/MaestroKesero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Pwn/Spookyctf2024/Loab_House_of_Horrors)
+Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Pwn/Spookyctf2024/Loab_House_of_Horrors)
 
 
 ## Analizando el Código

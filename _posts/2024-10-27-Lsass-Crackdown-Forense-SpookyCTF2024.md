@@ -9,7 +9,7 @@ pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/MaestroKesero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Forensics/Spookyctf2024/Lsass_Crackdown/Lsass_Crackdown.png?raw=true
+  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Forensics/Spookyctf2024/Lsass_Crackdown/Lsass_Crackdown.png?raw=true
   lqip: 
   alt: 
 comments: true
@@ -32,7 +32,7 @@ En este reto nos dan el siguiente archivo.
 
 - `dump.DMP`: Archivo que contiene el dumpeo de un proceso en Windows.
 
-Archivos en: [https://github.com/MaestroKesero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Forensics/Spookyctf2024/Lsass_Crackdown](https://github.com/MaestroKesero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Forensics/Spookyctf2024/Lsass_Crackdown)
+Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Forensics/Spookyctf2024/Lsass_Crackdown)
 
 
 ## Analizando el Código
@@ -94,7 +94,7 @@ Llegados a este punto, la clave para resolver el reto es filtrar de forma correc
 
 Una vez tenemos el hash NTLM de dicho usuario `f6c479f4b9904f884fede1b2d4328d98` podemos crackearlo de forma manual o directamente usar `crackstation` y podemos observar que dicho hash coincide con `1987evilovekoen`
 
-![Hash](https://github.com/MaestroKesero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Forensics/Spookyctf2024/Lsass_Crackdown/hash.png?raw=true)
+![Hash](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Forensics/Spookyctf2024/Lsass_Crackdown/hash.png?raw=true)
 
 ## Flag
 

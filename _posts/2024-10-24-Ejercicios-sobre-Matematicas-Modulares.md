@@ -9,7 +9,7 @@ pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/MaestroKesero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/Template%20Blog.png?raw=true
+  path: https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/Template%20Blog.png?raw=true
   lqip: 
   alt: 
 comments: true
@@ -24,20 +24,20 @@ Esta colección de ejercicios tiene como objetivo proporcionar una introducción
 
 ## Relación de Ejercicios
 
-![Relacion](https://github.com/MaestroKesero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/PrimeraLista.png?raw=true)
+![Relacion](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/PrimeraLista.png?raw=true)
 
 
 ## Ejercicios Resueltos
 
-![1](https://github.com/MaestroKesero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/1.png?raw=true)
-![2](https://github.com/MaestroKesero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/2.png?raw=true)
-![3](https://github.com/MaestroKesero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/3.png?raw=true)
-![4](https://github.com/MaestroKesero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/4.png?raw=true)
-![5](https://github.com/MaestroKesero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/5.png?raw=true)
-![6](https://github.com/MaestroKesero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/6.png?raw=true)
-![7](https://github.com/MaestroKesero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/7.png?raw=true)
-![8](https://github.com/MaestroKesero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/8.png?raw=true)
-![9](https://github.com/MaestroKesero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/9.png?raw=true)
-![10](https://github.com/MaestroKesero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/10.png?raw=true)
-![11](https://github.com/MaestroKesero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/11.png?raw=true)
-![12](https://github.com/MaestroKesero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/12.png?raw=true)
+![1](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/1.png?raw=true)
+![2](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/2.png?raw=true)
+![3](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/3.png?raw=true)
+![4](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/4.png?raw=true)
+![5](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/5.png?raw=true)
+![6](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/6.png?raw=true)
+![7](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/7.png?raw=true)
+![8](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/8.png?raw=true)
+![9](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/9.png?raw=true)
+![10](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/10.png?raw=true)
+![11](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/11.png?raw=true)
+![12](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/12.png?raw=true)

@@ -9,7 +9,7 @@ pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/MaestroKesero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Misc/Spookyctf2024/Strange_Sightings/Strange_Sightings.png?raw=true
+  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Misc/Spookyctf2024/Strange_Sightings/Strange_Sightings.png?raw=true
   lqip: 
   alt: 
 comments: true
@@ -31,7 +31,7 @@ En este reto solo nos dan un enlace a un video de YouTube.
 
 - `https://www.youtube.com/watch?v=4Xv8pLoDVP0`: "Strange Sightings"
 
-Video en: [https://drive.google.com/file/d/1lCyRp8TWrhw3XPwhtGK6F317hfYmq0fz/view?usp=sharing](https://drive.google.com/file/d/1lCyRp8TWrhw3XPwhtGK6F317hfYmq0fz/view?usp=sharing)
+Video [aqui](https://drive.google.com/file/d/1lCyRp8TWrhw3XPwhtGK6F317hfYmq0fz/view?usp=sharing)
 
 ## Analizando el reto
 
