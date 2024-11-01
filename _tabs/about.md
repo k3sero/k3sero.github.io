@@ -96,7 +96,7 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 • **Oportunidades en el Sector de la Defensa para Empresas Tecnológicas e Innovadoras 2024**
 
-• **Hack&Beers Vol.5 2024**
+• **Hack&Beers Vol.15 2024**
 
 
 ## Charlas sobre Ciberseguridad Asistidas
