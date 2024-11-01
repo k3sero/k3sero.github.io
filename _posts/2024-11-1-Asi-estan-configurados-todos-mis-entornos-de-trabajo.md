@@ -4,7 +4,7 @@ author: Kesero
 description: Explicación de cómo tengo configurados todos mis entornos profesionales de trabajo enfocados en la ciberseguridad
 date: 2024-11-1 20:42:30 +0800
 categories: [Herramientas, Entorno]
-tags: [Herraimentas, Entorno, Kali Linux, Bspwn, Polybar, Profesional, Debian, Windows10, VMware, Hyper-V, Máquinas]
+tags: [Herraimentas, Entorno, Kali Linux, Bspwm, Polybar, Profesional, Debian, Windows10, VMware, Hyper-V, Máquinas]
 pin: false
 math: true
 mermaid: true
@@ -15,40 +15,39 @@ image:
 comments: true
 ---
 
-Un entorno de trabajo limpio, ordenado y seguro, hace que la productividad del usuario incremente exponencialmente en sus actividades. Es por ello que es muy importante desarrollar un entorno de trabajo personalizado al usuario para que encuentre esos beneficios en su dia a día. Hoy, os traigo mi configuración personal de trabajo enfocado en el Hacking, Ciberseguridad y programación. Además, os enseñaré a como instalar cada entorno y configurarlo paso a paso para que podáis replicarlo en caso de que os guste.
+Un entorno de trabajo limpio, ordenado y seguro, hace que la productividad del usuario aumente exponencialmente en sus actividades. Es por ello que es muy importante desarrollar un entorno de trabajo personalizado al usuario para que encuentre esos beneficios en su día a día. Hoy, os traigo mi configuración personal de trabajo enfocado al mundo del Hacking, ciberseguridad y programación. Además, os enseñaré a cómo instalar cada entorno y configurarlo paso a paso para que podáis replicarlo en caso de que os guste.
 
-Para comenzar, mi sistema de gestión de entornos parte de la base de utilizar entornos virtualizados para asegurar la modularidad de cada sistema enfocándo cada máquina virtual en una funcionalidad en concreto. Como software virtualizador utilizo principalmente `Vmware Workstation` para lanzar los sitemas operativos basados en Linux y `Hyper-V` para sistemas Windows.
+Para comenzar, mi sistema de gestión de entornos parte de la base de utilizar entornos virtualizados para asegurar la modularidad de cada sistema enfocando cada máquina virtual en una funcionalidad en concreto. Como software virtualizador utilizo principalmente `VMware Workstation` para lanzar los sistemas operativos basados en Linux y `Hyper-V` para sistemas Windows.
 
 El siguiente esquema muestra la estructura de cada entorno de trabajo.
 
-![Estrcutura](https://github.com/k3sero/Blog_Content/blob/main/Herramientas/Entorno/Entornos_Profesionales/Estructura_Entornos.png?raw=true)
+![Estructura](https://github.com/k3sero/Blog_Content/blob/main/Herramientas/Entorno/Entornos_Profesionales/Estructura_Entornos.png?raw=true)
 
 
-**Windows Master:** Este sistema operativo es el que esta instalado de forma nativa en el hardware del computador, es por ello que siempre vamos a mantenerlo lo más limpio y actualizado posible (a poder ser instalado en un Disco de estado sólido o en un M.2 para beneficiarnos de la rapidez en nuestras máquinas virtuales) 
+**Windows Master:** Este sistema operativo es el que está instalado de forma nativa en el hardware del computador, es por ello que siempre vamos a mantenerlo lo más limpio y actualizado posible (si es posible, instalarlo en un disco de estado sólido o en una unidad M.2 para beneficiarnos de la rapidez en nuestras máquinas virtuales). 
 
-**Windows_temp:** Este windows es el encargado de abastecernos como respaldo en caso de necesitar la instalación de herramientas y programas de dudosa fiabilidad. La principal característica de este sistema es que cuenta con integración de GPU dedicada en caso de contar con una para ejecutar programas pesados.
+**Windows temp:** Este windows es el encargado de abastecernos como respaldo en caso de necesitar la instalación de herramientas y programas de dudosa fiabilidad. La principal característica de este sistema es que cuenta con integración de GPU dedicada en caso de contar con una para ejecutar programas pesados.
 
-**Debian:** La principal funcionalidad de este Linux es abordar temas de programación más complejos, como por ejemplo brindarnos de IDEs especializadas como Eclipse para trabajar con entornos en Java, Arduino IDE para trabajar con sistemas embebidos, entre otras.
+**Debian:** La principal funcionalidad de este Linux es abordar temas de programación más complejos, como por ejemplo brindarnos IDEs especializadas como Eclipse para trabajar con entornos en Java o como Arduino IDE para trabajar con sistemas embebidos.
 
-**Kali Linux**: Entorno profesional de trabajo basado en bspwn para labores de hacking ético. 
+**Kali Linux**: Entorno profesional de trabajo basado en bspwm para labores de hacking ético. 
 
 ## Instalacion de los sistemas virtualizadores.
 
 ### Vmware
 
-Gracias a que desde hace un par de meses contamos con `Vmware Workstation` de manera gratuita, podemos obtener los beneficios que nos aporta Vmware a nuestras máquinas sin costo. Antiguamente utilizaba `VirtualBox`, pero decidí migrar todo mi sistema de entornos a Vmware para observar diferencias y definitivamente, me quedo con VMware.
+Gracias a que desde hace un par de meses contamos con `VMware Workstation` de manera gratuita, podemos obtener los beneficios que nos aporta Vmware a nuestras máquinas sin costo. Antiguamente utilizaba `VirtualBox`, pero decidí migrar todo mi sistema de entornos a Vmware para observar diferencias y definitivamente, me quedo con VMware.
 
 Para instalarlo, simplemente os dejo un tutorial en Youtube de ContandoBits el cual explica el proceso de manera muy detallada y sencilla. Tutorial [aquí](https://www.youtube.com/watch?v=jFzQUsnlof0&t=1s) 
 
 
 ### Hyper-V
 
-Hyper-V es un sistema virtualizador soportado por Microsoft en el cual podemos instalar todo tipo de sistemas operativos, pero nosotros nos centraremos unicamente en utilziarlo para instalar sistemas Windows, ya que gracias a una serie de configuraciones, podemos utilizar nuestra GPU dedicada en la virtualización, obteniendo de esta manera un "Windows enjaulado"
+Hyper-V es un sistema de virtualización soportado por Microsoft en el cual podemos instalar todo tipo de sistemas operativos, pero nosotros nos centraremos únicamente en utilizarlo para instalar sistemas Windows, ya que gracias a una serie de configuraciones, podemos utilizar nuestra GPU dedicada en la virtualización, obteniendo de esta manera un "Windows enjaulado".
 
-Para instalarlo es un poco mas compleja que Vmware, ya que tenemos que serguir una serie de pasos adiccionales para Windows 10/11 Home.
+Para instalarlo es un poco más complejo que Vmware, ya que tenemos que seguir una serie de pasos adicionales para Windows 10/11 Home.
 
-Par comenzar, creamos un `archivo.txt` y copiamos este script, el cual será el encargado de instalar el programa en nuestro sistema.
-
+Para comenzar, creamos un `archivo.txt` y copiamos este script, que instalará el programa en nuestro sistema.
 
 	pushd "%~dp0"
 
@@ -64,16 +63,16 @@ Par comenzar, creamos un `archivo.txt` y copiamos este script, el cual será el 
 
 Posteriormente lo renombramos a `script.bat` y lo ejecutamos como administrador. Una vez termine nos pedirá que reiniciemos el ordenador.
 
-Al ingresar nuevamente, escribimos en el buscador "Hyper-V" y tendremos acceso al programa.
+Al ingresar nuevamente, escribimos en el buscador `"Hyper-V"` y tendremos acceso al programa.
 
 
 ## Debian
 
 ![Entorno Debian](https://github.com/k3sero/Blog_Content/blob/main/Herramientas/Entorno/Entornos_Profesionales/Entorno_Debian%20.png?raw=true)
 
-Como he mencionado anteriormente, este sistema operativo está enfocado principalmente en la programación. Es por ello que esta máquina solo tendremos una instalación básica de Debian, además de contar con las herramientas y suites IDE de programación pertinentes. Por último, instalaremos programas como `zshrc` y `powerlevel10k` para contar con un manejo fluido y cómodo por terminal.
+Como he mencionado anteriormente, este sistema operativo está enfocado principalmente en la programación. Es por ello que esta máquina tendrá una instalación básica de Debian, además de contar con las herramientas y suites IDE de programación pertinentes. Por último, instalaremos programas como `zshrc` y `powerlevel10k` para contar con un manejo fluido y cómodo en la terminal.
 
-Página Oficial de Debian para obtener la imagen.iso [aquí](https://www.debian.org/download.es.html).
+Página Oficial de Debian para obtener la imagen .iso [aquí](https://www.debian.org/download.es.html).
 
 Tutorial para la instalación de la zshrc y powerlevel10k [aquí](https://www.youtube.com/watch?v=vyRXgfDEudI).
 
@@ -81,11 +80,11 @@ Tutorial para la instalación de la zshrc y powerlevel10k [aquí](https://www.yo
 
 ![Entorno Windows_temp](https://github.com/k3sero/Blog_Content/blob/main/Herramientas/Entorno/Entornos_Profesionales/Entorno_Windows_Temp.png?raw=true)
 
-La finalidad de este Windows virtualizado es la de poder ejecutar programas de terceros con el fin de encapsular el posible malware que estos programas traigan consigo. Es por ello que viene con intagración de GPU dedicada, para poder correr programas más pesados con soltura. 
+La finalidad de este Windows virtualizado es la de ejecutar programas de terceros con el fin de encapsular el posible malware que estos programas traigan consigo. Es por ello que viene con integración de GPU dedicada, para poder ejecutar programas más pesados con soltura. 
 
-Para instalar este tipo de instancias, primero tenemos que tener instalado nuestro entorno de Windows 10 dentro de Hyper-V. Para ello seguir este [tutorial](https://www.youtube.com/watch?v=Bpsice4QuL8). 
+Para instalar este tipo de instancias, primero tenemos que tener instalado el entorno de Windows 10 dentro de Hyper-V. Para ello seguir este [tutorial](https://www.youtube.com/watch?v=Bpsice4QuL8). 
 
-Una vez instalado el entorno, tenemos que ejecutar el siguiente script en powershell con permisos de administrador y teniendo la máquina encendida pero no sin antes cambiar la variable `"$vm"` por el nombre que le hemos puesto a la máquina, en mi caso `Windows_temp`.
+Una vez instalado el entorno, tenemos que ejecutar el siguiente script en powershell con permisos de administrador, teniendo la máquina encendida pero no sin antes cambiar la variable `"$vm"` por el nombre que le hemos puesto a la máquina, en mi caso `Windows_temp`.
 
     $vm = "Windows_temp"
     $systemPath = "C:\Windows\System32\"
@@ -130,7 +129,7 @@ Una vez instalado el entorno, tenemos que ejecutar el siguiente script en powers
         Write-Host "This PowerShell Script must be run with Administrative Privileges or nothing will work."
     }
 
-Una vez ejecutado, se habrán copiado los archivos .dll necesarios de nuestra máquina master a nuestro `Windows_temp`. Para instalarlos simplemente nos vamos a El disco de nuestro entorno y copiamos los archivos del directorio `"/Temp"` dentro de `"/windows/system32"` y una vez hecho apagamos la máquina.
+Una vez ejecutado, se habrán copiado los archivos .dll necesarios de nuestra máquina master a nuestro `Windows_temp`. Para realizar la instalación, nos vamos al disco de nuestro entorno y copiamos los archivos del directorio `"/Temp"` al directorio `"/windows/system32"` y una vez hecho apagamos la máquina.
 
 Con la máquina apagada, tenemos que ejecutar nuevamente otro script mediante la powershell con permisos de administrdor, dicho script ejecutará la máquina con la GPU dedicada, pero no sin antes cambiar nuevamente la variable `"$vm"` por el nombre de nuestra máquina, en mi caso Windows_temp.
 
@@ -161,18 +160,18 @@ Listo, una vez ejecutado se nos abrirá la máquina virtual y dentro de ella con
 
 ![Entorno Kali](https://github.com/k3sero/Blog_Content/blob/main/Herramientas/Entorno/Entornos_Profesionales/Entorno_Kali.png?raw=true)
 
-Este entorno es el más complicado de todos, ya que no es una instalación de kali Linux común y corriente, si no que esta preparada para ser un entorno en el que únicamente nos basemos por comandos sin contar con interfaz grafica. Es por ello que la pieza clave de este entorno es el bspwn junto con otras herramientas como por ejemplo polybar, para adecuar el sistema a algo más amigable al usuario.
+Este entorno es el más complejo de todos, ya que no es una instalación de Kali Linux común y corriente, sino que está preparada para ser un entorno en el que únicamente nos manejemos por comandos sin contar con interfaz gráfica. Es por ello que la pieza clave de este entorno es el `bspwm` junto con otras herramientas como por ejemplo `polybar` entre otras, para hacer el sistema algo más amigable al usuario.
 
-Desde que comencé la carrera me decanté por este tipo de entornos de trabajo, ya que sabía que a la larga, mi productividad crecería exponencialmente frente a el uso de un Kali linux convencinal. Aunque la curva de aprendizaje fuese muy costosa al principio dado a la gran cantidad de archivos de configuración asociados, esto brinda la capacidad de personalizar el sistema operativo a gusto del usuario para optimizar al máximo la productividad.
+Desde que comencé la carrera me decanté por este tipo de entornos de trabajo, ya que sabía que a la larga, mi productividad crecería exponencialmente frente al uso de un Kali Linux convencional. Aunque la curva de aprendizaje fuese muy costosa al principio debido a la instalación de cada herramienta y a la gran cantidad de archivos de configuración asociados, esto brinda la capacidad de personalizar el sistema operativo a gusto del usuario para optimizar al máximo el rendimiento.
 
 Con el paso del tiempo he ido descubriendo que existen numerosos scripts que te automatizan todo el proceso de instalación en un par de minutos y posteriormente podemos configurar el entorno por defecto para personalizarlo a nuestro gusto.
 
-Es por ello que voy a compartir con vosotros el script de instalación desarrollado por ZLCube y os compartiré mis configuraciones personales. 
+Es por ello que voy a compartir con vosotros el script de instalación desarrollado por el Youtuber `ZLCube` junto con mis configuraciones personales. 
 
 Para ello seguimos los siguientes pasos:
 
 	# Agradecimiento a ZLCube por la creación de la automatización (Dadle estrellita a su Github: https://github.com/ZLCube/AutoBspwm) 
-	# Podemos crear una Snapshot desde Vmware en caso de que explote la instalacion.
+	# Podemos crear una Snapshot desde Vmware en caso de que explote la instalación.
  
 	#!/bin/bash
 	sudo apt update
@@ -185,7 +184,7 @@ Para ello seguimos los siguientes pasos:
 	# Si se queda esperando demasiado tiempo le damos enter 
 	# En la pestaña de theme selector, seleccionamos el tema a nuestro gusto
 	# Posteriormente seleccionaremos el tema del Rofi a nuestro gusto y pulsamos Alt + A
-	# En iniciar sesion cambiamos el entorno (Arriba derecha en la Hamburguesa) a "Bspwn"
+	# En iniciar sesion cambiamos el entorno (Arriba derecha en la Hamburguesa) a "Bspwm"
  
 	# En este punto lo configuraremos a nuestro gusto, video detallado del creador: https://www.youtube.com/watch?v=CClVFk4CCic
  
@@ -195,51 +194,474 @@ Para ello seguimos los siguientes pasos:
 		# ./theme.sh
 
 
-Una vez ejecutado el script anterior, antes de iniciar el nuevo entorno grafico, nos aseguraremos de configurar a nuestro gusto el entorno. Los principales archivos de configuración que deberemos tocar, estan dentro de lacarpeta .config dentro de nuestro home.
+Una vez ejecutado el script anterior, antes de iniciar el nuevo entorno gráfico, nos aseguraremos de configurar a nuestro gusto el entorno. Los principales archivos de configuración que deberemos tocar, estan dentro de la carpeta `.config` dentro de nuestro `/home`.
 
-Aquí os dejo mis configuraciones personales
-
-.shxkd: es el archivo de configuración de Hotkeys del teclado.
-
-.zshrc: es el archivo base de zshrc, pero con utilidades propias añadidas.
-
-.polybar_files: Estos son los archvios para configurar la barra superior del entorno, en mi caso he retocado algunas cosas respecto al original, como colores y refinamiento de recuadros
+Aquí os dejo mis configuraciones personales.
 
 
-Además, os dejaré todo mi carpeta .conf para que podáis tener todos mis archivos de configuración en caso de que queráis tener mi entorno en especifico.
+### **.shxkd**
 
-La clave de todo esto es que gracias a la sencillez de la instalación del entorno profesional, podemos levantar y tumbar entornos basados en Kali linux a nuestra voluntad. Como consejo, os recomiendo que una vez tenéis todo el entorno personalizado, hagais una snapshot del estado actual del entorno para que si en un futuro vuestra máquina deja de responder, podais volver a un estado inicial donde todo funcione sin problema.
+Es el archivo de configuración de Hotkeys del teclado.
+
+```sh
+
+##########################
+######### NEW ############
+##########################
+
+# Capturas
+alt + shift + s
+	xfce4-screenshooter
+
+# Burpsuite
+super + b
+    java -jar --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.base/java>
+
+# Burpsuite
+mod6 + b
+    java -jar --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.base/java>
+
+# terminal emulator
+mod5 + t
+    qterminal
+# rofi
+mod5 + d
+	rofi -show run
+
+#firefox
+mod5 + f
+	firefox
+
+#vscode 
+mod5 + v
+	code
+
+##########################
+# wm independent hotkeys #
+##########################
+
+# terminal emulator
+super + Return
+	/opt/kitty/bin/kitty
+
+# i3lock 
+super + {_,shift + }{1-9,0}
+        bspc {desktop -f,node -d} '^{1-9,10}'
+shift + l
+	/usr/bin/i3lock-everblush
+
+
+# program launcher
+super + d
+	rofi -show run
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+super + {_,shift + }{1-9,0}
+        bspc {desktop -f,node -d} '^{1-9,10}'
+#################
+# bspwm hotkeys #
+#################
+
+# quit/restart bspwm
+super + alt + {q,r}
+	bspc {quit,wm -r}
+
+# close and kill
+super + {_,shift + }w
+	bspc node -{c,k}
+
+mod5 + w
+	bspc node -{c,k}
+
+# alternate between the tiled and monocle layout
+super + m
+	bspc desktop -l next
+super + {_,shift + }{1-9,0}
+        bspc {desktop -f,node -d} '^{1-9,10}'
+
+# send the newest marked node to the newest preselected node
+super + y
+	bspc node newest.marked.local -n newest.!automatic.local
+
+# swap the current node and the biggest window
+super + g
+	bspc node -s biggest.window
+
+###############
+# state/flags #
+###############
+
+# set the window state
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# set the node flags
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+##############
+# focus/swap #
+##############
+
+# focus the node in the given direction
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus the node for the given path jump
+super + {p,b,comma,period}
+	bspc node -f @{parent,brother,first,second}
+
+# focus the next/previous window in the current desktop
+super + {_,shift + }c
+	bspc node -f {next,prev}.local.!hidden.window
+
+# focus the next/previous desktop in the current monitor
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+# focus the last node/desktop
+super + {grave,Tab}
+	bspc {node,desktop} -f last
+
+# focus the older or newer node in the focus history
+super + {o,i}
+	bspc wm -h off; \
+	bspc node {older,newer} -f; \
+	bspc wm -h on
+
+# focus or send to the given desktop
+super + shift + {_,ctrl + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# Mover pestaña a escritorio
+
+mod5 + shift + {_,ctrl + }{1-9,0}
+    bspc {desktop -f,node -d} '^{1-9,10}'
+
+
+#############
+# preselect #
+#############
+
+# preselect the direction
+super + ctrl + alt + {Left,Down,Up,Right}
+	bspc node -p {west,south,north,east}
+
+# preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+# cancel the preselection for the focused desktop
+super + ctrl + alt + space
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+###############
+# move/resize #
+###############
+
+# expand a window by moving one of its side outward
+#super + alt + {h,j,k,l}
+#	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+#super + alt + shift + {h,j,k,l}
+#	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# move a floating window
+super + ctrl + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# Custom move/resize
+super + alt + {Left,Down,Up,Right}
+	~/.config/bspwm/scripts/bspwm_resize {west,south,north,east}
+
+########################
+# Custom Launchers App #
+########################
+
+# Firefox
+super + shift + f
+	firefox
+
+# BurpSuite
+super + shift + b
+	burpsuite
+
+###############
+# ScreenShots #
+###############
+
+@Print
+        screenshot select
+
+@Print + ctrl
+        screenshot
+
+@Print + alt
+        screenshot window
+
+```
+
+### **.zshrc**
+
+Es el archivo base de zshrc (intérprete de comandos) pero con utilidades propias añadidas.
+
+```sh
+# Fix the Java Problem
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+# Enable Powerlevel10k instant prompt. Should stay at the top of ~/.zshrc.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# Set up the prompt
+
+autoload -Uz promptinit
+promptinit
+prompt adam1
+
+setopt histignorealldups sharehistory
+
+# Use emacs keybindings even if our EDITOR is set to vi
+bindkey -e
+
+# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
+HISTSIZE=1000
+SAVEHIST=1000
+HISTFILE=~/.zsh_history
+
+# Use modern completion system
+autoload -Uz compinit
+compinit
+
+zstyle ':completion:*' auto-description 'specify: %d'
+zstyle ':completion:*' completer _expand _complete _correct _approximate
+zstyle ':completion:*' format 'Completing %d'
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' menu select=2
+eval "$(dircolors -b)"
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
+zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
+zstyle ':completion:*' menu select=long
+zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
+zstyle ':completion:*' use-compctl false
+zstyle ':completion:*' verbose true
+
+zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
+zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
+# Manual configuration
+
+PATH=/root/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+
+# Custom Aliases
+
+alias ll='lsd -lh --group-dirs=first'
+alias la='lsd -a --group-dirs=first'
+alias l='lsd --group-dirs=first'
+alias lla='lsd -lha --group-dirs=first'
+alias ls='lsd --group-dirs=first'
+alias cat='/bin/batcat --paging=never'
+alias catn='cat'
+alias catnl='batcat'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Plugins
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /usr/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-sudo/sudo.plugin.zsh
+
+# Functions
+function mkt(){
+	mkdir {nmap,content,exploits,scripts}
+}
+function ctf(){
+	mkdir {Crypto,Misc,Rev,Pwn,Forensic}
+}
+
+
+# Extract nmap information
+function extractPorts(){
+	ports="$(cat $1 | grep -oP '\d{1,5}/open' | awk '{print $1}' FS='/' | xargs | tr ' ' ',')"
+	ip_address="$(cat $1 | grep -oP '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}' | sort -u | head -n 1)"
+	echo -e "\n[*] Extracting information...\n" > extractPorts.tmp
+	echo -e "\t[*] IP Address: $ip_address"  >> extractPorts.tmp
+	echo -e "\t[*] Open ports: $ports\n"  >> extractPorts.tmp
+	echo $ports | tr -d '\n' | xclip -sel clip
+	echo -e "[*] Ports copied to clipboard\n"  >> extractPorts.tmp
+	cat extractPorts.tmp; rm extractPorts.tmp
+}
+
+# Settarget
+
+function settarget(){
+	if [ $# -eq 1 ]; then
+	echo $1 > /home/kali/.config/bin/target
+	elif [ $# -gt 2 ]; then
+	echo "settarget [IP] [NAME] | settarget [IP]"
+	else
+	echo $1 $2 > /home/kali/.config/bin/target
+	fi
+}
+
+# Set 'man' colors
+function man() {
+    env \
+    LESS_TERMCAP_mb=$'\e[01;31m' \
+    LESS_TERMCAP_md=$'\e[01;31m' \
+    LESS_TERMCAP_me=$'\e[0m' \
+    LESS_TERMCAP_se=$'\e[0m' \
+    LESS_TERMCAP_so=$'\e[01;44;33m' \
+    LESS_TERMCAP_ue=$'\e[0m' \
+    LESS_TERMCAP_us=$'\e[01;32m' \
+    man "$@"
+}
+
+# fzf improvement
+function fzf-lovely(){
+
+	if [ "$1" = "h" ]; then
+		fzf -m --reverse --preview-window down:20 --preview '[[ $(file --mime {}) =~ binary ]] &&
+ 	                echo {} is a binary file ||
+	                 (bat --style=numbers --color=always {} ||
+	                  highlight -O ansi -l {} ||
+	                  coderay {} ||
+	                  rougify {} ||
+	                  cat {}) 2> /dev/null | head -500'
+
+	else
+	        fzf -m --preview '[[ $(file --mime {}) =~ binary ]] &&
+	                         echo {} is a binary file ||
+	                         (bat --style=numbers --color=always {} ||
+	                          highlight -O ansi -l {} ||
+	                         coderay {} ||
+	                          rougify {} ||
+	                          cat {}) 2> /dev/null | head -500'
+	fi
+}
+
+function rmk(){
+	scrub -p dod $1
+	shred -zun 10 -v $1
+}
+
+function ctf(){
+	mkdir {Cripto,Forensics,Rev,Pwn,Misc,Web,Blockchain}
+}
+
+function giti(){
+
+	echo -n "[!] Introduce la descripción del commit: "
+	read input
+
+	error=$(git add . 2>&1)
+	if [ $? -ne 0 ]; then
+		echo "[!] Ha ocurrido un error al ejecutar git add. Error: $error"
+		return 1
+	fi
+
+	error=$(git commit -m "$input" 2>&1)
+	if [ $? -ne 0 ]; then
+		echo "[!] Ha ocurrido un error al ejecutar git commit. Error: $error "
+		return 1
+	fi
+
+	error=$(git push origin main 2>&1)
+	if [ $? -ne 0 ]; then
+		echo "[!] Ha ocurrido un error al ejecutar git push. Error $error"
+		return 1
+	fi
+
+	echo "[!] Commit realizado correctamente."
+
+}
+
+# Entorno Virtual automatico para librerias de python
+source ~/python-env/bin/activate
+
+# Finalize Powerlevel10k instant prompt. Should stay at the bottom of ~/.zshrc.
+(( ! ${+functions[p10k-instant-prompt-finalize]} )) || p10k-instant-prompt-finalize 
+
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
+bindkey "^[[3~" delete-char
+bindkey "^[[1;3C" forward-word
+bindkey "^[[1;3D" backward-word
+source ~/.powerlevel10k/powerlevel10k.zsh-theme
+export PATH="$HOME/.gem/ruby/$(ruby -e puts RUBY_VERSION)/bin:$PATH"
+```
 
 
 
+### **bspwmrc**
+
+Es el archivo base de bspwm. (gestor de ventanas)
+
+```sh
+#! /bin/sh
+
+wmname LG3D &
+vmware-user-suid-wrapper &
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor -d I II III IV V VI VII VIII IX X
+
+bspc config border_width         2
+bspc config window_gap           8
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+# WALLPAPER
+feh --bg-fill ~/.config/Wallpaper/Parrot-1.png
+
+# POLYBAR
+~/.config/polybar/launch.sh
+
+# CUSTOM
+bspc config focus_follows_pointer true
+
+# PICOM
+picom &
+bspc config border_width 0
+
+bspc config normal_border_color "#8bcc6a"
+bspc config active_border_color "#8bcc6a"
+
+xsetroot -cursor_name left_ptr &
+```
+
+Además, os dejaré todo mi carpeta .conf con otros archivos de configuración como picom, kitty, powerlevel10k, rofi y fichero de la polybar para que podáis tener todos mis archivos de configuración en caso de que queráis tener mi entorno en específico.
+Archivos de configuración [aquí](https://github.com/k3sero/Blog_Content/tree/main/Herramientas/Entorno/Entornos_Profesionales/config).
+
+La clave de todo esto es que gracias a la sencillez de la instalación del entorno profesional, podemos levantar y tumbar entornos basados en Kali a nuestra voluntad. Como `consejo`, os recomiendo que una vez tenéis todo el entorno personalizado, hagáis una `snapshot` del estado actual del entorno para que si en un futuro vuestra máquina deja de funcionar, podais volver al estado inicial donde todo funcione sin problema.
 
 
+## Conclusión
 
+Esta distribución de máquinas virtuales es la que he seguido prácticamente desde que que comencé a estudiar Ingenieria Informática y os la comparto con vosotros para que le echéis un ojo. Uno de los principales inconvenientes que tiene esta distribución de máquinas virtuales es que puede que llegue un punto en que necesitamos más potencia de cómputo ya sea para romper hashes o para correr programas criptográficos pesados dentro de Kali Linux ya que nuestra GPU dedicada no está integrada en este sistema de Vmware Workstation llegando a tardar más tiempo en las ejecuciones.
 
-
-
-
-
-
-
-
-
-
-
-Para la instalación de dichos sistemas virtualizadores os aconsejo seguir estos tutoriales.
-
-
-https://www.youtube.com/watch?v=4M_JBHZ8D0s
-
-
-https://www.youtube.com/watch?v=t3cJfvR6FlU
-
-
-https://www.youtube.com/watch?v=Bpsice4QuL8
-
-
-https://www.youtube.com/watch?v=jFzQUsnlof0&t=1s
-
-El siguiente esquema muestra la estructura de cada entorno de trabajo.
-
-
+Para poder corregir este problema, podemos instalar VMware `ESXi` el cual permite la integración de la GPU dedicada a nuestras virtualizaciones. Otra posible solución sería instalar Kali Linux como subsistema de Windows `WSL`, de esta manera, tenemos a nuestra disposición la GPU especializada.
