@@ -24,11 +24,11 @@ El siguiente esquema muestra la estructura de cada entorno de trabajo.
 ![Estructura](https://github.com/k3sero/Blog_Content/blob/main/Herramientas/Entorno/Entornos_Profesionales/Estructura_Entornos.png?raw=true)
 
 
-<u>**Windows Master:**</u> Este sistema operativo es el que está instalado de forma nativa en el hardware del computador, es por ello que siempre vamos a mantenerlo lo más limpio y actualizado posible (si es posible, instalarlo en un disco de estado sólido o en una unidad M.2 para beneficiarnos de la rapidez en nuestras máquinas virtuales). 
+- **Windows Master:** Este sistema operativo es el que está instalado de forma nativa en el hardware del computador, es por ello que siempre vamos a mantenerlo lo más limpio y actualizado posible (si es posible, instalarlo en un disco de estado sólido o en una unidad M.2 para beneficiarnos de la rapidez en nuestras máquinas virtuales). 
 
-<u>**Windows temp:**</u> Este windows es el encargado de abastecernos como respaldo en caso de necesitar la instalación de herramientas y programas de dudosa fiabilidad. La principal característica de este sistema es que cuenta con integración de GPU dedicada en caso de contar con una para ejecutar programas pesados.
+- **Windows temp:** Este windows es el encargado de abastecernos como respaldo en caso de necesitar la instalación de herramientas y programas de dudosa fiabilidad. La principal característica de este sistema es que cuenta con integración de GPU dedicada en caso de contar con una para ejecutar programas pesados.
 
-<u>**Debian:**</u> La principal funcionalidad de este Linux es abordar temas de programación más complejos, como por ejemplo brindarnos IDEs especializadas como Eclipse para trabajar con entornos en Java o como Arduino IDE para trabajar con sistemas embebidos.
+- **Debian:** La principal funcionalidad de este Linux es abordar temas de programación más complejos, como por ejemplo brindarnos IDEs especializadas como Eclipse para trabajar con entornos en Java o como Arduino IDE para trabajar con sistemas embebidos.
 
 **Kali Linux**: Entorno profesional de trabajo basado en bspwm para labores de hacking ético. 
 
