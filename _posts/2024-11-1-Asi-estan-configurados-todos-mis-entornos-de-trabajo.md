@@ -1,5 +1,5 @@
 ---
-title: Así tengo configurados mi sistemas de entornos profesionales de trabajo
+title: Así tengo configurados mi sistema de entornos profesionales de trabajo
 author: Kesero
 description: Explicación de cómo tengo configurados todos mis entornos profesionales de trabajo enfocados en la ciberseguridad
 date: 2024-11-1 20:42:30 +0800
