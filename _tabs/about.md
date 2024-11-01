@@ -138,3 +138,14 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 • **"ACR - RFID"**
 
 • **"ACR - BadUSB"**
+
+
+## Cursos completados
+
+•**"Udemy - Curso Profesional de Hacking Ético +90 horas"**
+
+•**"Mastermind - Introducción al Hacking Ético"**
+
+•**"Mastermind - Hacking de Redes Inalámbricas (Hacking Wifi)"**
+
+•**"Mastermind - Hacking de Radiofrecuenca (Hacking RFID)"**
