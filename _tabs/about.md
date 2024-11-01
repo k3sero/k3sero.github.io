@@ -6,7 +6,7 @@ order: 4
 
 ![Presentacion](assets/images/about/Presentacion.jpg)
 
-Hola muy buenas, me presento, mi nombre es Carlos Marín (aka **k3sero**), actualmente soy un estudiante universitario de la carrera de Ingeniería Informática a quien le apasiona el mundo de la ciberseguridad, CTFs, ciberinteligencia y demás áreas que conforman dicha rama. Es por ello que me ha llevado a formarme de manera autodidacta compaginándolo con mis estudios prácticamente desde que empecé la misma.
+Hola muy buenas, me presento, mi nombre es Carlos Marín (aka **k3sero**), actualmente soy un estudiante universitario cursando la carrera de Ingeniería Informática a quien le apasiona el mundo de la ciberseguridad, CTFs, ciberinteligencia y demás áreas que conforman dicha rama. Es por ello que me ha llevado a formarme de manera autodidacta compaginándolo con mis estudios prácticamente desde que empecé la misma.
 
 Con este blog, pretendo aportar mi granito de arena con los conocimientos que voy adquiriendo a lo largo de mi travesía con el fin de compartir a la comunidad diversas metodologías de trabajo, formas de resolver ejercicios, conocimientos poco tratados por la comunidad, herramientas personales de cualquier índole o simplemente abordar cualquier tema de la misma. Es por ello que estoy abierto a cualquier fuente de conocimiento.
 
@@ -34,13 +34,13 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 ## Marcadores Personales
 
-**TFs Learning Path Hacking Web** --> Talleres impulsados por el Aula de Ciberseguridad y Redes en el que conseguí obtener la tercera posición en el ranking basado en retos CTFs enfocados en vulnerabilidades web.
+• **CTFs Learning Path Hacking Web** --> Talleres impulsados por el Aula de Ciberseguridad y Redes en el que conseguí obtener la tercera posición en el ranking basado en retos CTFs enfocados en vulnerabilidades web.
 
-**HackademicsForumCTF2024** --> Competición de CTFs impulsada por el Aula de Ciberseguridad y Redes con el fin de acercar la metodología de resolución de retos CTFs en el sector provincial. En dicha competición, conseguí obtener la segunda posición del ranking.
+• **HackademicsForumCTF2024** --> Competición de CTFs impulsada por el Aula de Ciberseguridad y Redes con el fin de acercar la metodología de resolución de retos CTFs en el sector provincial. En dicha competición, conseguí obtener la segunda posición del ranking.
 
-**Talent4Cyber** --> Competición de CTFs a nivel nacional, organizada por La Universidad de Granada, el TRUST Lab de la Universidad Politécnica de Cartagena y el Mando Conjunto del Ciberespacio con el fin de poner a prueba las habilidades y conocimientos de los mejores talentos universitarios con desafíos técnicos y simulaciones realistas. Nuestro equipo conformado por cuatro personas logró adentrarse en la cuarta posición del ranking, resolviendo un total de 6 de 10 en total.
+• **Talent4Cyber** --> Competición de CTFs a nivel nacional, organizada por La Universidad de Granada, el TRUST Lab de la Universidad Politécnica de Cartagena y el Mando Conjunto del Ciberespacio con el fin de poner a prueba las habilidades y conocimientos de los mejores talentos universitarios con desafíos técnicos y simulaciones realistas. Nuestro equipo conformado por cuatro personas logró adentrarse en la cuarta posición del ranking, resolviendo un total de 6 de 10 en total.
 
-**NCL2023** --> Evento referente en la cultura de la ciberseguridad Española enfocándose en la resolución de retos CTFs de distintas categorias (princpalmente forense). Nuestro equipo de 4 participantes compitió en la categoría amateour logró clasificar a la fase semifinal y se quedó a 50 puntos de clasificar a la fase final, obteniendo la plaza número 16 del ranking.
+• **NCL2023** --> Evento referente en la cultura de la ciberseguridad Española enfocándose en la resolución de retos CTFs de distintas categorias (princpalmente forense). Nuestro equipo de 4 participantes compitió en la categoría amateour logró clasificar a la fase semifinal y se quedó a 50 puntos de clasificar a la fase final, obteniendo la plaza número 16 del ranking.
 
 ## Competiciones Participadas
 
@@ -68,7 +68,7 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 | UMassCTF 2024                                       |	1797,0000	| 8,771  |
 | LINE CTF 2024                                       |	201,0000	| 2,988  |
 | Cyber Apocalypse 2024: Hacker Royale                |	7800,0000	| 9,359  |
-| BraekerCTF                                          | 800,0000|	| 5,575  |
+| BraekerCTF                                          | 800,0000	| 5,575  |
 | DiceCTF 2024 Quals                                  |	332,0000	| 3,428  |
 | Insomni'hack teaser 2024                            | 61,0000     | 1,040  |
 
@@ -76,8 +76,7 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |
 |----------------------------|------------|-------|
-|pingCTF 2023                |	650,0000  |	0,000 |
-|GlacierCTF 2023             |	410,0000  |	0,000 |
+|GlacierCTF 2023             |	410,0000  |	2,341 |
 |ASIS CTF Quals 2023         |	23,0000   |	0,768 |
 |SECCON CTF 2023 Quals       |	50,0000   |	1,306 |
 |SekaiCTF 2023               |	239,0000  |	0,641 |
@@ -91,51 +90,51 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 ## Eventos Asistidos
 
-**HackademicsForum2024**
+• **HackademicsForum2024**
 
-**HackademicsForum2023**
+• **HackademicsForum2023**
 
-**Oportunidades en el Sector de la Defensa para Empresas Tecnológicas e Innovadoras 2024**
+• **Oportunidades en el Sector de la Defensa para Empresas Tecnológicas e Innovadoras 2024**
 
-**Hack&Beers Vol.5 2024**
+• **Hack&Beers Vol.5 2024**
 
 
 ## Charlas sobre Ciberseguridad Asistidas
  
 ### 2024
 
-**"Vulnerabilidades en infraestructuras de Active Directory (AD)"**
+• **"Vulnerabilidades en infraestructuras de Active Directory (AD)"**
 
-**"ACR - Taller OSINT: Surface, Deep, Dark web - Francisco Rodríguez"**
+• **"ACR - Taller OSINT: Surface, Deep, Dark web - Francisco Rodríguez"**
 
-**"ACR - Mitos, debilidades y crímenes imperfectos. 10 años de investigaciones en Darknets - Francisco Rodríguez"**
+• **"ACR - Mitos, debilidades y crímenes imperfectos. 10 años de investigaciones en Darknets - Francisco Rodríguez"**
 
-**"ACR - Cómo llegar a ser perito forense (CNIJP) Actuaciones Forenses"**
+• **"ACR - Cómo llegar a ser perito forense (CNIJP) Actuaciones Forenses"**
 
 ### 2023
 
-**"ACR - El mundo de las competiciones CTFs"**
+• **"ACR - El mundo de las competiciones CTFs"**
 
-**"ACR - Tunel DNS"**
+• **"ACR - Tunel DNS"**
 
-**"ACR - Taller de OSINT"**
+• **"ACR - Taller de OSINT"**
 
-**"ACR - XSS Injection"**
+• **"ACR - XSS Injection"**
 
-**"ACR - File Related Vulnerabilities"**
+• **"ACR - File Related Vulnerabilities"**
 
-**"ACR - SQL Injection"**
+• **"ACR - SQL Injection"**
 
-**"ACR - CSRF SSRF "**
+• **"ACR - CSRF SSRF "**
 
 ### 2022
 
-**"ACR - Hackeando nuestra primera maquina"**
+• **"ACR - Hackeando nuestra primera maquina"**
 
-**"ACR - Introducción a los CTFs"**
+• **"ACR - Introducción a los CTFs"**
 
-**"ACR - Cómo empezar en ciberseguridad"**
+• **"ACR - Cómo empezar en ciberseguridad"**
 
-**"ACR - RFID"**
+• **"ACR - RFID"**
 
-**"ACR - BadUSB"**
+• **"ACR - BadUSB"**
