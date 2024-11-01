@@ -12,7 +12,7 @@ Con este blog, pretendo aportar mi granito de arena con los conocimientos que vo
 
 Actualmente estoy en búsqueda de prácticas de empresa con el fin de inicializarme en el mundo laborar. Estoy muy ilusionado y me encuentro con muchas ganas de trabajar con equipos profesionales de cualquier índole, ya sean enfocadas en el Blue-Team o Red-Team.
 
-Además para complementar dichos conocimientos actualmente estoy estudiando varias certificaciones como la eJPT de lado ofensivo junto la eCIR por el lado defensivo. 
+Además, para complementar dichos conocimientos actualmente estoy estudiando varias certificaciones como la eJPT de lado ofensivo junto la eCIR por el lado defensivo. 
 
 
 ## Proyectos Personales
@@ -40,7 +40,7 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 • **Talent4Cyber** --> Competición de CTFs a nivel nacional, organizada por La Universidad de Granada, el TRUST Lab de la Universidad Politécnica de Cartagena y el Mando Conjunto del Ciberespacio con el fin de poner a prueba las habilidades y conocimientos de los mejores talentos universitarios con desafíos técnicos y simulaciones realistas. Nuestro equipo conformado por cuatro personas logró adentrarse en la cuarta posición del ranking, resolviendo un total de 6 de 10 en total.
 
-• **NCL2023** --> Evento referente en la cultura de la ciberseguridad Española enfocándose en la resolución de retos CTFs de distintas categorias (princpalmente forense). Nuestro equipo de 4 participantes compitió en la categoría amateour logró clasificar a la fase semifinal y se quedó a 50 puntos de clasificar a la fase final, obteniendo la plaza número 16 del ranking.
+• **NCL2023** --> Evento referente en la cultura de la ciberseguridad Española enfocándose en la resolución de retos CTFs de distintas categorias (principalmente forense). Nuestro equipo de 4 participantes compitió en la categoría amateour logró clasificar a la fase semifinal y se quedó a 50 puntos de clasificar a la fase final, obteniendo la plaza número 16 del ranking.
 
 ## Competiciones Participadas
 
