@@ -9,7 +9,7 @@ pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Afin_Hill/img/Titulo.png?raw=true
+  path: https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Afin_Hill/img/Titulo_p.png?raw=true
   lqip: 
   alt: 
 comments: true
