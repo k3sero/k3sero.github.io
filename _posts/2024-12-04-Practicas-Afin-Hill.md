@@ -35,7 +35,7 @@ Al final de los ejercicios, contaréis con los menús `menuHill` y `menuAfin` pa
 
 ### Ejercicio 1
 
-[Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Afin_Hill/img/ex1.png?raw=true)
+![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Afin_Hill/img/ex1.png?raw=true)
 
 ```py
 """
@@ -235,7 +235,7 @@ def invModMatrix(a, n):
 
 ### Ejercicio 2
 
-[Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Afin_Hill/img/ex2.png?raw=true)
+![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Afin_Hill/img/ex2.png?raw=true)
 
 ```py
 """
@@ -292,7 +292,7 @@ def TexttoNumber(string):
 
 ### Ejercicio 3 (Menú Afín)
 
-[Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Afin_Hill/img/ex3.png?raw=true)
+![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Afin_Hill/img/ex3.png?raw=true)
 
 ```py
 """
@@ -587,7 +587,7 @@ if __name__ == "__main__":
 
 ### Ejercicio 4 (Menú Hill)
 
-[Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Afin_Hill/img/ex4.png?raw=true)
+![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Afin_Hill/img/ex4.png?raw=true)
 
 ```py
 """
