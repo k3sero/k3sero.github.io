@@ -47,24 +47,7 @@ layout: page
           <!-- content count -->
           {% assign top_posts_size = site.categories[category_name] | size %}
           <span class="text-muted small font-weight-light">
-            {% if sub_categories_size > 0 %}
-              {{ sub_categories_size }}
-              {% if sub_categories_size > 1 %}
-                {{
-                  site.data.locales[lang].categories.category_measure.plural
-                  | default: site.data.locales[lang].categories.category_measure
-                }}
-              {% else %}
-                {{
-                  site.data.locales[lang].categories.category_measure.singular
-                  | default: site.data.locales[lang].categories.category_measure
-                }}
-              {% endif -%}
-              ,
-            {% endif %}
-
             {{ top_posts_size }}
-
             {% if top_posts_size > 1 %}
               {{
                 site.data.locales[lang].categories.post_measure.plural
@@ -84,11 +67,11 @@ layout: page
           <a
             href="#{{ LIST_PREFIX }}{{ group_index }}"
             data-bs-toggle="collapse"
-            aria-expanded="true"
+            aria-expanded="false"
             aria-label="{{ HEAD_PREFIX }}{{ group_index }}-trigger"
             class="category-trigger hide-border-bottom"
           >
-            <i class="fas fa-fw fa-angle-down"></i>
+            <i class="fas fa-fw fa-angle-right"></i>
           </a>
         {% else %}
           <span data-bs-toggle="collapse" class="category-trigger hide-border-bottom disabled">
@@ -98,9 +81,9 @@ layout: page
       </div>
       <!-- .card-header -->
 
-      <!-- Sub-categories -->
+      <!-- Sub-categories (collapsed by default) -->
       {% if sub_categories_size > 0 %}
-        <div id="{{ LIST_PREFIX }}{{ group_index }}" class="collapse show" aria-expanded="true">
+        <div id="{{ LIST_PREFIX }}{{ group_index }}" class="collapse" aria-expanded="false">
           <ul class="list-group">
             {% for sub_category in sub_categories %}
               <li class="list-group-item">
