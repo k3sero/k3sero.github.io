@@ -2,20 +2,20 @@
   color-scheme: dark;
 
   /* Framework color */
-  --main-bg: rgb(27, 27, 30);
+  --main-bg: rgb(30, 30, 30);
   --mask-bg: rgb(68, 69, 70);
   --main-border-color: rgb(44, 45, 45);
 
   /* Common color */
-  --text-color: rgb(175, 176, 177);
+  --text-color: rgb(211, 211, 211);
   --text-muted-color: #868686;
   --text-muted-highlight-color: #aeaeae;
-  --heading-color: #cccccc;
+  --heading-color: #8ac41b;
   --label-color: #a7a7a7;
   --blockquote-border-color: rgb(66, 66, 66);
   --blockquote-text-color: #868686;
-  --link-color: rgb(138, 180, 248);
-  --link-underline-color: rgb(82, 108, 150);
+  --link-color: #8ac41b;
+  --link-underline-color: #8ac41b;
   --button-bg: #1e1e1e;
   --btn-border-color: #2e2f31;
   --btn-backtotop-color: var(--text-color);
@@ -23,7 +23,7 @@
   --card-header-bg: #292929;
   --checkbox-color: rgb(118, 120, 121);
   --checkbox-checked-color: var(--link-color);
-  --img-bg: radial-gradient(circle, rgb(22, 22, 24) 0%, rgb(32, 32, 32) 100%);
+  --img-bg: radial-gradient(circle, rgb(22, 22, 24) 0%, rgb(21, 21, 21) 100%);
   --shimmer-bg: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0) 0%,
@@ -32,7 +32,7 @@
   );
 
   /* Sidebar */
-  --site-title-color: #717070;
+  --site-title-color: #8ac41b;
   --site-subtitle-color: #868686;
   --sidebar-bg: #1e1e1e;
   --sidebar-border-color: #292929;
@@ -41,10 +41,10 @@
   --sidebar-hover-bg: #262626;
   --sidebar-btn-bg: #232328;
   --sidebar-btn-color: #787878;
-  --avatar-border-color: rgb(206, 206, 206, 0.9);
+  --avatar-border-color: rgb(255, 255, 255, 0.95);
 
   /* Topbar */
-  --topbar-bg: rgb(27, 27, 30, 0.64);
+  --topbar-bg: rgba(30, 30, 30, 0.8);
   --topbar-text-color: var(--text-color);
   --search-border-color: rgb(55, 55, 55);
   --search-icon-color: rgb(100, 102, 105);
@@ -56,13 +56,13 @@
   --btn-paginator-hover-color: #2e2e2e;
 
   /* Posts */
-  --toc-highlight: rgb(116, 178, 243);
+  --toc-highlight: #8ac41b;;
   --toc-popup-border-color: #373737;
   --tag-hover: rgb(43, 56, 62);
   --tb-odd-bg: #252526; /* odd rows of the posts' table */
   --tb-even-bg: rgb(31, 31, 34); /* even rows of the posts' table */
   --tb-border-color: var(--tb-odd-bg);
-  --footnote-target-bg: rgb(63, 81, 181);
+  --footnote-target-bg: #8ac41b;
   --btn-share-color: #6c757d;
   --btn-share-hover-color: #bfc1ca;
   --card-bg: #1e1e1e;
@@ -76,9 +76,9 @@
   --prompt-tip-bg: rgb(22, 60, 36, 0.64);
   --prompt-tip-icon-color: rgb(15, 164, 15, 0.81);
   --prompt-info-bg: rgb(7, 59, 104, 0.8);
-  --prompt-info-icon-color: #0075d1;
+  --prompt-info-icon-color: #b9b9b9;
   --prompt-warning-bg: rgb(90, 69, 3, 0.88);
-  --prompt-warning-icon-color: rgb(255, 165, 0, 0.8);
+  --prompt-warning-icon-color: #8ac41b;
   --prompt-danger-bg: rgb(86, 28, 8, 0.8);
   --prompt-danger-icon-color: #cd0202;
 
@@ -94,8 +94,8 @@
   --categories-icon-hover-color: white;
 
   /* Archive */
-  --timeline-node-bg: rgb(150, 152, 156);
-  --timeline-color: rgb(63, 65, 68);
+  --timeline-node-bg: rgba(40, 40, 40, 0.9);
+  --timeline-color: rgb(80, 80, 80);
   --timeline-year-dot-color: var(--timeline-color);
 
   /* Code highlight colors */
@@ -141,11 +141,11 @@
   #archives li:nth-child(odd) {
     background-image: linear-gradient(
       to left,
-      rgb(26, 26, 30),
-      rgb(39, 39, 45),
-      rgb(39, 39, 45),
-      rgb(39, 39, 45),
-      rgb(26, 26, 30)
+      rgb(30, 30, 30),
+      rgb(44, 44, 44), /* Un gris oscuro que se mezcla mejor con el nuevo fondo */
+      rgb(44, 44, 44),
+      rgb(44, 44, 44),
+      rgb(30, 30, 30)
     );
   }
 
@@ -190,11 +190,11 @@
   }
 
   .highlight .cp {
-    color: #f4bf75;
+    color: #8ac41b;
   }
 
   .highlight .nt {
-    color: #f4bf75;
+    color: #8ac41b;
   }
 
   .highlight .o,
@@ -217,7 +217,7 @@
   }
 
   .highlight .gh {
-    color: #6a9fb5;
+    color: #8ac41b;
     background-color: #151515;
     font-weight: bold;
   }
@@ -231,15 +231,15 @@
   }
 
   .highlight .kc {
-    color: #d28445;
+    color: #8ac41b;
   }
 
   .highlight .kt {
-    color: #d28445;
+    color: #8ac41b;
   }
 
   .highlight .kd {
-    color: #d28445;
+    color: #8ac41b;
   }
 
   .highlight .s,
@@ -271,11 +271,11 @@
   }
 
   .highlight .nn {
-    color: #f4bf75;
+    color: #8ac41b;
   }
 
   .highlight .nc {
-    color: #f4bf75;
+    color: #8ac41b;
   }
 
   .highlight .no {
@@ -283,7 +283,7 @@
   }
 
   .highlight .na {
-    color: #6a9fb5;
+    color: #8ac41b;
   }
 
   .highlight .m,
