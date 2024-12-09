@@ -203,7 +203,7 @@ def colision():
             print(f"[+] Hash encontrado (Bytes): {colision}")
 ```
 
-# Implementación básica MD5 (sin librerías)
+### Implementación básica MD5 (sin librerías)
 
 ```py
 """
