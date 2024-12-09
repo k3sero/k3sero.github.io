@@ -1,15 +1,15 @@
 ---
-title: Códigos en python para el cifrado Afín y el cifrado Hill.
+title: Códigos en python para el cifrado por Mochilas.
 author: Kesero
-description: Códigos realizados en python para el cifrado Afín y cifrado Hill.
-date: 2024-12-04 20:42:00 +0800
+description: Códigos realizados en python para el cifrado por mochilas, mochilas trampa y criptoanálisis de Shamir y Zippel.
+date: 2024-12-09 13:20:00 +0800
 categories: [Criptografía, Códigos en python]
-tags: [Afin, Hill, Códigos]
+tags: [Mochilas Trampa, Mochilas, Códigos]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Afin_Hill/img/Titulo_p.png?raw=true
+  path: https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Mochilas/img/Titulo.png?raw=true
   lqip: 
   alt: 
 comments: true
