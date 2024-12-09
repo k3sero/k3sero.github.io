@@ -17,7 +17,7 @@ comments: true
 
 ## Introducción
 
-En este post, contaréis con las prácticas que he desarrollado en `python` sobre el `cifrado por mochilas y mochilas trampa`. Dichas prácticas se han desarrollado a partir de la relación de ejercicios impuestas por el profesor con el fin de guiar la implementación de cada función.
+En este post, contaréis con las prácticas que he desarrollado en `python` sobre el `cifrado por mochilas` y `mochilas trampa`. Dichas prácticas se han desarrollado a partir de la relación de ejercicios impuestas por el profesor con el fin de guiar la implementación de cada función.
 
 Es por ello que comparto con vosotros todos los códigos desarrollados para que le echéis un vistazo, además de compartiros los recursos teóricos utilizados con el fin de aprender lo necesario para comprender en su totalidad el funcionamiento de dichos cifrados.
 
