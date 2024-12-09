@@ -40,9 +40,6 @@ Destacar que en estas prácticas, contamos con un `menuMD5` el cual necesita el 
 
 ### Menú Md5
 
-
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Md5/img/menu.png?raw=true)
-
 ```py
 """
 Nombre del archivo: menu_md5.py
