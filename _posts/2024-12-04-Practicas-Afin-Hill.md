@@ -33,7 +33,7 @@ Tendréis todos los códigos desarrollados en mi Github, más concretamente [aqu
 
 Al final de los ejercicios, contaréis con los menús `menuHill` y `menuAfin` para comprobar de manera interactiva el cifrado y descifrado de ambos procedimientos. Recordad que necesitáis tener en local todos los archivos para poder ejecutar las funcionalidades de dichos menús.
 
-### Ejercicio 1
+### Ejercicio 1 (Funciones Básicas)
 
 ![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Afin_Hill/img/ex1.png?raw=true)
 
@@ -233,7 +233,7 @@ def invModMatrix(a, n):
     return inversa
 ```
 
-### Ejercicio 2
+### Ejercicio 2 (Texto a Número)
 
 ![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Afin_Hill/img/ex2.png?raw=true)
 

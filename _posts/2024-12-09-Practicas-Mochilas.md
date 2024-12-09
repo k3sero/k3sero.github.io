@@ -41,7 +41,7 @@ Tendréis todos los códigos desarrollados en mi Github, más concretamente [aqu
 
 Al final de los ejercicios, contaréis con el `menuMochilas` para comprobar de manera interactiva el cifrado y descifrado de ambos procedimientos. Recordad que necesitáis tener en local todos los archivos para poder ejecutar las funcionalidades de dicho menú.
 
-### Ejercicio 1
+### Ejercicio 1 (Texto a Número y Viceversa)
 
 ![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Mochilas/img/ex1.png?raw=true)
 
@@ -141,7 +141,7 @@ def binary2ascii(binary_representation):
     return chr(ascii_value)
 ```
 
-### Ejercicio 2
+### Ejercicio 2 (Funciones Mochilas)
 
 ![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Mochilas/img/ex2.png?raw=true)
 
@@ -320,7 +320,7 @@ def knapsackdecipher(ciphertext, knapsack):
     return plaintext
 ```
 
-### Ejercicio 3
+### Ejercicio 3 (Funciones Mochilas Trampa)
 
 ![Ejercicio1](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Mochilas/img/ex3.png?raw=true)
 
@@ -659,7 +659,7 @@ def knapsackdeciphermh(s, m, w, ciphertext):
     return plaintext
 ```
 
-### Ejercicio 4
+### Ejercicio 4 (Criptoanálisis Shamir y Zippel)
 
 ![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Mochilas/img/ex4.png?raw=true)
 
