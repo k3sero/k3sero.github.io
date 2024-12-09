@@ -50,7 +50,7 @@ Tendréis todos los códigos desarrollados en mi Github, más concretamente [aqu
 Destacar que en estas prácticas, no tenemos un menú interactivo para comprobar las funcionalidades de manera dinámica. Es por ello que he adjuntado a cada ejercicio una prueba de `Testing` la cual se puede modificar para comprobar cada funcionalidad.
 
 
-### Ejercicio 1
+### Ejercicio 1 (Tests de Primalidad)
 
 ![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/ex1.png?raw=true)
 
@@ -286,7 +286,7 @@ print(f"\n[+] Tiempo total para el test de Miller-Rabin: {tiempo_miller} segundo
 '''
 ```
 
-### Ejercicio 2
+### Ejercicio 2 (Generación de Claves)
 
 ![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/ex2.png?raw=true)
 
@@ -489,7 +489,7 @@ keygeneration()
 '''
 ```
 
-### Ejercicio 3
+### Ejercicio 3 (Texto a numero y Viceversa)
 
 ![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/ex3.png?raw=true)
 
@@ -568,7 +568,7 @@ print(f"Números a texto: {recovered_text}")
 '''
 ```
 
-### Ejercicio 4
+### Ejercicio 4 (Prepara Texto)
 
 ![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/ex4.png?raw=true)
 
@@ -678,7 +678,7 @@ for num_str in examples:
 '''
 ```
 
-### Ejercicio 5
+### Ejercicio 5 (RSA Cifrado y Descifrado con bloques)
 
 ![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/ex5.png?raw=true)
 
@@ -763,7 +763,7 @@ print("Bloques descifrados:", decrypted_blocks)
 '''
 ```
 
-### Ejercicio 6
+### Ejercicio 6 (Cifrado y Descifrado RSA con texto)
 
 ![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/ex6.png?raw=true)
 
@@ -847,7 +847,7 @@ print("Texto descifrado:", decrypted_text)
 '''
 ```
 
-### Ejercicio 7
+### Ejercicio 7 (Firma del mensaje)
 
 ![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/ex7.png?raw=true)
 
@@ -927,7 +927,7 @@ print("C2 (firma cifrada con la clave privada del emisor y luego con la clave p�
 '''
 ```
 
-### Ejercicio 8
+### Ejercicio 8 (Descifrado y firma)
 
 ![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/ex8.png?raw=true)
 
@@ -1026,7 +1026,7 @@ print("¿El mensaje está autenticado?", is_authenticated)
 '''
 ```
 
-### Ejercicio 9 (En construcción)
+### Ejercicio 9 (ElGamal)
 
 ![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/ex9.png?raw=true)
 
