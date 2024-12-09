@@ -34,7 +34,7 @@ Presentación [aquí](https://github.com/k3sero/Blog_Content/blob/main/Criptogra
 
 ## Ejercicios
 
-Tendréis todos los códigos desarrollados en mi Github, más concretamente [aquí]().
+Tendréis todos los códigos desarrollados en mi Github, más concretamente [aquí](https://github.com/k3sero/Blog_Content/tree/main/Criptografia/Codigos_Practicas/Md5).
 
 Destacar que en estas prácticas, contamos con un `menuMD5` el cual necesita el resto de ficheros para poder ejecutarse sin problemas.
 
