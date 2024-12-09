@@ -1,5 +1,5 @@
 ---
-title: Códigos en python sobre RSA.
+title: Códigos en python sobre RSA
 author: Kesero
 description: Códigos realizados en python sobre RSA, firma de mensajes, cifrado ElGamal y tests de primalidad.
 date: 2024-12-09 13:35:00 +0800
@@ -47,7 +47,7 @@ La relación de ejercicios utilizada para la realización de las prácticas es l
 
 Tendréis todos los códigos desarrollados en mi Github, más concretamente [aquí](https://github.com/k3sero/Blog_Content/tree/main/Criptografia/Codigos_Practicas/RSA).
 
-Destacar que en estas prácticas, no tenemos un menú interactivo para comprobar las funcionalidades de manera dinámica. Es por ello que he adjuntado a cada ejercicio una prueba de `Testing` la cual se puede modificar para comprobar cada funcionalidad.
+Destacar que en estas prácticas, no tenemos un menú interactivo para comprobar las funcionalidades de manera dinámica. Es por ello que he adjuntado a cada ejercicio una prueba de `Testing` la cual se puede modificar a gusto del usuario para comprobar cada funcionalidad.
 
 
 ### Ejercicio 1 (Tests de Primalidad)

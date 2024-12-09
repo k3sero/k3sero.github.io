@@ -1,5 +1,5 @@
 ---
-title: Códigos en python para el cifrado Afín y el cifrado Hill.
+title: Códigos en python para el cifrado Afín y el cifrado Hill
 author: Kesero
 description: Códigos realizados en python para el cifrado Afín y cifrado Hill.
 date: 2024-12-04 20:42:00 +0800

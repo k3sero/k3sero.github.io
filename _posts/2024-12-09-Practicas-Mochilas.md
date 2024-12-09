@@ -1,5 +1,5 @@
 ---
-title: Códigos en python para el cifrado por Mochilas.
+title: Códigos en python para el cifrado por Mochilas
 author: Kesero
 description: Códigos realizados en python para el cifrado por mochilas, mochilas trampa y criptoanálisis de Shamir y Zippel.
 date: 2024-12-09 13:20:00 +0800
