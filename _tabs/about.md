@@ -33,7 +33,11 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 ## Marcadores Personales
 
+• **First Blood** --> [Hohoho3 Continue](https://k3sero.github.io/posts/Hohoho3-Continue-WarGamesCTF2024/)
+
 • **SpookyCTF2024** --> Competición de CTFs a nivel internacional, en la cual obtuvimos la 40º posición de 831 equipos participantes.
+
+• **WarGamesCTF2024** --> Competición de CTFs a nivel internacional, en la cual obtuvimos la 6º posición de 233 equipos.
 
 • **Talent4Cyber** --> Competición de CTFs a nivel nacional, organizada por La Universidad de Granada, el TRUST Lab de la Universidad Politécnica de Cartagena y el Mando Conjunto del Ciberespacio con el fin de poner a prueba las habilidades y conocimientos de los mejores talentos universitarios con desafíos técnicos y simulaciones realistas. Nuestro equipo conformado por cuatro personas logró adentrarse en la cuarta posición del ranking, resolviendo un total de 6 de 10 en total.
 
@@ -49,6 +53,12 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |
 |-----------------------------------------------------|-------------|--------|
+| Wargames.MY CTF 2024                                |	7179,0000   | 0,000* |
+| 0CTF 2024                                           |	70,0000	    | 1,389  |
+| TSG CTF 2024	                                      |703,0000	    | 4,121  |
+| LakeCTF Quals 24-25	                              |380,0000	    | 3,083  |
+| World Wide CTF 2024	                              |1232,0000	| 3,943  |
+| SECCON CTF 13 Quals                                 |	141,0000    | 3,888  |
 | 1337UP LIVE CTF                                     |	600,0000    | 1,755  |
 | Hackers N' Hops                                     |	920,0000    | 12,407 |
 | SpookyCTF 2024                                      |	7152,0000   | 9,924  |
@@ -156,5 +166,3 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 • **"Mastermind - Hacking de Redes Inalámbricas (Hacking Wifi)"**
 
 • **"Mastermind - Hacking de Radiofrecuenca (Hacking RFID)"**
-
-a
