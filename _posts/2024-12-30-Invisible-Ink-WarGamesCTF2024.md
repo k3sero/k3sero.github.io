@@ -1,7 +1,7 @@
 ---
 title: Invisible Ink - WarGamesCTF2024
 author: Kesero
-description: Reto Estego basado en la extración de información oculta de un archivo.gif.
+description: Reto Estego basado en la extracción de información oculta de un archivo.gif.
 date: 2024-12-30 15:15:00 +0800
 categories: [Writeups Competiciones Internacionales, Estego]
 tags: [gif, Fácil, Writeups]
@@ -33,16 +33,16 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Com
 
 ## Analizando el código
 
-En este reto basicamente tenemos que extraer la información del gif aportado. Si abrimos dicho archivo, nos encontraremos con un mensaje sin mayor relevancia.
+En este reto básicamente tenemos que extraer la información del gif aportado. Si abrimos dicho archivo, nos encontraremos con un mensaje sin mayor relevancia.
 
 ![challenge](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Estego/WarGamesCTF2024/Invisible-Ink/gif.png?raw=true)
 
 
 ## Solución
 
-En este caso, teníamos que utilizar [stegsolve](https://wiki.bi0s.in/steganography/stegsolve/) para obtener todos los frames que contaba dicho gif, ya que si queremos extraerlos con herramientas como Pillow, nos da error debido a la gran cantidad de pixeles que contiene el gif. (Pill sólo obtenía los frames 0, 1, 2 y 3 pero nos decía que los frames resultantes superaba el máximo de píxeles permitidos)
+En este caso, teníamos que utilizar [stegsolve](https://wiki.bi0s.in/steganography/stegsolve/) para obtener todos los frames que contaba dicho gif, ya que si queremos extraerlos con herramientas como Pillow, nos da error debido a la gran cantidad de píxeles que contiene el gif. (Pill sólo obtenía los frames 0, 1, 2 y 3 pero nos decía que los frames resultantes superaba el máximo de píxeles permitidos)
 
-Para ello teníamos que obtener los frames resultantes que es donde realmente está la información oculta. Para ello utilicé la herramienta mencionada anteriormente para la extración de estos dos ultimos frames.
+Para ello teníamos que obtener los frames resultantes que es donde realmente está la información oculta. Para ello utilicé la herramienta mencionada anteriormente para la extracción de estos dos últimos frames.
 
 ![Frame5](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Estego/WarGamesCTF2024/Invisible-Ink/frame5.png?raw=true)
 
