@@ -34,7 +34,7 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Com
 
 ## Preámbulo
 
-Este reto realmente lo resolví primero en la parte uno de este reto "Hohoho3", es por ello que volví a utilizar el mismo código y misma metodología para resolverlo nuevamente.
+Este reto es la continuación de [Hohoho3](https://k3sero.github.io/posts/Hohoho3-WarGamesCTF2024/), como este lo resolví de manera `unintended` la resolución de ese ejercicio es justo la que piden en esta continuación, por tanto, la resolución es parecida. 
 
 ## Analizando el código
 
