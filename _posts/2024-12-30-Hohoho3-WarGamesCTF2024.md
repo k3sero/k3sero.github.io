@@ -1,68 +1,45 @@
 ---
-title: BabyFlow - 1337UP LIVE CTF2024
+title: Hohoho3 - WarGamesCTF2024
 author: Kesero
-description: Reto de Pwn/Reversing basado en cambiar el valor de una variable en ejecución mediante un bufferoverflow.
-date: 2024-11-16 20:57:00 +0800
-categories: [Writeups Competiciones Internacionales, Pwn]
-tags: [Dinámico, Buffer Overflow, Fácil, Writeups]
+description: Reto Cripto basado en la explotación de Verificación de un CRC-128.
+date: 2024-12-30 11:04:00 +0800
+categories: [Writeups Competiciones Internacionales, Cripto]
+tags: [CRC-128, Medium, Writeups]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Pwn/1337UpCTF2024/BabyFlow/BabyFlow.jpg?raw=true
+  path: 
   lqip: 
   alt: 
 comments: true
 ---
 
-Autor del reto: `CryptoCat`
+Autor del reto: `SKR`
 
-Dificultad: <font color=green>Fácil</font>
+Dificultad: <font color=orange>Medium</font>
 
 ## Enunciado
 
-"Does this login application even work?!
+"Santa Claus is coming to town! Send your wishes by connecting to the netcat service!"
 
 ## Archivos
 
 Este reto nos da los siguientes archivos.
 
-- `babyflow` : Contiene el ejecutable a vulnerar.
-- `nc babyflow.ctf.intigriti.io 1331` : Conexión por netcat al servidor del reto.
+- `server.py` : Contiene el código que se ejecuta en el servidor.
+- `nc 43.216.228.210 32923` : Conexión por netcat al servidor del reto.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Pwn/1337UpCTF2024/BabyFlow).
+Archivos utilizados [aquí]().
 
 ## Analizando el código
 
-En este reto, tenemos un ejecutable el cual se corresponde con un `ELF` (Executable and Linkable Format) de 64 bits LSB.
+En este reto 
 
-    ┌──(kesero㉿kali)-[~]
-    └─$ file babyflow
 
-    babyflow: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=55a6fe0ff25ff287549a03eb79dd00df541ece7f, for GNU/Linux 3.2.0, not stripped
-
-Para poder ejecutarlo, simplemente le otorgamos permisos de ejecución y observamos lo siguiente.
-
-    ┌──(kesero㉿kali)-[~]
-    └─$ ./babyflow
-
-    Enter password: password
-    Inorrect Password!
 
 ## Solución
 
-En este reto, tenemos que encontrar una contraseña para poder continuar con la ejecución del programa. Lo primero que deberemos de hacer será lanzar un `strings` al binario para que nos arroje las cadenas de texto contenidas en dicho ejecutable. En este caso no encontramos nada.
-
-Lo siguiente a probar será la herramienta de `Ghidra` con la cual podremos analizar el código de manera estática para observar el funcionamiento y el comportamiento del programa.
-
-Para ello inicializamos `Ghidra`, creamos un proyecto, importamos el ejecutable y por último, le damos a analizar, para que el programa nos arroje el código en ensamblador analizado.
-
-Una vez ya tenemos el entorno creado, tenemos que irnos a la sección de funciones e ir analizando las mismas en busca de cualquier información. En este caso, solo tenemos una función `main`.
-Tras cambiar el nombre de algunas variables en la función `main`, podemos observar su comportamiento de forma más clara y a su vez, podemos ver que la contraseña esta hardcodeada en texto claro.
-
-![codigo_ghidra](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Pwn/1337UpCTF2024/BabyFlow/function.png?raw=true)
-
-Como podemos ver, la contraseña a introducir para continuar con la ejecución del programa es `SuPeRsEcUrEPaSsWoRd123`, por lo que ejecutando nuevamente el binario con esta contraseña obtenemos lo siguiente.
 
     ┌──(kesero㉿kali)-[~]
     └─$ ./babyflow
