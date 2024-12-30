@@ -30,6 +30,6 @@ Este reto nos da los siguientes archivos.
 - `babyflow` : Contiene el ejecutable a vulnerar.
 - `nc babyflow.ctf.intigriti.io 1331` : Conexión por netcat al servidor del reto.
 
-Archivos utilizados [aquí]().
+Archivos utilizados
 
 ## Analizando el código

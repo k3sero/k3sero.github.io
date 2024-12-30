@@ -30,7 +30,7 @@ Este reto nos da los siguientes archivos.
 - `server.py` : Contiene el código que se ejecuta en el servidor.
 - `nc 43.216.228.210 32923` : Conexión por netcat al servidor del reto.
 
-Archivos utilizados [aquí]().
+Archivos utilizados 
 
 ## Analizando el código
 
