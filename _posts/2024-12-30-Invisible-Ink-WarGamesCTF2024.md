@@ -38,41 +38,17 @@ En este reto basicamente tenemos que extraer la información del gif aportado.
 
 ## Solución
 
-En este caso teniamos que diseccionar el archivo.gif en todoas los frames con las imagenes a la que pertenecen, posteriormente habia 2 frames que contenia partes de un código QR, había que juntarlas y obteniamos el Qr completo. Posteriormente lo escaneábamos y era la flag.
+En este caso se tenía que utilizar stegsolve para obtener todos los frames que contaba dicho gif, ya que si queremos extraerlos con herramientas como Pillow, nos da error debido a la gran cantidad de pixeles que contiene el gif. (Solo obtenía los frames 0, 1, 2 y 3)
 
-```py
-import numpy as np
-import os
-from PIL import Image  # Importar Image de Pillow
 
-# Ruta del GIF con watermark
-gif_path = "challenge.gif"
+Para ello teníamos que obtener los frames 4 y 5 a partir de esta herramienta y posteriormente combinarlos con herramientas de edicción de imágenes (en mi caso utilicé GIMP).
 
-# Carpeta de salida para los fotogramas procesados
-output_folder = "images/"
+![Frame5](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Estego/WarGamesCTF2024/Invisible-Ink/frame5.png?raw=true)
 
-# Crear la carpeta si no existe
-os.makedirs(output_folder, exist_ok=True)
+![Frame6](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Estego/WarGamesCTF2024/Invisible-Ink/frame6.png?raw=true)
 
-# Paso 1: Extraer los fotogramas del GIF
-frames = []  # Lista para almacenar los fotogramas como arrays
-with Image.open(gif_path) as gif:
-    frame_number = 0
-    while True:
-        # Guardar cada fotograma como PNG
-        frame_path = os.path.join(output_folder, f"frame_{frame_number:03d}.png")
-        gif.save(frame_path, "PNG")
-        print(f"Guardado: {frame_path}")
-        
-        # Convertir el fotograma a formato RGB y guardarlo en la lista de fotogramas
-        frames.append(np.array(gif.convert("RGB")))  # Convertir a formato RGB
-        
-        frame_number += 1
-        try:
-            gif.seek(frame_number)  # Avanza al siguiente fotograma
-        except EOFError:
-            break  # Salir del bucle al final de la animación
-```
+Al combinar dichos frames aplicando diferentes colores para realizar una combinación más clara, obtenemos la siguiente imagen final.
+
 
 ## Flag
 
