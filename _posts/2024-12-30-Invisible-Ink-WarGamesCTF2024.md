@@ -74,9 +74,6 @@ with Image.open(gif_path) as gif:
             break  # Salir del bucle al final de la animación
 ```
 
-
-
 ## Flag
 
-
-`wgmy{6952956e2749f940428e6d16b169ac91}`
+`wgmy{d41d8cd98f00b204e9800998ecf8427e}`
