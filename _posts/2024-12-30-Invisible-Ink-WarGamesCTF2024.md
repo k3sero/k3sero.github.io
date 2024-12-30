@@ -9,7 +9,7 @@ pin: false
 math: true
 mermaid: true
 image:
-  path: 
+  path: https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/Titulo.png?raw=true
   lqip: 
   alt: 
 comments: true

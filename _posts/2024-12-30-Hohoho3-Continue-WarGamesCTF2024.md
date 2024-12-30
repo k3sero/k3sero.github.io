@@ -9,7 +9,7 @@ pin: false
 math: true
 mermaid: true
 image:
-  path: 
+  path: https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/Titulo.png?raw=true
   lqip: 
   alt: 
 comments: true
@@ -30,6 +30,6 @@ Este reto nos da los siguientes archivos.
 - `babyflow` : Contiene el ejecutable a vulnerar.
 - `nc babyflow.ctf.intigriti.io 1331` : Conexión por netcat al servidor del reto.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Pwn/1337UpCTF2024/BabyFlow).
+Archivos utilizados [aquí]().
 
 ## Analizando el código
