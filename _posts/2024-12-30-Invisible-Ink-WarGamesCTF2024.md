@@ -41,17 +41,18 @@ En este reto basicamente tenemos que extraer la información del gif aportado.
 En este caso teniamos que diseccionar el archivo.gif en todoas los frames con las imagenes a la que pertenecen, posteriormente habia 2 frames que contenia partes de un código QR, había que juntarlas y obteniamos el Qr completo. Posteriormente lo escaneábamos y era la flag.
 
 ```py
-rt numpy as np
+import numpy as np
 import os
+from PIL import Image  # Importar Image de Pillow
 
 # Ruta del GIF con watermark
 gif_path = "challenge.gif"
+
+# Carpeta de salida para los fotogramas procesados
 output_folder = "images/"
 
-# Crear carpetas para las imágenes procesadas
+# Crear la carpeta si no existe
 os.makedirs(output_folder, exist_ok=True)
-os.makedirs(output_masks_folder, exist_ok=True)
-os.makedirs(output_applied_folder, exist_ok=True)
 
 # Paso 1: Extraer los fotogramas del GIF
 frames = []  # Lista para almacenar los fotogramas como arrays
@@ -63,7 +64,7 @@ with Image.open(gif_path) as gif:
         gif.save(frame_path, "PNG")
         print(f"Guardado: {frame_path}")
         
-        # Convertir el fotograma a RGB (no a escala de grises)
+        # Convertir el fotograma a formato RGB y guardarlo en la lista de fotogramas
         frames.append(np.array(gif.convert("RGB")))  # Convertir a formato RGB
         
         frame_number += 1
