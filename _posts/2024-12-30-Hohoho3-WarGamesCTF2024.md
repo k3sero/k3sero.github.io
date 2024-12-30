@@ -352,13 +352,10 @@ def generateToken(name):
 
 name = str(input("Enter your name: "))
 token = generateToken(name)
-print(token)
+print(f"Este es el token de Santa Claus: {token}")
 ```
 
 Una vez obtenido, lo introducimos en el servidor remoto para obtener la `flag`.
-
-
-![Final](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Cripto/WarGamesCTF2024/Hohoho3/final.png?raw=true)
 
 ## Flag
 
