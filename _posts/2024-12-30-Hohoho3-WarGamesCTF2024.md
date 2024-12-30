@@ -9,7 +9,7 @@ pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/Titulo.png?raw=true
+  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Cripto/WarGamesCTF2024/Hohoho3/1.png?raw=true
   lqip: 
   alt: 
 comments: true
@@ -30,73 +30,214 @@ Este reto nos da los siguientes archivos.
 - `server.py` : Contiene el código que se ejecuta en el servidor.
 - `nc 43.216.228.210 32923` : Conexión por netcat al servidor del reto.
 
-Archivos utilizados 
+Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/WarGamesCTF2024/Hohoho3).
 
 ## Analizando el código
 
-En este reto 
+En este reto nos dan el siguiente script.
 
 
+```py
+#!/usr/bin/env python3
+import hashlib
+from Crypto.Util.number import *
+
+m = getRandomNBitInteger(128)
+
+class User:
+	def __init__(self, name, token):
+		self.name = name
+		self.mac = token
+
+	def verifyToken(self):
+		data = self.name.encode(errors="surrogateescape")
+		crc = (1 << 128) - 1
+		for b in data:
+			crc ^= b
+			for _ in range(8):
+				crc = (crc >> 1) ^ (m & -(crc & 1))
+		return hex(crc ^ ((1 << 128) - 1))[2:] == self.mac
+
+def generateToken(name):
+	data = name.encode(errors="surrogateescape")
+	crc = (1 << 128) - 1
+	for b in data:
+		crc ^= b
+		for _ in range(8):
+			crc = (crc >> 1) ^ (m & -(crc & 1))
+	return hex(crc ^ ((1 << 128) - 1))[2:]
+
+def printMenu():
+	print("1. Register")
+	print("2. Login")
+	print("3. Make a wish")
+	print("4. Wishlist (Santa Only)")
+	print("5. Exit")
+
+def main():
+	print("Want to make a wish for this Christmas? Submit here and we will tell Santa!!\n")
+	user = None
+	while(1):
+		printMenu()
+		try:
+			option = int(input("Enter option: "))
+			if option == 1:
+				name = str(input("Enter your name: "))
+
+				print(m)
+
+				if "Santa Claus" in name:
+					print("Cannot register as Santa!\n")
+					continue
+				print(f"Use this token to login: {generateToken(name)}\n")
+				
+			elif option == 2:
+				name = input("Enter your name: ")
+				mac = input("Enter your token: ")
+				user = User(name, mac)
+				if user.verifyToken():
+					print(f"Login successfully as {user.name}")
+					print("Now you can make a wish!\n")
+				else:
+					print("Ho Ho Ho! No cheating!")
+					break
+			elif option == 3:
+				if user:
+					wish = input("Enter your wish: ")
+					open("wishes.txt","a").write(f"{user.name}: {wish}\n")
+					print("Your wish has recorded! Santa will look for it!\n")
+				else:
+					print("You have not login yet!\n")
+
+			elif option == 4:
+				if user and "Santa Claus" in user.name:
+					wishes = open("wishes.txt","r").read()
+					print("Wishes:")
+					print(wishes)
+				else:
+					print("Only Santa is allow to access!\n")
+			elif option == 5:
+				print("Bye!!")
+				break
+			else:
+				print("Invalid choice!")
+		except Exception as e:
+			print(str(e))
+			break
+
+if __name__ == "__main__":
+	main()
+```
 
 ## Solución
 
-
-    ┌──(kesero㉿kali)-[~]
-    └─$ ./babyflow
-    Enter password: SuPeRsEcUrEPaSsWoRd123
-    Correct Password!
-    Are you sure you are admin? o.O
-
-Para poder llegar a la ejecución del `print` con la flag, tenemos que introducir la contraseña primero y posteriormente entrar dentro del `if`, el cual tiene asociado una variable `local_c`. Si `local_c` es igual a `1`, entonces se ejecutará el contenido.
-
-Por tanto, simplemente con cambiar el valor de `local_c` a `1`, una vez hayamos introducido la contraseña correcta, ya podremos acceder a la ejecución del `print` y obtener la flag, ¿cierto?
-
-Solo hay un pequeño problema y es que en el código del ejecutable no se cambia el valor de `local_c`, por lo que el valor de dicha variable permanece igual en su ejecución y su contenido siempre es `0`.
-
-Llegados a este punto, tenemos que cambiar el valor de dicha variable de manera dinámica, es decir, una vez el programa está en ejecucción. Pero realmente, ¿cómo hacemos esto?
-
-Para conseguir cambiar el valor de la variable `local_c`, tenemos que usar técnicas como **explotación de memoria** o **manipulación de variables en el binario**. 
-
-Vamos a comenzar a realizar un sencillo `Buffer Overflow` ya que podemos observar que la función `fgets` permite leer hasta 50 caracteres (`0x32` en hexadecimal). Sin embargo, el buffer `input` tiene 44 bytes. Esto deja una brecha de 6 bytes a aprovechar para sobreescribir `local_c`. Por lo tanto, tendremos que estructurar un input de manera que la parte adicional después del string correcto, sobreescriba `local_c` en memoria.
-
-Es muy importante aclarar que la variable `local_c` está declarada en memoria inmediatamente después del buffer input. Esto significa que cualquier contenido adicional que sobrepase los 44 bytes del buffer de entrada puede escribir directamente sobre la variable `local_c`.
-
-Por ejemplo un buen input sería el siguiente:
-
-```plaintext
-SuPeRsEcUrEPaSsWoRd123AAAAAAAAAAAAAAAAAAAA\x01
-```
-
-### NOTA
-
-Para ir probando inputs, lo recomendable es utilizar la consola interactiva de `python` e ir calculando la cantidad necesaria para desbordar el buffer y cambiar el contenido de la variable `local_c`.
+Primero realicé unas pruebas de testing.
 
 ```py
-python -c 'print("SuPeRsEcUrEPaSsWoRd123" + "A" * 29 + "\x01")' | ./babyflow
+import hashlib
+from Crypto.Util.number import *
+
+# Valor hexadecimal dado
+hex_value = "5536faf1a6b25cc4731f7ef2f16cf714"
+
+# Convertir el valor hexadecimal a entero
+token = int(hex_value, 16)
+
+# Deshacer el XOR con (1 << 128) - 1
+crc = token ^ ((1 << 128) - 1)
+
+# Mostrar el valor de crc original
+
+#print("El valor de crc recuperado es:", crc)
+
+def generateToken(name, m):
+    data = name.encode(errors="surrogateescape")
+    crc = (1 << 128) - 1
+
+    print(f"Este es el crc inicial {crc}")
+
+    for b in data:
+
+        print(f"Este es el valor de b: {b}")
+
+        crc ^= b
+        print(f"Este es el resultado de los bytes: {crc}")
+        print(f"Este es el crc ^ b : {crc}")
+
+        for _ in range(8):
+
+            #print(f"Este es crc antes de actualizarse {crc}")
+
+            print(f"Valor de crc >> 1 : {crc >> 1}")
+            print(f"Valor de -(crc & 1) : {-(crc & 1)}")
+            print(f"Segunda parte del XOR {(m & -(crc & 1))}")
+            print(f"")
+
+            crc = (crc >> 1) ^ (m & -(crc & 1))
+
+            print(f"Este es crc despues de actualizarse {crc}")
+
+
+
+    print(crc)
+
+    return hex(crc ^ ((1 << 128) - 1))[2:]
+
+
+
+
+#name = "\x7f"
+
+name = str(input("Enter your name: "))
+print(f"Valor de name es : {name}")
+
+m = 314320694760960186183647210177372466087
+print(f"Este es el m generado: {m}")
+print(f"")
+token = generateToken(name, m)
+print(f"Este es el resultado final: {token}")
+
+
+token = int(hex_value, 16)
+
+token = token ^ ((1 << 128) - 1)
+print(token)
 ```
 
-En este caso:
-- `SuPeRsEcUrEPaSsWoRd123` satisface la comparación de contraseña.
-- `AAAAAAAAAAAAAAAAAAAA\x01` desbordará el buffer y sobrescribe `local_c` con el valor `0x01`, que se corresponde con el valor `1`.
+Finalmente, me di cuenta de que el caracter ? introducía una vía potencial de recuperar el m ya que se da el caso perfecto para dentro del bucle de las 8 iteraciones, 6 de ellas serán 0, 1 de ellas será el cambio de crc con la operación m AND crc y la última puede ser 1 o 0 dependiendo del m generado, por tanto nosotros tenemos que ir probando hasta que esa ultima sea 0, para poder recuperar m
 
-Al ejecutar el binario, obtenemos lo siguiente.
+Una vez tenemos m, basicamente nos regsitramos 1 vez en remoto, obtenemos el hash, obtenemos la m que ha generado dicho hash y una vez obtenida, registramos Santa Claus en local sin la restricción. Una vez generada su hash, lo introducimos como login en el servidor y listo.
 
-    ┌──(kesero㉿kali)-[~]
-    └─$ ./babyflow
+```py
+m = 189037830245809490512965016070455766621
 
-    Enter password: SuPeRsEcUrEPaSsWoRd123AAAAAAAAAAAAAAAAAAAA\x01
-    Correct Password!
-    INTIGRITI{the_flag_is_different_on_remote}
+def verifyToken(name, mac):
+		data = self.name.encode(errors="surrogateescape")
+		crc = (1 << 128) - 1
+		for b in data:
+			crc ^= b
+			for _ in range(8):
+				crc = (crc >> 1) ^ (m & -(crc & 1))
+		return hex(crc ^ ((1 << 128) - 1))[2:] == self.mac
 
-Listo! Una vez tenemos la flag en local, simplemente tenemos que obtenerla de manera remota. Para esto, como este reto requiere de un payload muy sencillo, no es necesario realizar un script para automatizar el proceso, únicamente con introducir dicha cadena en el servidor, ya obtenemos la flag.
 
-    ┌──(kesero㉿kali)-[~]
-    └─$ nc babyflow.ctf.intigriti.io 1331a
 
-    Enter password: SuPeRsEcUrEPaSsWoRd123AAAAAAAAAAAAAAAAAAAA\x01
-    Correct Password!
-    INTIGRITI{b4bypwn_9cdfb439c7876e703e307864c9167a15}
+def generateToken(name):
+	data = name.encode(errors="surrogateescape")
+	crc = (1 << 128) - 1
+	for b in data:
+		crc ^= b
+		for _ in range(8):
+			crc = crc & 1 ^ (m & -(crc & 1))
+	return hex(crc ^ ((1 << 128) - 1))[2:]
+
+name = str(input("Enter your name: "))
+token = generateToken(name)
+print(token)
+```
+
+
 
 ## Flag
 
-`INTIGRITI{b4bypwn_9cdfb439c7876e703e307864c9167a15}`
+`wgmy{6952956e2749f941428e6d16b169ac91}`
