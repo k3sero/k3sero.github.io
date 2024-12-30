@@ -76,3 +76,6 @@ with Image.open(gif_path) as gif:
 
 
 ## Flag
+
+
+`wgmy{6952956e2749f940428e6d16b169ac91}`
