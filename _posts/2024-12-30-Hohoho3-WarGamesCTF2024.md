@@ -152,9 +152,9 @@ def generateToken(name):
 3. Se recorre un bucle for por cada caracter `b` de la variable `data`. (NOTA: Es muy importante saber que b se interpreta como un valor entre 0 hasta 255)
 
 4. Se realiza una operación `XOR` tal que
-\[
+$$
 \text{crc} = \text{crc} \oplus b
-\]
+$$
 
 5. Posteriormente se realiza un bucle con 8 iteraciones (1 para cada bit menos significativo) en la cual se realiza la operación `XOR` entre el `primer término` (crc rotado a la derecha una posición) junto el `segundo término` (realiza la operación `AND` del bit menos significativo de `crc` con `1`, se niega el resultado y por último, se vuelve a realizar la operación `AND` con `m`, siendo `m` un valor generado aleatoriamente).
 
@@ -265,7 +265,7 @@ Probando combinaciones, nos damos cuenta de que el valor `01111111`, voltea los 
 
 NOTA: Realmente podemos dejar dentro de los 8 bits, el menos significativo a 1 ya que el procedimiento sería el mismo pero al contrario.
 
-Listo no? simplemente tenemos que hacer que `b` valga `127` una vez que `data` se ha procesado y ya estaría, ¿no?
+Listo, simplemente tenemos que hacer que `b` valga `127` una vez que `data` se ha procesado y ya estaría, ¿no?
 
 El problema es que la variable `name` se interpreta con un `str()` de la siguiente manera: 
 
@@ -291,9 +291,9 @@ Por tanto, nosotros lo que haremos sera ejecutar el programa varias veces hasta 
 
 Para concluir, una vez tenemos en control de las 8 ejecuciones del bucle, simplemente tenemos que revertir el hash que nos arrojan al registar un usuario, hacer el proceso contrario, para que mediante puertas `XOR`, podamos despejar `m` de la siguiente manera.
 
-\[
+$$
 \text{crc}_{\text{final}} = \text{crc}_{\text{anterior}} \oplus m
-\]
+$$
 
 Para obtener el `crc_final` simplemente revertimos el hash obtenido mediante el siguiente código. 
 
