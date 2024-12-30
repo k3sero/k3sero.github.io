@@ -34,7 +34,7 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Com
 
 ## Analizando el código
 
-El script server.py contiene lo siguiente.
+El script `server.py` contiene lo siguiente.
 
 
 ```py
@@ -129,7 +129,7 @@ if __name__ == "__main__":
 	main()
 ```
 
-Este reto es un sistema de autenticación basado en tokens generados mediante un algoritmo CRC personalizado con una constante aleatoria m.
+Este reto es un sistema de autenticación basado en tokens generados mediante un algoritmo `CRC` personalizado con una constante aleatoria `m`.
 Los usuarios pueden registrarse, obtener un token único, iniciar sesión, y guardar deseos en un archivo.
 Solo `Santa Claus` tiene permiso para leer todos los deseos y es por ello que no podemos registrar el usuario `Santa Claus` y deberemos loguearnos con su nombre para poder leer la lista de deseos y recuperar la flag.
 
