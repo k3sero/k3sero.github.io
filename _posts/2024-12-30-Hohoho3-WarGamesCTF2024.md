@@ -226,74 +226,76 @@ print(token)
 Después de muchas iteraciones y de realizar numerosas pruebas en el intérprete de Python me di cuenta de lo siguiente.
 Comencemos con la función más importante de la generación de Tokens `crc = (crc >> 1) ^ (m & -(crc & 1))`.
 
-1. Sabemos que si realizamos por ejemplo 4 ^ 0 = 4. por tanto cuando la parte de la derecha valga 0, se realizará la operación XOR de crc ^ 0 = crc, por tanto m no tendrá efecto en dicha iteración.
+1. Sabemos que si realizamos por ejemplo 4 ^ 0 = 4. por tanto cuando la parte de la derecha valga 0, se realizará la operación `XOR` de crc ^ 0 = crc, por tanto `m` no tendrá efecto en dicha iteración.
 
-Llegados a este punto, me dí cuenta de que m se puede recuperar siempre y cuando de las 8 iteraciónes, 7 de ellas el segundo término (m & -(crc & 1)) sea 0 y solamente en una de ellas, el resultado tiene que ser distinto de 0, ya que si esto se cumple, el valor de m estará presente únicamente en dicha iteración (ya que se computaría como crc = crc ^ m) y no debe de haber más valores iguales ya que no tendríamos control en las siguientes iteraciones de la variable crc.
+Llegados a este punto, me dí cuenta de que `m` se puede recuperar siempre y cuando de en las 8 iteraciónes, 7 de ellas el segundo término `(m & -(crc & 1))` sea `0` y solamente en una de ellas, el resultado tiene que ser distinto de `0`, ya que si esto se cumple, el valor de `m` estará presente únicamente en dicha iteración (ya que se computaría como `crc = crc ^ m`) y no debe de haber más valores iguales ya que no tendríamos control en las siguientes iteraciones de la variable `crc`.
 
-Para lograr obtener un 0 en el segundo término (m & -(crc & 1)), tenemos que saber que para que el resultado de la operación AND entre dos variables sea 0, el primer término debe de ser 0 y el segundo debe de ser distinto de 0. 
+Para lograr obtener un `0` en el segundo término `(m & -(crc & 1))`, tenemos que saber que para que el resultado de la operación `AND` entre dos variables sea `0`, el primer término debe de ser `0` y en nuestra casuística, siempre tendremos un término disinto de `0`.
 
- Tabla de la operación AND
+ Tabla de la operación `AND`
 
-| \(a\) | \(b\) | \(a \land b\) |
+| \(A\) | \(B\) | (A AND B) |
 |------|------|--------------|
 | 0    | 0    | 0            |
 | 0    | 1    | 0            |
 | 1    | 0    | 0            |
 | 1    | 1    | 1            |
 
-Como en el segundo término la operación más externa es (m & (resultado)), sabemos que para obtener un 0, tenemos que hacer forzosamente que resultado tenga el valor 0, ya que el resultado final del segundo termino, sería un 0 también.
+Como en el segundo término la operación más externa es `(m & (resultado))`, sabemos que para obtener un `0`, tenemos que hacer forzosamente que `resultado` tenga el valor `0`, ya que el resultado final del segundo termino, sería un `0` también.
 
-Siguiendo la misma filosofía con la operación interna, para que -(crc & 1) sea 0, tenemos que hacer que el bit menos significativo de crc, sea 0 también.
+Siguiendo la misma filosofía con la operación interna, para que `-(crc & 1)` sea `0`, tenemos que hacer que el bit menos significativo de `crc`, sea `0` también.
 
-Por tanto, tenemos que manipular el valor de crc, para que de las 8 iteraciones, 7 de ellas los resultados sean 0 y solamente en una de ellas el resultado sea 1 pero, ¿cómo hacemos esto?
+Por tanto, tenemos que manipular el valor de `crc`, para que de las 8 iteraciones, 7 de ellas los resultados sean `0` y solamente en una de ellas el resultado sea `1` pero, ¿cómo hacemos esto?
 
-El único control quetenemos es el de la variable name el cual incluye el nombre a registrar que como hemos comentado anteriormente, con el bucle for b in data:, se recorren en forma de bytes cada caracter. En este caso nosotros solo tenemos que trabajar con un carácter, ya que si trabajásemos con más caracteres, las iteraciones se duplican por 2, es decir, en vez de 8 iteraciones en el bucle, tendriamos 16 y sería mucho mas dificil de controlar cada valor.
+El único control que tenemos es el de la variable `name` el cual incluye el nombre a registrar que como hemos comentado anteriormente, con el bucle `for b in data:`, se recorren en forma de bytes cada caracter. En este caso nosotros solo tenemos que trabajar con un carácter, ya que si trabajásemos con más caracteres, las iteraciones se duplican por 2, es decir, en vez de 8 iteraciones en el bucle, tendriamos 16 y sería mucho mas difícil de controlar cada valor.
 
-Por tanto, tenemos que encontrar un caracter, que al realizar crc ^= b, deje los 8 bits menos significativos a un valor, los cuales 7 de ellos deben ser 0 y solo uno de ellos tiene que ser 1.
+Por tanto, tenemos que encontrar un caracter, que al realizar `crc ^= b`, deje los 8 bits menos significativos a un valor, los cuales 7 de ellos deben ser `0` y solo uno de ellos tiene que ser `1`.
 
 Recordemos que la expresion binaria del crc inicial es la siguiente.
 
 	>>> bin(crc)
 	'0b11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111'
 
-Probando, nos damos cuenta de que el valor 01111111, voltea los últimos bits convirtiéndolos en:
+Probando combinaciones, nos damos cuenta de que el valor `01111111`, voltea los últimos bits convirtiéndolos en:
 
 	>>> int(0b01111111)
 	127
 	>>> bin(crc ^ 127)
 	'0b1111111111111111111111 (...) 1111111111111111111111111111111110000000'
 
-NOTA: Realmente se puede dejar dentro de los 8 bits, el menos significativo a 1 ya que el procedimiento sería el mismo pero levemente cambiado.
+NOTA: Realmente podemos dejar dentro de los 8 bits, el menos significativo a 1 ya que el procedimiento sería el mismo pero al contrario.
 
-Listo no? simplemente tenemos que hacer que b valga 127 una vez data se ha procesado y ya estaría, ¿no?
+Listo no? simplemente tenemos que hacer que `b` valga `127` una vez que `data` se ha procesado y ya estaría, ¿no?
 
-El problema es que la variable name se computa con un str() de la siguiente manera 
+El problema es que la variable `name` se computa con un `str()` de la siguiente manera: 
 
 	name = str(input("Enter your name: "))
 
-Por tanto, si realizamos la conversión del valor 127 a chr(), obtenemos que el valor que tenemos que introducir es el byte '\x7f', el cual al ejecutar el programa este se interpreta como carácteres y no como el valor del byte y no como el valor deseado. Por tanto deberemos de buscar un valor de entre los caracteres imprimibles de python, que al realizar la operación str(), devuelva un valor en ASCII que nos sirva para poder manipular la variable crc y poder obtener m.
+Por tanto, si realizamos la conversión del valor `127` a `chr()`, obtenemos que el valor a introducir es el byte `'\x7f'`, el cual al ejecutar el programa este se interpreta como carácteres individuales y no como el valor del propio byte. Por tanto deberemos de buscar un valor de entre los caracteres imprimibles de python, que al realizar la operación `str()`, devuelva un valor en `ASCII` que nos sirva para poder manipular la variable `crc` y poder obtener `m`.
 
 Sabemos de antemano que los carácteres imprimibles de python son los siguientes.
 
 	0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ 
 
-Probando, nos damos cuenta de que uno de los valores potenciales es '?' ya que, al realizar:
+Probando combinaciones nuevamente, nos damos cuenta de que uno de los valores potenciales es `'?'` ya que, al realizar:
 
 	bin(crc ^ ord("?"))
 	'0b111111111111111111111111111(...)1111111111111111 11000000'
 
-Pero, ¿por qué nos sirve este caracter imprimible? A pesar de que contamos con los dos bits más significativos a 1, realmente cuando se haga la primera iteración con el valor de m (es decir, cuando se compute el primer 1) el resultado será impredecible, ya que entra en juego m, por tanto en la siguiente iteración no tendríamos control de dicho bit, pudiendo ser 1 o 0 dependiendo de los bits de m que es aleatorio.
+Pero, ¿por qué nos sirve este caracter imprimible?
 
-Por tanto, nosotros lo que haremos sera ejecutar el programa varias veces hasta que se de la casuristica de que el bit mas significativo sea 0.
+A pesar de que contamos con los dos bits más significativos a `1`, realmente cuando se haga la primera iteración con el valor de `m` (es decir, cuando se compute el primer `1`) el resultado será impredecible, ya que entra en juego `m`, por tanto en la siguiente iteración no tendríamos control de dicho bit, pudiendo ser `1` o `0` dependiendo de los bits de `m` que es aleatorio.
+
+Por tanto, nosotros lo que haremos sera ejecutar el programa varias veces hasta que se dé la casuística de que el bit más significativo sea `0`.
 
 
-Para concluir, una vez tenemos en control de las 8 ejecuciones del bucle, simplemente tenemos que revertir el hash que nos arrojan al registar un usuario, hacer el proceso contrario, para que mediante puertas XOR, podamos despejar m de la siguiente manera.
+Para concluir, una vez tenemos en control de las 8 ejecuciones del bucle, simplemente tenemos que revertir el hash que nos arrojan al registar un usuario, hacer el proceso contrario, para que mediante puertas `XOR`, podamos despejar `m` de la siguiente manera.
 
 \[
 \text{crc}_{\text{final}} = \text{crc}_{\text{anterior}} \oplus m
 \]
 
-Para obtener el crc_final simplemente revertimos el hash obtenido mediante 
+Para obtener el `crc_final` simplemente revertimos el hash obtenido mediante el siguiente código. 
 
 ```py
 hex_value = "893bfb5e64002449d089a2c04b04d5d3"
@@ -302,20 +304,20 @@ token = int(hex_value, 16)
 crc_final = token ^ ((1 << 128) - 1)
 ```
 
-Además, tenemos que rotar un bit a la izquierda crc_final ya que sabemos que m se ha utilizado únicamente en la iteración 7 y como he mencionado anterior, suponemos que en la iteración 8 del bucle, el resultado es 0. Por tanto tenemos que rotar crc_final una vez a la izquierda.
+Además, tenemos que rotar un bit a la izquierda `crc_final` ya que sabemos que `m` se ha utilizado únicamente en la iteración 7 y como he mencionado anterior, suponemos que en la iteración 8 del bucle, el resultado es `0`. Por tanto tenemos que rotar `crc_final` una vez a la izquierda.
 
 ```py
 crc_final = crc_final << 1
 ```
 
-Tenemos que hacer el mismo procedimiento con crc_inicial, ya que para obtener el valor de crc en la iteración 7, este se ha rotado únicamente 7 veces a la derecha, por tanto tenemos que deshacer la rotación 7 a la izquierda para obtener dicho valor.
+Tenemos que hacer el mismo procedimiento con `crc_inicial`, ya que para obtener el valor de `crc` en la iteración 7, este se ha rotado únicamente 7 veces a la derecha, por tanto tenemos que deshacer las rotaciónes rotando 7 veces a la izquierda para obtener dicho valor.
 
 ```py
 crc_i = 340282366920938463463374607431768211455
 crc_inicial = crc_i >> 7
 ```
 
-Por último realizamos el XOR mencionado anteriormente y obtenemos el valor de m. El código que utilice fue el siguiente (Tenemos que introducir un hash valido en remoto para computar un m valido) 
+Por último realizamos el `XOR` mencionado anteriormente y obtenemos el valor de `m`. El código que utilicé fue el siguiente (Tenemos que introducir un hash válido computado en remoto para obtener un `m` valido) 
 
 ```py
 hex_value = "893bfb5e64002449d089a2c04b04d5d3"
@@ -332,10 +334,9 @@ m = x1 ^ x2
 print(f"Este es el m recuperado es : {m}")
 ```
 
-Una vez que tenemos el m válido, simplemente tenemos que registrar en local, el nombre de Santa Claus e introducir el hash obtenido en el servidor remoto, para loguearnos como Santa Claus.
+Una vez que tenemos el `m` válido, simplemente tenemos que registrar en local el nombre de `Santa Claus` e introducir el hash obtenido en el servidor remoto, para loguearnos como `Santa Claus` en él.
 
-Este fue el código que utilicé (Necesitamos el m recuperado anteriormente).
-
+Este fue el código que utilicé. (Necesitamos el `m` recuperado anteriormente).
 
 ```py
 m = 189037830245809490512965016070455766621
@@ -353,6 +354,9 @@ name = str(input("Enter your name: "))
 token = generateToken(name)
 print(token)
 ```
+
+Una vez obtenido, lo introducimos en el servidor remoto para obtener la `flag`.
+
 
 ![Final](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Cripto/WarGamesCTF2024/Hohoho3/final.png?raw=true)
 
