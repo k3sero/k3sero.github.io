@@ -286,8 +286,9 @@ Pero, ¿por qué nos sirve este caracter imprimible?
 
 A pesar de que contamos con los dos bits más significativos a `1`, realmente cuando se haga la primera iteración con el valor de `m` (es decir, cuando se compute el primer `1`) el resultado será impredecible, ya que entra en juego `m`, por tanto en la siguiente iteración no tendríamos control de dicho bit, pudiendo ser `1` o `0` dependiendo de los bits de `m` que es aleatorio.
 
-Por tanto, nosotros lo que haremos sera ejecutar el programa varias veces hasta que se dé la casuística de que el bit más significativo sea `0`.
+Por tanto, nosotros lo que haremos sera ejecutar el programa en remoto varias veces hasta que se dé la casuística de que el bit más significativo sea `0` (Sabremos que es válido al loguearnos como Santa Claus).
 
+En este punto, realizamos una conexión en remoto y registramos el usuario con el nombre `?` para obtener un hash con las condiciones mencionadas anteriormente.
 
 Para concluir, una vez tenemos en control de las 8 ejecuciones del bucle, simplemente tenemos que revertir el hash que nos arrojan al registar un usuario, hacer el proceso contrario, para que mediante puertas `XOR`, podamos despejar `m` de la siguiente manera.
 
@@ -334,7 +335,7 @@ m = x1 ^ x2
 print(f"Este es el m recuperado es : {m}")
 ```
 
-Una vez que tenemos el `m` válido, simplemente tenemos que registrar en local el nombre de `Santa Claus` e introducir el hash obtenido en el servidor remoto, para loguearnos como `Santa Claus` en él.
+Una vez que tenemos el `m` válido, simplemente tenemos que registrar en local el nombre de `Santa Claus` e introducir el hash obtenido en el servidor remoto, para loguearnos como `Santa Claus` en él (En este punto, si es válido sabemos que la iteración 8 ha sido 0 tal cual hemos supuesto, pero si es invalido pues hacemos el mismo proceso).
 
 Este fue el código que utilicé. (Necesitamos el `m` recuperado anteriormente).
 
