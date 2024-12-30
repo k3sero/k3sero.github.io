@@ -35,9 +35,10 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 • **First Blood** --> [Hohoho3 Continue](https://k3sero.github.io/posts/Hohoho3-Continue-WarGamesCTF2024/)
 
-• **SpookyCTF2024** --> Competición de CTFs a nivel internacional, en la cual obtuvimos la 40º posición de 831 equipos participantes.
-
 • **WarGamesCTF2024** --> Competición de CTFs a nivel internacional, en la cual obtuvimos la 6º posición de 233 equipos.
+
+
+• **SpookyCTF2024** --> Competición de CTFs a nivel internacional, en la cual obtuvimos la 40º posición de 831 equipos participantes.
 
 • **Talent4Cyber** --> Competición de CTFs a nivel nacional, organizada por La Universidad de Granada, el TRUST Lab de la Universidad Politécnica de Cartagena y el Mando Conjunto del Ciberespacio con el fin de poner a prueba las habilidades y conocimientos de los mejores talentos universitarios con desafíos técnicos y simulaciones realistas. Nuestro equipo conformado por cuatro personas logró adentrarse en la cuarta posición del ranking, resolviendo un total de 6 de 10 en total.
 
