@@ -9,7 +9,7 @@ pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Cripto/WarGamesCTF2024/Hohoho3_Continue/2.png?raw=true
+  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Cripto/WarGamesCTF2024/Hohoho3_Continue/Portada.png?raw=true
   lqip: 
   alt: 
 comments: true
@@ -34,7 +34,7 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Com
 
 ## Preámbulo
 
-Este reto es la continuación de [Hohoho3](https://k3sero.github.io/posts/Hohoho3-WarGamesCTF2024/), como este lo resolví de manera `unintended` la resolución de ese ejercicio es justo la que piden en esta continuación, por tanto, la resolución es parecida. 
+Este reto es la continuación de [Hohoho3](https://k3sero.github.io/posts/Hohoho3-WarGamesCTF2024/), como este lo resolví de manera `unintended`, la resolución de ese ejercicio es justo la que piden en esta continuación. 
 
 ## Analizando el código
 
