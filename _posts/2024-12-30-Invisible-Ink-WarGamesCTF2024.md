@@ -15,7 +15,7 @@ image:
 comments: true
 ---
 
-Autor del reto: `CryptoCat`
+Autor del reto: `Yes`
 
 Dificultad: <font color=green>Fácil</font>
 
