@@ -175,19 +175,6 @@ Para recuperar m deberemos de ir más allá. Primero tendremos que realizar un b
 import hashlib
 from Crypto.Util.number import *
 
-# Valor hexadecimal dado
-hex_value = "5536faf1a6b25cc4731f7ef2f16cf714"
-
-# Convertir el valor hexadecimal a entero
-token = int(hex_value, 16)
-
-# Deshacer el XOR con (1 << 128) - 1
-crc = token ^ ((1 << 128) - 1)
-
-# Mostrar el valor de crc original
-
-#print("El valor de crc recuperado es:", crc)
-
 def generateToken(name, m):
     data = name.encode(errors="surrogateescape")
     crc = (1 << 128) - 1
@@ -215,16 +202,9 @@ def generateToken(name, m):
 
             print(f"Este es crc despues de actualizarse {crc}")
 
-
-
     print(crc)
 
     return hex(crc ^ ((1 << 128) - 1))[2:]
-
-
-
-
-#name = "\x7f"
 
 name = str(input("Enter your name: "))
 print(f"Valor de name es : {name}")
@@ -240,7 +220,40 @@ token = int(hex_value, 16)
 
 token = token ^ ((1 << 128) - 1)
 print(token)
+#name = "\x7f"
 ```
+
+Después de muchas iteraciones y de realizar numerosas pruebas en el intérprete de Python me di cuenta de lo siguiente.
+Comencemos con la función más importante de la generación de Tokens `crc = (crc >> 1) ^ (m & -(crc & 1))`.
+
+1. Sabemos que si realizamos por ejemplo 4 ^ 0 = 4. por tanto cuando la parte de la derecha valga 0, se realizará la operación XOR de crc ^ 0 = crc, por tanto m no tendrá efecto en dicha iteración.
+
+Llegados a este punto, me dí cuenta de que m se puede recuperar siempre y cuando de las 8 iteraciónes, 7 de ellas el segundo término (m & -(crc & 1)) sea 0 y solamente en una de ellas, el resultado tiene que ser distinto de 0, ya que si esto se cumple, el valor de m estará presente únicamente en dicha iteración y no debe de haber más ya que no tendríamos control en las siguientes iteraciones.
+
+Para lograr obtener un 0 en el segundo término (m & -(crc & 1)), tenemos que saber que para que el resultado de la operación AND entre dos variables sea 0, el primer término debe de ser 0 y el segundo debe de ser distinto de 0. 
+
+ Tabla de la operación AND
+
+| \(a\) | \(b\) | \(a \land b\) |
+|------|------|--------------|
+| 0    | 0    | 0            |
+| 0    | 1    | 0            |
+| 1    | 0    | 0            |
+| 1    | 1    | 1            |
+
+Como en el segundo término la operación más externa es (m & (resultado)), sabemos que para obtener un 0, tenemos que hacer forzosamente que resultado tenga el valor 0, ya que el resultado final del segundo termino, sería un 0 también.
+
+Siguiendo la misma filosofía con la operación interna, para que -(crc & 1) sea 0, tenemos que hacer que el bit menos significativo de crc, sea 0 también.
+
+Por tanto, tenemos que manipular el valor de crc, para que de las 8 iteraciones, 7 de ellas los resultados sean 0 y solamente en una de ellas el resultado sea 1 pero, ¿cómo hacemos esto?
+
+El único control quetenemos es el de la variable name el cual incluye el nombre a registrar que como hemos comentado anteriormente, con el bucle for b in data:, se recorren en forma de bytes cada caracter. En este caso nosotros solo tenemos que trabajar con un carácter, ya que si trabajásemos con más caracteres, las iteraciones se duplican por 2, es decir, en vez de 8 iteraciones en el bucle, tendriamos 16 y sería mucho mas dificil de controlar cada valor.
+
+
+
+
+
+
 
 Finalmente, me di cuenta de que el caracter ? introducía una vía potencial de recuperar el m ya que se da el caso perfecto para dentro del bucle de las 8 iteraciones, 6 de ellas serán 0, 1 de ellas será el cambio de crc con la operación m AND crc y la última puede ser 1 o 0 dependiendo del m generado, por tanto nosotros tenemos que ir probando hasta que esa ultima sea 0, para poder recuperar m
 
