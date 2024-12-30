@@ -34,7 +34,7 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Com
 
 ## Analizando el código
 
-En este reto nos dan el siguiente script.
+El script server.py contiene lo siguiente.
 
 
 ```py
@@ -129,9 +129,47 @@ if __name__ == "__main__":
 	main()
 ```
 
+Este reto es un sistema de autenticación basado en tokens generados mediante un algoritmo CRC personalizado con una constante aleatoria m.
+Los usuarios pueden registrarse, obtener un token único, iniciar sesión, y guardar deseos en un archivo.
+Solo `Santa Claus` tiene permiso para leer todos los deseos y es por ello que no podemos registrar el usuario `Santa Claus` y deberemos loguearnos con su nombre para poder leer la lista de deseos y recuperar la flag.
+
+Antes de continuar, tenemos que echarle un vistazo en detalle de la función `GenerateTokens()` y sobre todo entender cómo funciona la lógica operacional en ella.
+
+```py
+def generateToken(name):
+	data = name.encode(errors="surrogateescape")
+	crc = (1 << 128) - 1
+	for b in data:
+		crc ^= b
+		for _ in range(8):
+			crc = (crc >> 1) ^ (m & -(crc & 1))
+	return hex(crc ^ ((1 << 128) - 1))[2:]
+```
+1. La función obtiene un string con el nombre del token a generar el cual se convierte en una representación en bytes utilizando la codificación por defecto (UTF-8), pero con un comportamiento especial para manejar errores de codificación.
+
+2. Se establece un valor inicial de crc de `340282366920938463463374607431768211455`.
+
+3. Se recorre un bucle for por cada caracter `b` de la variable `data`. (NOTA: Es muy importante saber que b se interpreta como un valor entre 0 hasta 255)
+
+4. Se realiza una operación `XOR` tal que
+\[
+\text{crc} = \text{crc} \oplus b
+\]
+
+5. Posteriormente se realiza un bucle con 8 iteraciones (1 para cada bit menos significativo) en la cual se realiza la operación `XOR` entre el `primer término` (crc rotado a la derecha una posición) junto el `segundo término` (realiza la operación `AND` del bit menos significativo de `crc` con `1`, se niega el resultado y por último, se vuelve a realizar la operación `AND` con `m`, siendo `m` un valor generado aleatoriamente).
+
+6. Para finalizar, la función devuelve los bits invertidos de crc y convierte el resultado en una cadena hexadecimal sin el prefijo '0x'.
+
+
 ## Solución
 
-Primero realicé unas pruebas de testing.
+Una vez comprendido a groso modo todo el comportamiento del script y sobre todo de la función que genera los tokens, se nos ocurrieron una gran diversidad de ideas. Una de ellas viene por la realización de colisionado de Hashes del hash perteneciente a Santa Claus, pero esto en inviable ya que el problema reside en que no tenemos el hash original.
+
+Es por ello que una idea que tuve desde el comienzo fue en recuperar la semilla `m` para posteriormente, realizar un registro válido como el usuario Santa Claus sin la restricción por parte del servidor y por último introducir dicho hash en el servidor para loguearnos exitosamente y observar la preciada lista de deseos con la flag en ella.
+
+Vale, pero ¿como recuperamos `m`?
+
+Para recuperar m deberemos de ir más allá. Primero tendremos que realizar un breve script de testing/debug, para observar de primera mano el valor de cada variable en cada iteración. En este caso el que utilicé fue el siguiente.
 
 ```py
 import hashlib
