@@ -1,10 +1,10 @@
 ---
 title: Hohoho3 Continue (First Blood) - WarGamesCTF2024
 author: Kesero
-description: Reto de Criptografía basado en el reto Hohoho3 anterior, pero con más sanitización
+description: Reto de Criptografía basado en el reto Hohoho3 anterior, pero con restricciones.
 date: 2024-12-30 12:30:00 +0800
 categories: [Writeups Competiciones Internacionales, Cripto]
-tags: [Dinámico, Buffer Overflow, Fácil, Writeups]
+tags: [CRC, Fácil, Writeups]
 pin: false
 math: true
 mermaid: true
@@ -15,13 +15,13 @@ image:
 comments: true
 ---
 
-Autor del reto: `CryptoCat`
+Autor del reto: `SKR`
 
-Dificultad: <font color=green>Fácil</font>
+Dificultad: <font color=orange>Medium</font>
 
 ## Enunciado
 
-"The flag is hidden somewhere in this GIF. You can't see it? Must be written in transparent ink."
+"Someone broke the service! Now everyone can only register once.."
 
 ## Archivos
 
