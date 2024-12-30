@@ -163,7 +163,7 @@ def generateToken(name):
 
 ## Solución
 
-Una vez comprendido a groso modo todo el comportamiento del script y sobre todo de la función que genera los tokens, se nos ocurrieron una gran diversidad de ideas. Una de ellas viene por la realización de colisionado de Hashes del hash perteneciente a Santa Claus, pero esto en inviable ya que el problema reside en que no tenemos el hash original.
+Una vez comprendido a groso modo todo el comportamiento del script y sobre todo de la función que genera los tokens, se nos ocurrieron una gran diversidad de ideas. Una de ellas viene por la realización de colisión de Hashes del hash perteneciente a Santa Claus, pero esto es inviable ya que el problema reside en que no tenemos el hash original.
 
 Es por ello que una idea que tuve desde el comienzo fue en recuperar la semilla `m` para posteriormente, realizar un registro válido como el usuario Santa Claus sin la restricción por parte del servidor y por último introducir dicho hash en el servidor para loguearnos exitosamente y observar la preciada lista de deseos con la flag en ella.
 
@@ -228,7 +228,7 @@ Comencemos con la función más importante de la generación de Tokens `crc = (c
 
 1. Sabemos que si realizamos por ejemplo 4 ^ 0 = 4. por tanto cuando la parte de la derecha valga 0, se realizará la operación `XOR` de crc ^ 0 = crc, por tanto `m` no tendrá efecto en dicha iteración.
 
-Llegados a este punto, me dí cuenta de que `m` se puede recuperar siempre y cuando de en las 8 iteraciónes, 7 de ellas el segundo término `(m & -(crc & 1))` sea `0` y solamente en una de ellas, el resultado tiene que ser distinto de `0`, ya que si esto se cumple, el valor de `m` estará presente únicamente en dicha iteración (ya que se computaría como `crc = crc ^ m`) y no debe de haber más valores iguales ya que no tendríamos control en las siguientes iteraciones de la variable `crc`.
+Llegados a este punto, me dí cuenta de que `m` se puede recuperar siempre y cuando de en las 8 iteraciónes, 7 de ellas el segundo término `(m & -(crc & 1))` sea `0` y solamente en una de ellas, el resultado debe ser distinto de `0`, ya que si esto se cumple, el valor de `m` estará presente únicamente en dicha iteración (ya que se computaría como `crc = crc ^ m`) y no debe de haber más valores iguales ya que no tendríamos control en las siguientes iteraciones de la variable `crc`.
 
 Para lograr obtener un `0` en el segundo término `(m & -(crc & 1))`, tenemos que saber que para que el resultado de la operación `AND` entre dos variables sea `0`, el primer término debe de ser `0` y en nuestra casuística, siempre tendremos un término disinto de `0`.
 
@@ -247,7 +247,7 @@ Siguiendo la misma filosofía con la operación interna, para que `-(crc & 1)` s
 
 Por tanto, tenemos que manipular el valor de `crc`, para que de las 8 iteraciones, 7 de ellas los resultados sean `0` y solamente en una de ellas el resultado sea `1` pero, ¿cómo hacemos esto?
 
-El único control que tenemos es el de la variable `name` el cual incluye el nombre a registrar que como hemos comentado anteriormente, con el bucle `for b in data:`, se recorren en forma de bytes cada caracter. En este caso nosotros solo tenemos que trabajar con un carácter, ya que si trabajásemos con más caracteres, las iteraciones se duplican por 2, es decir, en vez de 8 iteraciones en el bucle, tendriamos 16 y sería mucho mas difícil de controlar cada valor.
+El único control que tenemos es el de la variable `name` el cual incluye el nombre a registrar que como hemos comentado anteriormente con el bucle `for b in data:`, se recorren en forma de bytes cada caracter. En este caso nosotros solo tenemos que trabajar con un carácter, ya que si trabajásemos con más caracteres, las iteraciones se duplican por 2, es decir, en vez de 8 iteraciones en el bucle, tendriamos 16 y sería mucho mas difícil de controlar cada valor.
 
 Por tanto, tenemos que encontrar un caracter, que al realizar `crc ^= b`, deje los 8 bits menos significativos a un valor, los cuales 7 de ellos deben ser `0` y solo uno de ellos tiene que ser `1`.
 
@@ -267,7 +267,7 @@ NOTA: Realmente podemos dejar dentro de los 8 bits, el menos significativo a 1 y
 
 Listo no? simplemente tenemos que hacer que `b` valga `127` una vez que `data` se ha procesado y ya estaría, ¿no?
 
-El problema es que la variable `name` se computa con un `str()` de la siguiente manera: 
+El problema es que la variable `name` se interpreta con un `str()` de la siguiente manera: 
 
 	name = str(input("Enter your name: "))
 
