@@ -50,11 +50,20 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 ## Competiciones Participadas
 
+### 2025
+
+| Evento | Puntos totales CTF | Puntos obtenidos  |
+|--------------------------------------------------|-----------------|-------|
+| Srdnlen CTF 2025                                 |	210,0000     | 1,660 |
+| UofTCTF 2025                                     |	1764,0000    | 3,632 |
+| IrisCTF 2025                                     |	1697,0000    | 6,097 |
+
+
 ### 2024
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |
 |-----------------------------------------------------|-------------|--------|
-| Wargames.MY CTF 2024                                |	7179,0000   | 0,000* |
+| Wargames.MY CTF 2024                                |	7179,0000   | 16,036 |
 | 0CTF 2024                                           |	70,0000	    | 1,389  |
 | TSG CTF 2024	                                      |703,0000	    | 4,121  |
 | LakeCTF Quals 24-25	                              |380,0000	    | 3,083  |
