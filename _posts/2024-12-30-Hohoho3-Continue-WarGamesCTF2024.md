@@ -5,7 +5,7 @@ description: Reto de Criptografía basado en el reto Hohoho3 anterior, pero con 
 date: 2024-12-30 12:30:00 +0800
 categories: [Writeups Competiciones Internacionales, Cripto]
 tags: [CRC, Fácil, Writeups]
-pin: false
+pin: true
 math: true
 mermaid: true
 image:
