@@ -1,5 +1,5 @@
 ---
-title: Herramienta de Escaneo de Puertos Abiertos en python3
+title: Herramienta para escanear puertos abiertos en python3
 author: Kesero
 description: Herramienta para escanear puertos con scapy através de Stealth Scan empleando hilos 
 date: 2025-02-12 13:40:00 +0200
