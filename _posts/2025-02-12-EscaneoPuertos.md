@@ -9,7 +9,7 @@ pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Herramientas/EscaneoPuertos/portada.png?raw=true
+  path: https://github.com/k3sero/Blog_Content/blob/main/Herramientas/EscaneoPuertos/titulo.png?raw=true
   lqip: 
   alt: 
 comments: true
@@ -212,4 +212,4 @@ Un ejemplo básico podría ser el siguiente.
 
 En cuanto a eficiencia, no tiene nada que envidiarle a escaneadores como `nmap` ya que gracias a el empleo de hilos, obtenemos tiempos de ejecución bastante similares, pero puede llegar a saturar la red si esta no cuenta con buenos recursos si el rango a escanear es muy amplio.
 
-Al no completar la conexión el escaneo como hemos dicho anteriormente, es menos detectable pero igualmente dejamos traza a la hora de realizar las conexiones. Además hay que tener en cuenta que algunos sistemas/firewalls más sofisticados pueden bloquear este tipo de escaneos SYN.
+Al no completar la conexión el escaneo como hemos dicho anteriormente, es menos detectable pero igualmente dejamos traza a la hora de realizar las conexiones. Además hay que tener en cuenta que algunos sistemas/firewalls más sofisticados pueden bloquear este tipo de escaneos `SYN`.
