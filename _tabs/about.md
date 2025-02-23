@@ -35,8 +35,9 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 • **First Bloods** --> [Hohoho3 Continue](https://k3sero.github.io/posts/Hohoho3-Continue-WarGamesCTF2024/), Pederson (Coming soon)
 
-• **WarGamesCTF2024** --> Competición de CTFs a nivel internacional, en la cual obtuvimos la 6º posición de 233 equipos.
+• **HackOn2025** --> Competición de CTFs a nivel nacional, en la que obtuve 9º posición participando en solitario contra equipos de 3 personas.
 
+• **WarGamesCTF2024** --> Competición de CTFs a nivel internacional, en la cual obtuvimos la 6º posición de 233 equipos.
 
 • **SpookyCTF2024** --> Competición de CTFs a nivel internacional, en la cual obtuvimos la 40º posición de 831 equipos participantes.
 
@@ -54,6 +55,9 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |
 |--------------------------------------------------|-----------------|-------|
+|	BroncoCTF 2025	                               |    8421,0000	 | 18,136|
+|	BITSCTF 2025	                               |    2443,0000	 | 6,093 |
+|	x3CTF 2025 (feat. mvm)	                       |    1147,0000	 | 4,854 |
 | Srdnlen CTF 2025                                 |	210,0000     | 1,660 |
 | UofTCTF 2025                                     |	1764,0000    | 3,632 |
 | IrisCTF 2025                                     |	1697,0000    | 6,097 |
