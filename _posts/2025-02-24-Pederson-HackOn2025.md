@@ -3,7 +3,7 @@ title: Pederson (First Blood) - HackOn2025
 author: Kesero
 description: Reto Cripto basado en el esquema de compromiso Pedersen.
 date: 2025-02-24 00:00:00 +0000
-categories: [Writeups Competiciones Nacionales, Cripto]
+categories: [Writeups Competiciones Nacionales, Crypto]
 tags: [Pedersen, Writeups, Fácil]
 pin: false
 math: true
