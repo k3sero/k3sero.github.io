@@ -3,7 +3,7 @@ title: Invisible Ink - WarGamesCTF2024
 author: Kesero
 description: Reto Estego basado en la extracción de información oculta de un archivo.gif.
 date: 2024-12-30 15:15:00 +0800
-categories: [Writeups Competiciones Internacionales, Estego]
+categories: [Writeups Competiciones Internacionales, Esteganografía]
 tags: [gif, Fácil, Writeups]
 pin: false
 math: true
