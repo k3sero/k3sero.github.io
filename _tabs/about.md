@@ -33,7 +33,7 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 ## Marcadores Personales
 
-• **First Bloods** --> [Hohoho3 Continue](https://k3sero.github.io/posts/Hohoho3-Continue-WarGamesCTF2024/), Pederson (Coming soon)
+• **First Bloods** --> [Hohoho3 Continue - WarGames2024](https://k3sero.github.io/posts/Hohoho3-Continue-WarGamesCTF2024/), [Pederson - HackOn2025] https://k3sero.github.io/posts/Pederson-HackOn2025/
 
 • **HackOn2025** --> Competición de CTFs a nivel nacional, en la que obtuve 9º posición participando en solitario contra equipos de 3 personas.
 
