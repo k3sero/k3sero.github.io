@@ -1,15 +1,15 @@
 ---
-title: Viejas Raíces - HackademicsForum2025
+title: Invisible Ink - WarGamesCTF2024
 author: Kesero
-description: Reto OSINT basado en búsqueda de una charla del Aula de Ciberseguridad y Redes.
-date: 2025-04-06 18:00:00 +0000
-categories: [Writeups Competiciones Nacionales, Osint]
-tags: [Búsqueda, Writeups, Fácil]
+description: Reto Estego basado en la extracción de información oculta de un archivo.gif.
+date: 2024-12-30 15:15:00 +0800
+categories: [Writeups Competiciones Internacionales, Esteganografía]
+tags: [gif, Fácil, Writeups]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/6.png?raw=true
+  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Estego/WarGamesCTF2024/Invisible-Ink/Titulo.png?raw=true
   lqip: 
   alt: 
 comments: true
