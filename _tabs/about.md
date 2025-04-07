@@ -180,5 +180,3 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 • **"Mastermind - Hacking de Redes Inalámbricas (Hacking Wifi)"**
 
 • **"Mastermind - Hacking de Radiofrecuenca (Hacking RFID)"**
-
-a
