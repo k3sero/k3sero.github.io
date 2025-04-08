@@ -18,9 +18,9 @@ comments: true
 En este apartado, estaré subiendo las soluciones para los retos de la categoría "General de CryptoHack.
 Los subapartados que se tratarán son de caracter básico e introductorio formadas por las subcategorías `Encoding`, `Xor`, `Mathematics` y `Data Formats`
 
-# Encoding
+## Encoding
 
-## ASCII
+### ASCII
 
 "ASCII is a 7-bit encoding standard which allows the representation of text using the integers 0-127.
 
@@ -28,7 +28,7 @@ Using the below integer array, convert the numbers to their corresponding ASCII 
 
     [99, 114, 121, 112, 116, 111, 123, 65, 83, 67, 73, 73, 95, 112, 114, 49, 110, 116, 52, 98, 108, 51, 125]
 
-### Solver
+#### Solver
 
 ```py
 string = [99, 114, 121, 112, 116, 111, 123, 65, 83, 67, 73, 73, 95, 112, 114, 49, 110, 116, 52, 98, 108, 51, 125]
@@ -39,11 +39,11 @@ for element in string:
 
 print(f"\n[+] Flag: {result}")
 ```
-### Flag
+#### Flag
 
 `crypto{ASCII_pr1nt4bl3}`
 
-## Hex
+### Hex
 
 "When we encrypt something the resulting ciphertext commonly has bytes which are not printable ASCII characters. If we want to share our encrypted data, it's common to encode it into something more user-friendly and portable across different systems.
 
@@ -53,7 +53,7 @@ Included below is a flag encoded as a hex string. Decode this back into bytes to
 
     63727970746f7b596f755f77696c6c5f62655f776f726b696e675f776974685f6865785f737472696e67735f615f6c6f747d
 
-### Solver
+#### Solver
 
 ```py
 hex = "63727970746f7b596f755f77696c6c5f62655f776f726b696e675f776974685f6865785f737472696e67735f615f6c6f747d"
@@ -62,11 +62,11 @@ flag = bytes.fromhex(hex)
 print(f"\n[+] Flag: {flag}")
 ```
 
-### Flag
+#### Flag
 
 `crypto{You_will_be_working_with_hex_strings_a_lot}`
 
-## Base64
+### Base64
 
 "Another common encoding scheme is Base64, which allows us to represent binary data as an ASCII string using an alphabet of 64 characters. One character of a Base64 string encodes 6 binary digits (bits), and so 4 characters of Base64 encode three 8-bit bytes.
 
@@ -76,7 +76,7 @@ Take the below hex string, decode it into bytes and then encode it into Base64."
 
     72bca9b68fc16ac7beeb8f849dca1d8a783e8acf9679bf9269f7bf
 
-### Solver
+#### Solver
 
 ```py
 import base64 as b
@@ -88,11 +88,11 @@ flag = b.b64encode(result_bytes)
 print(flag)
 ```
 
-### Flag
+#### Flag
 
 `crypto/Base+64+Encoding+is+Web+Safe/`
 
-## Bytes and Big Integers
+### Bytes and Big Integers
 
 "Cryptosystems like RSA works on numbers, but messages are made up of characters. How should we convert our messages into numbers so that mathematical operations can be applied?
 
@@ -108,11 +108,11 @@ To illustrate:"
 
     11515195063862318899931685488813747395775516287289682636499965282714637259206269
 
-### Solver
+#### Solver
 
 `crypto{3nc0d1n6_4ll_7h3_w4y_d0wn}`
 
-## Encoding Challenge
+### Encoding Challenge
 
 "Now you've got the hang of the various encodings you'll be encountering, let's have a look at automating it.
 
@@ -188,7 +188,7 @@ import builtins; builtins.Challenge = Challenge # hack to enable challenge to be
 listener.start_server(port=13377)
 ```
 
-### Solver
+#### Solver
 ```py
 from pwn import * # pip install pwntools
 from Crypto.Util.number import long_to_bytes
@@ -235,9 +235,9 @@ for i in range (101):
     }
     json_send(to_send)
 ```
-# Xor
+## Xor
 
-## Xor Starter
+### Xor Starter
 
 "XOR is a bitwise operator which returns 0 if the bits are the same, and 1 otherwise. In textbooks the XOR operator is denoted by ⊕, but in most challenges and programming languages you will see the caret ^ used instead."
 
@@ -251,7 +251,7 @@ for i in range (101):
 
 "Given the string label, XOR each character with the integer 13. Convert these integers back to a string and submit the flag as crypto{new_string}."
 
-### Solver
+#### Solver
 ```py
 from pwn import xor
 
@@ -262,7 +262,7 @@ result = xor(label, number)
 print(f"\n[+] Flag: crypto[{result.decode()}]")
 ```
 
-## Xor Properties
+### Xor Properties
 
 "In the last challenge, you saw how XOR worked at the level of bits. In this one, we're going to cover the properties of the XOR operation and then use them to undo a chain of operations that have encrypted a flag. Gaining an intuition for how this works will help greatly when you come to attacking real cryptosystems later, especially in the block ciphers category.
 
@@ -282,7 +282,7 @@ Let's put this into practice! Below is a series of outputs where three random ke
     KEY2 ^ KEY3 = c1545756687e7573db23aa1c3452a098b71a7fbf0fddddde5fc1
     FLAG ^ KEY1 ^ KEY3 ^ KEY2 = 04ee9855208a2cd59091d04767ae47963170d1660df7f56f5faf
 
-### Solver
+#### Solver
 
 Para este reto simplemente tenemos que realizar la Xor de KEY1 ^ KEY2 ^ KEY3 para obtener la cadena KEY1_KEY3_KEY2 y finalmente realizar xor con FLAG ^ KEY1 ^ KEY3 ^ KEY2 para aislar FLAG y obtener la cadena.
 
@@ -300,7 +300,7 @@ flag = xor(xor(bytes.fromhex(KEY1),bytes.fromhex(KEY2_KEY3)),bytes.fromhex(FLAG_
 print(flag)
 ```
 
-## Favourite Byte
+### Favourite Byte
 
 "For the next few challenges, you'll use what you've just learned to solve some more XOR puzzles.
 
@@ -308,7 +308,7 @@ I've hidden some data using XOR with a single byte, but that byte is a secret. D
 "
   73626960647f6b206821204f21254f7d694f7624662065622127234f726927756d
 
-### Solver
+#### Solver
 
 Para resolver este ejercicio vamos a probar mediante fuerza bruta, el caracter con el que se hizo la XOR en toda la cadena, para ello nuestro rango de fuerza bruta será desde 0 hasta el byte 256.
 
@@ -325,7 +325,7 @@ for character in range(256):
     if decoded.startswith(b'crypto'):
         print(f"Flag: {decoded} con el byte: {character}")
 ```
-### Flag
+#### Flag
 `crypto{0x10_15_my_f4v0ur173_by7e}`
 
 ## You either know, Xor you don´t
@@ -334,7 +334,7 @@ for character in range(256):
 
     0e0b213f26041e480b26217f27342e175d0e070a3c5b103e2526217f27342e175d0e077e263451150104
 
-### Solver
+#### Solver
 
 Para este reto, como sabemos que dicha cadena empieza con el prefijo de la flag `crypto{` pues realizar XOR con los bytes de la flag, posteriormente obtenemos la llave que se utilizó que en este caso corresponde a `myXORkey` y posteriormente aplicamos XOR nuevamente de la clave con los bytes_flag.
 
@@ -380,16 +380,16 @@ flag = xor(secret_key, e_bytes)
 print(flag.decode())
 ```
 
-### Flag
+#### Flag
 `crypto{1f_y0u_Kn0w_En0uGH_y0u_Kn0w_1t_4ll}`
 
-## Lemur Xor
+### Lemur Xor
 
 "I've hidden two cool images by XOR with the same secret key so you can't see them!"
 
 En este reto nos dan dos imágenes, `lemur.png` y `flag.png`
 
-### Solver
+#### Solver
 
 Par resolver el reto, simplemente tenemos que realizar XOR de ambas imágenes. Aquí se pueden utilizar numerosos scripts.
 
@@ -493,27 +493,27 @@ xor_images()
     └─$ convert lemur.png flag.png -evaluate-sequence xor result.png
 ```
 
-### Flag
+#### Flag
 `crypto{X0Rly_n0t!}`
 
-# Mathematics
+## Mathematics
 
-## Greatest Common Divisor
+### Greatest Common Divisor
 
-## Extended GCD
+### Extended GCD
 
-## Modular Arithmetic 1
+### Modular Arithmetic 1
 
-## Modular Arithmetic 2
+### Modular Arithmetic 2
 
-## Modular Inverting
+### Modular Inverting
 
-# Data Formats
+## Data Formats
 
-## Privacy-Enhanced Mail?
+### Privacy-Enhanced Mail?
 
-## CERTainly not
+### CERTainly not
 
-## SSH Keys
+### SSH Keys
 
-## Transparency
+### Transparency
