@@ -491,8 +491,8 @@ xor_images()
     ┌──(kesero㉿kali)-[~]
     └─$ convert lemur.png flag.png -evaluate-sequence xor result.png
 ```
-
-
+### Flag
+`crypto{X0Rly_n0t!}`
 
 # Mathematics
 
