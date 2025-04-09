@@ -864,7 +864,7 @@ def encrypt(plaintext):
 
 Fuente [importante.](https://www.ctfrecipes.com/cryptography/symmetric-cryptography/aes/mode-of-operation/ecb/ecb-oracle)
 
-Un vídeo dice más que mil palabras. [Video explicativo]()
+Un vídeo dice más que mil palabras. [Video explicativo](https://www.youtube.com/watch?v=SLeTFY40PZQ)
 
 ```py
 # Extraer los últimos 16bytes de la flag.
