@@ -1037,6 +1037,7 @@ def check_admin(cookie, iv):
     else:
         return {"error": "Only admin can read the flag"}
 ```
+![cbc](https://aes.cryptohack.org/static/img/aes/CBC_decryption.svg)
 
 Para el cifrado y el descifrado se utiliza `AES-CBC`. Por tanto sabemos que: 
 
@@ -1123,11 +1124,11 @@ NOTA
 
 Es importante conocer que:
 
-$$ cipher_fake[16+i] = plain[16+i] ^ cookie[16+i] ^ fake[i] $$
+$$ cipher_fake[16+i] = plain[16+i] \oplus cookie[16+i] \oplus fake[i] $$
 
 Se utiliza para calcular el byte que se debe insertar en la posición correspondiente del bloque anterior (en el ciphertext) de modo que, al ser descifrado, la XOR con D(C) produzca el valor deseado fake[i]. De igual modo, la modificación en el IV:
 
-$$ iv[start+i] = plain[start+i] ^ cookie[start+i] ^ fake[i] $$
+$$ iv[start+i] = plain[start+i] \oplus cookie[start+i] \oplus fake[i] $$
 
 Permite hacer lo mismo para el primer bloque. La aplicación del XOR en esta fórmula se basa en la propiedad involutiva del XOR (aplicar XOR dos veces con el mismo valor "deshace" la operación), lo que permite calcular la diferencia (la "delta") entre el valor original y el deseado, y luego "inyectar" esa diferencia en el vector que se XORará durante el descifrado.
 
@@ -1144,9 +1145,208 @@ Play at https://aes.cryptohack.org/lazy_cbc
 
 #### Solver
 
+En este reto podemos observar como la `key` se utiliza tanto como `iv` como en la propia `key` del cifrado y descifrado en `AES-CBC`
+
+![cbc](https://aes.cryptohack.org/static/img/aes/CBC_decryption.svg)
+
+Como estamos en `AES-CBC` podemos establecer las siguientes ecuaciones.
+
+$$ key = iv = d(c_0) \oplus plaintext $$
+$$ p_0 = d(c_0) \oplus iv $$
+$$ p_1 = d(c_1) \oplus C_0 $$
+$$ p_2 = d(c_2) \oplus C_1 $$
+
+Si por ejemplo $$ c_1 = 0 $$ y $$ c_2 = c_0 $$ entonces tenemos las siguientes ecuaciones.
+
+$$ p_0 = d(c_0) \oplus iv $$
+$$ p_1 = d(0) \oplus C_0 $$
+$$ p_2 = d(c_0) \oplus C_1 $$
+
+Si además realizamos $$ p_0 \oplus p_2 $$ si la `key` es utilizada como `IV` entonces podemos realizar transformaciones para obtener el valor de `key`
+
+$$ p_0 \oplus p_2 = d(c_0) \oplus iv \oplus d(c_0) \oplus 0 $$
+$$ p_0 \oplus p_2 = d(c_0) \oplus iv \oplus d(c_0) $$
+
+Podemos simplificar $$ d(c_0) \oplus d(c_0) = 0 $$ Por propiedades de `Xor`
+Y por último, podemos simplificar un paso más con $$ iv \oplus 0 = iv $$
+
+Por ende, la ecuación resultante es la siguiente:
+
+$$ p_0 \oplus p_2 = iv $$
+
+La cual podemos reescribir en factor de `key`:
+$$ p_0 \oplus p_2 = key $$
+
+Por ende, la metodología a realizar será la siguiente:
+
+1. Ciframos la cadena $$ plaintext = b'a'*16*3 $$
+2. Obtenemos el resultado cifrado y separamos en bloques de 16 bytes,
+3. Creamos un texto cifrado falso de la siguiente forma.
+$$ fake_cipher = cipher[:32] + '0'*32 + cipher[:32] $$
+4. Desciframos la cadena haciendo uso de la función `receive()` y guardamos el resultado,
+5. Separamos el texto en claro obtenido en bloques de 16 bytes,
+6. Por último, realizamos `XOR` entre `p0` y `p2` para obtener la flag.
+
+El código completo es el siguiente.
+
+```py
+from pwn import xor
+import requests
+
+URL = 'https://aes.cryptohack.org/lazy_cbc/'
+
+def receive(ciphertext):
+    r = requests.get(URL +'receive/'+ciphertext+'/')
+    a = r.json()
+    decrypted = a['error'][19:]
+    return decrypted
+
+def get_flag(key):
+    r = requests.get(URL +'get_flag/'+key+'/')
+    a = r.json()
+    flag = a['plaintext']
+    return flag
+
+def encrypt(plaintext):
+
+    r = requests.get(URL +'encrypt/'+plaintext+'/')
+    a = r.json()
+    ciphertext = a['ciphertext']
+    return ciphertext
+
+# 1. Creamos el texto en claro a cifrar y lo mandamos
+plaintext = b'a'*16 * 3
+cipher = encrypt(plaintext.hex())
+
+# 2. Nos construimos nuestro mensaje cifrado falso
+fake_cipher = cipher[:32] + '0'*32 + cipher[:32]
+plaintext = receive(fake_cipher)
+
+# 3. Estructuramos el mensaje en claro por bloques
+plain_blocks = [plaintext[:32], plaintext[32:64], plaintext[64:]]  
+
+# 4. Realizamos XOR entre el p0 y p2
+key = xor(bytes.fromhex(plain_blocks[0]), bytes.fromhex(plain_blocks[2]))
+
+flag_hex = get_flag(key.hex())
+print(f"\n[+] Flag: {bytes.fromhex(flag_hex)}")
+```
+
 #### Flag
+`crypto{50m3_p30pl3_d0n7_7h1nk_IV_15_1mp0r74n7_?}`
 
 ### Triple DES
+
+Data Encryption Standard was the forerunner to AES, and is still widely used in some slow-moving areas like the Payment Card Industry. This challenge demonstrates a strange weakness of DES which a secure block cipher should not have.
+
+Play at https://aes.cryptohack.org/triple_des
+
+Challenge contributed by randomdude999
+
+#### Solver
+
+En este reto, podemos manipular las `keys` que se utilizan en el cifrado `TripleDes`.
+Por ello, podemos establecer una clave que sea débil y aprovecharnos de ello.
+
+¿Cómo sabemos que una clave en `DES` es débil?
+
+Se dice que una clave en `DES` es débil si genera todas (o la mayoría) de las subclaves idénticas, la función de cifrado se vuelve casi simétrica. Esto significa que aplicar el algoritmo de cifrado sobre el mensaje cifrado con dicha clave puede revertir el proceso, es decir, la encriptación se vuelve su propia desencriptación. En esencia, si se tiene un mensaje $$ C = E_key(P) usando una clave débil, entonces $$ P = E_key(C) $$, lo que debilita grandemente la seguridad.
+
+Además la falta de variabilidad en las subclaves reduce la complejidad interna del cifrado, por lo que ciertas técnicas de criptoanálisis pueden aprovechar esa estructura para descifrar mensajes cifrados o para encontrar la clave con menor esfuerzo.
+
+Existen exactamente 4 claves débiles conocidas para DES y además unas 6 parejas de claves semi-débiles (12 claves en total) que presentan propiedades relacionadas. Con una clave débil, el proceso de generación de subclaves produce el mismo valor en cada ronda. Algunos ejemplos de claves débiles en DES (representadas en hexadecimal) son:
+
+    Claves débiles:
+    0101010101010101
+    fefefefefefefefe
+    e0e0e0e0f1f1f1f1
+    1f1f1f1f0e0e0e0e
+
+    Claves semidébiles:
+    01fe01fe01fe01fe
+    fe01fe01fe01fe01
+    1fe01fe00ef10ef1
+    e01fe01ff10ef10e
+    01e001e001f101f1
+    e001e001f101f101
+    1ffe1ffe0e0efefe
+    fe1ffe1ffe0e0efe
+    011f011f010e010e
+    1f011f010e010e01
+    e0f1e0f1f1f0e0f1
+    f1e0f1e0e0f1e0f1
+
+En este caso el código aportado hace el siguiente procedimiento.
+
+1. Se aplica un XOR con un IV (valor fijo para la sesión) al plaintext.
+
+2. Se cifra el resultado con DES3 en modo ECB, usando la clave proporcionada.
+
+3. Se vuelve a aplicar un XOR con el mismo IV al resultado.
+
+Para el caso de dos claves, DES3 en PyCryptodome se interpreta como un esquema de dos claves, donde la clave proporcionada de 16 bytes se divide en dos partes:
+
+$$ K_1 = primeros 8 bytes $$
+$$ K_2 = segundos 8 bytes $$
+
+El proceso de triple DES en modo de dos claves es el siguiente.
+
+$$ C = E_K(D_k2(E_k1(M))) $$
+
+Si elegimos un `K1` y un `K2` de forma en que ambos sean complementario uno de otro, se puede aprovechar la propiedad de complementariedad de DES. Esta propiedad cumple que:
+
+$$ E(\overline{K},\, \overline{M}) = \overline{E(K, M)} $$
+
+Por tanto, podemos decir que $$ K_2 = \overline{K_1} $$
+
+Por lo que esto conduce a que en el esquema de dos claves de triple DES, la operación de cifrado se "deshaga" al aplicarla dos veces sobre el mismo mensaje. Por ende la función de cifrado haría lo siguiente:
+
+$$ E(\overline{K},\, \overline{M}) = \overline{E(K, M)} $$
+
+Por tanto, una clave que cumple estas propiedades es: 
+
+    b'\x00\x00\x00\x00\x00\x00\x00\x00\x0cf\x0cf\x0cf\x0cf\x0cf\x0cf\x0cf\x0cf'
+
+El código utilizado es el siguiente.
+
+```py
+from pwn import xor
+import requests
+
+URL = 'https://aes.cryptohack.org/triple_des/'
+
+def xor(a, b):
+    # xor 2 bytestrings, repeating the 2nd one if necessary
+    return bytes(x ^ y for x,y in zip(a, b * (1 + len(a) // len(b))))
+
+def receive(ciphertext):
+    r = requests.get(URL +'receive/'+ciphertext+'/')
+    a = r.json()
+    decrypted = a['error'][19:]
+    return decrypted
+
+def encrypt(key, plaintext):
+    r = requests.get(URL +'encrypt/'+key+'/'+plaintext+'/')
+    a = r.json()
+    cipher = a['ciphertext']
+    return cipher
+
+def encrypt_flag(key):
+    r = requests.get(URL +'encrypt_flag/'+key+'/')
+    a = r.json()
+    encrypted_flag = a['ciphertext']
+    return encrypted_flag
+
+key = b'\x00'*8 + b'\xff'*8
+print(key)
+encrypt_flag = encrypt_flag(key.hex())
+
+flag = encrypt(key.hex(), encrypt_flag)
+print(f"\n[+] Flag: {bytes.fromhex(flag)}")
+```
+
+#### Flag
+`crypto{n0t_4ll_k3ys_4r3_g00d_k3ys}`
 
 ## Stream Ciphers
 
