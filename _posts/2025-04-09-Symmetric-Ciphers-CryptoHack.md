@@ -748,7 +748,7 @@ Como sabemos la longitud de cada apartado, debemos de diseccionar los elementos 
 
 Una vez tenemos toda la información diseccionada deberemos de revertir el cifrado.
 
-![Decrypt](https://www.google.com/url?sa=i&url=https%3A%2F%2Fzhangzeyu2001.medium.com%2Fattacking-cbc-mode-bit-flipping-7e0a1c185511&psig=AOvVaw2b32V4uv1Z78ASWxDJOcW2&ust=1744312238444000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCEnc3Ty4wDFQAAAAAdAAAAABAE)
+![Decrypt](https://miro.medium.com/v2/resize:fit:640/format:webp/0*UzVUGFDg_C-Gbs5g.png)
 
 En este caso sabemos que solo tenemos dos bloques, `c0` y `c1`. Además tenemos la posiblidad de descifrar un bloque cifrado, por tanto podemos jugar con ello de la siguiente forma.
 
