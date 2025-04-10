@@ -1250,7 +1250,7 @@ Por ello, podemos establecer una clave que sea débil y aprovecharnos de ello.
 
 ¿Cómo sabemos que una clave en `DES` es débil?
 
-Se dice que una clave en `DES` es débil si genera todas (o la mayoría) de las subclaves idénticas, la función de cifrado se vuelve casi simétrica. Esto significa que aplicar el algoritmo de cifrado sobre el mensaje cifrado con dicha clave puede revertir el proceso, es decir, la encriptación se vuelve su propia desencriptación. En esencia, si se tiene un mensaje $$ C = E_key(P) usando una clave débil, entonces $$ P = E_key(C) $$, lo que debilita grandemente la seguridad.
+Se dice que una clave en `DES` es débil si genera todas (o la mayoría) de las subclaves idénticas, la función de cifrado se vuelve casi simétrica. Esto significa que aplicar el algoritmo de cifrado sobre el mensaje cifrado con dicha clave puede revertir el proceso, es decir, la encriptación se vuelve su propia desencriptación. En esencia, si se tiene un mensaje $$ C = E_key(P)$$ usando una clave débil, entonces $$ P = E_key(C) $$, lo que debilita grandemente la seguridad.
 
 Además la falta de variabilidad en las subclaves reduce la complejidad interna del cifrado, por lo que ciertas técnicas de criptoanálisis pueden aprovechar esa estructura para descifrar mensajes cifrados o para encontrar la clave con menor esfuerzo.
 
