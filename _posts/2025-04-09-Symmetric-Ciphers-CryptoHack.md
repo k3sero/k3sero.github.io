@@ -752,13 +752,13 @@ Una vez tenemos toda la información diseccionada deberemos de revertir el cifra
 
 En este caso sabemos que solo tenemos dos bloques, `c0` y `c1`. Además tenemos la posiblidad de descifrar un bloque cifrado, por tanto podemos jugar con ello de la siguiente forma.
 
-Sabemos que para obtener p1, el descifrado de C1 es de la forma $$ C0 ^ p1 = decrypt(C1) $$
-Además si queremos obtenr p0, sabemos que el descifrado de C0 es de la forma $$ p0 ^ IV = decrypt(C0) $$
+Sabemos que para obtener p1, el descifrado de C1 es de la forma $$ C_0 \oplus p_1 = decrypt(C_1) $$
+Además si queremos obtenr p0, sabemos que el descifrado de C0 es de la forma $$ p_0 \oplus IV = decrypt(C_0) $$
 
 Por tanto ya solo nos quedaría despejar `p0` y `p1` mediante `Xor` de la siguiente forma:
 
-$$ p0 = IV ^ decrypt(C0) $$
-$$ p1 = C0 ^ decypt(C1) $$
+$$ p_0 = IV \oplus decrypt(C_0) $$
+$$ p_1 = C_0 \oplus decypt(C_1) $$
 
 Podemos hacerlo manualmente desde la página o en python.
 
@@ -996,8 +996,156 @@ You can get a cookie for my website, but it won't help you read the flag... I th
 
 Play at https://aes.cryptohack.org/flipping_cookie
 
+#### Solver
+
+En este reto nos dan una cookie y nos dan una función que comprueba si la cookie es de administrador o no. En caso de que `admin=True`, el servidor nos dará la flag.
+
+Lo que tenemos que realizar es un bitflipping attack del valor de la cookie para cambiar `False` por `True`
+
+La función `get_cookie()` nos da el `Iv` en los primeros 16 bytes y posteriormente el ciphertext concatenado.
+
+```py
+def get_cookie():
+    expires_at = (datetime.today() + timedelta(days=1)).strftime("%s")
+    cookie = f"admin=False;expiry={expires_at}".encode()
+
+    iv = os.urandom(16)
+    padded = pad(cookie, 16)
+    cipher = AES.new(KEY, AES.MODE_CBC, iv)
+    encrypted = cipher.encrypt(padded)
+    ciphertext = iv.hex() + encrypted.hex()
+
+    return {"cookie": ciphertext}
+```
+
+La función `check_admin()` toma como valores el `ciphertext` y el `Iv` y devuleve la flag si `admin=True`
+
+```py
+def check_admin(cookie, iv):
+    cookie = bytes.fromhex(cookie)
+    iv = bytes.fromhex(iv)
+
+    try:
+        cipher = AES.new(KEY, AES.MODE_CBC, iv)
+        decrypted = cipher.decrypt(cookie)
+        unpadded = unpad(decrypted, 16)
+    except ValueError as e:
+        return {"error": str(e)}
+
+    if b"admin=True" in unpadded.split(b";"):
+        return {"flag": FLAG}
+    else:
+        return {"error": "Only admin can read the flag"}
+```
+
+Para el cifrado y el descifrado se utiliza `AES-CBC`. Por tanto sabemos que: 
+
+$$ p_1 = c_0 \oplus d(c_1) $$
+$$ d(c_1) = p_1 \oplus c_0 $$
+
+Además, para hacer creer al servidor que somos admins, necesitamos flippear el ciphertext y el `IV`, ya que como podemos establecer nuestro propio `Iv`, podemos establecer relaciones Con Xor que nos permitan introducir un texto en claro que nosotros queramos. De esta manera el texto desencriptado contendrá "admin=True". Por tanto podemos estipular que:
+
+$$ p_1' = c_0' \oplus d(c_1) $$
+$$ p_1' = c_0' \oplus p_1 \oplus c_0 $$
+
+Posteriormente, tenemos que establecer relaciones entre el Iv verdadero y el Iv falso a cambiar. Siendo `fake` el mensaje que el servidor debe leer, `plain` el mensaje original y `cipher` el texto cifrado que devuelve el servidor, podemos establecer:
+
+$$ plain = cipher \oplus iv $$
+$$ cipher = plain \oplus iv $$
+$$ fake = cipher \oplus iv' $$
+$$ iv' = fake \oplus cipher $$
+$$ iv' = fake \oplus plain \oplus iv $$
+
+Una vez se haya desencriptado nuestro texto cifrado malicioso, el servidor buscará la cadena que contenga "admin=True", por ende el mensaje que tenemos que falsear serà `;admin=True` por ende la parte que tenemos que cambiar será `admin=False` que se encuentra en el primer bloque.
+
+Hay que recalcar, que el segundo bloque del texto en claro original, contiene la variable `expiry_at` la cual es diferente en cada cookie generada por tanto tenemos que establecer un texto en claro con la variable `expiry_at` al mismo momento, para guardar exactamente el valor que contiene, si no podremos tener problemas de padding.
+
+El código final es el siguiente.
+
+```py
+# Script de Ejemplo para la conexión
+import requests
+
+from Crypto.Cipher import AES
+import os
+from Crypto.Util.Padding import pad, unpad
+from datetime import datetime, timedelta
+from pwn import xor
+
+def get_cookie():
+
+    URL = 'https://aes.cryptohack.org/flipping_cookie/get_cookie/'
+    r = requests.get(URL)
+    response = r.json()
+    return response["cookie"]
+
+def check_admin(cookie, iv):
+
+    URL = 'https://aes.cryptohack.org/flipping_cookie/check_admin/'
+    r = requests.get(URL+cookie+'/'+iv+'/')
+    response = r.json()
+    return response
+
+def flip(cookie, plain):
+
+    start = plain.find(b'admin=False')
+    cookie = bytes.fromhex(cookie)
+
+    # Nos creamos un iv'
+    iv = [0x00]*16
+
+    # Convierte los bytes a una lista de enteros
+    cipher_fake = list(cookie)
+
+    fake = b';admin=True;'
+
+    for i in range(len(fake)):
+
+        cipher_fake[16+i] = plain[16+i] ^ cookie[16+i] ^ fake[i] # Se utiliza 16 + i por que los 16 primeros son del IV original (No diseccionado)
+        iv[start+i] = plain[start+i] ^ cookie[start+i] ^ fake[i]
+
+    cipher_fake = bytes(cipher_fake).hex()
+    iv = bytes(iv).hex()
+
+    return cipher_fake, iv
+
+# Obtenemos el valor de datatime acorde con el servidor.
+expires_at = (datetime.today() + timedelta(days=1)).strftime("%s")
+plain = f"admin=False;expiry={expires_at}".encode()
+
+cookie = get_cookie()
+
+cookie, iv = flip(cookie, plain)
+print(check_admin(cookie, iv))
+```
+
+NOTA
+
+Es importante conocer que:
+
+$$ cipher_fake[16+i] = plain[16+i] ^ cookie[16+i] ^ fake[i] $$
+
+Se utiliza para calcular el byte que se debe insertar en la posición correspondiente del bloque anterior (en el ciphertext) de modo que, al ser descifrado, la XOR con D(C) produzca el valor deseado fake[i]. De igual modo, la modificación en el IV:
+
+$$ iv[start+i] = plain[start+i] ^ cookie[start+i] ^ fake[i] $$
+
+Permite hacer lo mismo para el primer bloque. La aplicación del XOR en esta fórmula se basa en la propiedad involutiva del XOR (aplicar XOR dos veces con el mismo valor "deshace" la operación), lo que permite calcular la diferencia (la "delta") entre el valor original y el deseado, y luego "inyectar" esa diferencia en el vector que se XORará durante el descifrado.
+
+Esta técnica es el núcleo del ataque de bitflipping en modo CBC: no es necesario conocer la clave para modificar el mensaje descifrado de manera controlada, sino que basta con conocer o inferir el texto plano original y luego aplicar la diferencia necesaria en el vector de XOR (ya sea el IV o el bloque cifrado previo).
+
+#### Flag
+`crypto{4u7h3n71c4710n_15_3553n714l}'`
 
 ### Lazy CBC
+
+I'm just a lazy dev and want my CBC encryption to work. What's all this talk about initialisations vectors? Doesn't sound important.
+
+Play at https://aes.cryptohack.org/lazy_cbc
+
+#### Solver
+
+#### Flag
+
 ### Triple DES
 
 ## Stream Ciphers
