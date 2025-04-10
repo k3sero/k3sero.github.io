@@ -1351,6 +1351,19 @@ print(f"\n[+] Flag: {bytes.fromhex(flag)}")
 ## Stream Ciphers
 
 ### Symmetry
+
+Some block cipher modes, such as OFB, CTR, or CFB, turn a block cipher into a stream cipher. The idea behind stream ciphers is to produce a pseudorandom keystream which is then XORed with the plaintext. One advantage of stream ciphers is that they can work of plaintext of arbitrary length, with no padding required.
+
+OFB is an obscure cipher mode, with no real benefits these days over using CTR. This challenge introduces an unusual property of OFB.
+
+Play at https://aes.cryptohack.org/symmetry
+
+#### Solver
+
+En este caso contamos con un reto basado en `AES-OFB` el cual se basa en el siguiente esquema.
+
+![ofb](https://aes.cryptohack.org/static/img/aes/OFB_encryption.svg)
+
 ### Bean Counter
 ### CTRIME
 ### Logon Zero
