@@ -1250,7 +1250,7 @@ Por ello, podemos establecer una clave que sea débil y aprovecharnos de ello.
 
 ¿Cómo sabemos que una clave en `DES` es débil?
 
-Se dice que una clave en `DES` es débil si genera todas (o la mayoría) de las subclaves idénticas, la función de cifrado se vuelve casi simétrica. Esto significa que aplicar el algoritmo de cifrado sobre el mensaje cifrado con dicha clave puede revertir el proceso, es decir, la encriptación se vuelve su propia desencriptación. En esencia, si se tiene un mensaje $$ C = E_key(P)$$ usando una clave débil, entonces $$ P = E_key(C) $$, lo que debilita grandemente la seguridad.
+Se dice que una clave en `DES` es débil si genera todas (o la mayoría) de las subclaves idénticas, la función de cifrado se vuelve casi simétrica. Esto significa que aplicar el algoritmo de cifrado sobre el mensaje cifrado con dicha clave puede revertir el proceso, es decir, la encriptación se vuelve su propia desencriptación. En esencia, si se tiene un mensaje $$ C = E_{key}(P)$$ usando una clave débil, entonces $$ P = E_{key}(C) $$, lo que debilita grandemente la seguridad.
 
 Además la falta de variabilidad en las subclaves reduce la complejidad interna del cifrado, por lo que ciertas técnicas de criptoanálisis pueden aprovechar esa estructura para descifrar mensajes cifrados o para encontrar la clave con menor esfuerzo.
 
@@ -1358,13 +1358,198 @@ OFB is an obscure cipher mode, with no real benefits these days over using CTR. 
 
 Play at https://aes.cryptohack.org/symmetry
 
+```py
+from Crypto.Cipher import AES
+
+
+KEY = ?
+FLAG = ?
+
+
+@chal.route('/symmetry/encrypt/<plaintext>/<iv>/')
+def encrypt(plaintext, iv):
+    plaintext = bytes.fromhex(plaintext)
+    iv = bytes.fromhex(iv)
+    if len(iv) != 16:
+        return {"error": "IV length must be 16"}
+
+    cipher = AES.new(KEY, AES.MODE_OFB, iv)
+    encrypted = cipher.encrypt(plaintext)
+    ciphertext = encrypted.hex()
+
+    return {"ciphertext": ciphertext}
+
+
+@chal.route('/symmetry/encrypt_flag/')
+def encrypt_flag():
+    iv = os.urandom(16)
+
+    cipher = AES.new(KEY, AES.MODE_OFB, iv)
+    encrypted = cipher.encrypt(FLAG.encode())
+    ciphertext = iv.hex() + encrypted.hex()
+
+    return {"ciphertext": ciphertext}
+
+```
+
 #### Solver
 
 En este caso contamos con un reto basado en `AES-OFB` el cual se basa en el siguiente esquema.
 
 ![ofb](https://aes.cryptohack.org/static/img/aes/OFB_encryption.svg)
 
+Sabemos que sus rutinas de cifrado y descifrado se definen como:
+
+$$ C_j = P_j \oplus O_j $$
+$$ P_j = C_J \oplus O_j $$
+$$ O_j = E_K(I_j) $$
+$$ I_j = O_{j-1} $$
+$$ I_0 = IV $$
+
+Además, podemos afirmar que `OFB` emplea una clave para crear un bloque pseudoaleatorio que es operado a través de XOR con el texto claro para generar el texto cifrado. Requiere de un vector de inicialización que debe ser único para cada ejecución realizada.
+
+En este caso podemos observar como podemos reutilizar constantemente el `IV` realizado en el cifrado de la flag, ya que es añadido como output y nosotros podemos rescatarlo y utilizarlo en la función `encrypt()` tantas veces como queramos, lo que supone una vulnerabilidad crítica.
+
+Al usar el mismo `IV` y la misma `Key` para cifrar dos mensajes distintos, el keystream generado será el mismo siempre, como consecuencia podemos realizar un ataque de recuperación de texto plano.
+
+Si ciframos dos mensajes $ P_1 $ y $ P_2 $ con el mismo `IV` y la misma `Key` podemos realizar las siguientes relaciones:
+
+$$ C_1 = P_1 \oplus KS $$
+$$ C_2 = P_2 \oplus KS $$
+
+Donde $ KS $ Se forma como $$ KS = E_K(IV) $$
+
+Si tenemos acceso a ambos textos cifrados $ C_1 $ y $ C_2 $ podemos establecer la siguiente relación:
+
+$$ C_1 \oplus C_2 = (P_1 \oplus KS) \oplus (P_2 \oplus KS) $$
+
+Despejando $KS$ ya que se trata del mismo en todos los cifrados en los que se utilice el mismo `IV`, obtenemos:
+
+$$ C_1 \oplus C_2 = P_1 \oplus P_2 $$
+
+Por tanto, si suponemos $ P_1 $ como un texto introducido por nosotros y $P_2$ como la flag a obtener:
+
+$$ P_2 = C_1 \oplus C_2 \oplus P_1 $$
+$$ P_{flag}  = C_{input} \oplus C_{flag} \oplus P_{input} $$
+
+El código utilizado es el siguiente:
+
+```py
+from pwn import xor
+import requests
+
+URL = 'https://aes.cryptohack.org/symmetry/'
+
+def encrypt_flag():
+    r = requests.get(URL + 'encrypt_flag/')
+    a = r.json()
+    ciphertext = a['ciphertext']
+    return ciphertext
+
+def encrypt(plaintext, iv):
+    r = requests.get(URL + 'encrypt/'+plaintext+'/'+iv+'/')
+    a = r.json()
+    ciphertext = a['ciphertext']
+    return ciphertext
+
+# 1. Obtenemos la flag cifrada y el IV
+data_ct = encrypt_flag()
+iv = data_ct[:32]
+ciphertext = data_ct[32:]
+
+# 2. Utilizamos un texto en claro conocido y lo ciframos
+p1 = b'a'*33
+c1 = encrypt(p1.hex(), iv)
+
+# 3. Recuperamos la flag.
+flag = xor(xor(bytes.fromhex(c1), bytes.fromhex(ciphertext)), p1)
+
+print(f"\n[+] Flag: {flag}")
+
+# Opcional: Comprobación de que ambos KS son los mismos en todos los cifrados con el mismo IV
+p2 = b'b'*33
+c2 = encrypt(p2.hex(), iv)
+
+ks1 = xor(bytes.fromhex(c1), p1)
+ks2 = xor(bytes.fromhex(c2), p2)
+ks3 = xor(bytes.fromhex(ciphertext), flag)
+
+if ks1 == ks2 == ks3:
+
+    print(f"\n[+] Aserto válido, todos los Keystream generados son iguales (ks1 == ks2 == ks3)")
+    print(f"[*] ks1: {ks1}")
+    print(f"[*] ks2: {ks2}")
+    print(f"[*] ks3: {ks3}")
+
+```
+
+NOTA
+
+Podemos calcular el tamaño de la flag aproximado sabiendo que como el ciphertext son dos bloques de 32 caracteres hexadecimales, sabemos que cada bloque cuenta con 16 bytes y como hay dos hay un total de 32 bytes de flag, los cuales a su vez, en `OFB` sabemos que no hay padding por tanto $$ tam_{ciphertext} = tam_{plaintext} $$
+
+#### Flag
+`crypto{0fb_15_5ymm37r1c4l_!!!11!}`
+
+
 ### Bean Counter
+
+I've struggled to get PyCrypto's counter mode doing what I want, so I've turned ECB mode into CTR myself. My counter can go both upwards and downwards to throw off cryptanalysts! There's no chance they'll be able to read my picture.
+
+Play at https://aes.cryptohack.org/bean_counter
+
+```py
+from Crypto.Cipher import AES
+
+
+KEY = ?
+
+
+class StepUpCounter(object):
+    def __init__(self, step_up=False):
+        self.value = os.urandom(16).hex()
+        self.step = 1
+        self.stup = step_up
+
+    def increment(self):
+        if self.stup:
+            self.newIV = hex(int(self.value, 16) + self.step)
+        else:
+            self.newIV = hex(int(self.value, 16) - self.stup)
+        self.value = self.newIV[2:len(self.newIV)]
+        return bytes.fromhex(self.value.zfill(32))
+
+    def __repr__(self):
+        self.increment()
+        return self.value
+
+
+
+@chal.route('/bean_counter/encrypt/')
+def encrypt():
+    cipher = AES.new(KEY, AES.MODE_ECB)
+    ctr = StepUpCounter()
+
+    out = []
+    with open("challenge_files/bean_flag.png", 'rb') as f:
+        block = f.read(16)
+        while block:
+            keystream = cipher.encrypt(ctr.increment())
+            xored = [a^b for a, b in zip(block, keystream)]
+            out.append(bytes(xored).hex())
+            block = f.read(16)
+
+    return {"encrypted": ''.join(out)}
+```
+
+#### Solver
+
+En este caso, contamos con un modo personalizado de `AES-ECB` el cual se basa en `AES_CTR`
+
+![ctr](https://aes.cryptohack.org/static/img/aes/CTR_encryption.svg)
+
+
+### Flag
+
 ### CTRIME
 ### Logon Zero
 ### Stream of Consciousness
