@@ -51,4 +51,20 @@ Básicamente el lore de estos ejercicios se trata en seguir la pista de un ciber
 
 ![1](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Gunnar%20Vacations/1.jpg?raw=true)
 
-Básicamente si buscamos el nombre del hotel en Google, obtendremos la ubicación
+Básicamente si buscamos el nombre del hotel en Google, obtendremos las ubicaciones del hotel y echando un vistazo sobre ellas, al final encontramos la posición exacta.
+
+### Flag
+`THC{Gl4dos_1s_Un1mpr3ss3d}`
+
+
+## Picture 2 (Easy)
+
+![2](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Gunnar%20Vacations/2a.jpg?raw=true)
+
+En este caso tenemos una imagen de una costa sin letreros y sin nada que podamos encontrar rápido. En este caso realizamos una búsqueda global de la imágen en google, para ello primero tenemos que obtenr toda la imagen de 360º y para ello, le daremos a `inspeccionar` a la página web y posteriormente estraemos el recurso estático de la imagen.
+
+Una vez obtenida y buscada en google, obtenedremos imágenes muy parecidas en google y simplemente con observar el nombre del lugar ya sabremos donde estamos. Por último debemos de cuadrar la posición exacta y listo.
+
+### Flag
+`a`
+
