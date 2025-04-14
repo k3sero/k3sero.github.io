@@ -157,9 +157,11 @@ out center;
 
 En este caso, solo tenemos una imágen de una carretera y un letrero en ella, el cual se puede observar que pertenece a las distancias próximas de 3 ciudades.
 
-  IS ARUTAS 10.5
-  ORISTANO 19
-  PUTZU IDU 19.5
+```
+IS ARUTAS 10.5
+ORISTANO 19
+PUTZU IDU 19.5
+```
 
 En este caso, podemos realizar una triangulación manual en base a las tres ciudades que se mencionan para poder cuadrar en base al kilometraje una posición exacta. Preguntándole a ChatGPT, este nos comenta que dicha carretera pertenece a una carretera secundaria por la zona de la unión de dichas carreteras, concretamente pertenece a la carretera `SP6`. Por lo tanto una vez tenemos la zona, debemos de buscar un punto donde pueda estar dicha ubicación. Finalmente se encuentra en Cerdeña - San Giovanni di Sinis.
 
@@ -185,10 +187,12 @@ Este reto es el último del lore y se basa en encontrar el escondite final del c
 
 Además según el enunciado tenemos datos de gran importancia para la búsqueda del lugar exacto.
 
-  La zona se encuentra en el Departamento de Var - Región de la Costa Azul en Francia.
-  Se menciona que el lugar es una capilla
-  El lugar se encuentra alejado de zonas urbanas
-  Dicha capilla tiene una campana
+```
+La zona se encuentra en el Departamento de Var - Región de la Costa Azul en Francia.
+Se menciona que el lugar es una capilla
+El lugar se encuentra alejado de zonas urbanas
+Dicha capilla tiene una campana
+```
 
 En base a esta información, podemos buscar manualmente por la zona todos las iglesias, santuarios y capillas existentes dentro de la zona del Departamento de Var en Francia. Después de más de 3 horas buscando la dichosa capilla, obtuvimos la solución mediante una búsqueda de la imágen en google, pero insertando parámetros como "Var" y "Capilla" finalmente encontramos una imágen de una capilla al final de todos los resultados la cual cuadra perfectamente con la cruz y el granito desgastado.
 
