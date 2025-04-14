@@ -26,7 +26,7 @@ A pesar de ser una serie de ejercicios básicos, he decidido hacer writeup de to
 2. Chatgpt ayuda enormemente a la hora de realizar estos ejercicios.
 3. Páginas web de triangulación en base al kilometraje como [smappen](https://www.smappen.com/app/)
 4. Scripts manuales de búsqueda en Google Maps con filtros específicos.
-5. Páginas web basadas en IA como [Picarta]() (0% de aciertos) o [GeoSpy]()(No probada por tener los registros cerrados)
+5. Páginas web basadas en IA como [Picarta](https://picarta.ai/) (0% de aciertos) o [GeoSpy](https://geospy.ai/)(No probada por tener los registros cerrados)
 6. [GeoHints](https://geohints.com/) es una página basada en ofrecer posibles ubicaciones en base a las diferentes pistas y objetos de un lugar en cuestión. Muy usada por expertos de GeoGuesser.
 
 A la hora de visualizar mapas se pueden utiizar las siguientes herramientas.
@@ -63,8 +63,8 @@ Básicamente si buscamos el nombre del hotel en Google, obtendremos las ubicacio
 
 En este caso tenemos una imagen de una costa sin letreros y sin nada que podamos encontrar rápido. En este caso realizamos una búsqueda global de la imágen en google, para ello primero tenemos que obtenr toda la imagen de 360º y para ello, le daremos a `inspeccionar` a la página web y posteriormente estraemos el recurso estático de la imagen.
 
-Una vez obtenida y buscada en google, obtenedremos imágenes muy parecidas en google y simplemente con observar el nombre del lugar ya sabremos donde estamos. Por último debemos de cuadrar la posición exacta y listo.
+Una vez obtenida y buscada en google, obtenedremos imágenes muy parecidas en google y simplemente con observar el nombre del lugar ya sabemos que el lugar se trata de Capo Testa en Cerdeña. Por último debemos cuadrar la posición exacta y listo.
 
 ### Flag
-`a`
+`THC{Hum4n5_4r3_5l0w}`
 
