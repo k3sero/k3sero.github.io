@@ -175,6 +175,7 @@ Según sus posts en blusky, a él le gusta mucho el cifrado césar. Aquí es don
 
 
 NOTA
+
 Como nosotros no ibamos a comprar pistas, pensamos distintas formas. Aquí Nacho jugó la de pensar (cosa que los demás integrantes no hacían) y es que todas las páginas web relacionadas con los retos siguen el dominio de `nombre.ctf.thcon.party` (Esto realmente no tiene por qué ser así ya que se puede suponer cualquier enlace en el reto, no los pertenecientes a la propia THCON, pero son franceses...).
 
 Además Daysa jugó la de Masterclass con el cifrado Vigenere y es que suponiendo que la URL sigue el patrón descrito por Nacho: `nombre.ctf.thcon.party` podemos ir probando distintas claves, diseccionando el texto completo por partes. Por ejemplo si queremos descifrar la parte final `.party`, podemos ir jugando con los caracteres de la clave hasta que la parte final coincida, si coincide pues añadimos dicho caracter a la posible key, de manera iterativa, hasta ir dando con la clave completa. También es importante ir jugando con la longitud, ya que de esta manera en el cifrado Vigenere, descifraremos los carácteres elegidos.
