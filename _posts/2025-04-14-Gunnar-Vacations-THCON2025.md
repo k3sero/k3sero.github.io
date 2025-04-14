@@ -2,7 +2,7 @@
 title: Gunnar´s Vacation Pictures[1-7] - THCON2025
 author: Kesero
 description: Compilación de retos asociados a la búsqueda de posición en base a imágenes en Google Maps
-date: 2025-14-14 10:00:00 +0000
+date: 2025-04-14 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Osint]
 tags: [Osint]
 pin: false
@@ -27,6 +27,7 @@ A pesar de ser una serie de ejercicios básicos, he decidido hacer writeup de to
 3. Páginas web de triangulación en base al kilometraje como [smappen](https://www.smappen.com/app/)
 4. Scripts manuales de búsqueda en Google Maps con filtros específicos.
 5. Páginas web basadas en IA como [Picarta]() (0% de aciertos) o [GeoSpy]()(No probada por tener los registros cerrados)
+6. [GeoHints](https://geohints.com/) es una página basada en ofrecer posibles ubicaciones en base a las diferentes pistas y objetos de un lugar en cuestión. Muy usada por expertos de GeoGuesser.
 
 A la hora de visualizar mapas se pueden utiizar las siguientes herramientas.
 
