@@ -68,3 +68,10 @@ Una vez obtenida y buscada en google, obtenedremos imágenes muy parecidas en go
 ### Flag
 `THC{Hum4n5_4r3_5l0w}`
 
+## Picture 3 (Medium)
+
+![3](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Gunnar%20Vacations/3.jpg?raw=true)
+
+En este caso la dificultad sube ya que tenemos la fotografía de un lugar pero no obtenemos información muy relevante sobre ella. Lo primero en hacer en este caso es obtener nuevamente la imagen estática de la página web y en este caso usar ChatGPT para que nos arroje un análisis más profundo del lugar.
+
+En este caso ChatGPT nos dice que imagen se ha tomado en un lugar cerca de Toulon, más concretamente en Saint-Mandrier-sur-Mer. Mirando la arquitectura de la zona con Google Street View, nos damos cuenta de que la arquitectura del lugar, carretera, aceras y demás elemntos coinciden. Cuadramos la posición exacta de la imágen y listo.
