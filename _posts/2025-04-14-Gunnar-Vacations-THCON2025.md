@@ -27,6 +27,7 @@ A pesar de ser una serie de ejercicios básicos, he decidido hacer writeup de to
 4. [Overpass Turbo](https://overpass-turbo.eu/?Q=%5Bout%3Ajson%5D%5Bbbox%3A%7B%7Bbbox%7D%7D%5D%3B%0A%28%0A%2F%2F%20First%20get%20all%20beaches%20in%20the%20bounding%20box%0Anode%5B%22natural%22%3D%22beach%22%5D%3B%0Away%5B%22natural%22%3D%22beach%22%5D%3B%0Arelation%5B%22natural%22%3D%22beach%22%5D%3B%0A%29%20-%3E%20.beaches%3B%0A%0Anode%28around.beaches%3A1000%29%5B%22shop%22%5D%5B%22name%22%7E%22Spar%22%2C%20i%5D%3B%0A%0Aout%20body%3B%0A%3E%3B%0Aout%20skel%20qt%3B&C=43.044805%3B7.190475%3B7) permite establecer filtros específicos en base a un script dado en Google Maps.
 5. Páginas web basadas en IA como [Picarta](https://picarta.ai/) (0% de aciertos) o [GeoSpy](https://geospy.ai/)(No probada por tener los registros cerrados)
 6. [GeoHints](https://geohints.com/) es una página basada en ofrecer posibles ubicaciones en base a las diferentes pistas y objetos de un lugar en cuestión. Muy usada por expertos de GeoGuesser.
+7. [CacheSleuth](https://www.cachesleuth.com/) es una navaja suiza de herramientas como por ejemplo, realizar triangulaciones y calcular su punto medio, interseciones de circulos, intersección de líneas, etc.
 
 A la hora de visualizar mapas se pueden utiizar las siguientes herramientas.
 
@@ -262,7 +263,6 @@ area["name"="Var"]["admin_level"="6"]["boundary"="administrative"]->.searchArea;
 
 // Mostrar resultados
 .places_of_worship out center;
-
 ```
 
 ### Flag
