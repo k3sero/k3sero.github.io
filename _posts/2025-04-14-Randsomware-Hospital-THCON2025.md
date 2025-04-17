@@ -250,7 +250,7 @@ Las coordenadas del punto medio son `46° 04.647' E 002° 55.879'`, en el format
 
 ### PD
 
-Reto asquerosamente malo, es necesario tener un toulousain con C2 de Francés en el equipo para poder resolver este reto, además de OBVIAMENTE conocerte el himno del eqipo de Linnois.
+Reto asquerosamente malo, es necesario tener un toulousain con C2 de Francés en el equipo para poder resolver este reto, además de OBVIAMENTE conocerte el himno del equipo de Linnois.
 
 En fin, franceses...
 
