@@ -308,7 +308,6 @@ Si buscamos justo esa imágen en google, podemos obtener de manera sencilla su u
 ![Imagen_completa](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/laturbie.png?raw=true)
 
 Su ubicación corresponde a `La Turbie`
-Por tanto, ya tenemos el ejercicio resuleto
 
 ### Manera no Intended
 
