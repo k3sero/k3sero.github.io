@@ -318,10 +318,14 @@ Otra manera más compacta y un poco tricky sería en buscar la palabra `Pandarmo
 ### PD
 
 Nosotros no teníamos ni idea de que se podían etiquetar personas en las publicaciones con imágenes dentro de `blusky` por tanto...
-Además de no conocer el himno de Lyon
-Además de no tener un C2 en francés
-Además de no suponer cosas guessy
-Y además de no saber leer los enunciados y Títulos de los retos
+
+Además de no conocer el himno de Lyon.
+
+Además de no tener un C2 en francés.
+
+Además de no suponer cosas guessy.
+
+Y además de no saber leer los enunciados y títulos de los retos.
 
 Skill Issue...
 
