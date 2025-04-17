@@ -212,7 +212,11 @@ Have you thought about taking the center of this triangle ?
 
 Llegados a este punto es donde este reto se vuelve irresoluble (mucho más sin pistas) y es que una vez tenemos la página web de uno de sus cómplices, necesitamos un correo y contraseña para ingresar en su página web, o quizás no?
 
-Aquí fue donde Nacho hizo magia con un poco de web scrapping y sacó los recursos estáticos asociados a la página (no sé como lo hizo) y obtuvo un pdf llamado `GeoMeet` el cual habla sobre geolocalización de personas en tiempo real. Además, obtuvo los audios que se mencionan en el enunciado. (Desconozco si fue la intended)
+Según el dueño del reto, lo que teníamos que hacer es suponer que el correo del cómplice es igual que el nombre de usuario en blusky `zenMmth@gmail.com`. Además en contraseña si pulsábamos en reitaradas ocasiones, se nos desbloqueaba una pista diciendo que su contraseña era uno de sus hobbies ("casino").
+
+Nosotros en este caso nos quedamos muy perdidos, ya que no encontrábamos correos en ninguna parte y aunque suponíamos varios nombres de usuario en blusky como correos, no encontrabamos nada.
+
+Por ello aquí fue donde Nacho hizo magia con un poco de web scrapping y sacó los recursos estáticos asociados a la página (no sé como lo hizo) y obtuvo un pdf llamado `GeoMeet` el cual habla sobre geolocalización de personas en tiempo real. Además, obtuvo los audios que se mencionan en el enunciado.
 
 ```
 GeoMeet.pdf
@@ -255,7 +259,7 @@ A pesar de todo, unas herramientas muy potentes para futuros retos de audio son 
 1. Audiacity con reducción de ruido con filtro de paso alto.
 2. Para obtener la instrumental del himno de fondo se utilizan Ias como [Aesus](https://multimedia.easeus.com/vocal-remover/share/?share_source=copy_result&id=XsTbvU0Ng).
 
-## Is that guy really just walking? (Hard)
+## Is that guy really just walking? (Mid)
 
 ### Enunciado
 During your research on the hospital attacks, you might find other persons linked to the network. Can you find the username of the damaging malware’s developer as well as the city he is living in so the Special Forces can ask him some questions?
@@ -264,7 +268,58 @@ Flag Format : THC{@username_City-Hyphen-Separated} For instance Aragorn living i
 
 
 ### Solver
-Este es el último reto de todos, lo dejo a la espera de writeup oficial por que no se resolverlo
+Este es el último reto de todos, en este caso tenemos que encontrar a el responsable del malware que se ha ejecutado en el Hospital.
+
+En uno de los correos, concretamente en el fichero `logs.txt` se encuentra el historial de movimientos del sistema del hospital. En una de sus líneas podemos encontrar el nombre del malware en cuestión llamado `Pandarmor`.
+
+```
+(...)
+2025-02-28 19:36:22	10.100.0.10	WARNING	User accessed multiple systems quickly
+2025-02-28 23:57:11	76.76.21.93	WARNING	Suspected Activities
+2025-02-28 23:58:23	XX.XX.XX.XX	WARNING	Unknown Software usage : Pandarmor
+2025-02-28 19:50:34	10.100.0.32	INFO	Access badge used
+2025-02-28 22:22:22	10.100.0.38	INFO	Database query
+2025-02-28 23:07:24	10.100.0.25	INFO	Failed login attempt
+(...)
+```
+
+En este punto tenemos dos vías para realizar el siguiente paso. Según el creador del reto, en el propio perfil de blusky de `Zephi`, podemos encontrar una relación directa entre `Zephi` y el creador del malware.
+
+Si vamos mirando los posts de `Zephi` en blusky además de ir mirando a las personas etiquetadas en cada imágen podemos ver que el siguiente post, se menciona a un tal "@thenetworkwalker"
+
+![post_quedad](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/post_etiqueta.png?raw=true)
+
+![Etiqueta_post](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/post_etiqueta_mensaje.png?raw=true)
+
+Si nos adentramos en su perfil, podemos observar que dicha persona se dedica al desarrollo de software y que es fan de Taylor Swift (Hobby que hace que tengamos en relación a todos los complices)
+
+![perfil_network](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/perfil.png?raw=true)
+
+Si miramos su perfil, nos daremos cuenta que menciona que ha desarrollado un randsomware llamado `Pandarmor`, con que todo a punta a que él ha sido el dueño del malware.
+
+![post_pandarmore](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/post.png?raw=true)
+
+Ahora solo nos queda averigurar dónde reside. Justamente hay post en el que menciona un lugar dentro de su ciudad local. El post es el siguiente.
+
+![post_imagen](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/post%20laturbie.png?raw=true)
+
+Si buscamos justo esa imágen en google, podemos obtener de manera sencilla su ubiación.
+
+![Imagen_completa](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/laturbie.png?raw=true)
+
+Su ubicación corresponde a `La Turbie`
+Por tanto, ya tenemos el ejercicio resuleto
+
+### Manera no Intended
+
+Otra manera más compacta y un poco tricky sería en buscar la palabra `Pandarmor` tanto en reddit como en blusky. Si lo hacemos en blusky, accederemos rápidamente al perfil del desarrollador.
+
+![post_pandarmore](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/post.png?raw=true)
+
+### PD
+
+Nosotros no teníamos ni idea de que se podían etiquetar personas en las publicaciones con imágenes dentro de `blusky` por tanto... Skill Issue.
 
 ### Flag
-`THC{}`
+`THC{@thenetworkwalker_La-Turbie}`
+
