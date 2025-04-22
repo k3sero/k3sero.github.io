@@ -2,7 +2,7 @@
 title: Multiplayer - UmassCTF2025
 author: Kesero
 description: Reto basado en encontrar un punto medio en base a 2 coordenadas.
-date: 2025-04-14 12:30:00 +0000
+date: 2025-04-22 20:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Osint]
 tags: [Fácil, Writeups]
 pin: false
@@ -27,7 +27,7 @@ Flag format: UMASS{Address as on Google Maps}, e.g. UMASS{650 N Pleasant St, Amh
 
 ## Archivos
 
-Este reto nos da el siguiente archivo.
+Este reto nos dan  los siguiente archivos.
 
 - `Multiplayer 1` : Contiene la 1º localización
 - `Multiplayer 2` : Contiene la 2º localización
@@ -47,7 +47,7 @@ La ubicación tiene ordenadores públicos y se encuentra en el punto medio
 El nombre del lugar comparte el nombre de la calle donde viven.
 ```
 
-## Solver.py
+## Solver
 
 Primero que todo, tenemos que encontrar los lugares pertenecientes a ambas imágenes. Para ello utilizaremos las herramientas mencionadas [aquí](https://k3sero.github.io/posts/Gunnar-Vacations-THCON2025/) para encontrar realizar Geolocalizar los lugares.
 
