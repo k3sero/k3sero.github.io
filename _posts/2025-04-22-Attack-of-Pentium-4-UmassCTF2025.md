@@ -33,7 +33,7 @@ Este reto nos da el siguiente archivo.
 
 Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204).
 
-![image.jpeg]
+![image.jpeg](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/image.jpeg?raw=true)
 
 ## Analizando el reto
 
