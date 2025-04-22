@@ -65,7 +65,7 @@ Si ponemos los puntos en un mapa, veremos lo siguiente.
 
 Como en el enunciado del reto nos dicen que la ubiación se encuentra en el punto medio de ambos, sabemos que la ubiación que nos piden debe de estar en `Baltimore`. Además si miramos sus direcciones, llegamos a la conclusión de que sus calles se llaman igual "Pennsylvania Ave Street" por lo que sabemos que el lugar va a contener la palabra `Pennsylvania`
 
-Buscando por Baltimore, finalmente encontramos la ubiación, [""]()
+Buscando por Baltimore, finalmente encontramos la ubicación.
 
 ![ubi_final](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Multiplayer/img/ubi_final.png?raw=true)
 
