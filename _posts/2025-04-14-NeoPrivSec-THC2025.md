@@ -15,6 +15,10 @@ image:
 comments: true
 ---
 
+Autor del reto: `nin70`
+
+Dificultad: <font color=orange>Easy</font>
+
 ## Enunciado
 
 We saw that Gideon Morse is a keen artist and that he loves beautiful things... perhaps a bit too much. Looks like he's been into ricing his NixOS/LibreBoot/Hyprland/Astrovim/Neofetch/Btop a lot lately and we think this may help us.
@@ -23,6 +27,19 @@ We have access to a user session on his laptop but all important files are only 
 
 The -very secure- connexion info we gathered were bud:bud
 
+## Archivos
+
+Este reto nos da los siguientes archivos.
+
+- `server.py` : Contiene el código que se ejecuta en el servidor.
+- `nc` : Instancia con netcat para acceder al reto.
+
+Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/WarGamesCTF2024/Hohoho3_Continue).
+
+
+## Analizando el reto
+
+Para conectarnos con dicha instancia, tenemos que hacerlo mediante `ssh`, una vez dentro tendremos una bash con el usuario `bud:bud`
 
 ## Solver
 
