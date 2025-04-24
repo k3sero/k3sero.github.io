@@ -415,7 +415,7 @@ Si le lanzamos un `xxd` a dicho binario encontramos lo siguiente.
 
 Como podemos observar, los magic bytes son CWS, este tipo de archivo corresponde a un archivo `flash.swf`.
 
-Ahora solo tenemos que decompilarlo, para ello hay herramientas como [jpexs-decompiler](http://github.com/jindrapetrik/jpexs-decompiler) que realizan decompilados en formato `.swf`.
+Ahora solo tenemos que decompilarlo, para ello hay herramientas como [jpexs-decompiler](https://github.com/jindrapetrik/jpexs-decompiler) que realizan decompilados en formato `.swf`.
 
 Introducimos el binario y podemos leer la flag en texto claro.
 
