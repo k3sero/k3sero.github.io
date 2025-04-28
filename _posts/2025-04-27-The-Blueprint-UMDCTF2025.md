@@ -54,7 +54,7 @@ Para resolver este reto podemos realizarlo de dos maneras, con un script en `Ove
 
 El siguiente script busca por calles cortadas alrededor de todo Ohio.
 
-```json
+```py
 [out:json][timeout:90];
 
 // Área de búsqueda: Ohio
