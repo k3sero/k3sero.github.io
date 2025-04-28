@@ -99,7 +99,7 @@ Para ello, primero tenemos que compreder cómo se sobreescribe en la pila.
 
 El binario `gambling` está compilado en 32 bits, por tanto la pila local se organiza aproximadamente de la siguiente manera.
 
-```css
+```c
 [ f[0] ]  bytes 0x00–0x03
 [ f[1] ]         0x04–0x07
 [ f[2] ]         0x08–0x0B
@@ -225,7 +225,7 @@ Una vez tenemos la `shell` interactiva, leemos la flag.
 
 ## P.D
 
-Agradecido por el manqueo de Víctor de último momento para carrilear Pwn.
+Agradecido por el manqueo de Víctor eb ek último momento para carrilear Pwn.
 
 ![skill_issue](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/pwn/img/skill_issue.png?raw=true)
 
