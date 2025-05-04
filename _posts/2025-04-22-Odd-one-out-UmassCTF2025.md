@@ -41,7 +41,7 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Com
 
 En la imágen obtenida, podemos encontrar un panel con 64 códigos qr (8 x 8)
 
-![odd_one](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Misc/Odd%20one%20out/OddOneOut.png?raw=true)
+![odd_one](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Misc/Odd%20one%20out/OddOneOut.png)
 
 ## Solver
 
