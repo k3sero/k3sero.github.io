@@ -9,7 +9,7 @@ pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/prompt.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/prompt.png
   lqip: 
   alt: 
 comments: true
@@ -32,7 +32,7 @@ Este reto nos da el siguiente archivo.
 
 Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img).
 
-![blueprint](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/the-blueprint.jpg?raw=true)
+![blueprint](https://raw.githubusercontent.com/k3sero/Blog_Content/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/the-blueprint.jpg)
 
 ## Analizando el reto
 
@@ -40,9 +40,9 @@ En la imagen proporcionada podemos distinguir que se trata de una zona residenci
 
 Los elementos de la imagen que más llaman la atención es la siguiente.
 
-![valla](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/signal.png?raw=true)
+![valla](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/signal.png)
 
-![casa](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/casa.png?raw=true)
+![casa](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/casa.png)
 
 Además como esta imagen se corresponde a una imagen tomada en Google Maps y además nos dan la imagen panorámica, con visualizadores como [Renderstuff](https://renderstuff.com/tools/360-panorama-web-viewer/) podemos visualizarla de forma completa. De este modo entenderemos al 100% la morfología urbana del lugar.
 
@@ -75,31 +75,31 @@ out skel qt;
 
 Después de ejecutar el script, nos aparecerán unas 6290 ocurrencias. El problema es que de este método tendremos que ir filtrado por las que a simple vista no sean coincidentes con el lugar, pero poco a poco tenemos la certeza de que nuestro punto en el mapa se corresponde a uno de ellos.
 
-![ubi_overpass](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/overpass_turbo_photo.png?raw=true)
+![ubi_overpass](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/overpass_turbo_photo.png)
 
 Para ir descartando nodos, podemos exportar el resultado en formato geojson e importarlo con la herramienta web [Geojson.io](https://geojson.io/#map=2/0/20)
 
 Después de una larga búsqueda, encontramos el nodo que coincide a la perfección.
 
-![ubi_overpass_final](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/overpass%20ubi%20final.png?raw=true)
+![ubi_overpass_final](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/overpass%20ubi%20final.png)
 
 ### De manera manual
 
 Si buscamos de manera manual, podemos ir probando con Chatgpt y por búsquedas de Google Lens, pero no encontrábamos nada certero solo suposiciones. A una desesperada, si buscabamos justo por la colina del lugar, encontramos la solución.
 
-![img_a_buscar](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/Busq_final.png?raw=true)
+![img_a_buscar](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/Busq_final.png)
 
 Buscando la anterior imagen en Google Lens, encontramos lo siguiente
 
-![busqueda](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/busqueda.png?raw=true)
+![busqueda](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/busqueda.png)
 
 Dicha colina pertenece a un monumento llamado `Alligator Mound` el cual es un lugar de interés histórico ya que parece que la colina contiene un lagarto enorme en cima.
 
-![articulo_colina](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/post.png?raw=true)
+![articulo_colina](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/post.png)
 
 Por tanto, ya tenemos la ubicación final. 417 Bryn Du Dr, Granville, OH 43023
 
-![google_maps_final](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/loc_final.png?raw=true)
+![google_maps_final](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/loc_final.png)
 
 ## Flag
 `UMDCTF{417 Bryn Du Dr, Granville, OH 43023}`

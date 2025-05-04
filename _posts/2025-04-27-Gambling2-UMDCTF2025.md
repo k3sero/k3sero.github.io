@@ -9,7 +9,7 @@ pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/pwn/img/prompt.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/pwn/img/prompt.png
   lqip: 
   alt: 
 comments: true
@@ -227,7 +227,7 @@ Una vez tenemos la `shell` interactiva, leemos la flag.
 
 Agradecido por el manqueo de Víctor eb ek último momento para carrilear Pwn.
 
-![skill_issue](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/pwn/img/skill_issue.png?raw=true)
+![skill_issue](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/pwn/img/skill_issue.png)
 
 ## Flag
 `UMDCTF{99_percent_of_pwners_quit_before_they_get_a_shell_congrats_on_being_the_1_percent}`

@@ -9,7 +9,7 @@ pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Misc/the-mini/img/the-mini.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Misc/the-mini/img/the-mini.png
   lqip: 
   alt: 
 comments: true
@@ -41,7 +41,7 @@ En el enunciado se menciona el autor de varios juegos de puzzles llamado `Joel F
 
 Para abrir archivos en formato `.puz` utilizaremos la herramienta online [communicrossings.com](https://communicrossings.com/files/crossword/puz/derekslager/puz.html) la cual nos permitirá realizar el crucigrama de manera interactiva.
 
-![img_crucigrama](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Misc/the-mini/img/img_crucigrama.png?raw=true)
+![img_crucigrama](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Misc/the-mini/img/img_crucigrama.png)
 
 Al resolverlo finalmente, podremos llegar a la conclusión de que no hay una flag o una cadena legible, es por ello que Daysa en este momento, perdió la mitad de sus increibles neuronas (haciendo retos de Misc y no de Crypto).
 
