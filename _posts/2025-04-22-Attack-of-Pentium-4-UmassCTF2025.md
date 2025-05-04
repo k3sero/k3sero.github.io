@@ -4,12 +4,12 @@ author: Kesero
 description: Reto basado en encontrar a una persona en base a una información
 date: 2025-04-22 20:01:00 +0000
 categories: [Writeups Competiciones Internacionales, Osint]
-tags: [Medio, Writeups]
+tags: [Medio, Osint - Research]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/2.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/2.png
   lqip: 
   alt: 
 comments: true
@@ -33,7 +33,7 @@ Este reto nos da el siguiente archivo.
 
 Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204).
 
-![image.jpeg](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/image.jpeg?raw=true)
+![image.jpeg](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/image.jpeg)
 
 ## Analizando el reto
 
@@ -50,22 +50,22 @@ Buscamos a alguien que una vez compró de esa tienda un ordenador
 
 Para comenzar con este reto tenemos que ir por partes. Primero vamos a encontar la ubiación exacta de la imágen. La imágen muestra un lugar en Tokio, en esta ubicación.
 
-![ubi](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/ubicacion.png?raw=true)
+![ubi](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/ubicacion.png)
 
 Si miramos justo en el edificio donde enfocan, podemos observar que dentro de ese departamento, se encuentra una tienda de ordenadores genérica. Dicha tienda alberga unas 4 tiendas distintas llamadas `acharge`, `hercules`, `vspec` y `zeus`.
 
-![pag](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/pagina.png?raw=true)
+![pag](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/pagina.png)
 
-![achar](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/acharge.png?raw=true)
-![hercules](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/hercules.png?raw=true)
-![zeus](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/zeus.png?raw=true)
-![vspec](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/vspec.png?raw=true)
+![achar](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/acharge.png)
+![hercules](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/hercules.png)
+![zeus](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/zeus.png)
+![vspec](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/vspec.png)
 
 Llegados a este punto tenemos que mirar en las reseñas de cada página, una opinión experta que relacione los conceptos que se hablan en el enunciado. Después de muchas búsquedas y reseñas, podemos decir que la opinión experta es la [siguiente](https://pc-zeus.com/example_13.html).
 
-![reseña](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/rese%C3%B1a.png?raw=true)
+![reseña](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/rese%C3%B1a.png)
 
-![japones](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/japones.jpg?raw=true)
+![japones](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/japones.jpg)
 
 Sabemos que es la que se menciona por que en la propia reseña incluye una mini entrevista, la cual detalla su trabajo.
 

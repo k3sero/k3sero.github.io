@@ -4,12 +4,12 @@ author: Kesero
 description: Reto basado en explotar una vulnerabilidad basada en ciclos dentro de un RISC.
 date: 2025-04-24 12:30:00 +0000
 categories: [Writeups Competiciones Internacionales, Hardware]
-tags: [Difícil, Writeups]
+tags: [Difícil, Hardware - RISC]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/FCSign/img/4.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/FCSign/img/4.png
   lqip: 
   alt: 
 comments: true
@@ -428,7 +428,7 @@ if extract_files and found_headers:
 ```
 Por último en la imágen se encuentra la flag.
 
-![ima](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/FCSign/img/png.png?raw=true)
+![ima](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/FCSign/img/png.png)
 
 ## Flag
 `UMASS{un(_b3_w1l1n_w1th_s1d3ch4nn3l1n_XT60WWSC}`

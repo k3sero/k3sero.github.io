@@ -4,12 +4,12 @@ author: Kesero
 description: Reto basado en recuperar una señal infraroja a partir de un archivo de señales
 date: 2025-04-24 12:30:00 +0000
 categories: [Writeups Competiciones Internacionales, Hardware]
-tags: [Difícil, Writeups]
+tags: [Difícil, Hardware - Infrarojos]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/RF%20Fan/img/6.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/RF%20Fan/img/6.png
   lqip: 
   alt: 
 comments: true
@@ -59,16 +59,16 @@ El procedimiento que el siguió fue muy simple:
 
 2. Con el `signal.wav` creado, utilizó audiacity para visualizar las señales y efectivamente se podían notar claramente los 7 mensajes captados.
 
-![onda_completa](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/RF%20Fan/img/onda_completa.png?raw=true)
+![onda_completa](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/RF%20Fan/img/onda_completa.png)
 
 Si ampliamos cada mensaje, podemos obtener los mensajes individuales y su representación en el espectograma.
 
-![onda_mensaje](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/RF%20Fan/img/unico_mensaje.png?raw=true)
+![onda_mensaje](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/RF%20Fan/img/unico_mensaje.png)
 
 3. Una vez que tenemos la representación, podemos intuir que los picos altos equivalen al bit 1 y la ausencia de picos al bit 0. De esta manera reconstruimos la secuencia infraroja de cada mensaje.
 Realizando este procedimiento en los 7 mensajes, obtenemos las siguientes cadenas.
 
-![cadenas](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/RF%20Fan/img/Sin%20t%C3%ADtulo.png?raw=true)
+![cadenas](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/RF%20Fan/img/Sin%20t%C3%ADtulo.png)
 
 ```
 01010001001111111011100000110010

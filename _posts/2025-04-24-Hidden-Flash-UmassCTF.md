@@ -4,12 +4,12 @@ author: Kesero
 description: Reto basado en leer una EPROM para obtener un juego flash y desvelar el secreto.
 date: 2025-04-24 12:30:00 +0000
 categories: [Writeups Competiciones Internacionales, Hardware]
-tags: [Fácil, Writeups]
+tags: [Fácil, Hardware - EPROM]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/Hidden%20in%20Flash/img/5.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/Hidden%20in%20Flash/img/5.png
   lqip: 
   alt: 
 comments: true
@@ -419,7 +419,7 @@ Ahora solo tenemos que decompilarlo, para ello hay herramientas como [jpexs-deco
 
 Introducimos el binario y podemos leer la flag en texto claro.
 
-![decompiled](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/Hidden%20in%20Flash/decompiled.png?raw=true)
+![decompiled](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/Hidden%20in%20Flash/decompiled.png)
 
 ## Flag
 `UMASS{asT3r0iDs!1}`
