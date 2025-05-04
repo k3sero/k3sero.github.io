@@ -79,7 +79,7 @@ Este reto nos da el siguiente archivo.
 
 - `Insert coin to play - Part 2.rar` : Carpeta con los archivos necesarios para ejecutar el juego.
 
-Archivos utilizados [aquí]().
+Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/prompt.png?raw=true).
 
 ### Analizando el reto
 
