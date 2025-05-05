@@ -4,12 +4,12 @@ author: Kesero
 description: Compilación de retos asociados a la búsqueda de posición en base a imágenes en Google Maps
 date: 2025-04-14 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Osint]
-tags: [Osint, Herramientas]
+tags: [Osint, Osint - Geo, Herramientas, Writeups, Dificultad - Difícil]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Gunnar%20Vacations/prompt.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Gunnar%20Vacations/prompt.png
   lqip: 
   alt: 
 comments: true
@@ -49,7 +49,7 @@ Básicamente el lore de estos ejercicios se trata en seguir la pista de un ciber
 
 ## Picture 1 (Easy)
 
-![1](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Gunnar%20Vacations/1.jpg?raw=true)
+![1](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Gunnar%20Vacations/1.jpg)
 
 Básicamente si buscamos el nombre del hotel en Google, obtendremos las ubicaciones del hotel y echando un vistazo sobre ellas, al final encontramos la posición exacta.
 
@@ -59,7 +59,7 @@ Básicamente si buscamos el nombre del hotel en Google, obtendremos las ubicacio
 
 ## Picture 2 (Easy)
 
-![2](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Gunnar%20Vacations/2a.jpg?raw=true)
+![2](https://raw.githubusercontent.com/k3sero/Blog_Content/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Gunnar%20Vacations/2a.jpg)
 
 En este caso tenemos una imagen de una costa sin letreros y sin nada que podamos encontrar rápido. En este caso realizamos una búsqueda global de la imágen en google, para ello primero tenemos que obtenr toda la imagen de 360º y para ello, le daremos a `inspeccionar` a la página web y posteriormente estraemos el recurso estático de la imagen.
 
@@ -70,7 +70,7 @@ Una vez obtenida y buscada en google, obtenedremos imágenes muy parecidas en go
 
 ## Picture 3 (Medium)
 
-![3](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Gunnar%20Vacations/3.jpg?raw=true)
+![3](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Gunnar%20Vacations/3.jpg)
 
 En este caso la dificultad sube ya que tenemos la fotografía de un lugar pero no obtenemos información muy relevante sobre ella. Lo primero en hacer en este caso es obtener nuevamente la imagen estática de la página web y en este caso usar ChatGPT para que nos arroje un análisis más profundo del lugar.
 
@@ -81,7 +81,7 @@ En este caso ChatGPT nos dice que imagen se ha tomado en un lugar cerca de Toulo
 
 ## Picture 4 (Medium)
 
-![4](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Gunnar%20Vacations/4.jpg?raw=true)
+![4](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Gunnar%20Vacations/4.jpg)
 
 Este reto parece abrumador debido a que nos encontramos justo en una calle de algún lugar y puede parecer que es imposible resolverlo, pero justo en estos casos es donde más referencias de objetos, tiendas y referencias podemos obtener. En este caso obtenemos la imágen y le preguntamos a chatgpt en que ciudades puede haberse tomado dicha imagen y una vez tenemos algunas de referencia, buscamos tiendas `Nexity` en Google Maps. Una vez tenemos un repertorio de ellas, vamos descartando las que no coinciden con la imagen.
 Finalmente la encontramos en Marseille - Bd Chave
@@ -91,7 +91,7 @@ Finalmente la encontramos en Marseille - Bd Chave
 
 ## Picture 5 (Medium)
 
-![5](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Gunnar%20Vacations/5.jpg?raw=true)
+![5](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Gunnar%20Vacations/5.jpg)
 
 Con este reto la dificultad aumenta y es debido a que no tenemos referencias exactas mas allá de un letrero borroso a la izquierda y la señal clara de una tienda `SPAR` con parking, además de contar con la carretera a pie de playa. ChatGPT nos comenta posibles ubicaciones y nos asesora diciendo que el lugar se encuentra en algún punto de Córcega, por lo que nuestra búsqueda de tiendas `Spar` la comenzamos en dicha isla y después de un sin fin de búsquedas, conseguimos encontar el lugar. Córcega - Playa de Abartello.
 
@@ -154,7 +154,7 @@ out center;
 
 ## Picture 6 (Hard)
 
-![6](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Gunnar%20Vacations/6.jpg?raw=true)
+![6](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Gunnar%20Vacations/6.jpg)
 
 En este caso, solo tenemos una imágen de una carretera y un letrero en ella, el cual se puede observar que pertenece a las distancias próximas de 3 ciudades.
 
@@ -182,7 +182,7 @@ Hey there,
 I just arrived at the Var hideout and secured the location. Come quickly and try to be stealthy I don't want to get caught because of you ! There is no one here so we'll wait until things settle down. The chapel looks as weird as I remembered, look at this picture of the steeple.
 Ryker "Riot" Morales"
 
-![final](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Gunnar%20Vacations/final.jpeg?raw=true)
+![final](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Gunnar%20Vacations/final.jpeg)
 
 Este reto es el último del lore y se basa en encontrar el escondite final del ciberdelincuente. Para ello solo tenemos una imágen en la que se ve montañas redondas y verdes a lo lejos junto al mar en el horizonte y en primer plano encontramos una especie de dolmen de granito con una cruz en lo alto.
 

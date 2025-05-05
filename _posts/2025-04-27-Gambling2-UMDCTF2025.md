@@ -4,7 +4,7 @@ author: Kesero
 description: Reto pwn basado en explotar la vulnerabilidad Out of Band en un binario (OOB)
 date: 2025-04-27 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Pwn]
-tags: [Pwn, Fácil]
+tags: [Pwn, Pwn - OOB, Writeups, Dificultad - Fácil]
 pin: false
 math: true
 mermaid: true

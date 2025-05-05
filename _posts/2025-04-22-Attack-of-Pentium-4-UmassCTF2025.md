@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en encontrar a una persona en base a una información
 date: 2025-04-22 20:01:00 +0000
 categories: [Writeups Competiciones Internacionales, Osint]
-tags: [Medio, Osint - Research]
+tags: [ Dificultad - Media, Osint, Osint - Research, Writeups]
 pin: false
 math: true
 mermaid: true

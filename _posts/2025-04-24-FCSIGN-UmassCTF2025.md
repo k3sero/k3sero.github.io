@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en explotar una vulnerabilidad basada en ciclos dentro de un RISC.
 date: 2025-04-24 12:30:00 +0000
 categories: [Writeups Competiciones Internacionales, Hardware]
-tags: [Difícil, Hardware - RISC]
+tags: [Dificultad - Difícil, Hardware,  Hardware - RISC]
 pin: false
 math: true
 mermaid: true

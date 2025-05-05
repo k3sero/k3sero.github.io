@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en escapar de una pyjail para leer la flag.
 date: 2025-04-27 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Miscelánea, pyjail]
+tags: [Misc, Misc - Pyjail, Writeups, Dificultad - Media]
 pin: false
 math: true
 mermaid: true
@@ -17,7 +17,7 @@ comments: true
 
 Autor del reto: `aparker`
 
-Dificultad: <font color=orange>Medio</font>
+Dificultad: <font color=orange>Media</font>
 
 ## Enunciado
 

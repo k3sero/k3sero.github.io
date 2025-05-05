@@ -4,12 +4,12 @@ author: Kesero
 description: Reto OSINT basado en búsqueda de una charla del Aula de Ciberseguridad y Redes.
 date: 2025-04-06 15:00:00 +0000
 categories: [Writeups Competiciones Nacionales, Osint]
-tags: [Búsqueda, Writeups, Fácil]
+tags: [Osint, Osint - Reserach, Writeups, Dificultad - Fácil]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/6.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/6.png
   lqip: 
   alt: 
 comments: true
@@ -37,35 +37,35 @@ Este ejercicio es un mero calentamiento de la categoría Osint.
 Simplemente con realizar una búsqueda en Google con "Aula de Ciberseguridad y Redes", tendremos acceso a la página oficial de la que se hace referencia.
 
 
-![1](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/1.png?raw=true)
+![1](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/1.png)
 
 Dentro de la página podemos ver varios recursos, lo más destado es que se encuentran todas las charlas listadas como artículos en el panel principal.
 
-![2](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/2.png?raw=true)
+![2](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/2.png)
 
 
 Si seguimos scrolleando podemos observar que podemos presionar el botón "Artículos antiguos".
 
-![3](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/3.png?raw=true)
+![3](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/3.png)
 
 
 Listando todas las charlas presentes, llegaremos a la que hace referencia el ejercicio "Hackeando Nuestra primera máquina".
 
-![4](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/4.png?raw=true)
+![4](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/4.png)
 
 Clickeando en dicha charla tendremos una descripción a la misma y se listará el nombre de la máquina a la que se hace mención en el enunciado.
 
 
-![5](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/5.png?raw=true)
+![5](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/5.png)
 
-![6](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/6_a.png?raw=true)
+![6](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/6_a.png)
 
 
 ### Opcional
 
 Otro método más sencillo es desplegar el menú "Cursos" y se nos abrirá un menú con las charlas organizadas por años.
 
-![optional](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/optional.png?raw=true)
+![optional](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/optional.png)
 
 
 # Flags Válidas

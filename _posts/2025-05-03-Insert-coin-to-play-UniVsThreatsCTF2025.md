@@ -4,12 +4,12 @@ author: Kesero
 description: Reto basado en hackear videojuegos para cambiar registros a nuestra voluntad
 date: 2025-05-03 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, GamePwn]
-tags: [GamePwn]
+tags: [GamePwn, Writeups, Dificultad - Fácil]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/prompt.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/prompt.png
   lqip: 
   alt: 
 comments: true
@@ -41,7 +41,7 @@ Archivos utilizados [aquí](https://drive.google.com/drive/folders/1zl7a9cuc_UhS
 
 Una vez tengamos la carpeta descomprimida, tendremos que ejecutar el binario `GTA5.exe`.
 
-![ejecu](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/Insert%20coin%20to%20play%20-%20Part%201/img/ejecu.png?raw=true)
+![ejecu](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/Insert%20coin%20to%20play%20-%20Part%201/img/ejecu.png)
 
 Nuestra misión será conseguir las 10 monedas para que el juego nos arroje la flag, pero es sencillo no?
 
@@ -57,11 +57,11 @@ Para ello, como el contador empieza por 0 monedas, buscaremos registros cuyas di
 
 Lo siguiente será cambiar el valor de los registros mencionados por 10 y acto seguido para actualizar el contador, cogeremos una de las monedas que quedan en el escenario
 
-![Cheat_Engine](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/Insert%20coin%20to%20play%20-%20Part%201/img/cheat.png?raw=true)
+![Cheat_Engine](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/Insert%20coin%20to%20play%20-%20Part%201/img/cheat.png)
 
 Al hacerlo, nos saldrá la flag por pantalla.
 
-![flag_1](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/Insert%20coin%20to%20play%20-%20Part%201/img/flag.png?raw=true)
+![flag_1](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/Insert%20coin%20to%20play%20-%20Part%201/img/flag.png)
 
 ### Flag
 `UVT{L00ks_l1K3_Th3r3_w3R3_M0r3_c01N5}`
@@ -85,7 +85,7 @@ Archivos utilizados [aquí](https://drive.google.com/drive/folders/1zl7a9cuc_UhS
 
 Una vez tengamos la carpeta descomprimida, tendremos que ejecutar el binario `GTA6.exe`.
 
-![ejecu](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/Insert%20coin%20to%20play%20-%20Part%201/img/ejecu.png?raw=true)
+![ejecu](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/Insert%20coin%20to%20play%20-%20Part%201/img/ejecu.png)
 
 Nuestra misión será conseguir las 10 monedas para que el juego nos arroje la flag, pero es sencillo no?
 
@@ -93,17 +93,17 @@ Nuestra misión será conseguir las 10 monedas para que el juego nos arroje la f
 
 En este caso, en el escenario se encuentran las 10 monedas que necesitamos para que nos arroje la flag, pero justo cuando intentamos obtener la décima, esta moneda será como un imán con el personaje y nunca la podremos obtener, ya que la repeleremos. Al obtener la penúltima moneda obtendremos el siguiente mensaje.
 
-![err_msg](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/Insert%20coin%20to%20play%20-%20Part%202/img/err_msg.png?raw=true)
+![err_msg](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/Insert%20coin%20to%20play%20-%20Part%202/img/err_msg.png)
 
 En este caso, utilizaremos nuevamente `CheatEngine` para resolver este reto, pero en vez de filtrar por direcciones de memoria para introducir valores a nuestra voluntad, utilizaremos la herramienta de hipervelocidad, para engañar al juego en el último momento y obtener la décima moneda forzando al juego a que no ejecute la función que repele la última moneda.
 
 Para ello como tenemos 2 monedas en el suelo, tendremos que coger todas las demás para que en el último momento, activemos el cheat de la hipervelocidad y acto seguido recoger las dos últimas monedas del tirón.
 
-![cheat_engine_hipervelocidad](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/Insert%20coin%20to%20play%20-%20Part%202/img/paint2.png?raw=true)
+![cheat_engine_hipervelocidad](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/Insert%20coin%20to%20play%20-%20Part%202/img/paint2.png)
 
 Al hacerlo, obtendremos la flag por pantalla.
 
-![flag2](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/Insert%20coin%20to%20play%20-%20Part%202/img/flag2.png?raw=true)
+![flag2](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/Insert%20coin%20to%20play%20-%20Part%202/img/flag2.png)
 
 ### Flag
 

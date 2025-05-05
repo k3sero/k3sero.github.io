@@ -4,12 +4,12 @@ author: Kesero
 description: Reto OSINT basado en búsqueda de información en la página de HackademicsForum.
 date: 2025-04-06 15:00:00 +0000
 categories: [Writeups Competiciones Nacionales, Osint]
-tags: [Búsqueda, Writeups, Fácil]
+tags: [Osint - Reserach, Osint, Writeups, Dificultad - Fácil]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Nuevas_Raices/img/5.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Nuevas_Raices/img/5.png
   lqip: 
   alt: 
 comments: true
@@ -31,27 +31,27 @@ Tal vez solo sea un lunático vociferando o quizás sus palabras tengan algún s
 
 Para comenzar con el reto, tendremos que visitar la página de [Hackademics Forum](https://hackademics-forum.com/) y una vez dentro, tendremos que jugar a ser Sherlock Holmes.
 
-![1](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Nuevas_Raices/img/1.png?raw=true)
+![1](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Nuevas_Raices/img/1.png)
 
 Una vez dentro, para obtener la flag deberemos de irnos a la sección `Quiénes somos`.
 
-![2](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Nuevas_Raices/img/2.png?raw=true)
+![2](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Nuevas_Raices/img/2.png)
 
 Posteriormente nos iremos al subapartado `Aprender haciendo`, donde se encuentran imágenes de charlas anteriores.
 
-![3](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Nuevas_Raices/img/3.png?raw=true)
+![3](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Nuevas_Raices/img/3.png)
 
 Por último, si analizamos las imágenes de dichas charlas, podemos encontrar que varias de ellas se encuentran modificadas. En una de ellas se visualiza un código QR.
 
 
-![4](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Nuevas_Raices/img/4.png?raw=true)
+![4](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Nuevas_Raices/img/4.png)
 
 
-![5](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Nuevas_Raices/img/5_a.jpg?raw=true)
+![5](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Nuevas_Raices/img/5_a.jpg)
 
 Escaneando dicho codigo QR, obtenemos la flag.
 
-![6](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Nuevas_Raices/img/6.png?raw=true)
+![6](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Nuevas_Raices/img/6.png)
 
 
 ## Flag

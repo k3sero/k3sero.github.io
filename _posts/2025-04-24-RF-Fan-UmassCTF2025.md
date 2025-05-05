@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en recuperar una señal infraroja a partir de un archivo de señales
 date: 2025-04-24 12:30:00 +0000
 categories: [Writeups Competiciones Internacionales, Hardware]
-tags: [Difícil, Hardware - Infrarojos]
+tags: [Dificultad - Difícil, Hardware,  Hardware - Infrarojo, Writeups]
 pin: false
 math: true
 mermaid: true

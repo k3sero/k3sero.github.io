@@ -4,12 +4,12 @@ author: Kesero
 description: Reto hardware basado decodificar los estímulos de un esquemático.
 date: 2025-04-06 15:00:00 +0000
 categories: [Writeups Competiciones Nacionales, Hardware]
-tags: [Esquemático, Writeups, Media]
+tags: [Hardware, Hardware - Esquemático, Writeups, Dificultad - Media]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Hardware/Laberinto_Logico/img/4.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Hardware/Laberinto_Logico/img/4.png
   lqip: 
   alt: 
 comments: true
@@ -37,7 +37,7 @@ En el reto, nos dan los siguientes archivos.
 
 Si abrimos el archivo `logic.png` podemos ver que se trata de un diagrama esquemático realizado con transistores BJT, que a su vez cuenta con las entradas A, B, C y D y la salida output.
 
-![esquematico](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Hardware/Laberinto_Logico/img/esquematico.png?raw=true)
+![esquematico](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Hardware/Laberinto_Logico/img/esquematico.png)
 
 Además en el archivo `inputs.csv` nos dan los valores en binario de cada entrada.
 
@@ -52,7 +52,7 @@ Si tratamos de agrupar el funcionamiento de dichos transistores, podemos obtener
 
 Si simplificamos el esquemático original, obtenemos el siguiente circuito lógico.
 
-![circuito lógico](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Hardware/Laberinto_Logico/img/circuito_logico.png?raw=true)
+![circuito lógico](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Hardware/Laberinto_Logico/img/circuito_logico.png)
 
 Una vez sabemos el funcionamiento del circuito, simplemente tenemos que calcular el `output` en base a los estímulos de las entradas que se han generado en el archivo `inputs.csv`
 

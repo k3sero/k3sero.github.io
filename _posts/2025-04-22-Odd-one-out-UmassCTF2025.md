@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en recuperar los mensajes embebidos en lsb al principio, medio y final de una imágen
 date: 2025-04-14 12:30:00 +0000
 categories: [Writeups Competiciones Internacionales, Esteganografía]
-tags: [Fácil, Estego - LSB]
+tags: [Dificultad - Fácil, Estego,  Estego - LSB, Writeups]
 pin: false
 math: true
 mermaid: true

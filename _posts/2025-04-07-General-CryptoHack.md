@@ -9,7 +9,7 @@ pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/CryptoHack/img/1.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/CryptoHack/img/1.png
   lqip: 
   alt: 
 comments: true

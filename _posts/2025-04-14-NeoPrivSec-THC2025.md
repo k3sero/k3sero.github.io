@@ -4,12 +4,12 @@ author: Kesero
 description: Reto basado en la obtención de privilegios para leer un fichero flag.txt
 date: 2025-04-14 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Misc]
+tags: [Misc, Misc - Rbash, Writeups, Dificultad - Fácil]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/misc/neoprivsec/prompt.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/misc/neoprivsec/prompt.png
   lqip: 
   alt: 
 comments: true
@@ -17,7 +17,7 @@ comments: true
 
 Autor del reto: `nin70`
 
-Dificultad: <font color=orange>Easy</font>
+Dificultad: <font color=orange>Fácil</font>
 
 ## Enunciado
 

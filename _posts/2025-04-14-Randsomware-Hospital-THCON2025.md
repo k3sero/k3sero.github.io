@@ -4,12 +4,12 @@ author: Kesero
 description: Compilación de retos asociados a la búsqueda de los responsables del ciberataque en un Hospital.
 date: 2025-04-14 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Osint]
-tags: [Osint]
+tags: [Osint, Osint - Reserach, Writeups, Dificultad - Difícil]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/prompt.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/prompt.png
   lqip: 
   alt: 
 comments: true
@@ -49,7 +49,7 @@ Visitors always seem to be linked to the patient they come to see"
 
 En este reto, nos dan los correos que han podido recuperar pertenecientes al CISO de un Hospital, el cual nos cuentan que han sufrido un ciberataque de randsomware.
 
-![correos](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/correos/img/correos.png?raw=true)
+![correos](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/correos/img/correos.png)
 
 En dichos correos podemos obtener información muy relevante en nuestra investigación, como los reportes de asistencia semanales en el Hospital, los logs provenientes del sistema así como un subentramado de lore basado en la confidencialidad del alcalde en sus instalaciones entre otros correos sin relevancia.
 
@@ -119,27 +119,27 @@ En el siguiente reto nos piden que indiquemos el nombre de usuario de uno de sus
 
 Una vez tenemos nombre del atacante, lo primero que tenemos que hacer es buscar en google por `Zypherion Vexshade`. Una vez hecho, nos encontraremos con un perfil en reddit que tiene diversos posts relacionados con `casinos`, `mma` y algunos posts en general dando su opinión sobre varios temas.
 
-![reddit](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/reddit.png?raw=true)
+![reddit](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/reddit.png)
 
 Llegados a este punto nos podemos tirar varias horas buscando información sobre las personas que comentan junto a Zypherion, likes, seguidores u comentarios.
 
 En este caso podemos ver un post que nos llama la atención y es sobre nombres de usuario.
 
-![nicknames](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/nicknames.png?raw=true)
+![nicknames](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/nicknames.png)
 
 Tenemos el nombre de usuario del atacante `ZyphiVexi`, pero este no es el que se pide en el reto, pero tenemos un nombre de usuario potencial a buscar en las distintas redes sociales. Es por ello que en este momento entra en juego [Osint Framework](https://osintframework.com/), concretamente la página [Instant Usernames Search](https://instantusername.com/) que en base a un nombre de usuario nos lista su disponibilidad en las distintas redes sociales. En caso de no estar disponible significa que está ocupado por tanto existe esa cuenta. 
 
-![Busqueda](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/busqueda.png?raw=true)
+![Busqueda](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/busqueda.png)
 
 Entre la búsqueda, destaca que en la plataforma de `bluesky` el nombre de usuario dado está tomado. Por tanto entraremos en su perfil
 
 NOTA: En `blusky`, es muy importante contar con una cuenta creada previamente, ya que hay posts que no son visibles para gente sin perfil.
 
-![perfil blusky](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/perfil_blusky.png?raw=true)
+![perfil blusky](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/perfil_blusky.png)
 
 Una vez en en su perfil, miramos por sus seguidores/seguidos y nos daremos cuenta que hay una cuenta muy sospechosa llamada `the one that does the things` con su username `@zenmmth.bsky.social` además se puede observar la relación entre ambos mediante sus posts publicados en dicha red social.
 
-![perfil zen](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/peril_zen.png?raw=true)
+![perfil zen](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/peril_zen.png)
 
 Como podemos establecer una relación clara con el atacante, podemos considerarlo cómplice del ataque.
 Insertamos su username y tenemos cashh.
@@ -164,7 +164,7 @@ Have you tried the vigenere code with an important county ?
 
 En el siguiente reto, tenemos que averiguar la página web del cómplice del atacante, como tenemos un perfil en blusky llamado `@zenmmth.bsky.social`, indagaremos en su información pública y podemos obtener información relevante como una posible contraseña, datos personales como su ciudad y país así como una captura comprometedora de la pantalla de su ordenador.
 
-![monitor](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/monitor.jpg?raw=true)
+![monitor](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/monitor.jpg)
 
 En dicha imágen podemos obtener información como sus correos e información confidencial como una reserva de hotel, pero en un posit de su portátil podemos encontrar la URL de su página web, pero esta se encuentra cifrada.
 ```
@@ -241,7 +241,7 @@ En `VOC3.wav` podemos encontrar que se encuentra en un sitio con mucha gente. Se
 
 Una vez obtenidas las tres ubicaciones, podemos realizar la triangulación mediante la página [CacheSleuth](https://www.cachesleuth.com/centeroftriangle.html) la cual se basa en calcular el punto medio en base a 3 coordenadas dadas.
 
-![Interseccion](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/interseccion.png?raw=true)
+![Interseccion](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/interseccion.png)
 
 Las coordenadas del punto medio son `46° 04.647' E 002° 55.879'`, en el formato a introducir son `46.07745, 2.93132`
 
@@ -287,25 +287,25 @@ En este punto tenemos dos vías para realizar el siguiente paso. Según el cread
 
 Si vamos mirando los posts de `Zephi` en blusky además de ir mirando a las personas etiquetadas en cada imágen podemos ver que el siguiente post, se menciona a un tal "@thenetworkwalker"
 
-![post_quedad](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/post_etiqueta.png?raw=true)
+![post_quedad](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/post_etiqueta.png)
 
-![Etiqueta_post](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/post_etiqueta_mensaje.png?raw=true)
+![Etiqueta_post](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/post_etiqueta_mensaje.png)
 
 Si nos adentramos en su perfil, podemos observar que dicha persona se dedica al desarrollo de software y que es fan de Taylor Swift (Hobby que hace que tengamos en relación a todos los complices)
 
-![perfil_network](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/perfil.png?raw=true)
+![perfil_network](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/perfil.png)
 
 Si miramos su perfil, nos daremos cuenta que menciona que ha desarrollado un randsomware llamado `Pandarmor`, con que todo a punta a que él ha sido el dueño del malware.
 
-![post_pandarmore](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/post.png?raw=true)
+![post_pandarmore](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/post.png)
 
 Ahora solo nos queda averigurar dónde reside. Justamente hay post en el que menciona un lugar dentro de su ciudad local. El post es el siguiente.
 
-![post_imagen](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/post%20laturbie.png?raw=true)
+![post_imagen](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/post%20laturbie.png)
 
 Si buscamos justo esa imágen en google, podemos obtener de manera sencilla su ubiación.
 
-![Imagen_completa](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/laturbie.png?raw=true)
+![Imagen_completa](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/laturbie.png)
 
 Su ubicación corresponde a `La Turbie`
 
@@ -313,7 +313,7 @@ Su ubicación corresponde a `La Turbie`
 
 Otra manera más compacta y un poco tricky sería en buscar la palabra `Pandarmor` tanto en reddit como en blusky. Si lo hacemos en blusky, accederemos rápidamente al perfil del desarrollador.
 
-![post_pandarmore](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/post.png?raw=true)
+![post_pandarmore](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/post.png)
 
 ### PD
 

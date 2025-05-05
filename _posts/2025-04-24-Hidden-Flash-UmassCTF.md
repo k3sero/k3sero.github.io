@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en leer una EPROM para obtener un juego flash y desvelar el secreto.
 date: 2025-04-24 12:30:00 +0000
 categories: [Writeups Competiciones Internacionales, Hardware]
-tags: [Fácil, Hardware - EPROM]
+tags: [Dificultad - Fácil, Hardware,  Hardware - EPROM, Writeups]
 pin: false
 math: true
 mermaid: true
