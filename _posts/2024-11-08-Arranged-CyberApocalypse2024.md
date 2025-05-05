@@ -3,13 +3,13 @@ title: Arranged - CyberApocalypse2024
 author: Kesero
 description: Reto Cripto basado en curvas elípticas para recuperar el exponente privado del intercambio de claves.
 date: 2024-11-08 21:16:00 +0800
-categories: [Writeups Competiciones Internacionales, Cripto]
-tags: [Media, Curvas Elípticas, Diffie-Hellman, Base, Orden, AES, Writeups]
+categories: [Writeups Competiciones Internacionales, Criptografía]
+tags: [Dificultad - Media, Cripto - Curvas Elípticas, Cripto - Matemáticas, Writeups]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Arranged/Arranged.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Arranged/Arranged.png
   lqip: 
   alt: 
 comments: true

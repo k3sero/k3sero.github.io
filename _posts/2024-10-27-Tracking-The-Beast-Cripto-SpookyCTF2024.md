@@ -3,13 +3,13 @@ title: Tracking The Beast - SpookyCTF2024
 author: Kesero
 description: Reto Cripto basado en Curvas Elipticas.
 date: 2024-10-27 22:54:00 +0800
-categories: [Writeups Competiciones Internacionales, Cripto]
-tags: [Curvas Elípticas, Points, Multiplicativo, Subgrupos, Guessy, Writeups, Difícil]
+categories: [Writeups Competiciones Internacionales, Criptografía]
+tags: [Cripto - Curvas Elípticas, Writeups, Dificultad - Difícil]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Cripto/Spookyctf2024/Tracking_The_Best/Tracking_The_Beast.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Cripto/Spookyctf2024/Tracking_The_Best/Tracking_The_Beast.png
   lqip: 
   alt: 
 comments: true
@@ -50,14 +50,14 @@ Pero antes de comenzar, vamos a desglosar todos los datos que tenemos.
 
 Antes de continuar desarrollando la pista, vamos a observar los posibles puntos en los que puede estar escondido Bigfoot.
 
-![Grafica](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Cripto/Spookyctf2024/Tracking_The_Best/Grafica.png?raw=true)
-![Subgrupos](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Cripto/Spookyctf2024/Tracking_The_Best/Subgrupos.png?raw=true)
+![Grafica](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Cripto/Spookyctf2024/Tracking_The_Best/Grafica.png)
+![Subgrupos](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Cripto/Spookyctf2024/Tracking_The_Best/Subgrupos.png)
 
 Es importante saber que elegimos subgrupos dentro del punto P ya que las curvas elípticas tienen estructuras algebraicas que permiten la definición de grupos de puntos. Estos grupos tienen subgrupos que son útiles para realizar operaciones y cálculos específicos. La clave en este reto viene dada por encontrar dichos puntos a lo largo de la curva. Como sabemos que para seguir el camino tenemos un punto inicial P, simplemente tenemos que multiplicar el punto inicial P por un escalar N.
 
 Dicho escalar N lo obtenemos mediante la tercera pista, por lo que tenemos que encontrar la portada a la que se refieren en el enunciado, para ello un poco de OSINT y encontramos lo [siguiente.](https://www.reddit.com/r/comicbooks/comments/a6prip/green_lantern_49_cover_art_by_darryl_banks/)
 
-![Portada](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Cripto/Spookyctf2024/Tracking_The_Best/portada.png?raw=true)
+![Portada](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Cripto/Spookyctf2024/Tracking_The_Best/portada.png)
 
 Como podemos observar, dicha portada del cómic se corresonde con lo descrito en el enunciado, ¿y ahora que hacemos?
 

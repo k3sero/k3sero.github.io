@@ -1,15 +1,15 @@
 ---
 title: Loab´s House of Horrors - SpookyCTF2024
 author: Kesero
-description: Reto Binario basado en una pyjail.
+description: Reto Binario basado en una Pyjail.
 date: 2024-10-27 15:30:00 +0800
-categories: [Writeups Competiciones Internacionales, Pwn]
-tags: [Bypass, Pyjail, Binario, Pwn, Writeups, Media]
+categories: [Writeups Competiciones Internacionales, Miscelánea]
+tags: [Misc, Misc - Pyjail, Writeups, Dificultad - Media]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Pwn/Spookyctf2024/Loab_House_of_Horrors/Loab_House_of_Horrors.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Pwn/Spookyctf2024/Loab_House_of_Horrors/Loab_House_of_Horrors.png
   lqip: 
   alt: 
 comments: true

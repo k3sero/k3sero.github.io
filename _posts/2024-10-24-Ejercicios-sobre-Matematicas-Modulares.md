@@ -4,12 +4,12 @@ author: Kesero
 description: Relacion de ejercicios para comenzar con las matemáticas modulares.
 date: 2024-10-24 18:40:00 +0800
 categories: [Criptografía, Relaciones de Ejercicios]
-tags: [Criptografía, Ejercicios, Matematicas Modulares, Teorema Chino del Resto, Potenciación Modular, Congruencias, Sistema de Ecuaciones]
+tags: [Cripto, Cripto - Matemáticas]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/Template%20Blog.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista1/Template%20Blog.png
   lqip: 
   alt: 
 comments: true
@@ -24,20 +24,20 @@ Esta colección de ejercicios tiene como objetivo proporcionar una introducción
 
 ## Relación de Ejercicios
 
-![Relacion](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/PrimeraLista.png?raw=true)
+![Relacion](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista1/PrimeraLista.png)
 
 
 ## Ejercicios Resueltos
 
-![1](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/1.png?raw=true)
-![2](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/2.png?raw=true)
-![3](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/3.png?raw=true)
-![4](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/4.png?raw=true)
-![5](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/5.png?raw=true)
-![6](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/6.png?raw=true)
-![7](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/7.png?raw=true)
-![8](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/8.png?raw=true)
-![9](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/9.png?raw=true)
-![10](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/10.png?raw=true)
-![11](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/11.png?raw=true)
-![12](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista1/12.png?raw=true)
+![1](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista1/1.png)
+![2](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista1/2.png)
+![3](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista1/3.png)
+![4](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista1/4.png)
+![5](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista1/5.png)
+![6](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista1/6.png)
+![7](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista1/7.png)
+![8](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista1/8.png)
+![9](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista1/9.png)
+![10](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista1/10.png)
+![11](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista1/11.png)
+![12](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista1/12.png)

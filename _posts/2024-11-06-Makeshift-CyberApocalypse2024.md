@@ -3,13 +3,13 @@ title: Makeshift - CyberApocalypse2024
 author: Kesero
 description: Reto Cripto basado en revertir una función de cifrado sencilla.
 date: 2024-11-6 20:31:00 +0800
-categories: [Writeups Competiciones Internacionales, Cripto]
-tags: [Iteraciones, Muy Fácil, Writeups, Funciones Encrypt/Decrypt]
+categories: [Writeups Competiciones Internacionales, Criptografía]
+tags: [Cripto - Algoritmos, Dificulatad - Muy Fácil, Writeups]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Makeshift/Makeshift.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Makeshift/Makeshift.png
   lqip: 
   alt: 
 comments: true

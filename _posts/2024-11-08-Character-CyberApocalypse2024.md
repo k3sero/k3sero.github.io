@@ -4,12 +4,12 @@ author: Kesero
 description: Reto Miscelánea basado en hacer un breve script de conexión por nc.
 date: 2024-11-08 21:54:00 +0800
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Muy Fácil, Script, Writeups]
+tags: [Dificultad - Muy Fácil, Writeups, Misc]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Misc/CyberApocalypse2024/Character/Character.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Misc/CyberApocalypse2024/Character/Character.png
   lqip: 
   alt: 
 comments: true

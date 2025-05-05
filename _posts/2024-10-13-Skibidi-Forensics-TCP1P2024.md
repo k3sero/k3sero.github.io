@@ -4,12 +4,12 @@ author: Kesero
 description: Reto forense basado en el formato .skibidi
 date: 2024-10-13 16:40:00 +0800
 categories: [Writeups Competiciones Internacionales, Forense]
-tags: [Forense, Data, Headers, Extension, Writeups, Fácil]
+tags: [Forense, Forense - Formato, Writeups, Fácil]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/MaestroKesero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Forensics/TCP1P2024/Skibidi/TCP1P_Skibidi.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Forensics/TCP1P2024/Skibidi/TCP1P_Skibidi.png
   lqip: 
   alt: 
 comments: true
@@ -151,7 +151,7 @@ Nota: Sabemos que es el parámetro depth es 8 ya que dicho parámetro especifica
 
 Abrimos la imagen y obtenemos la flag.
 
-![Imagen_Final](https://github.com/MaestroKesero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Forensics/TCP1P2024/Skibidi/final_skibidi.png?raw=true)
+![Imagen_Final](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Forensics/TCP1P2024/Skibidi/final_skibidi.png)
 
 
 ### Flag

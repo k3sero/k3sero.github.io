@@ -9,7 +9,7 @@ pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Herramientas/EscaneoPuertos/titulo.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Herramientas/EscaneoPuertos/titulo.png
   lqip: 
   alt: 
 comments: true

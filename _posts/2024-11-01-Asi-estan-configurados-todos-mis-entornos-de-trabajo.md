@@ -3,13 +3,13 @@ title: Así tengo configurado mi sistema de entornos profesionales de trabajo
 author: Kesero
 description: Explicación de cómo tengo configurados todos mis entornos profesionales de trabajo enfocados en el hacking.
 date: 2024-11-1 20:42:30 +0800
-categories: [Herramientas, Entorno]
-tags: [Herramientas, Entorno, Kali Linux, Bspwm, Polybar, Profesional, Debian, Windows10, VMware, Hyper-V, Máquinas]
+categories: [Herramientas, Entornos]
+tags: [Herramientas]
 pin: true
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Herramientas/Entorno/Entornos_Profesionales/Entorno%20de%20Trabajo%20Profesional.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Herramientas/Entorno/Entornos_Profesionales/Entorno%20de%20Trabajo%20Profesional.png
   lqip: 
   alt: 
 comments: true
@@ -21,7 +21,7 @@ Para comenzar, mi sistema de gestión de entornos parte de la base de utilizar e
 
 El siguiente esquema muestra la estructura de cada entorno de trabajo.
 
-![Estructura](https://github.com/k3sero/Blog_Content/blob/main/Herramientas/Entorno/Entornos_Profesionales/Estructura_Entorno.png?raw=true)
+![Estructura](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Herramientas/Entorno/Entornos_Profesionales/Estructura_Entorno.png)
 
 
 - **Windows Master:** Este sistema operativo es el que está instalado de forma nativa en el hardware del computador, es por ello que siempre vamos a mantenerlo lo más limpio y actualizado posible (si es posible, instalarlo en un disco de estado sólido o en una unidad M.2 para beneficiarnos de la rapidez en nuestras máquinas virtuales). 
@@ -72,7 +72,7 @@ Al ingresar nuevamente, escribimos en el buscador `"Hyper-V"` y tendremos acceso
 
 ## Debian
 
-![Entorno Debian](https://github.com/k3sero/Blog_Content/blob/main/Herramientas/Entorno/Entornos_Profesionales/Entorno_Debian%20.png?raw=true)
+![Entorno Debian](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Herramientas/Entorno/Entornos_Profesionales/Entorno_Debian%20.png)
 
 Como he mencionado anteriormente, este sistema operativo está enfocado principalmente en la programación. Es por ello que esta máquina tendrá una instalación básica de Debian, además de contar con las herramientas y suites IDE de programación pertinentes. Por último, instalaremos programas como `zshrc` y `powerlevel10k` para contar con un manejo fluido y cómodo en la terminal.
 
@@ -82,7 +82,7 @@ Tutorial para la instalación de la zshrc y powerlevel10k [aquí](https://www.yo
 
 ## Windows_temp
 
-![Entorno Windows_temp](https://github.com/k3sero/Blog_Content/blob/main/Herramientas/Entorno/Entornos_Profesionales/Entorno_Windows_Temp.png?raw=true)
+![Entorno Windows_temp](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Herramientas/Entorno/Entornos_Profesionales/Entorno_Windows_Temp.png)
 
 La finalidad de este Windows virtualizado es la de ejecutar programas de terceros con el fin de encapsular el posible malware que estos programas traigan consigo. Es por ello que viene con integración de GPU dedicada, para poder ejecutar programas más pesados con soltura. 
 
@@ -162,7 +162,7 @@ Listo, una vez ejecutado se nos abrirá la máquina virtual y dentro de ella con
 
 ## Kali Linux 
 
-![Entorno Kali](https://github.com/k3sero/Blog_Content/blob/main/Herramientas/Entorno/Entornos_Profesionales/Entorno_Kali.png?raw=true)
+![Entorno Kali](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Herramientas/Entorno/Entornos_Profesionales/Entorno_Kali.png)
 
 Este entorno es el más complejo de todos, ya que no es una instalación de Kali Linux común y corriente, sino que está preparada para ser un entorno en el que únicamente nos manejemos por comandos sin contar con interfaz gráfica. Es por ello que la pieza clave de este entorno es el `bspwm` junto con otras herramientas como por ejemplo `polybar` entre otras, para hacer el sistema algo más amigable al usuario.
 
@@ -665,7 +665,7 @@ La clave de todo esto es que gracias a la sencillez de la instalación del entor
 
 ## Kali Linux Portable con Persistencia
 
-![Kali Persistente](https://github.com/k3sero/Blog_Content/blob/main/Herramientas/Entorno/Entornos_Profesionales/Entorno_Kali_Persistente.jpg?raw=true)
+![Kali Persistente](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Herramientas/Entorno/Entornos_Profesionales/Entorno_Kali_Persistente.jpg)
 
 La labor de este Kali Linux portable con persistencia es la de brindarnos portabilidad junto a la capacidad de integrar la GPU dedicada de nuestro sistema para contar con la capacidad de realizar cálculos masivos en Linux ya sean con herramientas como `hashcat` las cuales permiten romper hashes de manera más rápida utilizando la GPU o por ejemplo con herramientas criptográficas pesadas como `sage` o `z3` permitiendo la integración con GPU para obtener ejecuciones mucho más ligeras.
 
@@ -702,7 +702,7 @@ Nota: Otra forma de lograr integrar nuestra GPU dedicada en nuestro sistema, ser
 
 ## Tails en Live Boot USB
 
-![Tails](https://github.com/k3sero/Blog_Content/blob/main/Herramientas/Entorno/Entornos_Profesionales/tails.png?raw=true)
+![Tails](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Herramientas/Entorno/Entornos_Profesionales/tails.png)
 
 `Tails` es un sistema operativo basado en Linux diseñado con un enfoque principal en la privacidad y el anonimato. Está orientado a proteger la identidad y la información personal de sus usuarios, especialmente en situaciones de alto riesgo, como la navegación en internet o el manejo de información sensible.
 

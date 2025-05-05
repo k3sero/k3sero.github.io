@@ -4,12 +4,12 @@ author: Kesero
 description: Reto Forense basado en un dump de un proceso LSASS.
 date: 2024-10-27 22:09:00 +0800
 categories: [Writeups Competiciones Internacionales, Forense]
-tags: [NTLM, Dump, Proceso, Forense, Writeups, LSASS, Fácil]
+tags: [Forense, Forense - LSASS, Writeups, Dificultad - Fácil]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Forensics/Spookyctf2024/Lsass_Crackdown/Lsass_Crackdown.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Forensics/Spookyctf2024/Lsass_Crackdown/Lsass_Crackdown.png
   lqip: 
   alt: 
 comments: true

@@ -3,13 +3,13 @@ title: Partial Tenacity - CyberApocalypse2024
 author: Kesero
 description: Reto Cripto basado en recuperar los primos p y q partiendo de bits alternos.
 date: 2024-11-07 18:42:00 +0800
-categories: [Writeups Competiciones Internacionales, Cripto]
-tags: [Media, Primos, RSA, PKCS#1 OAEP, Writeups]
+categories: [Writeups Competiciones Internacionales, Criptografía]
+tags: [Dificultad - Media, Cripto - información Parcial, Writeups]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Partial_Tenacity/Partial_Tenacity.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Partial_Tenacity/Partial_Tenacity.png
   lqip: 
   alt: 
 comments: true

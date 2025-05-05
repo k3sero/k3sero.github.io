@@ -4,12 +4,12 @@ author: Kesero
 description: Relacion de ejercicios sobre números primos aplicados a matemáticas modulares.
 date: 2024-11-4 18:40:00 +0800
 categories: [Criptografía, Relaciones de Ejercicios]
-tags: [Criptografía, Ejercicios, Matematicas Modulares, Teorema Chino del Resto, Potenciación Modular, Congruencias, Sistema de Ecuaciones, Números Primos, Fórmula Garnet]
+tags: [Cripto, Cripto - Matemáticas]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista2/NumerosTemplate.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista2/NumerosTemplate.png
   lqip: 
   alt: 
 comments: true
@@ -26,14 +26,14 @@ Esta colección de ejercicios tiene como objetivo proporcionar una continuación
 
 ## Relación de Ejercicios
 
-![Relacion](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista2/SegundaLista.png?raw=true)
+![Relacion](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista2/SegundaLista.png)
 
 
 ## Ejercicios Resueltos
 
-![1](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista2/1.png?raw=true)
-![2](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista2/2.png?raw=true)
-![3](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista2/3.png?raw=true)
-![4](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista2/4.png?raw=true)
-![5](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista2/5.png?raw=true)
-![6](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Relaciones_Ejercicios/lista2/6.png?raw=true)
+![1](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista2/1.png)
+![2](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista2/2.png)
+![3](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista2/3.png)
+![4](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista2/4.png)
+![5](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista2/5.png)
+![6](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Relaciones_Ejercicios/lista2/6.png)

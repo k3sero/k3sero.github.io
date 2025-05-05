@@ -3,13 +3,13 @@ title: Primary Knowledge - CyberApocalypse2024
 author: Kesero
 description: Reto Cripto basado en recuperar los primos p y q partiendo de bits alternos.
 date: 2024-11-07 19:06:00 +0800
-categories: [Writeups Competiciones Internacionales, Cripto]
-tags: [Muy Fácil, Función de Euler, RSA, Writeups]
+categories: [Writeups Competiciones Internacionales, Criptografía]
+tags: [Dificultad - Muy Fácil, Cripto - RSA, Writeups]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Primary_Knowledge/Primary_Knowleadge.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Primary_Knowledge/Primary_Knowleadge.png
   lqip: 
   alt: 
 comments: true
