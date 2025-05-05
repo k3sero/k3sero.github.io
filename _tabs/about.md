@@ -4,15 +4,13 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-![Presentacion](assets/images/about/Presentacion.jpg)
+![Presentacion](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/Presentacion.jpg)
 
 Hola muy buenas, me presento, mi nombre es Carlos Marín (aka **k3sero**), actualmente soy un estudiante universitario cursando la carrera de Ingeniería Informática a quien le apasiona el mundo de la ciberseguridad, CTFs, ciberinteligencia y demás áreas que conforman dicha rama. Es por ello que me ha llevado a formarme de manera autodidacta compaginándolo con mis estudios prácticamente desde que empecé la misma.
 
 Con este blog, pretendo aportar mi granito de arena con los conocimientos que voy adquiriendo a lo largo de mi travesía con el fin de compartir a la comunidad diversas metodologías de trabajo, formas de resolver ejercicios, conocimientos poco tratados por la comunidad, herramientas personales de cualquier índole o simplemente abordar cualquier tema de la misma. Es por ello que estoy abierto a cualquier fuente de conocimiento.
 
-Actualmente estoy en búsqueda de prácticas de empresa con el fin de inicializarme en el mundo laboral. Estoy muy ilusionado y me encuentro con muchas ganas de trabajar con equipos profesionales de cualquier índole, ya sean enfocadas en el Blue-Team o Red-Team.
-
-Además, para complementar dichos conocimientos actualmente estoy estudiando varias certificaciones como la eJPT de lado ofensivo junto la eCIR por el lado defensivo. 
+Además, para complementar dichos conocimientos, actualmente estoy estudiando varias certificaciones como la eJPT de lado ofensivo junto la eCIR por el lado defensivo. 
 
 ## Proyectos Personales
 
@@ -30,10 +28,11 @@ En este 2024, seguimos demostrando nuestro desempeño rozando las primeras posic
 
 Este blog personal está dedicado a tratar distintos temas sobre la ciberseguridad y hacking ético, realizando diversas investigaciones sobre las ramas que la conforman. A su vez, también está enfocado en la resolución de retos CTF (Capture the Flag) que abordamos en las competiciones nacionales e internacionales, con el fin de aportar soluciones a las distintas categorías para contribuir conocimiento a la comunidad.
 
-
 ## Marcadores Personales
 
 • **First Bloods** --> [Hohoho3 Continue - WarGames2024](https://k3sero.github.io/posts/Hohoho3-Continue-WarGamesCTF2024/), [Pederson - HackOn2025](https://k3sero.github.io/posts/Pederson-HackOn2025/)
+
+• **THCON2025** --> Competición de CTFs a nivel internacional, en la que obtuvimos el primer podio con la 3º posición en grupos de 5 personas.
 
 • **HackOn2025** --> Competición de CTFs a nivel nacional, en la que obtuve 9º posición participando en solitario contra equipos de 3 personas.
 
@@ -55,9 +54,17 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |
 |--------------------------------------------------|-----------------|-------|
-|	BroncoCTF 2025	                               |    8421,0000	 | 18,136|
-|	BITSCTF 2025	                               |    2443,0000	 | 6,093 |
-|	x3CTF 2025 (feat. mvm)	                       |    1147,0000	 | 4,854 |
+| UniVsThreats2025                                 |    864,0000	 | 0,000*|
+| UMDCTF2025	                                   |    6623,0000	 | 29,700|
+| UMassCTF2025	                                   |    5572,0000	 | 25,134|
+| THCon 2K25CTF	                                   |    8364,0000	 | 29,582|
+| DiceCTF 2025 Quals	                           |    447,0000	 | 7,820 |
+| Cyber Apocalypse CTF2025: Tales from Eldoria	   |    30800,0000	 | 13,027|
+| K!nd4SUS CTF2025	                               |    488,0000	 | 1,354 |
+| PwnMe CTF Quals2025	                           |    982,0000	 | 2,826 |
+| BroncoCTF 2025	                               |    8421,0000	 | 18,136|
+| BITSCTF 2025	                                   |    2443,0000	 | 6,093 |
+| x3CTF 2025 (feat. mvm)	                       |    1147,0000	 | 4,854 |
 | Srdnlen CTF 2025                                 |	210,0000     | 1,660 |
 | UofTCTF 2025                                     |	1764,0000    | 3,632 |
 | IrisCTF 2025                                     |	1697,0000    | 6,097 |
@@ -117,6 +124,8 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 ## Eventos Asistidos
 
+• **HackademicsForum2025** (Organizador)
+
 • **DanaCon2024**
 
 • **NavajaNegra2024**
@@ -129,9 +138,12 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 • **HackademicsForum2023**
 
-
 ## Charlas sobre Ciberseguridad Asistidas
  
+### 2025
+
+• **"ACR -  CTFs y Criptografía. Del juego al escenario real."**
+
 ### 2024
 
 • **"ACR - Vulnerabilidades en infraestructuras de Active Directory (AD)"**
@@ -172,6 +184,14 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 
 ## Cursos completados
+
+• **"Hack4u - Python Ofensivo"**
+
+• **"Hack4u - Personalización de entorno en Linux"**
+
+• **"Hack4u - Introducción a Linux"**
+
+• **"Hack4u - Introducción al Hacking Ético"**
 
 • **"Udemy - Curso Profesional de Hacking Ético +90 horas"**
 
