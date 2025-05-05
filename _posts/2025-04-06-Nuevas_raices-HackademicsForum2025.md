@@ -3,7 +3,7 @@ title: Nuevas Raíces - HackademicsForum2025
 author: Kesero
 description: Reto OSINT basado en búsqueda de información en la página de HackademicsForum.
 date: 2025-04-06 15:00:00 +0000
-categories: [Writeups Competiciones Nacionales, Osint]
+categories: [Writeups Competiciones Nacionales, Osint N]
 tags: [Osint - Research, Osint, Writeups, Dificultad - Fácil]
 pin: false
 math: true
