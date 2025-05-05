@@ -4,7 +4,7 @@ author: Kesero
 description: Herramienta para escanear puertos con scapy através de Stealth Scan empleando hilos 
 date: 2025-02-12 13:40:00 +0200
 categories: [Herramientas, Reconocimiento]
-tags: [Herramientas, Escaneo]
+tags: [Herramientas]
 pin: false
 math: true
 mermaid: true

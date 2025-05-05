@@ -3,13 +3,13 @@ title: Hohoho3 - WarGamesCTF2024
 author: Kesero
 description: Reto Cripto basado en la explotación de Verificación de un CRC-128.
 date: 2024-12-30 11:04:00 +0800
-categories: [Writeups Competiciones Internacionales, Cripto]
-tags: [CRC-128, Medium, Writeups]
+categories: [Writeups Competiciones Internacionales, Criptografía]
+tags: [Cripto, Cripto - Algoritmos, Dificultad - Media, Writeups]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Cripto/WarGamesCTF2024/Hohoho3/Titulo.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Cripto/WarGamesCTF2024/Hohoho3/Titulo.png
   lqip: 
   alt: 
 comments: true

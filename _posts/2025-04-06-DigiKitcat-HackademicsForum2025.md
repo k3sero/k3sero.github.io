@@ -4,12 +4,12 @@ author: Kesero
 description: Reto hardware basado en una PCB.
 date: 2025-04-06 15:00:00 +0000
 categories: [Writeups Competiciones Nacionales, Hardware]
-tags: [PCB, Writeups, Fácil]
+tags: [Hardware, Hardware - PCB, Writeups, Dificultad - Fácil]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Hardware/DigiKitkat/img/7.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Hardware/DigiKitkat/img/7.png
   lqip: 
   alt: 
 comments: true
@@ -51,13 +51,13 @@ La manera más sencilla de manipular estos archivos es con la aplicación `KiCad
 
 Una vez instalada, abriremos la aplicación y nos iremos a `Visor Gerber`, y se nos abrirá una pestaña con todas las capas que conforman nuestra circuito impreso.
 
-![placa](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Hardware/DigiKitkat/img/placa.png?raw=true)
+![placa](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Hardware/DigiKitkat/img/placa.png)
 
 En este punto tendremos que navegar entre las distintas capas del circuito y es en la capa `Bottom Paste` donde se encuentra nuestra flag.
 
-![capa](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Hardware/DigiKitkat/img/capa.png?raw=true)
+![capa](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Hardware/DigiKitkat/img/capa.png)
 
-![flag](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Hardware/DigiKitkat/img/flag.png?raw=true)
+![flag](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Hardware/DigiKitkat/img/flag.png)
 
 ## Flag
 

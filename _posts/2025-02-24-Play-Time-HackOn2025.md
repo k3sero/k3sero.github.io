@@ -3,13 +3,13 @@ title: Play Time - HackOn2025
 author: Kesero
 description: Reto Cripto basado OTP y Xoshiro256, como generador de números pseudoaleatorios.
 date: 2025-02-24 00:00:00 +0000
-categories: [Writeups Competiciones Nacionales, Crypto]
-tags: [PRNGs, Writeups, Media]
+categories: [Writeups Competiciones Nacionales, Cripto]
+tags: [Cripto, Cripto - PRNGs, Writeups, Dificultad - Media]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackOn2025/Cripto/Play_Time/2.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackOn2025/Cripto/Play_Time/2.png
   lqip: 
   alt: 
 comments: true

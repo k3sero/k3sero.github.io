@@ -4,12 +4,12 @@ author: Kesero
 description: Reto Estego basado en la extracción de información oculta de un archivo.gif.
 date: 2024-12-30 15:15:00 +0800
 categories: [Writeups Competiciones Internacionales, Esteganografía]
-tags: [gif, Fácil, Writeups]
+tags: [Estego, Dificultad - Fácil, Writeups]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Estego/WarGamesCTF2024/Invisible-Ink/Titulo.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Estego/WarGamesCTF2024/Invisible-Ink/Titulo.png
   lqip: 
   alt: 
 comments: true
@@ -35,7 +35,7 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Com
 
 En este reto básicamente tenemos que extraer la información del gif aportado. Si abrimos dicho archivo, nos encontraremos con un mensaje sin mayor relevancia.
 
-![challenge](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Estego/WarGamesCTF2024/Invisible-Ink/gif.png?raw=true)
+![challenge](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Estego/WarGamesCTF2024/Invisible-Ink/gif.png)
 
 
 ## Solución
@@ -44,14 +44,14 @@ En este caso, teníamos que utilizar [stegsolve](https://wiki.bi0s.in/steganogra
 
 Para ello teníamos que obtener los frames resultantes que es donde realmente está la información oculta. Para ello utilicé la herramienta mencionada anteriormente para la extracción de estos dos últimos frames.
 
-![Frame5](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Estego/WarGamesCTF2024/Invisible-Ink/frame5.png?raw=true)
+![Frame5](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Estego/WarGamesCTF2024/Invisible-Ink/frame5.png)
 
-![Frame6](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Estego/WarGamesCTF2024/Invisible-Ink/frame6.png?raw=true)
+![Frame6](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Estego/WarGamesCTF2024/Invisible-Ink/frame6.png)
 
 Finalmente para obtener la flag tenemos que combinar los frames anteriores.
 En Gimp simplemente tenemos que añadir cada imagen a una capa diferente, no sin antes aplicar un color distinto a cada frame, para que el resultado sea mucho más visible que en blanco y negro.
 
-![Final](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Estego/WarGamesCTF2024/Invisible-Ink/final.png?raw=true)
+![Final](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Estego/WarGamesCTF2024/Invisible-Ink/final.png)
 
 ## Flag
 

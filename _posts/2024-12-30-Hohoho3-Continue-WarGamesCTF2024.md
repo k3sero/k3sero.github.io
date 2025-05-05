@@ -3,13 +3,13 @@ title: Hohoho3 Continue (First Blood) - WarGamesCTF2024
 author: Kesero
 description: Reto de Criptografía basado en el reto Hohoho3 anterior, pero con restricciones.
 date: 2024-12-30 12:30:00 +0800
-categories: [Writeups Competiciones Internacionales, Cripto]
-tags: [CRC, Fácil, Writeups]
+categories: [Writeups Competiciones Internacionales, Criptografía]
+tags: [Cripto, Cripto - Algoritmos, Dificultad - Fácil, Writeups]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Cripto/WarGamesCTF2024/Hohoho3_Continue/Titulo.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Cripto/WarGamesCTF2024/Hohoho3_Continue/Titulo.png
   lqip: 
   alt: 
 comments: true
@@ -363,7 +363,7 @@ print(token)
 Una vez obtenido, lo introducimos en el servidor remoto para obtener la `flag`.
 
 
-![Final](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Cripto/WarGamesCTF2024/Hohoho3/final.png?raw=true)
+![Final](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Cripto/WarGamesCTF2024/Hohoho3/final.png)
 
 ## Flag
 

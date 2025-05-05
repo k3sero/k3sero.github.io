@@ -4,12 +4,12 @@ author: Kesero
 description: Reto misc basado en escapar de una rbash y leer flag.txt
 date: 2025-02-24 00:00:00 +0000
 categories: [Writeups Competiciones Nacionales, Misc]
-tags: [rbash, Writeups, Media]
+tags: [Misc, Misc- Rbash, Writeups, Dificultad - Media]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/HackOn2025/Misc/SandBox/3.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackOn2025/Misc/SandBox/3.png
   lqip: 
   alt: 
 comments: true
