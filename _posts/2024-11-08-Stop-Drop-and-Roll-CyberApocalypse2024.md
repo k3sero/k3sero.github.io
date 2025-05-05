@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Miscelánea basado en hacer un script de automatización en base a unas directrices.
 date: 2024-11-08 21:54:00 +0800
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Dificultad - Fácil, Script, Writeups]
+tags: [Dificultad - Fácil, Misc, Misc - Scripts, Writeups]
 pin: false
 math: true
 mermaid: true

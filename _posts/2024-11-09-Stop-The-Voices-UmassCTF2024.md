@@ -4,7 +4,7 @@ author: Kesero
 description: Reto de Esteganografía basado en la operación de 400 imágenes para aproximar una función gaussiana.
 date: 2024-11-09 15:01:00 +0800
 categories: [Writeups Competiciones Internacionales, Esteganografía]
-tags: [Dificultad - Media, Esteganografía, Writeups]
+tags: [Dificultad - Media, Estego, Writeups]
 pin: false
 math: true
 mermaid: true
