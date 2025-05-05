@@ -4,7 +4,7 @@ author: Kesero
 description: Reto OSINT basado en búsqueda de información en la página de HackademicsForum.
 date: 2025-04-06 15:00:00 +0000
 categories: [Writeups Competiciones Nacionales, Osint]
-tags: [Osint - Reserach, Osint, Writeups, Dificultad - Fácil]
+tags: [Osint - Research, Osint, Writeups, Dificultad - Fácil]
 pin: false
 math: true
 mermaid: true
