@@ -4,12 +4,12 @@ author: Kesero
 description: Códigos realizados en python para el cifrado por mochilas, mochilas trampa y criptoanálisis de Shamir y Zippel.
 date: 2024-12-09 13:20:00 +0800
 categories: [Criptografía, Códigos en python]
-tags: [Mochilas Trampa, Mochilas, Códigos]
+tags: [Cripto - Códigos en python, Cripto - Mochilas]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Mochilas/img/Titulo.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Mochilas/img/Titulo.png
   lqip: 
   alt: 
 comments: true
@@ -23,7 +23,7 @@ Es por ello que comparto con vosotros todos los códigos desarrollados para que 
 
 ## Recursos Teóricos
 
-![Cap](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Teoria/Mochilas/img/Portada_teoria.png?raw=true)
+![Cap](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Teoria/Mochilas/img/Portada_teoria.png)
 
 En cuanto a teoría respecta, os dejo adjuntada la presentación utilizada para enteder y comprender el cifrado mediante mochilas en este [enlace](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Teoria/Mochilas/Mochilas.pdf).
 
@@ -31,9 +31,9 @@ En cuanto a teoría respecta, os dejo adjuntada la presentación utilizada para 
 
 La relación de ejercicios utilizada para la realización de las prácticas es la siguiente.
 
-![Relacion_1](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Mochilas/img/Practica_Mochilas-1.png?raw=true)
+![Relacion_1](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Mochilas/img/Practica_Mochilas-1.png)
 
-![Relacion_2](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Mochilas/img/Practica_Mochilas-2.png?raw=true)
+![Relacion_2](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Mochilas/img/Practica_Mochilas-2.png)
 
 ## Ejercicios
 
@@ -43,7 +43,7 @@ Al final de los ejercicios, contaréis con el `menuMochilas` para comprobar de m
 
 ### Ejercicio 1 (Texto a Número y Viceversa)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Mochilas/img/ex1.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Mochilas/img/ex1.png)
 
 ```py
 """
@@ -143,7 +143,7 @@ def binary2ascii(binary_representation):
 
 ### Ejercicio 2 (Funciones Mochilas)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Mochilas/img/ex2.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Mochilas/img/ex2.png)
 
 ```py
 """
@@ -322,9 +322,9 @@ def knapsackdecipher(ciphertext, knapsack):
 
 ### Ejercicio 3 (Funciones Mochilas Trampa)
 
-![Ejercicio1](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Mochilas/img/ex3.png?raw=true)
+![Ejercicio1](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Mochilas/img/ex3.png)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Mochilas/img/ex3_2.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Mochilas/img/ex3_2.png)
 
 ```py
 """
@@ -661,7 +661,7 @@ def knapsackdeciphermh(s, m, w, ciphertext):
 
 ### Ejercicio 4 (Criptoanálisis Shamir y Zippel)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Mochilas/img/ex4.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Mochilas/img/ex4.png)
 
 ```py
 """

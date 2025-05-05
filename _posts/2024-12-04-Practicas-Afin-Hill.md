@@ -4,12 +4,12 @@ author: Kesero
 description: Códigos realizados en python para el cifrado Afín y cifrado Hill.
 date: 2024-12-04 20:42:00 +0800
 categories: [Criptografía, Códigos en python]
-tags: [Afin, Hill, Códigos]
+tags: [Cripto - Códigos en python, Cripto - Cifrados Clásicos]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Afin_Hill/img/Titulo_p.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Afin_Hill/img/Titulo_p.png
   lqip: 
   alt: 
 comments: true
@@ -25,7 +25,7 @@ Es por ello que comparto con vosotros todos los códigos desarrollados para que 
 
 La relación de ejercicios utilizada para la realización de las prácticas es la siguiente.
 
-![Relacion](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Afin_Hill/img/Pr%C3%A1ctica_Afin.png?raw=true)
+![Relacion](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Afin_Hill/img/Pr%C3%A1ctica_Afin.png)
 
 ## Ejercicios
 
@@ -35,7 +35,7 @@ Al final de los ejercicios, contaréis con los menús `menuHill` y `menuAfin` pa
 
 ### Ejercicio 1 (Funciones Básicas)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Afin_Hill/img/ex1.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Afin_Hill/img/ex1.png)
 
 ```py
 """
@@ -235,7 +235,7 @@ def invModMatrix(a, n):
 
 ### Ejercicio 2 (Texto a Número)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Afin_Hill/img/ex2.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Afin_Hill/img/ex2.png)
 
 ```py
 """
@@ -292,7 +292,7 @@ def TexttoNumber(string):
 
 ### Ejercicio 3 (Menú Afín)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Afin_Hill/img/ex3.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Afin_Hill/img/ex3.png)
 
 ```py
 """
@@ -587,7 +587,7 @@ if __name__ == "__main__":
 
 ### Ejercicio 4 (Menú Hill)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Afin_Hill/img/ex4.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Afin_Hill/img/ex4.png)
 
 ```py
 """

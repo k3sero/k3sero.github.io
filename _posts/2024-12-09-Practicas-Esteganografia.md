@@ -4,12 +4,12 @@ author: Kesero
 description: Códigos realizados en python sobre LSB y métodos de ordenación de imágenes.
 date: 2024-12-09 17:25:00 +0800
 categories: [Criptografía, Códigos en python]
-tags: [Esteganografía, LSB, Ordenación]
+tags: [Cripto - Códigos en python, Estego - LSB ]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Esteganografia/img/Titulo.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Esteganografia/img/Titulo.png
   lqip: 
   alt: 
 comments: true
@@ -27,7 +27,7 @@ Es por ello que comparto con vosotros todos los códigos desarrollados para que 
 
 En cuanto a teoría respecta, os dejo adjuntada la presentación sobre dichos métodos esteganográficos para que podáis entender y comprender los procedimientos seguidos.
 
-![Estego](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Teoria/Esteganografia/img/portada.png?raw=true)
+![Estego](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Teoria/Esteganografia/img/portada.png)
 
 Presentación [aquí](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Teoria/Esteganografia/Esteganografia.pdf).
 
@@ -36,7 +36,7 @@ Presentación [aquí](https://github.com/k3sero/Blog_Content/blob/main/Criptogra
 
 La relación de ejercicios utilizada para la realización de las prácticas es la siguiente.
 
-![Relacion_1](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Esteganografia/img/Practica_Esteganografia-1.png?raw=true)
+![Relacion_1](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Esteganografia/img/Practica_Esteganografia-1.png)
 
 
 ## Ejercicios
@@ -49,7 +49,7 @@ Destacar que en estas prácticas, no tenemos un menú interactivo para comprobar
 
 ### Ejercicio 1 (Cargar Imágenes)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Esteganografia/img/ex1.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Esteganografia/img/ex1.png)
 
 ```py
 """
@@ -122,7 +122,7 @@ print(rgb_matrix)
 
 ### Ejercicio 2 (Conversión Bit-Texto)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Esteganografia/img/ex2.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Esteganografia/img/ex2.png)
 
 ```py
 """
@@ -178,7 +178,7 @@ print(f"\n[!] Bits a Texto: {recovered_text}")
 
 ### Ejercicio 3 (Cifrado/Descifrado por LSB)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Esteganografia/img/ex3.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Esteganografia/img/ex3.png)
 
 ```py
 """
@@ -277,7 +277,7 @@ print(f"\n[+] Mensaje recuperado: {secret_recovered} ")
 
 ### Ejercicio 4 (Cifrado/Descifrado por LSB Complejo)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Esteganografia/img/ex4.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Esteganografia/img/ex4.png)
 
 ```py
 """
@@ -385,7 +385,7 @@ print("\n[+] Mensaje recuperado:", secret_message)
 
 ### Ejercicio 1 (Función invertible)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Esteganografia/img/ex_2_1.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Esteganografia/img/ex_2_1.png)
 
 ```py
 """
@@ -482,7 +482,7 @@ print(isinvertible(matrix, n))  # Salida: False, ya que el determinante (1*4 - 2
 
 ### Ejercicio 2 (Inversa de potencias)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Esteganografia/img/ex_2_2.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Esteganografia/img/ex_2_2.png)
 
 ```py
 """
@@ -540,7 +540,7 @@ print("[+] El valor de p es:", p)
 
 ### Ejercicio 3 (Función Desordena/Ordena Imágen)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Esteganografia/img/ex_2_3.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Esteganografia/img/ex_2_3.png)
 
 ```py
 """
@@ -733,7 +733,7 @@ print(f"[+] Imagen ordenada guardada en {ordered_image}")
 
 ### Ejercicio 4 (Función Desordena/Ordena Imágen con K)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Esteganografia/img/ex_2_4.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Esteganografia/img/ex_2_4.png)
 
 ```py
 """
@@ -908,7 +908,7 @@ print(f"[+] La imagen se restauró correctamente.")
 
 ### Ejercicio 5 (Iteración de K en Desordena/Ordena Imágen)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Esteganografia/img/ex_2_5.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Esteganografia/img/ex_2_5.png)
 
 ```py
 """

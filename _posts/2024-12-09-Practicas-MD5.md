@@ -4,12 +4,12 @@ author: Kesero
 description: Códigos realizados en python sobre la implementación de MD5.
 date: 2024-12-09 18:00:00 +0800
 categories: [Criptografía, Códigos en python]
-tags: [MD5, Hashing]
+tags: [Cripto - Códigos en python, Cripto - MD5]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/Md5/img/Titulo.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/Md5/img/Titulo.png
   lqip: 
   alt: 
 comments: true
@@ -27,7 +27,7 @@ Es por ello que comparto con vosotros todos los códigos desarrollados para que 
 
 En cuanto a teoría respecta, os dejo adjuntada la presentación sobre métodos de hashing y concretamente con la presentación que seguimos para el `hash MD5` para que podáis entender y comprender los procedimientos seguidos.
 
-![MD5](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Teoria/Md5/img/portada.png?raw=true)
+![MD5](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Teoria/Md5/img/portada.png)
 
 Presentación [aquí](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Teoria/Md5/MD5.pdf).
 

@@ -4,12 +4,12 @@ author: Kesero
 description: Códigos realizados en python sobre RSA, firma de mensajes, cifrado ElGamal y tests de primalidad.
 date: 2024-12-09 13:35:00 +0800
 categories: [Criptografía, Códigos en python]
-tags: [RSA, ElGammal, firma]
+tags: [Cripto - Códigos en python, Cripto - RSA]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/Titulo.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/RSA/img/Titulo.png
   lqip: 
   alt: 
 comments: true
@@ -27,11 +27,11 @@ Es por ello que comparto con vosotros todos los códigos desarrollados para que 
 
 En cuanto a teoría respecta, os dejo adjuntada la presentación de la autenticación por RSA como la presentación del cifrado ElGamal.
 
-![RSA](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Teoria/RSA/img/Autenticacion_RSA.png?raw=true)
+![RSA](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Teoria/RSA/img/Autenticacion_RSA.png)
 
 Presentación RSA y autentiación [aquí](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Teoria/RSA/RSA.pdf).
 
-![ElGamal](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Teoria/RSA/img/ElGammal.png?raw=true)
+![ElGamal](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Teoria/RSA/img/ElGammal.png)
 
 Presentación ElGamal [aquí](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Teoria/RSA/RSA_Autenticaci%C3%B3n.pdf).
 
@@ -40,7 +40,7 @@ Presentación ElGamal [aquí](https://github.com/k3sero/Blog_Content/blob/main/C
 
 La relación de ejercicios utilizada para la realización de las prácticas es la siguiente.
 
-![Relacion_1](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/Practica_RSA-1.png?raw=true)
+![Relacion_1](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/RSA/img/Practica_RSA-1.png)
 
 
 ## Ejercicios
@@ -52,7 +52,7 @@ Destacar que en estas prácticas, no tenemos un menú interactivo para comprobar
 
 ### Ejercicio 1 (Tests de Primalidad)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/ex1.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/RSA/img/ex1.png)
 
 ```py
 """
@@ -288,7 +288,7 @@ print(f"\n[+] Tiempo total para el test de Miller-Rabin: {tiempo_miller} segundo
 
 ### Ejercicio 2 (Generación de Claves)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/ex2.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/RSA/img/ex2.png)
 
 ```py
 """
@@ -491,7 +491,7 @@ keygeneration()
 
 ### Ejercicio 3 (Texto a numero y Viceversa)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/ex3.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/RSA/img/ex3.png)
 
 ```py
 """
@@ -570,7 +570,7 @@ print(f"Números a texto: {recovered_text}")
 
 ### Ejercicio 4 (Prepara Texto)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/ex4.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/RSA/img/ex4.png)
 
 ```py
 """
@@ -680,7 +680,7 @@ for num_str in examples:
 
 ### Ejercicio 5 (RSA Cifrado y Descifrado con bloques)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/ex5.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/RSA/img/ex5.png)
 
 ```py
 """
@@ -765,7 +765,7 @@ print("Bloques descifrados:", decrypted_blocks)
 
 ### Ejercicio 6 (Cifrado y Descifrado RSA con texto)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/ex6.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/RSA/img/ex6.png)
 
 ```py
 """
@@ -849,7 +849,7 @@ print("Texto descifrado:", decrypted_text)
 
 ### Ejercicio 7 (Firma del mensaje)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/ex7.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/RSA/img/ex7.png)
 
 ```py
 """
@@ -929,7 +929,7 @@ print("C2 (firma cifrada con la clave privada del emisor y luego con la clave p�
 
 ### Ejercicio 8 (Descifrado y firma)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/ex8.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/RSA/img/ex8.png)
 
 ```py
 """
@@ -1028,7 +1028,7 @@ print("¿El mensaje está autenticado?", is_authenticated)
 
 ### Ejercicio 9 (ElGamal)
 
-![Ejercicio](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Codigos_Practicas/RSA/img/ex9.png?raw=true)
+![Ejercicio](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Codigos_Practicas/RSA/img/ex9.png)
 
 ```py
 """
