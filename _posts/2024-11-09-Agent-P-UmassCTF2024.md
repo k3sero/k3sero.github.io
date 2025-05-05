@@ -4,12 +4,12 @@ author: Kesero
 description: Reto Miscelánea basado en la interpretación de una cadena supuestamente codificada.
 date: 2024-11-09 12:28:00 +0800
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Fácil, Interpretación, Writeups]
+tags: [Dificultad - Fácil, Misc, Writeups]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Agent_P/Agent_P.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Agent_P/Agent_P.png
   lqip: 
   alt: 
 comments: true

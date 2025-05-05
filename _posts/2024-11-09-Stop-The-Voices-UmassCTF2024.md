@@ -4,12 +4,12 @@ author: Kesero
 description: Reto de Esteganografía basado en la operación de 400 imágenes para aproximar una función gaussiana.
 date: 2024-11-09 15:01:00 +0800
 categories: [Writeups Competiciones Internacionales, Esteganografía]
-tags: [Media, Esteganografía, Distribución Normal, Writeups]
+tags: [Dificultad - Media, Esteganografía, Writeups]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Estego/UmassCTF2024/Stop_The_Voices/Stop_The_Voices.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Estego/UmassCTF2024/Stop_The_Voices/Stop_The_Voices.png
   lqip: 
   alt: 
 comments: true
@@ -154,7 +154,7 @@ De forma mucho más detallada, el script hace lo siguiente.
 
 10. Por último, imprimimos la ubicación donde se guardó la imagen.
 
-![Flag](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Estego/UmassCTF2024/Stop_The_Voices/flag.png?raw=true)
+![Flag](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Estego/UmassCTF2024/Stop_The_Voices/flag.png)
 
 ### NOTA
 

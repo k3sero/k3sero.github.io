@@ -3,13 +3,13 @@ title: MD5 Road - HackademicsForum2024
 author: Kesero
 description: Reto Binario basado en la colisión de hashes en MD5.
 date: 2024-11-09 15:27:00 +0800
-categories: [Writeups Competiciones Nacionales, Crypto]
-tags: [Media, MD5, Colisión, Writeups]
+categories: [Writeups Competiciones Nacionales, Cripto]
+tags: [Cripto, Cripto - MD5, Dificultad - Media, Writeups]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2024/Cripto/HackademicsForumCTF2024/Md5_road/md5_road.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2024/Cripto/HackademicsForumCTF2024/Md5_road/md5_road.png
   lqip: 
   alt: 
 comments: true

@@ -4,12 +4,12 @@ author: Kesero
 description: Reto Miscelánea basado en la utilización de diversos protocolos distintos del HTTP.
 date: 2024-11-09 12:01:00 +0800
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Fácil, Protocolos, FTP, SSH, Writeups]
+tags: [Dificultad - Fácil, Misc, Writeups]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Polyglot/Polyglot.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Polyglot/Polyglot.png
   lqip: 
   alt: 
 comments: true
@@ -35,7 +35,7 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Com
 
 Si entramos en la página web, observaremos lo siguiente.
 
-![Web](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Polyglot/web.png?raw=true)
+![Web](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Polyglot/web.png)
 
 
 ## Solución

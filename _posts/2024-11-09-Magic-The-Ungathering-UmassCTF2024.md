@@ -4,12 +4,12 @@ author: Kesero
 description: Reto Miscelánea basado en la interpretación de una cadena supuestamente codificada.
 date: 2024-11-09 12:47:00 +0800
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Muy Fácil, Interpretación, Writeups]
+tags: [Dificultad - Muy Fácil, Misc, Writeups]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Magic_the_Ungathering/Magit_the_Ungathering.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Magic_the_Ungathering/Magit_the_Ungathering.png
   lqip: 
   alt: 
 comments: true
@@ -35,7 +35,7 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Com
 
 Al abrir la imagen encontramos lo siguiente.
 
-![Imagen](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Magic_the_Ungathering/image.png?raw=true)
+![Imagen](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Magic_the_Ungathering/image.png)
 
 Podemos observar que la imagen se encuentra un tanto borrosa y además, sabemos que dentro hay una palabra la cual tenemos que introducir dentro de la cadena UMASS{} para obtener la flag
 

@@ -3,13 +3,13 @@ title: Unbreakable - CyberApocalypse2024
 author: Kesero
 description: Reto Binario basado en escapar de una pyjail.
 date: 2024-11-08 21:54:00 +0800
-categories: [Writeups Competiciones Internacionales, Pwn]
-tags: [Fácil, Pyjail, Writeups]
+categories: [Writeups Competiciones Internacionales, Miscelánea]
+tags: [Dificultad - Fácil, Misc, Misc - Pyjail, Writeups]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Misc/CyberApocalypse2024/Unbreakable/Unbreakable.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Pwn/CyberApocalypse2024/Unbreakable/Unbreakable.png
   lqip: 
   alt: 
 comments: true

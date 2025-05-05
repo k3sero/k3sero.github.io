@@ -4,12 +4,12 @@ author: Kesero
 description: Reto de Esteganografía basado en recuperar datos incrustados de diferentes archivos.
 date: 2024-11-16 19:55:00 +0800
 categories: [Writeups Competiciones Internacionales, Esteganografía]
-tags: [Esteganografía, Writeups, incrustado]
+tags: [Esteganografía, Writeups, Dificultad - Fácil]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Estego/1337UpCTF2024/In_Plain_Sight/In_plain_sight.jpg?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Estego/1337UpCTF2024/In_Plain_Sight/In_plain_sight.jpg
   lqip: 
   alt: 
 comments: true
@@ -36,7 +36,7 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Com
 
 El archivo que nos dan se corresponde con la imagen de un gato.
 
-![Gato](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Estego/1337UpCTF2024/In_Plain_Sight/meow.jpg?raw=true)
+![Gato](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Estego/1337UpCTF2024/In_Plain_Sight/meow.jpg)
 
 Aparentemente tenemos que encontrar algo de información en esta imagen, para ello iremos jugando con distintas herramientas como `exiftool`, `binwalk`, `zsteg`, `stegseek`, `stegsnow`, `strings`, `file` para tratar de recuperar datos incrustados en dicha imagen.
 
@@ -79,7 +79,7 @@ Una vez tenemos la contraseña, descomprimimos el fichero `.zip` y obtenemos un 
     Archive:  20BA6E.zip
     inflating: flag.png 
 
-![flag.png](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Estego/1337UpCTF2024/In_Plain_Sight/flag.png?raw=true)
+![flag.png](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Estego/1337UpCTF2024/In_Plain_Sight/flag.png)
 
 Podemos observar lanzando un `file`, que efectivamente se corresponde con el formato de una imagen .png la cual contiene información en su interior. Es por ello que nuevamente deberemos de seguir jugando con las distintas herramientas esteganográficas. 
 
@@ -92,7 +92,7 @@ En mi caso, yo utilicé la herramienta `convert` la cual extrae la posible infor
 
 Abrimos la imagen y efectivamente, encontramos la flag.
 
-![output.png](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Estego/1337UpCTF2024/In_Plain_Sight/output.png?raw=true)
+![output.png](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Estego/1337UpCTF2024/In_Plain_Sight/output.png)
 
 ### NOTA
 

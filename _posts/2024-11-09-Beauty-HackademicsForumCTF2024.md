@@ -4,12 +4,12 @@ author: Kesero
 description: Reto de Esteganografía basado en la extracción de bytes alternos en canales RGB.
 date: 2024-11-09 15:42:00 +0800
 categories: [Writeups Competiciones Nacionales, Estego]
-tags: [Media, RGB, Bytes, XOR, Fibonacci, Writeups]
+tags: [Dificultad - Media, Esteganografía, Writeups]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2024/Estego/HackademicsForumCTF2024/Beauty/BeautyT.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2024/Estego/HackademicsForumCTF2024/Beauty/BeautyT.png
   lqip: 
   alt: 
 comments: true
@@ -38,7 +38,7 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Com
 
 Si abrimos la imagen `original.png` y la imagen `beauty.png`, podemos observar que ambas son "iguales"
 
-![original](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2024/Estego/HackademicsForumCTF2024/Beauty/original.png?raw=true)
+![original](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2024/Estego/HackademicsForumCTF2024/Beauty/original.png)
 
 Además, el código fuente es el siguiente.
 

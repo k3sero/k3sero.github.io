@@ -4,12 +4,12 @@ author: Kesero
 description: Reto Miscelánea basado en la creación de un script para automatizar órdenes.
 date: 2024-11-09 13:22:00 +0800
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Fácil, Script, Writeups]
+tags: [Dificultad - Fácil, Misc, Misc - Scripts, Writeups]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Krusty_Kathering/Krusty_Kathering.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Krusty_Kathering/Krusty_Kathering.png
   lqip: 
   alt: 
 comments: true

@@ -3,13 +3,13 @@ title: Third Times The Charm - UmassCTF2024
 author: Kesero
 description: Reto Cripto basado en la resolución de un sistema congruente por medio del Teorema Chino del Resto.
 date: 2024-11-09 13:43:00 +0800
-categories: [Writeups Competiciones Internacionales, Cripto]
-tags: [Fácil, Teorema Chino del Resto, Congruencias, Writeups]
+categories: [Writeups Competiciones Internacionales, Criptografía]
+tags: [Cripto, Cripto - Matemáticas, Dificultad - Fácil, Writeups]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Internacionales_Writeups/2024/Cripto/UmassCTF2024/Third_Times_The_Charm/Third_Times_The_Charm.png?raw=true
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Cripto/UmassCTF2024/Third_Times_The_Charm/Third_Times_The_Charm.png
   lqip: 
   alt: 
 comments: true
