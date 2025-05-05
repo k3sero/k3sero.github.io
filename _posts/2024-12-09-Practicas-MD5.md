@@ -3,7 +3,7 @@ title: Códigos en python sobre la implementación del Hash MD5
 author: Kesero
 description: Códigos realizados en python sobre la implementación de MD5.
 date: 2024-12-09 18:00:00 +0800
-categories: [Criptografía, Códigos en python]
+categories: [Cripto, Códigos en python]
 tags: [Cripto - Códigos en python, Cripto - MD5]
 pin: false
 math: true

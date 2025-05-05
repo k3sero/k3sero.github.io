@@ -3,7 +3,7 @@ title: Códigos en python sobre RSA
 author: Kesero
 description: Códigos realizados en python sobre RSA, firma de mensajes, cifrado ElGamal y tests de primalidad.
 date: 2024-12-09 13:35:00 +0800
-categories: [Criptografía, Códigos en python]
+categories: [Cripto, Códigos en python]
 tags: [Cripto - Códigos en python, Cripto - RSA]
 pin: false
 math: true

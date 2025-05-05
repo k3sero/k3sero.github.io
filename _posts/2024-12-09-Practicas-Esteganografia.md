@@ -3,7 +3,7 @@ title: Códigos en python sobre métodos Esteganográficos
 author: Kesero
 description: Códigos realizados en python sobre LSB y métodos de ordenación de imágenes.
 date: 2024-12-09 17:25:00 +0800
-categories: [Criptografía, Códigos en python]
+categories: [Cripto, Códigos en python]
 tags: [Cripto - Códigos en python, Estego - LSB ]
 pin: false
 math: true
