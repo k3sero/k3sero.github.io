@@ -4,7 +4,7 @@ author: Kesero
 description: Soluciones a los retos de la categoría GENERAL de CryptoHack
 date: 2025-04-07 13:00:00 +0000
 categories: [CryptoHack, General]
-tags: [CryptoHack]
+tags: [CryptoHack, Writeups]
 pin: false
 math: true
 mermaid: true
