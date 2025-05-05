@@ -3,7 +3,7 @@ title: Laberinto Lógico - HackademicsForum2025
 author: Kesero
 description: Reto hardware basado decodificar los estímulos de un esquemático.
 date: 2025-04-06 15:00:00 +0000
-categories: [Writeups Competiciones Nacionales, Hardware]
+categories: [Writeups Competiciones Nacionales, Hardware N]
 tags: [Hardware, Hardware - Esquemático, Writeups, Dificultad - Media]
 pin: false
 math: true

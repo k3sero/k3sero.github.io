@@ -3,7 +3,7 @@ title: Beauty - HackademicsForum2024
 author: Kesero
 description: Reto de Esteganografía basado en la extracción de bytes alternos en canales RGB.
 date: 2024-11-09 15:42:00 +0800
-categories: [Writeups Competiciones Nacionales, Estego]
+categories: [Writeups Competiciones Nacionales, Esteganografía N]
 tags: [Dificultad - Media, Estego, Writeups]
 pin: false
 math: true
