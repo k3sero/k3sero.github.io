@@ -4,7 +4,7 @@ author: Kesero
 description: Códigos realizados en python sobre RSA, firma de mensajes, cifrado ElGamal y tests de primalidad.
 date: 2024-12-09 13:35:00 +0800
 categories: [Cripto, Códigos en python]
-tags: [Cripto - Códigos en python, Cripto - RSA]
+tags: [Cripto, Cripto - Códigos en python, Cripto - RSA]
 pin: false
 math: true
 mermaid: true

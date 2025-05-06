@@ -4,7 +4,7 @@ author: Kesero
 description: Códigos realizados en python para el cifrado Afín y cifrado Hill.
 date: 2024-12-04 20:42:00 +0800
 categories: [Cripto, Códigos en python]
-tags: [Cripto - Códigos en python, Cripto - Cifrados Clásicos]
+tags: [Cripto, Cripto - Códigos en python, Cripto - Cifrados Clásicos]
 pin: false
 math: true
 mermaid: true

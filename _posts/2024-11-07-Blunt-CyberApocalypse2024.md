@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Cripto basado en la resolución del Logaritmo Discreto con p poco seguro factorizado en números pequeños.
 date: 2024-11-07 11:51:00 +0800
 categories: [Writeups Competiciones Internacionales, Criptografía]
-tags: [Cripto - RSA, Dificultad - Fácil, Writeups]
+tags: [Cripto, Cripto - RSA, Dificultad - Fácil, Writeups]
 pin: false
 math: true
 mermaid: true

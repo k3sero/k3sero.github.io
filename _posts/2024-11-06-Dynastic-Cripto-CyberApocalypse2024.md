@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Cripto basado en el Cifrado Trithemius basado en desplacamientos incrementales.
 date: 2024-11-6 16:31:00 +0800
 categories: [Writeups Competiciones Internacionales, Criptografía]
-tags: [Cripto - Cifrados Clásicos, Dificultad - Muy Fácil, Writeups]
+tags: [Cripto, Cripto - Cifrados Clásicos, Dificultad - Muy Fácil, Writeups]
 pin: false
 math: true
 mermaid: true

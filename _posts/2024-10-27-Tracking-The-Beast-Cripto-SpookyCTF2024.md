@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Cripto basado en Curvas Elipticas.
 date: 2024-10-27 22:54:00 +0800
 categories: [Writeups Competiciones Internacionales, Criptografía]
-tags: [Cripto - Curvas Elípticas, Writeups, Dificultad - Difícil]
+tags: [Cripto, Cripto - Curvas Elípticas, Writeups, Dificultad - Difícil]
 pin: false
 math: true
 mermaid: true
