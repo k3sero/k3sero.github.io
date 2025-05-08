@@ -2,7 +2,7 @@
 title: The Needle - Hardware HackThebox
 author: Kesero
 description: 
-date: 2025-05-09 10:00:00 +0000
+date: 2025-05-08 10:00:00 +0000
 categories: [Hack The Box, Hardware]
 tags: [Writeups, Dificultad - Muy Fácil, Hardware, Hardware - Firmware, HTB, HTB - Hardware]
 pin: false
