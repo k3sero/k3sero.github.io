@@ -1,43 +1,40 @@
-# Chirpy Starter
+# 🛡️ Kesero — Blog de Ciberseguridad y CTFs
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+Bienvenido al repositorio de [Kesero](https://k3sero.github.io), un blog dedicado al aprendizaje, resolución y documentación de retos de ciberseguridad, con un enfoque especial en CTFs (Capture The Flag), análisis técnico y divulgación de conocimientos sobre hacking ético.
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+## 🌐 Sitio web
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+👉 [https://k3sero.github.io](https://k3sero.github.io)
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+## 📚 Temáticas
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
-```
+- Writeups de competiciones internacionales y nacionales
+- Criptografía aplicada y retos de CryptoHack
+- Ingeniería inversa y exploits controlados
+- OSINT, forense digital y hardware hacking
+- Recursos educativos y configuraciones de entornos
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+## 🧰 Tecnologías usadas
 
-## Usage
+- [Jekyll](https://jekyllrb.com/) como generador estático
+- [Chirpy Theme](https://github.com/cotes2020/jekyll-theme-chirpy) personalizado
+- Markdown para la redacción de contenidos
+- GitHub Pages para despliegue automático
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+## 📝 Licencias
 
-## Contributing
+- **Código y theme:** bajo [MIT License](LICENSE)
+- **Contenido (artículos, imágenes, etc.):** bajo [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+> Consulta el archivo [`CONTENT_LICENSE.md`](./CONTENT_LICENSE.md) para más información sobre los derechos del contenido.
 
-## License
+## 🤝 Contacto
 
-This work is published under [MIT][mit] License.
+- 🌐 [Beacons](https://beacons.ai/kesero)
+- 🐙 [GitHub](https://github.com/k3sero)
+- 💼 [LinkedIn](https://www.linkedin.com/in/carlos-mar%C3%ADn-rodr%C3%ADguez-670766263/)
+- 📫 [Email](mailto:maestrokesero@gmail.com)
 
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+---
+
+Este blog es únicamente con fines educativos. No se promueve ni se justifica el uso indebido de ninguna herramienta o técnica descrita.
