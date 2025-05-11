@@ -84,7 +84,7 @@ Tutorial para la instalación de la zshrc y powerlevel10k [aquí](https://www.yo
 
 ![Entorno Windows_temp](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Herramientas/Entorno/Entornos_Profesionales/Entorno_Windows_Temp.png)
 
-La finalidad de este Windows virtualizado es la de ejecutar programas de terceros con el fin de encapsular el posible malware que estos programas traigan consigo. Es por ello que viene con integración de GPU dedicada, para poder ejecutar programas más pesados con soltura. 
+La finalidad de este Windows virtualizado es la de ejecutar programas de terceros con el fin de encapsular los programas de terceros para que sean seguros. Es por ello que viene con integración de GPU dedicada, para poder ejecutar programas más pesados con soltura. 
 
 Para instalar este tipo de instancias, primero tenemos que tener instalado el entorno de Windows 10 dentro de Hyper-V. Para ello seguir este [tutorial](https://www.youtube.com/watch?v=Bpsice4QuL8). 
 

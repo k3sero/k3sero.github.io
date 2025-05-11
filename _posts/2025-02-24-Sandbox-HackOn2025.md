@@ -85,7 +85,7 @@ Podemos escribir archivos mediante
     LFILE=file_to_write
     echo DATA | xxd | xxd -r - "$LFILE"
 
-NOTA: Importante aclarar que la escritura se realiza al comienzo del archivo, por lo que si queremos escribir al final tendremos que copiar todo el contenido del mismo y luego nuestro payload.
+NOTA: Importante aclarar que la escritura se realiza al comienzo del archivo, por lo que si queremos escribir al final tendremos que copiar todo el contenido del mismo y luego nuestra cadena a introducir.
 
 Llegados a este punto podemos salir de la `rbash` de distintos modos. El camino que seguí es que como tenemos capacidad de escritura en los archivos cuyo propietario sea `paco`, directamente podemos escribir en nuestra propia `.bashrc` para escapar de la bash.
 

@@ -63,16 +63,16 @@ while True:
         print("🟥🟥🟥🟥🟥")
 ```
 
-En resumidas cuentas, este código implementa un juego tipo Wordle que compara adivinanzas con la palabra secreta `SIGMA` dando pistas con emojis. Posteriormente, ejecuta el input introducido como código en Python en la función `exec()`. Además podemos observar que tiene un bug en la lógica de pistas, ya que `target[j]` es una letra y no una colección, por eso solo se evalúa como verdadera si ambas letras son iguales (cubierto por la primera condición)
+En resumidas cuentas, este código implementa un juego tipo Wordle que compara adivinanzas con la palabra secreta `SIGMA` dando pistas con emojis. Posteriormente, la cadena introducida por parte del usuario entra en la función `exec()`. Además podemos observar que tiene un bug en la lógica de pistas, ya que `target[j]` es una letra y no una colección, por eso solo se evalúa como verdadera si ambas letras son iguales (cubierto por la primera condición)
 
-Hay un factor muy importante y es que el usuario está limitado al input a introducir, ya que este debe de ser de 5 caracteres para que se ejecute la función `exec()`, en caso contrario no se ejecutará.
+Hay un factor muy importante y es que el usuario está limitado a la cadena  a introducir, ya que esta debe de ser de 5 caracteres para que se ejecute la función `exec()`, en caso contrario saltará el try.
 
 ## Solver
 
-La solución de este reto viene dada por la explotación de la función `exec(guess)`
+La solución de este reto viene dada por ejecución de la función `exec(guess)`
 Además, podemos ver que a simple vista el contenido de `flag.txt` se encuentra embebido en la variable `f`
 
-Como el código ejecuta cualquier input del usuario gracias al `exec()`, esto nos permite ejecutar código en el contexto del programa. Para ello, tendremos que reconstruir la bandera carácter por carácter sin adivinarla manualmente, usando una técnica de búsqueda binaria sobre un conjuto de caracteres posibles llamados `alpha`
+El código que nos proporcionan para este reto en particular, permite que cualquier texto introducido por el usuario, puede llegar a introducirse dentro de la función `exec()`, esto nos permite ejecutar código en el contexto del programa. Para ello, tendremos que reconstruir la bandera carácter por carácter sin adivinarla manualmente, usando una técnica de búsqueda binaria sobre un conjuto de caracteres posibles llamados `alpha`
 
 Para ello, en cada intento tenemos que construir una string parcial y compararlo con la flag y en base si la flag es "menor" o "mayor" al string actual, el script provocará errores (como dividir entre False) además de observar si el programa responde con error (🟥🟥🟥🟥🟥) o éxito (🟩🟩🟩🟩🟩).
 
@@ -120,7 +120,7 @@ with remote("challs.umdctf.io", 31601) as p:
 
 Antes que nada, vamos a explicar paso por paso cada parte del código.
 
-1. Lo más importante es entender la explotación del propio `exec()`
+1. Lo más importante es entender y comprender el funcionamiento de `exec()`
 
 Para ello, sabemos que `exec(guess)` va a ejecutar todo lo que escribamos como input (y tenga 5 caracteres). Por ejemplo, si ponemos `1+1`, el programa ejecutará `exec(1+1)`. Si pudieramos poner `exec(print(f))`, el programa nos devovlería la flag pero en este caso no aplica ya que input tiene más de 5 caracteres.
 

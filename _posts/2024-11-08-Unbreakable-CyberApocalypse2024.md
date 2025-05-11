@@ -127,8 +127,7 @@ while True:
       print(f"\n{banner2}\nI'm UNBREAKABLE!\n") 
 ```
 
-Básicamente al ejecutar el script, podemos introducir comandos los cuales se comprobarán posteriormente y si alguno de los caracteres de la cadena introducida pertenecen a una lista llamada `blacklist`, el programa arrojará la cadena `Naughty naughty`. Si no pertenecen a esta lista, se pasara a la función `eval()` la cual añadirá los paréntesis `()` a nuestra cadena introducida.
-
+Básicamente el usuario puede introducir cadenas las cuales se comprobarán anteriormente y si alguno de los caracteres de la cadena introducida pertenecen a una lista de comandos inválidos, el programa arrojará la cadena `Naughty naughty`. Si no pertenecen a esta lista, se pasara a la función `eval()` la cual añadirá los paréntesis `()` a nuestra cadena introducida.
 
 ## Solución
 

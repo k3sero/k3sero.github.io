@@ -33,7 +33,7 @@ Todos los archivos pertenecientes a estos retos los puedes encontrar [aquí](htt
 
 ### Enunciado
 
-"You wake up this morning, called by the CISO of THCity Hospital, and check his emails. Trouble! Last night, the hospital was the victim of an attack, and ransomware was deployed on all the hospital's machines. Your goal now is to find out who could have done this, why, how, and where to find the criminals. You need to find the most important files and find a clue as to the attacker's name!
+"You wake up this morning, called by the CISO of THCity Hospital, and check his emails. Trouble! Last night, the hospital was the victim of an attack, and blackmail program was deployed on all the hospital's machines. Your goal now is to find out who could have done this, why, how, and where to find the criminals. You need to find the most important files and find a clue as to the attacker's name!
 
 Flag Format: THC{Name_Surname}. Example if the attacker is called "William Gibson" : THC{William_Gibson}
 
@@ -262,15 +262,15 @@ A pesar de todo, unas herramientas muy potentes para futuros retos de audio son 
 ## Is that guy really just walking? (Mid)
 
 ### Enunciado
-During your research on the hospital attacks, you might find other persons linked to the network. Can you find the username of the damaging malware’s developer as well as the city he is living in so the Special Forces can ask him some questions?
+During your research on the hospital attacks, you might find other persons linked to the network. Can you find the username of the damaging program developer as well as the city he is living in so the Special Forces can ask him some questions?
 
 Flag Format : THC{@username_City-Hyphen-Separated} For instance Aragorn living in Minas Tirith would yield THC{@aragorn_Minas-Tirith}
 
 
 ### Solver
-Este es el último reto de todos, en este caso tenemos que encontrar a el responsable del malware que se ha ejecutado en el Hospital.
+Este es el último reto de todos, en este caso tenemos que encontrar a el responsable del programa que se ha ejecutado en el Hospital.
 
-En uno de los correos, concretamente en el fichero `logs.txt` se encuentra el historial de movimientos del sistema del hospital. En una de sus líneas podemos encontrar el nombre del malware en cuestión llamado `Pandarmor`.
+En uno de los correos, concretamente en el fichero `logs.txt` se encuentra el historial de movimientos del sistema del hospital. En una de sus líneas podemos encontrar el nombre del programa específico en cuestión llamado `Pandarmor`.
 
 ```
 (...)
@@ -283,7 +283,7 @@ En uno de los correos, concretamente en el fichero `logs.txt` se encuentra el hi
 (...)
 ```
 
-En este punto tenemos dos vías para realizar el siguiente paso. Según el creador del reto, en el propio perfil de blusky de `Zephi`, podemos encontrar una relación directa entre `Zephi` y el creador del malware.
+En este punto tenemos dos vías para realizar el siguiente paso. Según el creador del reto, en el propio perfil de blusky de `Zephi`, podemos encontrar una relación directa entre `Zephi` y el creador del programa que se ejecutó.
 
 Si vamos mirando los posts de `Zephi` en blusky además de ir mirando a las personas etiquetadas en cada imágen podemos ver que el siguiente post, se menciona a un tal "@thenetworkwalker"
 
@@ -295,7 +295,7 @@ Si nos adentramos en su perfil, podemos observar que dicha persona se dedica al 
 
 ![perfil_network](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/perfil.png)
 
-Si miramos su perfil, nos daremos cuenta que menciona que ha desarrollado un randsomware llamado `Pandarmor`, con que todo a punta a que él ha sido el dueño del malware.
+Si miramos su perfil, nos daremos cuenta que menciona que ha desarrollado un randsomware llamado `Pandarmor`, con que todo a punta a que él ha sido el dueño del programa.
 
 ![post_pandarmore](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/post.png)
 

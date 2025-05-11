@@ -81,13 +81,13 @@ Créditos a [sumurazmirzayev](https://medium.com/@sumurazmirzayev/multiplayer-um
 
 Mirando soluciones he visto una técnica muy buena. Normalmente hay imágenes que suelen tener en metadatos su la ubicación de donde se tomaron, para ello es muy recomendable siempre utilizar `exiftool` para intentar extraer esa información.
 
-En este caso, estas imágenes pertenecen a "Street View Download 360" y por tanto tienen un identificador único llamado "Panorama ID" el cual identifica la ubicación exacta.
+En este caso, estas imágenes pertenecen a "Street View 360" y por tanto tienen un identificador único llamado "Panorama ID" el cual identifica la ubicación exacta.
 
 ![id1](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*tldE0krcUZbDdjED_UVvNg.png)
 
 ![id2](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*JRDrKniQweKuSk4IeGjiGg.png)
 
-Una vez obtenido su identificador, nos vamos a la aplicación "Street View Download 360" y buscamos esos identificadores.
+Una vez obtenido su identificador, nos vamos a la aplicación "Street View 360" y buscamos esos identificadores.
 
 ![ids](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*_UgaTf85IT1kn6-Ag5Y7og.png)
 ![ids2](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*E2isPK3Gvl2ICTq7RhRzNg.png)
