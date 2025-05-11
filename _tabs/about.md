@@ -16,7 +16,7 @@ Además, para complementar dichos conocimientos, actualmente estoy estudiando va
 
 ### **Caliphal Hounds** 
 
-![Logo](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/Logo_mod.png)
+![Logo](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/prompt.png)
 
 Caliphal Hounds es un equipo de ciberseguridad enfocado en la resolución de desafíos CTF (Capture the Flag) a nivel nacional e internacional.
 
