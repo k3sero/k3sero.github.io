@@ -16,6 +16,8 @@ Además, para complementar dichos conocimientos, actualmente estoy estudiando va
 
 ### **Caliphal Hounds** 
 
+![Logo](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/Logo_mod.png)
+
 Caliphal Hounds es un equipo de ciberseguridad enfocado en la resolución de desafíos CTF (Capture the Flag) a nivel nacional e internacional.
 
 En dichas competiciones, tocamos retos basados en distintas categorías como exploiting, criptografía, ingeniería inversa, forense digital, seguridad web, blockchain, radiofrecuencia, hardware, etc.
@@ -25,6 +27,8 @@ En este 2024, seguimos demostrando nuestro desempeño rozando las primeras posic
 
 
 ### **Blog k3sero** 
+
+![Logok](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/Logo_mod.png)
 
 Este blog personal está dedicado a tratar distintos temas sobre la ciberseguridad y hacking ético, realizando diversas investigaciones sobre las ramas que la conforman. A su vez, también está enfocado en la resolución de retos CTF (Capture the Flag) que abordamos en las competiciones nacionales e internacionales, con el fin de aportar soluciones a las distintas categorías para contribuir conocimiento a la comunidad.
 
