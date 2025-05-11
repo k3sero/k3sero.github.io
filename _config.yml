@@ -229,7 +229,7 @@ jekyll-archives:
 plugins:
   - jekyll-seo-tag
 
-title: "Blog Kesero: Writeups y CTFs"
+title: "Blog Kesero"
 description: "Blog dedicado a la resolución de retos CTFs y Writeups"
 url: "https://k3sero.github.io/"
 author:
