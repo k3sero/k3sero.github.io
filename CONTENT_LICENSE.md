@@ -1,8 +1,8 @@
-## Licencia de contenido
+## Licencia de Contenido
 
-El contenido textual de este sitio (posts, descripciones, artículos, imágenes y recursos generados por el autor) está licenciado bajo la:
+Todos los artículos y publicaciones ubicados en la carpeta `_posts/` están protegidos bajo la licencia:
 
-**Creative Commons Attribution 4.0 International (CC BY 4.0)**  
-https://creativecommons.org/licenses/by/4.0/
+**Creative Commons Atribución-NoComercial-SinObraDerivada 4.0 Internacional (CC BY-NC-ND 4.0)**  
+https://creativecommons.org/licenses/by-nc-nd/4.0/
 
-Puedes copiar, distribuir, remezclar, transformar y construir a partir del contenido, siempre que des crédito adecuado y enlaces a la licencia.
+No está permitido usar el contenido con fines comerciales, ni modificarlo sin autorización. Se permite su distribución solo con atribución clara al autor original.
