@@ -232,7 +232,7 @@ plugins:
 
 title: "Kesero"
 description: "Blog dedicado a la resolución de retos CTFs y Writeups"
-url: "https://k3sero.github.io/"
+url: "https://k3sero.github.io"
 author:
   name: "Kesero"
   twitter: k3sero
