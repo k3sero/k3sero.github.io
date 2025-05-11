@@ -225,3 +225,14 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+plugins:
+  - jekyll-seo-tag
+
+title: "Blog Kesero: Writeups y CTFs"
+description: "Blog dedicado a la resolución de retos CTFs y Writeups"
+url: "https://k3sero.github.io/"
+author:
+  name: "Kesero"
+  twitter: k3sero
+
