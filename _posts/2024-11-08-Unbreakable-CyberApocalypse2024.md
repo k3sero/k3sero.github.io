@@ -134,7 +134,7 @@ Básicamente al ejecutar el script, podemos introducir comandos los cuales se co
 
 En este punto, nuestra misión se reduce a salir del programa jail y leer el archivo `flag.txt`. Para ello podemos hacerlo mediante la obtención de una shell o simplemente leer el archivo `flag.txt`.
 
-En este caso hay una serie de comandos los cuales no podremos utilizar, limitándonos el payload a crear.
+En este caso hay una serie de comandos los cuales no podremos utilizar, limitándonos los comandos a ejecutar.
 
 De todos modos, en el código podemos ver las funciones que están disponibles simplemente introduciendo el comando `help`.
 
@@ -144,7 +144,7 @@ Además, podemos ir probando comandos y veremos que los siguientes comandos son 
 * `open` para abrir el archivo `flag.txt`.
 * `read` para leer su contenido.
 
-Sabiendo que estos comandos están permitidos, simplemente con el siguiente payload, podemos leer la flag.
+Sabiendo que estos comandos están permitidos y habiendo creado la cadena de comandos idónea, podemos leer la flag.
 
 ```python
 print(open('flag.txt').read())

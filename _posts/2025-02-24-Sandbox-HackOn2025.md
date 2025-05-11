@@ -42,7 +42,7 @@ Una vez dentro, se nos desplegará una bash restringida como el usuario `paco`. 
 
 ## Solución
 
-Este tipo de retos requiere tiempo y sobre todo de probar, probar y probar diferentes comandos y payloads.
+Este tipo de retos requiere tiempo y sobre todo de probar, probar y probar diferentes comandos para ir depurando posibles vías de ataque.
 
 En este caso, la bash nos permite listar archivos mediante `ls` dentro de nuestra carpeta teníamos una carpeta `bin/` con los comandos que podíamos ejecutar los cuales son los siguientes.
 

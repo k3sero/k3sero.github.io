@@ -529,7 +529,7 @@ print(decrypt(key, ciphertext))
 
 The previous set of challenges showed how AES performs a keyed permutation on a block of data. In practice, we need to encrypt messages much longer than a single block. A mode of operation describes how to use a cipher like AES on longer messages.
 
-All modes have serious weaknesses when used incorrectly. The challenges in this category take you to a different section of the website where you can interact with APIs and exploit those weaknesses. Get yourself acquainted with the interface and use it to take your next flag!
+All modes have serious weaknesses when used incorrectly. The challenges in this category take you to a different section of the website where you can interact with APIs and take advantage of those weaknesses. Get yourself acquainted with the interface and use it to take your next flag!
 
 Play at https://aes.cryptohack.org/passwords_as_keys
 
