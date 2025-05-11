@@ -1,10 +1,10 @@
 ---
 title: The Mini - UMDCTF2025
 author: Kesero
-description: Reto basado escapar de un programa 
+description: Reto basado escapar de un programa de apuntes por terminal
 date: 2025-05-11 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Misc, Writeups, Dificultad - Media]
+tags: [Misc, Writeups, Dificultad - Media, Misc - Jail]
 pin: false
 math: true
 mermaid: true

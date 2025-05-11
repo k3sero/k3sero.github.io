@@ -2,7 +2,7 @@
 title: More Sleuth - UMDCTF2025
 author: Kesero
 description: Reto basado en encontrar el avión fantasma dentro de un reporte de radio
-date: 2025-04-27 10:00:00 +0000
+date: 2025-05-11 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Miscelánea]
 tags: [Misc, Writeups, Dificultad - Media]
 pin: false
