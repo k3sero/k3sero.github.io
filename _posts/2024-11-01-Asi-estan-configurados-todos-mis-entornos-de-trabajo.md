@@ -76,7 +76,7 @@ Al ingresar nuevamente, escribimos en el buscador `"Hyper-V"` y tendremos acceso
 
 Como he mencionado anteriormente, este sistema operativo está enfocado principalmente en la programación. Es por ello que esta máquina tendrá una instalación básica de Debian, además de contar con las herramientas y suites IDE de programación pertinentes. Por último, instalaremos programas como `zshrc` y `powerlevel10k` para contar con un manejo fluido y cómodo en la terminal.
 
-Página Oficial de Debian para obtener la imagen .iso [aquí](https://www.debian.org/download.es.html).
+Página Oficial de Debian. [aquí](https://www.debian.org/download.es.html).
 
 Tutorial para la instalación de la zshrc y powerlevel10k [aquí](https://www.youtube.com/watch?v=vyRXgfDEudI).
 
