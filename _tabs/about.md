@@ -73,7 +73,6 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 | UofTCTF 2025                                     |	1764,0000    | 3,632 |
 | IrisCTF 2025                                     |	1697,0000    | 6,097 |
 
-
 ### 2024
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |

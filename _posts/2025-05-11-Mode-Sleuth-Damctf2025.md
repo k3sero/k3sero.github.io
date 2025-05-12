@@ -1,10 +1,10 @@
 ---
 title: More Sleuth - UMDCTF2025
 author: Kesero
-description: Reto basado en encontrar el avión fantasma dentro de un reporte de radio
+description: Reto basado en encontrar el avión fantasma dentro de un reporte de radio mediante una captura en ADS-B
 date: 2025-05-11 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Misc, Writeups, Dificultad - Media]
+tags: [Misc, Writeups, Dificultad - Media, Osint, Osint - Research]
 pin: false
 math: true
 mermaid: true
@@ -16,7 +16,7 @@ comments: true
 ---
 Autores del reto: `KeKoa_M, alienfoetus`
 
-Dificultad: <font color=green>Media</font>
+Dificultad: <font color=orange>Media</font>
 
 ## Enunciado
 
@@ -65,7 +65,126 @@ En la `captura.txt` podemos encontrar la siguiente información.
 (...)
 ```
 
+Este reporte, coincide con una captura `ADS-B`. Una captura ADS-B (Automatic Dependent Surveillance–Broadcast) se refiere a la recolección de señales transmitidas por aviones que usan el sistema ADS-B para enviar información sobre su posición, velocidad, altitud, identificación, y más.
+
+Básicamente podmeos decir que es un sistema de vigilanzia usado en aviación que permite a las aereonaves determinar su propia posición mediante GPS, transmitir esa posición y otros datos automáticamente y de forma continua a estaciones de tierra y otras aeronaves cercanas.
+
+El tipo de información que se transmite en estas señales suele incluir el identificador de la aeronave, (número de vuelo), posición (latitud y longitud), velocidad, rumbo, estado del transpondedor y a veces información del plan de vuelo.
+
 ## Solver
 
+Para resolver este reto, primero tenemos que comprender la información que tenemos en `captura.txt`
+
+Por ejemplo, hay líneas en nuestro documento que se transmiten en un mensaje `Mode S extendido` y otras en formato `Mode S short`, ambas se encuentran en formato hexadecimal y sólo se diferencian en longitud.
+
+Estas tramas suelen comenzar con `*` seguidas de 28 caracteres hexadecimales (14 bytes) y terminan en `;`.
+
+Para ponernos en situación, un mensaje de 112 bits (14 bytes) contiene la siguiente información.
+
+1. Formato / tipo de mensaje (5 bits).
+
+2. ICAO address (24 bits) – identificación única del avión.
+
+3. Payload (datos variables) – pueden ser posición, altitud, velocidad, identificación, etc.
+
+4. CRC (24 bits) – para comprobar errores.
+
+Si ponemos de ejemplo el mensaje `*8DAB8D76589B82A3FD2E748E7900;`, podemos desglosar la siguiente información.
+
+1. 8D equivale al tipo de mensaje y transpondedor:
+
+2. 8D indica un mensaje ADS-B tipo 17 (Downlink Format 17), lo que significa que contiene datos útiles como posición, identificación o velocidad.
+
+3. AB8D76 → ICAO address de la aeronave (hexadecimal). Esta dirección, identifica de forma única al avión. Puede buscarse en bases de datos como ADSBExchange o OpenSky Network.
+
+4. El resto 589B82A3FD2E748E7900 → Es el contenido y CRC, y requiere decodificación binaria para entender si es un mensaje de posición, velocidad, o identificación.
+
+Otro ejemplo son los mensajes que no comienzan por `8D` como por ejemplo `*20001338D874AD;`, los cuales se desglosan de la siguiente manera.
+
+1. 20 equivale a Downlink Format 4, posiblemente una respuesta de interrogación del radar secundario (SSR). No es un mensaje ADS-B completo, pero puede contener datos útiles como Squawk code o identificadores.
+
+2. 5DAB8D76... también es un mensaje válido, de otro tipo, probablemente un DF11 o DF5 (respuestas sin ADS-B, transpondedor puro).
+
+Para que no tengamos dudas, podemos listar toda la información utilizando el módulo `pyModeS` de python para llevar a cabo la automatización de la información.
+
+Con el siguiente script, podremos listar toda la información perteneciente a cada registro.
+
+```py
+import pyModeS as pms
+
+# Archivo de entrada y salida
+archivo_entrada = "captura.txt"
+archivo_salida = "resultado_adsb.txt"
+
+def procesar_mensaje(msg):
+    msg = msg.strip().strip('*').strip(';')
+    
+    if len(msg) != 28 or not msg.startswith("8D"):
+        return None  # No es un mensaje ADS-B de 112 bits
+
+    icao = pms.adsb.icao(msg)
+    tc = pms.adsb.typecode(msg)
+
+    resultado = {
+        "raw": msg,
+        "icao": icao,
+        "typecode": tc,
+    }
+
+    if 1 <= tc <= 4:
+        resultado["tipo"] = "Identificación"
+        resultado["callsign"] = pms.adsb.callsign(msg)
+
+    elif 9 <= tc <= 18:
+        resultado["tipo"] = "Posición (Airborne)"
+        resultado["altitud"] = pms.adsb.altitude(msg)
+        resultado["lat/lon"] = "Codificado (CPR, requiere más de 1 msg)"
+
+    elif tc == 19:
+        resultado["tipo"] = "Velocidad"
+        vs = pms.adsb.velocity(msg)
+        if vs:
+            resultado["velocidad"] = f"{vs[0]} knots"
+            resultado["rumbo"] = f"{vs[1]}°"
+            resultado["ascenso/descenso"] = f"{vs[2]} ft/min"
+
+    else:
+        resultado["tipo"] = "Otro"
+
+    return resultado
+
+def main():
+    resultados = []
+
+    with open(archivo_entrada, "r") as f:
+        lineas = f.readlines()
+
+    for linea in lineas:
+        datos = procesar_mensaje(linea)
+        if datos:
+            resultados.append(datos)
+
+    # Escribir en archivo
+    with open(archivo_salida, "w") as out:
+        for datos in resultados:
+            out.write("-" * 40 + "\n")
+            for k, v in datos.items():
+                out.write(f"{k}: {v}\n")
+
+    print(f"\n Resultados guardados en '{archivo_salida}'")
+
+if __name__ == "__main__":
+    main()
+
+```
+
+Con la información listada y desgranada, tendremos que revisar los datos publicos de aviación para determinar que aviones destacan o probablemente no estarían en la zona en la que se produce el resto de captura. Es por ello que investigando a fondo la procedencia de cada uno de los aviones, finalmente encontrabamos que un avión `NASA Shuttle Carrier aircraft` con la dirección en la cola de `905NA`.
+
+Este avión se corresponde al legendario Shuttle Carrier Aircraft (SCA) de la NASA, un Boeing 747 modificado para transportar el transbordador espacial y fue el encargado de trasladar el transbordador espacial Shuttle entre bases. Es por ello que en el contexto del problema no encaja.
+
+A partir de este momento, tenemos que encontrar el reportes públicos más información sobre la nave. Para ello utilizaremos páginas como [gis.icao](https://gis.icao.int/portal/home/item.html?id=14a985339f224d23af60ce8f37f8cd09) o como [hexdb](https://hexdb.io/#api-body) los cuales permiten la identificación de aviones en base al `ICAO` y otros parámetros en cuestión.
+
+Afinando la búsqueda, encontramos `serial number` el cual se corresponde con `20107` y finalmente el nombre de registro `NATIONAL AERONAUTICS AND SPACE ADMINISTRATION`
+
 ## Flag
-``
+`dam{N905NA_NATIONAL AERONAUTICS AND SPACE ADMINISTRATION_20107}`
