@@ -1,5 +1,5 @@
 ---
-title: Insert coin to play Part [1-2] - UMDCTF2025
+title: Insert coin to play Part [1-2] - UnivsthreatsCTF2025
 author: Kesero
 description: Reto basado en hackear videojuegos para cambiar registros a nuestra voluntad
 date: 2025-05-03 10:00:00 +0000
