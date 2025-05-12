@@ -178,7 +178,7 @@ if __name__ == "__main__":
 
 ```
 
-Con la información listada y desgranada, tendremos que revisar los datos publicos de aviación para determinar que aviones destacan o probablemente no estarían en la zona en la que se produce el resto de captura. Es por ello que investigando a fondo la procedencia de cada uno de los aviones, finalmente encontrabamos que un avión `NASA Shuttle Carrier aircraft` con la dirección en la cola de `905NA`.
+Con la información listada y desgranada, tendremos que revisar los datos publicos de aviación para determinar que aviones destacan o probablemente no estarían en la zona en la que se produce el resto de captura. Es por ello que investigando a fondo la procedencia de cada uno de los aviones, finalmente encontrabamos que un avión con el `ICAO:` `ADF94B` perteneciente al mensaje `*8DAD0887590F563867B7CADF94B1;` el cual se corresponde con el avión `NASA Shuttle Carrier aircraft` con la dirección en la cola de `905NA`.
 
 Este avión se corresponde al legendario Shuttle Carrier Aircraft (SCA) de la NASA, un Boeing 747 modificado para transportar el transbordador espacial y fue el encargado de trasladar el transbordador espacial Shuttle entre bases. Es por ello que en el contexto del problema no encaja.
 
