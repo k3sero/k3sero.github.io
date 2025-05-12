@@ -1,7 +1,7 @@
 ---
 title: Debugging Interface - Hardware HackThebox
 author: Kesero
-description: Reto basado en decodificar una señal digital y obtener la información que transmite
+description: Reto basado en decodificar una señal digital y obtener la información que transmite.
 date: 2025-05-12 17:00:00 +0000
 categories: [Hack The Box, Hardware - HTB]
 tags: [Writeups, Dificultad - Muy Fácil, Hardware, Hardware - Signal, HTB, HTB - Hardware]
