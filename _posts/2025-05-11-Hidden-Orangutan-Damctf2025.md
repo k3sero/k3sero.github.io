@@ -1,5 +1,5 @@
 ---
-title: Hidden Orangutan - Damctf2025
+title: Hidden Orangutan - DAMCTF2025
 author: Kesero
 description: Reto Cripto basado en un cifrado por transposición utilizando una partida de ajedrez
 date: 2025-05-11 10:00:00 +0000
