@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en decodificar una señal digital y obtener la información que transmite.
 date: 2025-05-12 17:00:00 +0000
 categories: [Hack The Box, Hardware - HTB]
-tags: [Writeups, Dificultad - Muy Fácil, Hardware, Hardware - Signal, HTB, HTB - Hardware]
+tags: [Writeups, Dificultad - Fácil, Hardware, Hardware - Signal, HTB, HTB - Hardware]
 pin: false
 math: true
 mermaid: true
@@ -17,13 +17,11 @@ comments: true
 
 Autor del reto: `diogt`
 
-Dificultad: <font color=green>Muy Fácil</font>
+Dificultad: <font color=green>Fácil</font>
 
 ## Enunciado
 
-```
 "We accessed the embedded device's asynchronous serial debugging interface while it was operational and captured some messages that were being transmitted over it. Can you decode them?"
-```
 
 ## Archivos
 
