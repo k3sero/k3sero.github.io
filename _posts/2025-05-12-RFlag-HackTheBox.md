@@ -41,6 +41,7 @@ Este tipo de archivos en resumidas cuentas, cuenta con información en punto flo
 
 ## Solver
 
+
 Primero como siempre, vamos a lanzarle un `file` al archivo para ver de qué se trata.
 
 ```
