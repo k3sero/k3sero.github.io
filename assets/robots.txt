@@ -7,4 +7,5 @@ User-agent: *
 
 Disallow: /norobots/
 
-Sitemap: {{ '/sitemap.xml' | absolute_url }}
+Sitemap: https://k3sero.github.io/sitemap_copy.xml
+#Sitemap: {{ '/sitemap.xml' | absolute_url }}
