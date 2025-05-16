@@ -6,4 +6,4 @@ permalink: /robots.txt
 User-agent: *
 
 Disallow: /norobots/
-Sitemap: https://k3sero.github.io/index_sitemap.xml
+Sitemap: https://k3sero.github.io/sitemap.xml
