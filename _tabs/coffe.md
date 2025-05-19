@@ -1,6 +1,6 @@
 ---
 layout: page           # usa el layout interno “page” del tema
-title: "¿Un qué? Un Café ☕"
+title: "¿Un qué? Un Café"
 icon: fas fa-coffee    # Font Awesome ya viene incluido
 order: 5               # 1-4 ya los utilizan Categorías, Tags, Archives y About
 ---
