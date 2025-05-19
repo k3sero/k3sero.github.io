@@ -1,28 +1,16 @@
 ---
-layout: page
+layout: page           # usa el layout interno “page” del tema
 title: "¿Un qué? Un Café"
-icon: fas fa-coffee
-order: 5
+icon: fas fa-coffee    # Font Awesome ya viene incluido
+order: 5               # 1-4 ya los utilizan Categorías, Tags, Archives y About
 ---
 
-<p id="msg" style="font-weight:600;margin-top:2rem">
-  Redirigiéndote a Buy&nbsp;Me&nbsp;a&nbsp;Coffee… ✨
-</p>
+![prompt](https://miro.medium.com/v2/resize:fit:1200/1*EPdXV6DAFtthI3w-d0XUcg.jpeg)
 
 <script>
-  /* 1 s: cambia el texto */
-  setTimeout(() => {
-    document.getElementById('msg').textContent =
-      '¡Que sea un doble americano, pls! ';
-  }, 1000);
-
-  /* 2 s: salta a tu página de donaciones */
-  setTimeout(() => {
-    window.location.replace('https://buymeacoffee.com/kesero');
-  }, 2000);
+  /* redirige al cargar la página */
+  location.replace("https://buymeacoffee.com/kesero");
+  /* Si prefieres que se abra en otra pestaña: 
+     window.open("https://buymeacoffee.com/TU_USUARIO","_blank");
+  */
 </script>
-
-<!-- Fallback para navegadores sin JS -->
-<noscript>
-  <meta http-equiv="refresh" content="2; url=https://buymeacoffee.com/kesero">
-</noscript>
