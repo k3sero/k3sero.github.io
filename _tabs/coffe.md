@@ -9,12 +9,12 @@ Redirigiéndote a Buy Me a Coffe... ✨
 
 ¡Que sea un doble americano, que se viene una competición muuuuy larga! ☕
 
-![prompt](https://miro.medium.com/v2/resize:fit:1200/1*EPdXV6DAFtthI3w-d0XUcg.jpeg)
+![prompt](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/buy_me_coffe.png)
 
 <script>
 
   setTimeout(() => {
     location.replace("https://buymeacoffee.com/kesero");
 
-  }, 2000);
+  }, 2500);
 </script>
