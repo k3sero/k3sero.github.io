@@ -7,14 +7,16 @@ order: 5               # 1-4 ya los utilizan Categorías, Tags, Archives y About
 
 Redirigiéndote a Buy Me a Coffe... ✨
 
-¡Que sea un doble americo, por favor ☕!
+¡Que sea un doble americo, que se viene una competición muuuuy larga... ☕!
 
-![prompt](https://miro.medium.com/v2/resize:fit:1200/1*EPdXV6DAFtthI3w-d0XUcg.jpeg)
+![prompt](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/buy_me_coffe.png)
 
 <script>
-  /* redirige al cargar la página */
-  location.replace("https://buymeacoffee.com/kesero");
-  /* Si prefieres que se abra en otra pestaña: 
-     window.open("https://buymeacoffee.com/TU_USUARIO","_blank");
-  */
+  /* espera 2000 ms y luego redirige */
+  setTimeout(() => {
+    location.replace("https://buymeacoffee.com/kesero");
+    /* Si prefieres abrir en otra pestaña:
+       window.open("https://buymeacoffee.com/kesero","_blank");
+    */
+  }, 2000);
 </script>
