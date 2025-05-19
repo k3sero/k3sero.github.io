@@ -16,5 +16,5 @@ Redirigiéndote a Buy Me a Coffe... ✨
   setTimeout(() => {
     location.replace("https://buymeacoffee.com/kesero");
 
-  }, 2500);
+  }, 3500);
 </script>
