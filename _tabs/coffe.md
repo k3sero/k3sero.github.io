@@ -1,4 +1,3 @@
-# _tabs/cafe.md   (o  tabs/cafe.md  si tu versión no lleva guion bajo)
 ---
 layout: page           # usa el layout interno “page” del tema
 title: "¿Un qué? Un Café ☕"
