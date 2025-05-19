@@ -5,7 +5,7 @@ icon: fas fa-coffee    # Font Awesome ya viene incluido
 order: 5               # 1-4 ya los utilizan Categorías, Tags, Archives y About
 ---
 
-Redirigiéndote a Buy Me a Coffe... ✨
+## Redirigiendo a Buy Me a Coffe... ✨
 
 ¡Que sea un doble americano, que se viene una competición muuuuy larga! ☕
 
