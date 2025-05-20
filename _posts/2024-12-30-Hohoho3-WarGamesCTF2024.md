@@ -17,7 +17,7 @@ comments: true
 
 Autor del reto: `SKR`
 
-Dificultad: <font color=orange>Medium</font>
+Dificultad: <font color=orange>Media</font>
 
 ## Enunciado
 
@@ -25,7 +25,7 @@ Dificultad: <font color=orange>Medium</font>
 
 ## Archivos
 
-Este reto nos da los siguientes archivos.
+En este reto nos dan los siguientes archivos.
 
 - `server.py` : Contiene el código que se ejecuta en el servidor.
 - `nc 43.216.228.210 32923` : Conexión por netcat al servidor del reto.
@@ -133,7 +133,7 @@ Este reto es un sistema de autenticación basado en tokens generados mediante un
 Los usuarios pueden registrarse, obtener un token único, iniciar sesión, y guardar deseos en un archivo.
 Solo `Santa Claus` tiene permiso para leer todos los deseos y es por ello que no podemos registrar el usuario `Santa Claus` y deberemos loguearnos con su nombre para poder leer la lista de deseos y recuperar la flag.
 
-Antes de continuar, tenemos que echarle un vistazo en detalle de la función `GenerateTokens()` y sobre todo entender cómo funciona la lógica operacional en ella.
+Antes de continuar, tenemos que echarle un vistazo en detalle de la función `generateTokens()` y sobre todo entender cómo funciona la lógica operacional en ella.
 
 ```py
 def generateToken(name):
@@ -167,9 +167,9 @@ Una vez comprendido a groso modo todo el comportamiento del script y sobre todo 
 
 Es por ello que una idea que tuve desde el comienzo fue en recuperar la semilla `m` para posteriormente, realizar un registro válido como el usuario Santa Claus sin la restricción por parte del servidor y por último introducir dicho hash en el servidor para loguearnos exitosamente y observar la preciada lista de deseos con la flag en ella.
 
-Vale, pero ¿como recuperamos `m`?
+Vale, pero ¿cómo recuperamos `m`?
 
-Para recuperar m deberemos de ir más allá. Primero tendremos que realizar un breve script de testing/debug, para observar de primera mano el valor de cada variable en cada iteración. En este caso el que utilicé fue el siguiente.
+Para recuperar m deberemos de ir más allá. Primero tendremos que realizar un breve script de pruebas o depuración, para observar de primera mano el valor de cada variable en cada iteración. En este caso el que utilicé fue el siguiente.
 
 ```py
 import hashlib
@@ -247,7 +247,7 @@ Siguiendo la misma filosofía con la operación interna, para que `-(crc & 1)` s
 
 Por tanto, tenemos que manipular el valor de `crc`, para que de las 8 iteraciones, 7 de ellas los resultados sean `0` y solamente en una de ellas el resultado sea `1` pero, ¿cómo hacemos esto?
 
-El único control que tenemos es el de la variable `name` el cual incluye el nombre a registrar que como hemos comentado anteriormente con el bucle `for b in data:`, se recorren en forma de bytes cada caracter. En este caso nosotros solo tenemos que trabajar con un carácter, ya que si trabajásemos con más caracteres, las iteraciones se duplican por 2, es decir, en vez de 8 iteraciones en el bucle, tendriamos 16 y sería mucho mas difícil de controlar cada valor.
+El único control que tenemos es el de la variable `name` el cual incluye el nombre a registrar que como hemos comentado anteriormente con el bucle `for b in data:`, se recorren en forma de bytes cada caracter. En este caso nosotros solo tenemos que trabajar con un carácter, ya que si trabajásemos con más caracteres, las iteraciones se duplican por 2, es decir, en vez de 8 iteraciones en el bucle, tendríamos 16 y sería mucho más difícil de controlar cada valor.
 
 Por tanto, tenemos que encontrar un caracter, que al realizar `crc ^= b`, deje los 8 bits menos significativos a un valor, los cuales 7 de ellos deben ser `0` y solo uno de ellos tiene que ser `1`.
 
@@ -263,7 +263,7 @@ Probando combinaciones, nos damos cuenta de que el valor `01111111`, voltea los 
 	>>> bin(crc ^ 127)
 	'0b1111111111111111111111 (...) 1111111111111111111111111111111110000000'
 
-NOTA: Realmente podemos dejar dentro de los 8 bits, el menos significativo a 1 ya que el procedimiento sería el mismo pero al contrario.
+NOTA: Realmente podemos dejar dentro de los 8 bits el menos significativo a 1 ya que el procedimiento sería el mismo pero al contrario.
 
 Listo, simplemente tenemos que hacer que `b` valga `127` una vez que `data` se ha procesado y ya estaría, ¿no?
 
@@ -271,9 +271,9 @@ El problema es que la variable `name` se interpreta con un `str()` de la siguien
 
 	name = str(input("Enter your name: "))
 
-Por tanto, si realizamos la conversión del valor `127` a `chr()`, obtenemos que el valor a introducir es el byte `'\x7f'`, el cual al ejecutar el programa este se interpreta como carácteres individuales y no como el valor del propio byte. Por tanto deberemos de buscar un valor de entre los caracteres imprimibles de python, que al realizar la operación `str()`, devuelva un valor en `ASCII` que nos sirva para poder manipular la variable `crc` y poder obtener `m`.
+Por tanto, si realizamos la conversión del valor `127` a `chr()`, obtenemos que el valor a introducir es el byte `'\x7f'`, el cual al ejecutar el programa este se interpreta como caracteres individuales y no como el valor del propio byte. Por tanto deberemos de buscar un valor de entre los caracteres imprimibles de python, que al realizar la operación `str()`, devuelva un valor en `ASCII` que nos sirva para poder manipular la variable `crc` y poder obtener `m`.
 
-Sabemos de antemano que los carácteres imprimibles de python son los siguientes.
+Sabemos de antemano que los caracteres imprimibles de python son los siguientes.
 
 	0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ 
 
@@ -284,13 +284,13 @@ Probando combinaciones nuevamente, nos damos cuenta de que uno de los valores po
 
 Pero, ¿por qué nos sirve este caracter imprimible?
 
-A pesar de que contamos con los dos bits más significativos a `1`, realmente cuando se haga la primera iteración con el valor de `m` (es decir, cuando se compute el primer `1`) el resultado será impredecible, ya que entra en juego `m`, por tanto en la siguiente iteración no tendríamos control de dicho bit, pudiendo ser `1` o `0` dependiendo de los bits de `m` que es aleatorio.
+A pesar de que contamos con los dos bits más significativos a `1`, realmente cuando se haga la primera iteración con el valor de `m` (es decir, cuando se calcule el primer `1`) el resultado será impredecible, ya que entra en juego `m`, por tanto en la siguiente iteración no tendríamos control de dicho bit, pudiendo ser `1` o `0` dependiendo de los bits de `m`, que es aleatorio.
 
-Por tanto, nosotros lo que haremos sera ejecutar el programa en remoto varias veces hasta que se dé la casuística de que el bit más significativo sea `0` (Sabremos que es válido al loguearnos como Santa Claus).
+Por ende, nosotros lo que haremos sera ejecutar el programa en remoto varias veces hasta que se dé la casuística de que el bit más significativo sea `0` (Sabremos que es válido al loguearnos como Santa Claus).
 
 En este punto, realizamos una conexión en remoto y registramos el usuario con el nombre `?` para obtener un hash con las condiciones mencionadas anteriormente.
 
-Para concluir, una vez tenemos en control de las 8 ejecuciones del bucle, simplemente tenemos que revertir el hash que nos arrojan al registar un usuario, hacer el proceso contrario, para que mediante puertas `XOR`, podamos despejar `m` de la siguiente manera.
+Para concluir, una vez tenemos en control de las 8 ejecuciones del bucle, simplemente tenemos que revertir el hash que nos arrojan al registrar un usuario, hacer el proceso contrario, para que mediante puertas `XOR`, podamos despejar `m` de la siguiente manera.
 
 $$
 \text{crc}_{\text{final}} = \text{crc}_{\text{anterior}} \oplus m
@@ -305,13 +305,13 @@ token = int(hex_value, 16)
 crc_final = token ^ ((1 << 128) - 1)
 ```
 
-Además, tenemos que rotar un bit a la izquierda `crc_final` ya que sabemos que `m` se ha utilizado únicamente en la iteración 7 y como he mencionado anterior, suponemos que en la iteración 8 del bucle, el resultado es `0`. Por tanto tenemos que rotar `crc_final` una vez a la izquierda.
+Además, tenemos que rotar un bit a la izquierda `crc_final` ya que sabemos que `m` se ha utilizado únicamente en la iteración 7 y como he mencionado anterior, suponemos que en la iteración 8 del bucle, el resultado es `0`. Entonces, tenemos que rotar `crc_final` una vez a la izquierda.
 
 ```py
 crc_final = crc_final << 1
 ```
 
-Tenemos que hacer el mismo procedimiento con `crc_inicial`, ya que para obtener el valor de `crc` en la iteración 7, este se ha rotado únicamente 7 veces a la derecha, por tanto tenemos que deshacer las rotaciónes rotando 7 veces a la izquierda para obtener dicho valor.
+Tenemos que hacer el mismo procedimiento con `crc_inicial`, ya que para obtener el valor de `crc` en la iteración 7, este se ha rotado únicamente 7 veces a la derecha, por tanto tenemos que deshacer las rotaciones rotando 7 veces a la izquierda para obtener dicho valor.
 
 ```py
 crc_i = 340282366920938463463374607431768211455
