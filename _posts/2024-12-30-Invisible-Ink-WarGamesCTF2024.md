@@ -25,7 +25,7 @@ Dificultad: <font color=green>Fácil</font>
 
 ## Archivos
 
-En reto, solo nos dan el siguiente archivo.
+En este reto, solo nos dan el siguiente archivo.
 
 - `challenge.gif` : Contiene un archivo .gif.
 
@@ -40,7 +40,7 @@ En este reto básicamente tenemos que extraer la información del gif aportado. 
 
 ## Solución
 
-En este caso, teníamos que utilizar [stegsolve](https://wiki.bi0s.in/steganography/stegsolve/) para obtener todos los frames que contaba dicho gif, ya que si queremos extraerlos con herramientas como Pillow, nos da error debido a la gran cantidad de píxeles que contiene el gif. (Pill sólo obtenía los frames 0, 1, 2 y 3 pero nos decía que los frames resultantes superaba el máximo de píxeles permitidos)
+En este caso, teníamos que utilizar [stegsolve](https://wiki.bi0s.in/steganography/stegsolve/) para obtener todos los frames que contaba dicho gif, ya que si queremos extraerlos con herramientas como Pillow, nos da error debido a la gran cantidad de píxeles que contiene el gif. (Pillow sólo obtenía los frames 0, 1, 2 y 3, pero nos decía que los frames resultantes superaban el máximo de píxeles permitidos)
 
 Para ello teníamos que obtener los frames resultantes que es donde realmente está la información oculta. Para ello utilicé la herramienta mencionada anteriormente para la extracción de estos dos últimos frames.
 
@@ -48,8 +48,8 @@ Para ello teníamos que obtener los frames resultantes que es donde realmente es
 
 ![Frame6](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Estego/WarGamesCTF2024/Invisible-Ink/frame6.png)
 
-Finalmente para obtener la flag tenemos que combinar los frames anteriores.
-En Gimp simplemente tenemos que añadir cada imagen a una capa diferente, no sin antes aplicar un color distinto a cada frame, para que el resultado sea mucho más visible que en blanco y negro.
+Finalmente, para obtener la flag, tenemos que combinar los frames anteriores.
+En Gimp, simplemente tenemos que añadir cada imagen a una capa diferente, no sin antes aplicar un color distinto a cada frame, para que el resultado sea mucho más visible que en blanco y negro.
 
 ![Final](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2024/Estego/WarGamesCTF2024/Invisible-Ink/final.png)
 

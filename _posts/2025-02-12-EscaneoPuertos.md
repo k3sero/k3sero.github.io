@@ -1,7 +1,7 @@
 ---
-title: Herramienta para escanear puertos abiertos en python3
+title: Herramienta para escanear puertos abiertos en Python 3
 author: Kesero
-description: Herramienta para escanear puertos con scapy através de Stealth Scan empleando hilos 
+description: Herramienta para escanear puertos con scapy a través de Stealth Scan empleando hilos 
 date: 2025-02-12 13:40:00 +0200
 categories: [Herramientas, Reconocimiento]
 tags: [Herramientas]
@@ -17,11 +17,11 @@ comments: true
 
 ## Introducción
 
-¿Cúantos de vosotros estáis cansados de utilizar nmap en vuestros escaneos?
+¿Cuántos de vosotros estáis cansados de utilizar nmap en vuestros escaneos?
 
 Hoy os traigo otra manera de escaneo de puertos abiertos efectiva mediante un script en `Python` utilizando `SYN Scan`, empleando hilos por cada puerto a escanear, capturando la señal Ctrl+c por parte del usuario y empleando colores y barras de progreso para amenizar la espera.
 
-Este tipo de escaneo es rápido y "sigiloso", ya que no completa la conexión TCP (half-open scanning) aunque seamos realistas, siempre hay trazas. De hecho, `nmap` utiliza el parámetro `-sS` para realizar el mismo funcionamiento.
+Este tipo de escaneo es rápido y "sigiloso" ya que no completa la conexión TCP (half-open scanning) aunque seamos realistas, siempre hay trazas. De hecho, `nmap` utiliza el parámetro `-sS` para realizar el mismo funcionamiento.
 
 ## Script Completo
 
@@ -31,7 +31,7 @@ Podéis encontrar el script a continuación o en mi [github](https://github.com/
 #!/usr/bin/env python3
 
 """
-Descripcion: Script para ecanear puertos abiertos
+Descripción: Script para ecanear puertos abiertos
 Autor: k3sero
 """
 
@@ -55,7 +55,7 @@ def def_handler(sig,frame):
     print(colored(f"\n\n[!] Saliendo...\n",'red'))
     sys.exit(1)
 
-#Ctrl+c
+# Ctrl+c
 signal.signal(signal.SIGINT, def_handler)
 
 def scanPort(ip,port):
@@ -153,7 +153,7 @@ signal.signal(signal.SIGINT, def_handler)
 
 ### Lógica del Escaneo.
 
-Las peticiones se realizan mediante paquetes SynScan, de modo en que nosotros como atacantes enviaremos a la máquina victima una paquete `SYN` por un puerto en específico para iniciar la conexión. La máquina víctima recibe dicho paquete y si el puerto asociado se encuentra abierto, la máquina nos enviará una trama `SYN-ACK` dando paso a la conexión. Por último si todo se ha realizado correcatamente, el atacante enviara en último lugar un paquete `RST` para cerrar la conexión sin completarla.
+Las peticiones se realizan mediante paquetes SynScan, de modo en que nosotros como atacantes enviaremos a la máquina victima una paquete `SYN` por un puerto en específico para iniciar la conexión. La máquina víctima recibe dicho paquete y, si el puerto asociado se encuentra abierto, la máquina nos enviará una trama `SYN-ACK` dando paso a la conexión. Por último si todo se ha realizado correctamente, el atacante enviara en último lugar un paquete `RST` para cerrar la conexión sin completarla.
 
 `SYN`: Se envía un paquete TCP con flag SYN.
 
@@ -210,6 +210,6 @@ Un ejemplo básico podría ser el siguiente.
 
 ## Conclusión
 
-En cuanto a eficiencia, no tiene nada que envidiarle a escaneadores como `nmap` ya que gracias a el empleo de hilos, obtenemos tiempos de ejecución bastante similares, pero puede llegar a saturar la red si esta no cuenta con buenos recursos si el rango a escanear es muy amplio.
+En cuanto a eficiencia, no tiene nada que envidiarle a escaneadores como `nmap` ya que gracias al empleo de hilos, obtenemos tiempos de ejecución bastante similares, pero puede llegar a saturar la red si esta no cuenta con buenos recursos, especialmente si el rango a escanear es muy amplio.
 
-Al no completar la conexión el escaneo como hemos dicho anteriormente, es menos detectable pero igualmente dejamos traza a la hora de realizar las conexiones. Además hay que tener en cuenta que algunos sistemas/firewalls más sofisticados pueden bloquear este tipo de escaneos `SYN`.
+Al no completar la conexión el escaneo es menos detectable pero igualmente dejamos traza a la hora de realizar las conexiones. Además hay que tener en cuenta que algunos sistemas/firewalls más sofisticados pueden bloquear este tipo de escaneos `SYN`.

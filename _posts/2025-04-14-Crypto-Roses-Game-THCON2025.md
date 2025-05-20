@@ -23,7 +23,7 @@ Dificultad: <font color=green>Fácil</font>
 
 "Congratulation on accessing our target's computer.
 
-He seems to have a background task that interracts with a remote host through a socket. Spawn the docker below to get access to it. Find out if we can exfiltrate information from this !
+He seems to have a background task that interacts with a remote host through a socket. Spawn the docker below to get access to it. Find out if we can exfiltrate information from this !
 
 (Don't forget to use the link you get with NeoPrivesc)
 
@@ -42,7 +42,7 @@ Did you ever heard of base 3 ?"
 
 ## Archivos
 
-Este reto nos da el siguiente archivo.
+En este reto, tenemos el siguiente archivo.
 
 - `Instancia Netcat` : Instancia de conexión con netcat.
 
@@ -72,9 +72,9 @@ Básicamente se trata de un sistema de "cifrado" basado en el juego `"Petals Aro
 
 3. Los otros números (1, 2, 4, 6) cuentan como 0 pétalos.
 
-Una vez decodificada, obtendremos un mensaje en `base 3` el cual tendremos que pasar a binario para posteriormente leer la flag.
+Una vez decodificada, obtendremos un mensaje en `base 3`, el cual tendremos que pasar a binario para posteriormente leer la flag.
 
-En este caso el script completo es el siguiente.
+El script completo es el siguiente.
 
 ```py
 def petals_around_the_rose_value(die_face):

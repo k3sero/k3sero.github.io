@@ -21,11 +21,11 @@ Dificultad: <font color=green>Fácil</font>
 
 ## Enunciado
 
-"So i was testing the Pederson Commitment but i think something is wrong..."
+"So I was testing the Pederson Commitment but I think something is wrong..."
 
 ## Archivos
 
-En reto, solo nos dan el siguiente archivo.
+En este reto, nos dan los siguientes archivos.
 
 - `chall.py` : Contiene la lógica principal del reto.
 - `Servidor en remoto` : Conexión por ncat.
@@ -115,16 +115,16 @@ $g$ y $h$ son generadores aleatorios ([$2$, $q-1$]) en el grupo multiplicativo d
 4. Se calcula A como un compromiso de la flag mediante  $$ A = g^x \cdot h^y \mod q $$
 
 5. El servidor pide al usuario, demostrar que es conocedor de la flag, mediante las iteraciones en 5 rondas.
-Cada ronda el usuario debe enviar el valor de $T$ calculado como $$ T = g^{t1} \cdot h^{t2} \mod q $$ done $t1$ y $t2$ son valores aleatorios generados en cada ronda.
+Cada ronda el usuario debe enviar el valor de $T$ calculado como $$ T = g^{t1} \cdot h^{t2} \mod q $$ donde $t1$ y $t2$ son valores aleatorios generados en cada ronda.
 Posteriormente, se debe de calcular los valores $s1$ y $s2$ basados en la flag y un valor aleatorio $k$ siguiendo las fórmulas:   $$ s1 = t1 + k \cdot x \mod q $$ $$ s2 = t2 + k \cdot y \mod q $$
 
-6. Al final de cada ronda, el servidor verifica si las respuestas proporcionadas son correctas y si en algún momento la verificación falla, el desafío termina.
+6. Al final de cada ronda, el servidor verifica si las respuestas proporcionadas son correctas, y si en algún momento la verificación falla, el desafío termina.
 
-7. El proceso se repite 5 veces y si todas las rondas son corretas, el servidor imprime la flag.
+7. El proceso se repite 5 veces y si todas las rondas son correctas, el servidor imprime la flag.
 
 ## Solución 
 
-El reto inicialmente deja este [recurso](https://www.zkdocs.com/docs/zkdocs/commitments/pedersen/).
+El reto inicialmente proporciona este [recurso](https://www.zkdocs.com/docs/zkdocs/commitments/pedersen/).
 
 El esquema de compromiso de Pedersen a groso modo, es un sistema criptográfico en el cual se compromete a un valor secreto sin revelarlo, pero luego permite "abrir" el compromiso y demostrar que el valor comprometido es el correcto sin revelar más información.
 

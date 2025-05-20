@@ -25,7 +25,7 @@ Dificultad: <font color=orange>Media</font>
 
 ## Archivos
 
-En reto, solo nos dan una conexión.
+En este reto, solo tenemos una conexión.
 
 - `Servidor en remoto` : Conexión por ncat.
 
@@ -33,16 +33,16 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Com
 
 ## Entrando al reto.
 
-Para entrar al entorno del reto, simplemente nos tenemos que conectar mediante `openssl` de la siguiente manera.
+Para acceder al entorno del reto, simplemente nos tenemos que conectar mediante `openssl` de la siguiente manera.
 
     ┌──(kesero㉿kali)-[~]
     └─$ openssl s_client -connect hackon-444ba26d30e4-sandbox-1.chals.io:443
 
-Una vez dentro, se nos desplegará una bash restringida como el usuario `paco`. Nuestro cometido será leer el archivo `flag.txt` el cual se encuentra dentro del directorio `/root`
+Una vez dentro, se nos desplegará una bash restringida como el usuario `paco`. Nuestro cometido será leer el archivo `flag.txt`, el cual se encuentra dentro del directorio `/root`.
 
 ## Solución
 
-Este tipo de retos requiere tiempo y sobre todo de probar, probar y probar diferentes comandos para ir depurando posibles vías de ataque.
+Este tipo de retos requiere tiempo y sobre todo probar y probar diferentes comandos para ir depurando posibles vías de ataque.
 
 En este caso, la bash nos permite listar archivos mediante `ls` dentro de nuestra carpeta teníamos una carpeta `bin/` con los comandos que podíamos ejecutar los cuales son los siguientes.
 
@@ -58,9 +58,9 @@ De todos estos comandos los que nos llama más la atención son `python` y `xxd`
 
     You just lose THE GAME
 
-Como tenemos capacidad de listar directorios con `ls`, podemos listar todo el contenido en el que paco tenga capacidad de lectura. Es en este momento en el que indagaremos por el sistema en busca de información que podamos utilizar a nuestro favor, como rutas de binarios, permisos asociados a los mismos, etc.
+Como tenemos capacidad para listar directorios con `ls`, podemos listar todo el contenido en el que paco tenga capacidad de lectura. Es en este momento en el que indagaremos por el sistema en busca de información que podamos utilizar a nuestro favor, como rutas de binarios, permisos asociados a los mismos, etc.
 
-Además un truquele que podemos aplicar en estos casos, es que como tenemos el comando `echo`, podemos mostrar el contenido de archivos mediante el siguiente comando.
+Además un truco que podemos aplicar en estos casos, como tenemos el comando `echo`, podemos mostrar el contenido de archivos mediante el siguiente comando.
 
     ┌──(paco@ac3d575b01fb)-[~]
     └─$ echo $(>.profile)
@@ -91,12 +91,12 @@ Llegados a este punto podemos salir de la `rbash` de distintos modos. El camino 
 
 Aquí se pueden aplicar varios métodos, podemos exportar el $PATH para que incluya rutas del sistema como /usr/bin (actualmente el usuario paco solo tiene en el path /home/paco/bin/), podemos incrustar comandos o abrirnos distintos entornos de ejecuciones como puede ser vim, nano, etc.
 
-Lo que yo hice fue simplemente escribir en `.bashrc` el interprete de python libre restricciones el cual está alojado en `/usr/bin/python3.11`, de esta manera al salir de la bash y volver a conectarnos mediante `openssl`, se ejecutará el contenido dentro de  `.bashrc` y por ende se ejecutará el interprete de `python3.11`. Para ello.
+Lo que yo hice fue simplemente escribir en `.bashrc` el intérprete de python libre restricciones el cual está alojado en `/usr/bin/python3.11`, de esta manera al salir de la bash y volver a conectarnos mediante `openssl`, se ejecutará el contenido dentro de  `.bashrc` y por ende se ejecutará el intérprete de `python3.11`. Para ello.
 
     ┌──(paco@ac3d575b01fb)-[~]
     └─$ echo "exec /usr/bin/python3" | xxd | xxd -r - ".bashrc"
 
-Al salir de la sesión y volver a conectarnos podremos ver que efectivamente, tenemos un interprete de python3.11.2
+Al salir de la sesión y al volver a conectarnos, podremos ver que efectivamente, tenemos un intérprete de python 3.11.2.
 
     ┌──(kesero㉿kali)-[~]
     └─$ openssl s_client -connect hackon-444ba26d30e4-sandbox-1.chals.io:443
@@ -107,7 +107,7 @@ Al salir de la sesión y volver a conectarnos podremos ver que efectivamente, te
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
 
-Llegados a este punto podemos ejecutar comandos en el sistema mediante `import os;`, pero seguimos sin tener permisos para leer el directorio `/root`, es por ello que entra el juego la `escalada de privilegios` para poder leer `/root/flag.txt`
+Llegados a este punto podemos ejecutar comandos en el sistema mediante `import os;`, pero seguimos sin tener permisos para leer el directorio `/root`, es por ello que entra el juego la escalada de privilegios para poder leer `/root/flag.txt`
 
 Listando con `ls -la` los permisos de los binarios alojados en `/usr/bin/` podemos listar los privilegios `SUID` que tiene el sistema y observamos que hay varios binarios que tiene permisos `SUID` cuyo propietario es `root`, por lo que podemos manipularlos para ejecutar dicho binario con máximos privilegios.
 

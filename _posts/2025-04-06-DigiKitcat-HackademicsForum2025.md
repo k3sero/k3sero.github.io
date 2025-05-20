@@ -17,39 +17,41 @@ comments: true
 
 Nombre del reto: DigiKitcat.
 
-Autor del reto: `kesero`
+Autor del reto: `Kesero`
 
 Dificultad: <font color=green>Fácil</font>
 
 ## Enunciado
 
-" Mi gran amigo Joe Grand ha diseñado un dispositivo hardware capaz de realizar ataques de Keylogging.
+"Mi gran amigo Joe Grand ha diseñado un dispositivo hardware capaz de realizar ataques de Keylogging.
 Me ha dicho que ha guardado una sorpresa en él, pero no tengo ni idea de esto del hardware.
-¿Me ayudas? "
+¿Me ayudas?"
 
 ## Archivos
 
-En el reto, nos dan la siguiente carpeta.
+En este reto, nos dan la siguiente carpeta.
 
-- `gerber/` : Contiene los archivos .gbr
+- `gerber/` : Contiene los archivos `.gbr`
 
 ## Analizando el reto
 
-En este reto tenemos una carpeta `Gerber` la cual contiene archivos `.gbr`. Este tipo de archivos son utilizados a la hora de realizar placas de circuitos impresos (PCBs). Estos archivos deben abrirse en un conjunto con aplicaciones dedicadas ya que contribuyen individualmente a la representación visual de la PCB por capas.
+En este reto tenemos una carpeta llamada `gerber` la cual contiene archivos `.gbr`. Este tipo de archivos son utilizados a la hora de realizar placas de circuitos impresos (PCBs). Estos archivos deben abrirse en un conjunto con aplicaciones dedicadas, ya que contribuyen individualmente a la representación visual de la PCB por capas.
 
 Hay numerosas aplicaciones en las que podemos visualizar dichos archivos, como por ejemplo`KiCad`, `Gerbv`, `EasyEDA`, `PCBWay`, `ViewMate` o directamente con visualizadores online.
 
 ## Solución
 
-Este reto trata de visualizar el diseño lógico de un circuito impreso, en este caso estamos tratando de la famosa `DigiSpark`.
+Este reto trata de visualizar el diseño lógico de un circuito impreso, en este caso estamos tratando con la famosa `DigiSpark`.
 Para ello tendremos que navegar entre las capas que conforman dicha PCB en busca de la flag. Esto lo podemos realizar con numerosas herramientas, como he mencionado anteriormente.
 
-La manera más sencilla de manipular estos archivos es con la aplicación `KiCad` ya que es gratuita y se instala de forma sencilla.
+La manera más sencilla de manipular estos archivos es con la aplicación `KiCad`, ya que es gratuita y se instala de forma sencilla.
 
+```
     ┌──(kesero㉿kali)-[~]
     └─$ sudo apt install kicad
+```
 
-Una vez instalada, abriremos la aplicación y nos iremos a `Visor Gerber`, y se nos abrirá una pestaña con todas las capas que conforman nuestra circuito impreso.
+Una vez instalada, abriremos la aplicación e iremos a `Visor Gerber`, y se nos abrirá una pestaña con todas las capas que conforman nuestra circuito impreso.
 
 ![placa](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Hardware/DigiKitkat/img/placa.png)
 

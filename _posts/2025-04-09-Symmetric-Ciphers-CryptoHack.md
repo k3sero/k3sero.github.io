@@ -998,7 +998,7 @@ Play at https://aes.cryptohack.org/flipping_cookie
 
 #### Solver
 
-En este reto nos dan una cookie y nos dan una función que comprueba si la cookie es de administrador o no. En caso de que `admin=True`, el servidor nos dará la flag.
+En este reto, nos dan una cookie y nos dan una función que comprueba si la cookie es de administrador o no. En caso de que `admin=True`, el servidor nos dará la flag.
 
 Lo que tenemos que realizar es un bitflipping attack del valor de la cookie para cambiar `False` por `True`
 

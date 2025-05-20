@@ -18,7 +18,7 @@ comments: true
 
 Nombre del reto: `Viejas Raíces`
 
-Autor del reto: `kesero`
+Autor del reto: `Kesero`
 
 Dificultad: <font color=green>Fácil</font>
 
@@ -36,15 +36,14 @@ Intentamos recordar los detalles y coincidimos en que la charla trataba sobre "h
 Este ejercicio es un mero calentamiento de la categoría Osint.
 Simplemente con realizar una búsqueda en Google con "Aula de Ciberseguridad y Redes", tendremos acceso a la página oficial de la que se hace referencia.
 
-
 ![1](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/1.png)
 
-Dentro de la página podemos ver varios recursos, lo más destado es que se encuentran todas las charlas listadas como artículos en el panel principal.
+Dentro de la página podemos ver varios recursos, lo más destacado es que se encuentran todas las charlas listadas como artículos en el panel principal.
 
 ![2](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/2.png)
 
 
-Si seguimos scrolleando podemos observar que podemos presionar el botón "Artículos antiguos".
+Si seguimos desplazándonos hacia abajo, podemos observar que podemos presionar el botón "Artículos antiguos".
 
 ![3](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/3.png)
 
@@ -53,7 +52,7 @@ Listando todas las charlas presentes, llegaremos a la que hace referencia el eje
 
 ![4](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/4.png)
 
-Clickeando en dicha charla tendremos una descripción a la misma y se listará el nombre de la máquina a la que se hace mención en el enunciado.
+Haciendo click en dicha charla tendremos una descripción a la misma y se mostrará el nombre de la máquina a la que se hace mención en el enunciado.
 
 
 ![5](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Viejas_Raices/img/5.png)

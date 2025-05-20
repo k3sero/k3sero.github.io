@@ -29,7 +29,7 @@ The -very secure- connexion info we gathered were bud:bud
 
 ## Archivos
 
-Este reto nos da los siguientes archivos.
+Este reto, nos dan los siguientes archivos.
 
 - `server.py` : Contiene el código que se ejecuta en el servidor.
 - `nc` : Instancia con netcat para acceder al reto.
@@ -39,13 +39,13 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Com
 
 ## Analizando el reto
 
-Para conectarnos con dicha instancia, tenemos que hacerlo mediante `ssh`, una vez dentro tendremos una bash con el usuario `bud:bud`
+Para conectarnos con dicha instancia, tenemos que hacerlo mediante `ssh`. Una vez dentro tendremos una bash con el usuario `bud:bud`
 
 ## Solver
 
-En este tipo de retos tenemos que encontrar la manera de escalar privilegios para poder leer el archivo deseado, en este caso `flag.txt`. Para ello realizaremos lo de siempre, mirar capabilities, permisos SUID entre otras.
+En este tipo de retos tenemos que encontrar la manera de escalar privilegios para poder leer el archivo deseado, en este caso `flag.txt`. Para ello realizaremos lo de siempre: mirar capabilities, permisos SUID entre otras.
 
-En este caso, primero tenemos que ver los comandos que podemos ejecutar con permisos de ALL.
+En este caso, primero tenemos que ver los comandos que podemos ejecutar con permisos de root utilizando el comando `sudo -l`.
 
         ┌──(kesero㉿kali)-[~]
         └─$ sudo -l

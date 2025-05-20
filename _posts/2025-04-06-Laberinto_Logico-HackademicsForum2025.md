@@ -17,7 +17,7 @@ comments: true
 
 Nombre del reto: `Laberinto Lógico`
 
-Autor del reto: `kesero`
+Autor del reto: `Kesero`
 
 Dificultad: <font color=orange>Medio</font>
 
@@ -27,15 +27,15 @@ Dificultad: <font color=orange>Medio</font>
 
 ## Archivos
 
-En el reto, nos dan los siguientes archivos.
+En este reto, nos dan los siguientes archivos.
 
-- `inputs.csv` : Contiene los estímulos de las entradas A, B, C y D.
-- `logic.png` : Diagrama esquemático del circuito lógico.
+- `inputs.csv`: Contiene los estímulos de las entradas A, B, C y D.
+- `logic.png`: Diagrama esquemático del circuito lógico.
 
 
 ## Analizando el reto
 
-Si abrimos el archivo `logic.png` podemos ver que se trata de un diagrama esquemático realizado con transistores BJT, que a su vez cuenta con las entradas A, B, C y D y la salida output.
+Si abrimos el archivo `logic.png`, podemos ver que se trata de un diagrama esquemático realizado con transistores BJT, que a su vez cuenta con las entradas A, B, C y D y la salida `output`.
 
 ![esquematico](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Hardware/Laberinto_Logico/img/esquematico.png)
 

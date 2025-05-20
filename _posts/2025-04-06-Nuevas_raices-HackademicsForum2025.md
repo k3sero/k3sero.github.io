@@ -17,9 +17,9 @@ comments: true
 
 Nombre del reto: `Nuevas Raíces`
 
-Autor del reto: `kesero`
+Autor del reto: `Kesero`
 
-Dificultad: <font color=orange>Medio</font>
+Dificultad: <font color=orange>Fácil</font>
 
 ## Enunciado
 
@@ -29,7 +29,7 @@ Tal vez solo sea un lunático vociferando o quizás sus palabras tengan algún s
 
 ## Solución
 
-Para comenzar con el reto, tendremos que visitar la página de [Hackademics Forum](https://hackademics-forum.com/) y una vez dentro, tendremos que jugar a ser Sherlock Holmes.
+Para comenzar con el reto, visitaremos la página de [Hackademics Forum](https://hackademics-forum.com/) y una vez dentro, tendremos que jugar a ser Sherlock Holmes.
 
 ![1](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Nuevas_Raices/img/1.png)
 
@@ -49,7 +49,7 @@ Por último, si analizamos las imágenes de dichas charlas, podemos encontrar qu
 
 ![5](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Nuevas_Raices/img/5_a.jpg)
 
-Escaneando dicho codigo QR, obtenemos la flag.
+Escaneando dicho código QR, obtenemos la flag.
 
 ![6](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/HackademicsForum2025/Osint/Nuevas_Raices/img/6.png)
 

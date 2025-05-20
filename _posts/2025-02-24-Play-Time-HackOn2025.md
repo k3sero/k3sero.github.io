@@ -25,7 +25,7 @@ Dificultad: <font color=orange>Media</font>
 
 ## Archivos
 
-En reto, solo nos dan el siguiente archivo.
+En este reto, nos dan los siguientes archivos.
 
 - `chall.py` : Contiene la lógica principal del reto.
 - `xorshiro256.py` : Contiene la lógica del PRNG Xoshiro256.
@@ -124,7 +124,7 @@ def untemper(s1):
     return (rotl64(s1 * Xoshiro256estrellaestrella.inv9 & MASK64, 64 - 7) * Xoshiro256estrellaestrella.inv5 & MASK64)
 
 ```
-5. Se calcula los inversos de 9 y 5 en módulo 2^64 para deshacer la trasnsformación de `temper()`. 
+5. Se calcula los inversos de 9 y 5 en módulo 2^64 para deshacer la transformación de `temper()`. 
 Si capturamos la salida de `temper()`, podemos aplicar `untemper()` para recuperar el estado interno $s1$, lo veremos más adelante.
 
 ```py
@@ -186,7 +186,7 @@ from hashlib import sha512
 from secrets import randbits
 from Crypto.Util.number import getPrime
 ```
-1. Se importan las típicas librerias necesarias.
+1. Se importan las típicas librerías necesarias.
 
 ```py
 rng = Xoshiro256estrellaestrella([randbits(64) for _ in range(4)])
@@ -223,7 +223,7 @@ def lets_play():
         print(www * (hhh * getPrime(400) + eee[_]))
 ```
 7. Se crea la función `lets_play()` la cual genera 5 valores OTP (eee).
-Se calcula hhh como el hash de SHA-512 de "What is going on????" (convertido a entero en hexadecimal)
+Se calcula `hhh` como el hash de SHA-512 de "What is going on????", convertido a entero en hexadecimal.
 Se calcula www como el hash de SHA-512 de "-_-" (también convertido a un entero en hexadecimal.
 Luego, en un bucle de 5 iteraciones, se imprime el resultado de la expresión: $$ www \times (hhh \times P + eee[i]) $$
 Donde $$P$ es un número primo de 400 bits.
@@ -231,7 +231,7 @@ Donde $$P$ es un número primo de 400 bits.
 ```py
 print(f"Of course take the flag: {encrypt(FLAG,otp().to_bytes(24,'big') + otp().to_bytes(24,'big') + otp().to_bytes(24,'big') + otp().to_bytes(24,'big'))}")
 ```
-8. Finalmente se genera una clave OTP concatenando los 4 valores de `opt()` (cada uno convertido a 24 bytes) y se usa esta clave para cifrar la bandera con XOR.
+8. Finalmente se genera una clave OTP concatenando los 4 valores de `otp()` (cada uno convertido a 24 bytes) y se usa esta clave para cifrar la bandera con XOR.
 
 ## Solución
 
@@ -241,25 +241,25 @@ Además, podemos saber que la función `temper()` es invertible, lo que signific
 
 El problema que presenta este generador, reside en que revela 5 valores generados por `otp()` pero cada `otp()` se compone de 3 valores de `Xorshiro256` concatenados. Esto nos permite extraer la información del estado interno.
 
-Para comenzar con el procedimiento, tenemos que seguir los siguients pasos.
+Para comenzar con el procedimiento, tenemos que seguir los siguientes pasos.
 
 ### 1. Extraemos las salidas del PRNG
 
 ```py
 print(www*(hhh*getPrime(400) + eee[_]))
 ```
-Obtenemos los valores, donde sabemos que `eee[_]` es un número pseudoaleatorio obtenido de `opt()`.
-Cada `otp() se forma de tres llamadas al PRNG, así que si tenemos 5 valores, podemos extraer 15 valores del PRNG.
+Obtenemos los valores, donde sabemos que `eee[_]` es un número pseudoaleatorio obtenido de `otp()`.
+Cada `otp() se forma de tres llamadas al PRNG, así que si tenemos 5 valores, podemos extraer 15 salidas del PRNG.
 
 Para recuperar `eee[_]`, primero sabemos que cada salida tiene la siguiente forma  $$ \text{output} = www \times (hhh \times \text{primo} + eee[_]) $$
 
-Si dividmos por `www`, obtenemos $$ \frac{\text{output}}{\text{www}} = hhh \times \text{primo} + eee[_] $$
+Si dividimos por `www`, obtenemos $$ \frac{\text{output}}{\text{www}} = hhh \times \text{primo} + eee[_] $$
 
 Aplicando módulo `hhh`, aislamos `eee[_]`: $$ \text{eee}[_] = \left(\frac{\text{output}}{\text{www}}\right) \mod hhh $$
 
 Ahora tenemos 5 valores `eee[_]`, cada uno compuesto de 3 valores del PRNG.
 
-### 2. Deshacemos la función temp()
+### 2. Deshacemos la función temper()
 
 Cada número generado por `Xoshiro256` pasa por la función `temper()`:
 
@@ -310,7 +310,7 @@ Sabemos que la flag se cifra con `encrypt()`.
 ```py
 print(f"Of course take the flag: {encrypt(FLAG, otp().to_bytes(24,'big') + ...)}")
 ```
-Para finalmente descifrar la flag tenemos que hacer lo siguiente.
+Para finalmente descifrar la flag tenemos, que hacer lo siguiente.
 
 1. Reiniciamos el PRNG con el estado interno encontrado.
 
@@ -322,7 +322,7 @@ Para finalmente descifrar la flag tenemos que hacer lo siguiente.
 
 ### Script final
 
-El script final es el siguiente.
+A continuación se muestra el script final.
 
 ```py
 from Crypto.Util.number import long_to_bytes
