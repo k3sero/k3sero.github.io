@@ -1,7 +1,7 @@
 ---
 title: SandBox - HackOn2025
 author: Kesero
-description: Reto misc basado en escapar de una rbash y leer flag.txt
+description: Reto misc basado en escapar de una rbash y leer flag.txt.
 date: 2025-02-24 00:00:00 +0000
 categories: [Writeups Competiciones Nacionales, Miscelánea N]
 tags: [Misc, Misc - Rbash, Writeups, Dificultad - Media]

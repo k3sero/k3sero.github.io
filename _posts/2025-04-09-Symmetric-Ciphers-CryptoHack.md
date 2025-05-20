@@ -1,7 +1,7 @@
 ---
 title: Symmetric Ciphers - CryptoHack
 author: Kesero
-description: Soluciones a los retos de la categoría Symmetric Ciphers de CryptoHack
+description: Soluciones a los retos de la categoría Symmetric Ciphers de CryptoHack.
 date: 2025-04-09 10:00:00 +0000
 categories: [CryptoHack, Cifrados Simétricos]
 tags: [CryptoHack, Writeups]

@@ -28,9 +28,9 @@ Note: must be all caps, owner name should be full name including any spaces Exam
 
 ## Archivos
 
-Este reto nos da el siguiente archivo.
+En este reto, tenemos el siguiente archivo.
 
-- `captura.txt` : Contiene la captura de radio de los logs de aviones.
+- `captura.txt`: Contiene la captura de radio de los logs de aviones.
 
 Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/Damctf2025/Misc/Mode%20Sleuth).
 
@@ -67,7 +67,7 @@ En la `captura.txt` podemos encontrar la siguiente información.
 
 Este reporte, coincide con una captura `ADS-B`. Una captura ADS-B (Automatic Dependent Surveillance–Broadcast) se refiere a la recolección de señales transmitidas por aviones que usan el sistema ADS-B para enviar información sobre su posición, velocidad, altitud, identificación, y más.
 
-Básicamente podmeos decir que es un sistema de vigilanzia usado en aviación que permite a las aereonaves determinar su propia posición mediante GPS, transmitir esa posición y otros datos automáticamente y de forma continua a estaciones de tierra y otras aeronaves cercanas.
+Básicamente podemeos decir que es un sistema de vigilancia usado en aviación que permite a las aeronaves determinar su propia posición mediante GPS, transmitir esa posición y otros datos automáticamente y de forma continua a estaciones de tierra y otras aeronaves cercanas.
 
 El tipo de información que se transmite en estas señales suele incluir el identificador de la aeronave, (número de vuelo), posición (latitud y longitud), velocidad, rumbo, estado del transpondedor y a veces información del plan de vuelo.
 
@@ -75,9 +75,9 @@ El tipo de información que se transmite en estas señales suele incluir el iden
 
 Para resolver este reto, primero tenemos que comprender la información que tenemos en `captura.txt`
 
-Por ejemplo, hay líneas en nuestro documento que se transmiten en un mensaje `Mode S extendido` y otras en formato `Mode S short`, ambas se encuentran en formato hexadecimal y sólo se diferencian en longitud.
+Por ejemplo, hay líneas en nuestro documento que transmiten un mensaje `Mode S extendido` y otras en formato `Mode S short`, ambas se encuentran en formato hexadecimal y sólo se diferencian en longitud.
 
-Estas tramas suelen comenzar con `*` seguidas de 28 caracteres hexadecimales (14 bytes) y terminan en `;`.
+Estas tramas suelen comenzar con `*` seguida de 28 caracteres hexadecimales (14 bytes) y terminan en `;`.
 
 Para ponernos en situación, un mensaje de 112 bits (14 bytes) contiene la siguiente información.
 
@@ -178,11 +178,11 @@ if __name__ == "__main__":
 
 ```
 
-Con la información listada y desgranada, tendremos que revisar los datos publicos de aviación para determinar que aviones destacan o probablemente no estarían en la zona en la que se produce el resto de captura. Es por ello que investigando a fondo la procedencia de cada uno de los aviones, finalmente encontrabamos que un avión con el `ICAO:` `ADF94B` perteneciente al mensaje `*8DAD0887590F563867B7CADF94B1;` el cual se corresponde con el avión `NASA Shuttle Carrier aircraft` con la dirección en la cola de `905NA`.
+Con la información listada y desgranada, tendremos que revisar los datos publicos de aviación para determinar que aviones destacan o probablemente no estarían en la zona en la que se produce el resto de captura. Es por ello que investigando a fondo la procedencia de cada uno de los aviones, finalmente encontrábamos que un avión con el `ICAO:` `ADF94B` perteneciente al mensaje `*8DAD0887590F563867B7CADF94B1;` el cual se corresponde con el avión `NASA Shuttle Carrier aircraft` con la dirección en la cola de `905NA`.
 
-Este avión se corresponde al legendario Shuttle Carrier Aircraft (SCA) de la NASA, un Boeing 747 modificado para transportar el transbordador espacial y fue el encargado de trasladar el transbordador espacial Shuttle entre bases. Es por ello que en el contexto del problema no encaja.
+Este avión se corresponde al legendario Shuttle Carrier Aircraft (SCA) de la NASA, un Boeing 747 modificado para transportar el transbordador espacial y fue el encargado de trasladar el transbordador espacial Shuttle entre bases. Por ello, en el contexto del problema no encaja.
 
-A partir de este momento, tenemos que encontrar el reportes públicos más información sobre la nave. Para ello utilizaremos páginas como [gis.icao](https://gis.icao.int/portal/home/item.html?id=14a985339f224d23af60ce8f37f8cd09) o como [hexdb](https://hexdb.io/#api-body) los cuales permiten la identificación de aviones en base al `ICAO` y otros parámetros en cuestión.
+A partir de este momento, tenemos que encontrar reportes públicos con más información sobre la nave. Para ello utilizaremos páginas como [gis.icao](https://gis.icao.int/portal/home/item.html?id=14a985339f224d23af60ce8f37f8cd09) o como [hexdb](https://hexdb.io/#api-body) los cuales permiten la identificación de aviones en base al `ICAO` y otros parámetros en cuestión.
 
 Afinando la búsqueda, encontramos `serial number` el cual se corresponde con `20107` y finalmente el nombre de registro `NATIONAL AERONAUTICS AND SPACE ADMINISTRATION`
 

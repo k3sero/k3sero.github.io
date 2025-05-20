@@ -1,7 +1,7 @@
 ---
 title: Insert coin to play Part [1-2] - UnivsthreatsCTF2025
 author: Kesero
-description: Reto basado en hackear videojuegos para cambiar registros a nuestra voluntad
+description: Reto basado en hackear videojuegos para cambiar registros a nuestra voluntad.
 date: 2025-05-03 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, GamePwn]
 tags: [GamePwn, Writeups, Dificultad - Fácil]
@@ -31,7 +31,7 @@ En este post, se verán los retos `Insert coin to play Part 1` y `Insert coin to
 
 ### Archivos
 
-Este reto nos da el siguiente archivo.
+Este reto, tenemos el siguiente archivo.
 
 - `Insert coin to play - Part 1.rar` : Carpeta de archivos necesarios para ejecutar el juego.
 
@@ -43,17 +43,17 @@ Una vez tengamos la carpeta descomprimida, tendremos que ejecutar el binario `GT
 
 ![ejecu](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/Insert%20coin%20to%20play%20-%20Part%201/img/ejecu.png)
 
-Nuestra misión será conseguir las 10 monedas para que el juego nos arroje la flag, pero es sencillo no?
+Nuestra misión será conseguir las 10 monedas para que el juego nos arroje la flag, pero es sencillo, ¿no?
 
 ### Solver
 
 Como he mencionado anteriormente, tenemos que conseguir las 10 monedas, pero en el escenario en el que se encuentra nuestro personaje solo tenemos acceso a 5 de ellas, el resto no aparecerán.
 
-Para conseguir modificar el registro del contador de nuestras monedas, utilizaremos el software `CheatEngine`
+Para conseguir modificar el registro del contador de nuestras monedas, utilizaremos el software `Cheat Engine`
 
-Para ello ejecutaremos nuestro binario.exe y ejecutaremos cheat Engine, para posteriormente añadir el proceso del binario.exe en CheatEngine y acto seguido ir filtrando por las direcciones de memoria.
+Para ello, ejecutaremos nuestro binario.exe y ejecutaremos `Cheat Engine`, para posteriormente añadir el proceso del binario.exe en `Cheat Engine` y acto seguido ir filtrando por las direcciones de memoria.
 
-Para ello, como el contador empieza por 0 monedas, buscaremos registros cuyas direcciones de memoria tengan 0 en su interior. Posteriormente cogemos una moneda y buscaremos la siguiente ocurrencia por un valor de 1 en el registro. Realizando el paso anterior varias veces, nos daremos cuenta de que solo tenemos 3 direcciones potenciales donde se guardan el contador de monedas.
+Como el contador empieza por 0 monedas, buscaremos registros cuyas direcciones de memoria tengan 0 en su interior. Posteriormente cogemos una moneda y buscaremos la siguiente ocurrencia por un valor de 1 en el registro. Realizando el paso anterior varias veces, nos daremos cuenta de que solo tenemos 3 direcciones potenciales donde se guardan el contador de monedas.
 
 Lo siguiente será cambiar el valor de los registros mencionados por 10 y acto seguido para actualizar el contador, cogeremos una de las monedas que quedan en el escenario
 
@@ -95,9 +95,9 @@ En este caso, en el escenario se encuentran las 10 monedas que necesitamos para 
 
 ![err_msg](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/Insert%20coin%20to%20play%20-%20Part%202/img/err_msg.png)
 
-En este caso, utilizaremos nuevamente `CheatEngine` para resolver este reto, pero en vez de filtrar por direcciones de memoria para introducir valores a nuestra voluntad, utilizaremos la herramienta de hipervelocidad, para engañar al juego en el último momento y obtener la décima moneda forzando al juego a que no ejecute la función que repele la última moneda.
+En este caso, utilizaremos nuevamente `Cheat Engine` para resolver este reto, pero en vez de filtrar por direcciones de memoria para introducir valores a nuestra voluntad, utilizaremos la herramienta de hipervelocidad, para engañar al juego en el último momento y obtener la décima moneda forzando al juego a que no ejecute la función que repele la última moneda.
 
-Para ello como tenemos 2 monedas en el suelo, tendremos que coger todas las demás para que en el último momento, activemos el cheat de la hipervelocidad y acto seguido recoger las dos últimas monedas del tirón.
+Como tenemos dos monedas en el suelo, tendremos que coger todas las demás para que en el último momento, activemos el cheat de la hipervelocidad y acto seguido recoger las dos últimas monedas del tirón.
 
 ![cheat_engine_hipervelocidad](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UniVsThreatsCTF2025/GamePwn/Insert%20coin%20to%20play/Insert%20coin%20to%20play%20-%20Part%202/img/paint2.png)
 

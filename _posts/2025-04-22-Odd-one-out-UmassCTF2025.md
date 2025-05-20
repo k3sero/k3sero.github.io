@@ -1,7 +1,7 @@
 ---
 title: Odd one out - UmassCTF2025
 author: Kesero
-description: Reto basado en recuperar los mensajes embebidos en lsb al principio, medio y final de una imágen
+description: Reto basado en recuperar los mensajes embebidos en lsb al principio, medio y final de una imagen.
 date: 2025-04-14 12:30:00 +0000
 categories: [Writeups Competiciones Internacionales, Esteganografía]
 tags: [Dificultad - Fácil, Estego,  Estego - LSB, Writeups]
@@ -31,7 +31,7 @@ The oddoneout challenge is multilayer! You'll know you have the right one if it 
 
 ## Archivos
 
-Este reto nos da el siguiente archivo.
+En este reto, tenemos el siguiente archivo.
 
 - `OddOneOut.png` : Imagen con QRs en su interior.
 
@@ -45,7 +45,7 @@ En la imágen obtenida, podemos encontrar un panel con 64 códigos qr (8 x 8)
 
 ## Solver
 
-Primero tenemos que diseccionar todos los qr en entidades atómicas para poder escanear su contenido, para ello realizaremos tratamiento de imágenes con python. El script utilizado es el siguiente.
+Primero tenemos que dividir todos los QR en entidades atómicas para poder escanear su contenido, para ello realizaremos tratamiento de imágenes con python. El script utilizado es el siguiente.
 
 ```py
 from PIL import Image
@@ -73,7 +73,7 @@ for i in range(rows):
 print(f"[+] Guardados {rows * cols} códigos QR en la carpeta '{output_dir}'")
 ```
 
-Una vez tenemos todos los qr por partes, podemos escanear manualmente los 64 Qr o podemos realizar dicha operatoria mediante python nuevamente. El script es el siguiente.
+Una vez tenemos todos los QR por partes, podemos escanear manualmente los 64 QR o podemos realizar dicha operatoria mediante python nuevamente. El script es el siguiente.
 
 ```py
 from pyzbar.pyzbar import decode
@@ -175,9 +175,9 @@ UMASS{Q6moX3k4mXOb8KbD}
 
 Llegados a este punto, podemos ver que tenemos muchisimas flags potenciales. Podemos observar como la flag `UMASS{{rcckuizufzxhznod}}` tiene una doble llave, lo cual puede ser un indicio de que es justo esa la que necesitamos.
 
-Además si abrimos la imagen con `gimp` y mirando los colores de los QRs, podemos observar como justo el QR proveniente de esa flag, se encuentra en un color levemente más claro (no visible a simple vista) y justo en el enunciado nos menciona que el verdadero QR tiene un color distinto por lo que podemos asegurar que esa es nuestra flag.
+Además si abrimos la imagen con `gimp` y mirando los colores de los QR, podemos observar como justo el QR proveniente de esa flag, se encuentra en un color levemente más claro (no visible a simple vista) y justo en el enunciado nos menciona que el verdadero QR tiene un color distinto por lo que podemos asegurar que esa es nuestra flag.
 
-Vale y ¿ahora que hacemos?
+Vale, y ¿ahora qué hacemos?
 
 Llegados a este punto podemos probar a listar información oculta con `zsteg` en búsqueda de posibles `lsb` oculto en la imagen principal y así podemos encontrar la siguiente información.
 
@@ -199,7 +199,7 @@ Llegados a este punto podemos probar a listar información oculta con `zsteg` en
 ```
 Llegados a este punto se nos pueden ocurrir mil cosas más, pero que tal si pensamos que hay más `lsbs` ocultos en la imagen? Podemos observar como en la pista nos dicen que probemos distintas herramientas, ¿será por algo en particular?
 
-En este caso sí. Para obtener todos los `lsbs` pertencientes a una imagen sin depender de encontrarse en el comienzo o en el final, se pueden utilizar páginas online como [Stylesuxx](https://stylesuxx.github.io/steganography/) la cual le subes la foto y obtienes toda su información perteniciente a `lsb`
+En este caso sí. Para obtener todos los `lsbs` pertenecientes a una imagen sin depender de encontrarse en el comienzo o en el final, se pueden utilizar páginas online como [Stylesuxx](https://stylesuxx.github.io/steganography/) la cual le subes la foto y obtienes toda su información perteniciente a `lsb`
 
 El mensaje completo que revela la página es el siguiente.
 
@@ -214,7 +214,7 @@ If you didn't: that's a travesty and you should go play Bloxorz right now. Or ma
 
 Llegados a la recta final, una observación de nuestra flag candidata es que es diferente al resto, debido a que únicamente se compone de letras del alfabeto, por lo que se nos puede ocurrir que dicha flag cifrada en `Vigenere`, con la clave `Bloxorz`.
 
-Al realizarlo, tenemos la flag desencriptada.
+Al desencriptar con esa clave, obtenemos la flag.
 
 ```
 UMASS{qrongratulations}

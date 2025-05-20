@@ -17,7 +17,7 @@ comments: true
 
 ## Introducción
 
-En esta sección veremos la resolución de retos de OSINT de la competición CTFs, la cual incluye los siguientes retos:
+En esta sección veremos la resolución de retos de OSINT de la competición THCON2025, que incluye los siguientes retos de Osint:
 
 ```
 Intrusion at THCity Hospital !
@@ -47,11 +47,11 @@ Visitors always seem to be linked to the patient they come to see"
 
 ### Analizando el reto
 
-En este reto, nos dan los correos que han podido recuperar pertenecientes al CISO de un Hospital, el cual nos cuentan que han sufrido un ciberataque de randsomware.
+En este reto, nos dan los correos que han sido recuperarados pertenecientes al CISO de un Hospital, el cual nos cuentan que han sufrido un ciberataque de randsomware.
 
 ![correos](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/correos/img/correos.png)
 
-En dichos correos podemos obtener información muy relevante en nuestra investigación, como los reportes de asistencia semanales en el Hospital, los logs provenientes del sistema así como un subentramado de lore basado en la confidencialidad del alcalde en sus instalaciones entre otros correos sin relevancia.
+En dichos correos podemos obtener información muy relevante en nuestra investigación, como los reportes de asistencia semanales del hospital, los logs provenientes del sistema así como un subentramado de lore basado en la confidencialidad del alcalde en sus instalaciones entre otros correos sin relevancia.
 
 [Aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/correos/img) puedes encontrar capturas de todos los correos así como sus archivos.
 
@@ -59,7 +59,7 @@ En dichos correos podemos obtener información muy relevante en nuestra investig
 ### Solver
 En este primer ejercicio, nos piden que encontremos el causante del ataque. En este caso podemos pensar mil métodos de encontrar un posible atacante, pero podemos pensar que quien haya sido, ha tenido que ingresar en el propio hospital y por ende, se ha tenido que registrar su presencia, así como su nombre y sus datos personales.
 
-Es por ello que en base a los registros semanales que se encuentran en los correos, podemos ver todas las personas que ingresaron así como su puesto en el Hospital (visitante, administrador, médico y pacientes), por ende lo que primero nos basaremos es en los visitantes como primer hipótesis. Para ello juntaremos los 3 registros semanales en 1 para obtener todos los visitantes al hospital en las tres semanas anteriores al ataque.
+Es por ello que, basándonos en los registros semanales que se encuentran en los correos, podemos ver todas las personas que ingresaron así como su puesto en el Hospital (visitante, administrador, médico y pacientes), por ende lo que primero nos basaremos es en los visitantes como nuestra primera hipótesis. Para ello juntaremos los 3 registros semanales en 1 para obtener todos los visitantes al hospital en las tres semanas anteriores al ataque.
 
 ```
 Alt	Alvarez
@@ -117,7 +117,7 @@ En el siguiente reto nos piden que indiquemos el nombre de usuario de uno de sus
 
 ### Solver
 
-Una vez tenemos nombre del atacante, lo primero que tenemos que hacer es buscar en google por `Zypherion Vexshade`. Una vez hecho, nos encontraremos con un perfil en reddit que tiene diversos posts relacionados con `casinos`, `mma` y algunos posts en general dando su opinión sobre varios temas.
+Una vez tenemos nombre del atacante, lo primero que tenemos que hacer es buscar en Google por `Zypherion Vexshade`. Una vez hecho, nos encontraremos con un perfil en reddit que tiene diversos posts relacionados con `casinos`, `mma` y algunos posts en general dando su opinión sobre varios temas.
 
 ![reddit](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/reddit.png)
 
@@ -131,7 +131,7 @@ Tenemos el nombre de usuario del atacante `ZyphiVexi`, pero este no es el que se
 
 ![Busqueda](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/busqueda.png)
 
-Entre la búsqueda, destaca que en la plataforma de `bluesky` el nombre de usuario dado está tomado. Por tanto entraremos en su perfil
+Entre la búsqueda, destaca que en la plataforma de `bluesky` el nombre de usuario dado está tomado. Por tanto entraremos en su perfil.
 
 NOTA: En `blusky`, es muy importante contar con una cuenta creada previamente, ya que hay posts que no son visibles para gente sin perfil.
 
@@ -142,7 +142,7 @@ Una vez en en su perfil, miramos por sus seguidores/seguidos y nos daremos cuent
 ![perfil zen](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/peril_zen.png)
 
 Como podemos establecer una relación clara con el atacante, podemos considerarlo cómplice del ataque.
-Insertamos su username y tenemos cashh.
+Insertamos su username y tenemos cash.
 
 ### Flag
 `THC{zenmmth.bsky.social}`
@@ -166,7 +166,7 @@ En el siguiente reto, tenemos que averiguar la página web del cómplice del ata
 
 ![monitor](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/monitor.jpg)
 
-En dicha imágen podemos obtener información como sus correos e información confidencial como una reserva de hotel, pero en un posit de su portátil podemos encontrar la URL de su página web, pero esta se encuentra cifrada.
+En dicha imagen podemos obtener información como sus correos e información confidencial como una reserva de hotel, pero en un posit de su portátil podemos encontrar la URL de su página web, pero esta se encuentra cifrada.
 ```
 y4azuhsalmwe.ihq.bhoca.vocby
 ```
@@ -178,9 +178,9 @@ NOTA
 
 Como nosotros no ibamos a comprar pistas, pensamos distintas formas. Aquí Nacho jugó la de pensar (cosa que los demás integrantes no hacían) y es que todas las páginas web relacionadas con los retos siguen el dominio de `nombre.ctf.thcon.party` (Esto realmente no tiene por qué ser así ya que se puede suponer cualquier enlace en el reto, no los pertenecientes a la propia THCON, pero son franceses...).
 
-Además Daysa jugó la de Masterclass con el cifrado Vigenere y es que suponiendo que la URL sigue el patrón descrito por Nacho: `nombre.ctf.thcon.party` podemos ir probando distintas claves, diseccionando el texto completo por partes. Por ejemplo si queremos descifrar la parte final `.party`, podemos ir jugando con los caracteres de la clave hasta que la parte final coincida, si coincide pues añadimos dicho caracter a la posible key, de manera iterativa, hasta ir dando con la clave completa. También es importante ir jugando con la longitud, ya que de esta manera en el cifrado Vigenere, descifraremos los carácteres elegidos.
+Además Daysa jugó la de Masterclass con el Cifrado Vigenere y es que suponiendo que la URL sigue el patrón descrito por Nacho: `nombre.ctf.thcon.party` podemos ir probando distintas claves, diseccionando el texto completo por partes. Por ejemplo si queremos descifrar la parte final `.party`, podemos ir jugando con los caracteres de la clave hasta que la parte final coincida, si coincide pues añadimos dicho caracter a la posible key, de manera iterativa, hasta ir dando con la clave completa. También es importante ir jugando con la longitud, ya que de esta manera en el Cifrado Vigenere, descifraremos los carácteres elegidos.
 
-Una vez montado todo el ataque, finalmente recuperamos la url siendo el método de cifrado Vigenere y la clave `Mongolia` (pertenece al país de procedencia del cómplice)
+Una vez montado todo el ataque, finalmente recuperamos la url siendo el método de Cifrado Vigenere y la clave `Mongolia` (pertenece al país de procedencia del cómplice)
 
 ```
 m4mmothslair.ctf.thcon.party
@@ -192,6 +192,7 @@ m4mmothslair.ctf.thcon.party
 ## Sound Engineer (Hard - Guessy)
 
 ### Enunciado
+
 You come across audio messages between Zen M4mmoth and his team. You then learn more about their plan. They nevertheless mention a secret hideout; you need to know where it is to catch their team!
 
 Flag Format: THC{Lattitude_3_sig_figs-Longitude_3_sig_figs} Example for the french Point Zéro whose coordinates are 48.8534104,2.3481483 would yield THC{48.853-2.348}
@@ -229,17 +230,17 @@ COVER1.wav
 
 Puedes encontrar los audios y el pdf [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/webscrapping)
 
-Llegados a este punto se nos ocurre que dichos audios deben de contener la ubiación próxima de su punto de encuentro o a su vez, podemos intuir que dicha ubicacion es calculada mediante la ubiación en tiempo real de cada uno de los complices. Como hay 3 personas en total involucradas, podemos intuir que la ubiación de la reunión se encuentra en el medio de la triangulación de las 3 ubicaciones.
+Llegados a este punto se nos ocurre que dichos audios deben de contener la ubicación próxima de su punto de encuentro o a su vez, podemos intuir que dicha ubicacion es calculada mediante la ubicación en tiempo real de cada uno de los complices. Como hay 3 personas en total involucradas, podemos intuir que la ubicación de la reunión se encuentra en el medio de la triangulación de las 3 ubicaciones.
 
-Escuchando dichos audios no obtenemos nada relevante a simple vista (además de que tragarnos COVER1.wav), tenemos que fijarnos en las voces secundarias de cada audio, ya que en ellas se van revelando la ubicación de cada uno de ellos. (Aquí es donde se vuelve completamente Guessy, además de tener que sacarte un nivel de C1 tanto en inglés como en Francés para poder entender primero los audios y luego las ubiaciones)
+Escuchando dichos audios no obtenemos nada relevante a simple vista (además de tragarnos COVER1.wav), tenemos que fijarnos en las voces secundarias de cada audio, ya que en ellas se van revelando la ubicación de cada uno de ellos. (Aquí es donde se vuelve completamente Guessy, además de tener que sacarte un nivel de C1 tanto en inglés como en Francés para poder entender primero los audios y luego las ubicaciones)
 
-En `VOC1.wav` se escucha una segunda persona en el audio revelando una ubiación del restaurante `Restaurant L'orgueil - 6 rue Popincourt 75011 Paris`, pero es necesario realizar un tratamiento del audio para que se pueda escuchar la ubiación con claridad. Las coordenadas son `48.857068505377086, 2.3777099711634446`
+En `VOC1.wav` se escucha una segunda persona en el audio revelando una ubicación del restaurante `Restaurant L'orgueil - 6 rue Popincourt 75011 Paris`, pero es necesario realizar un tratamiento del audio para que se pueda escuchar la ubicación con claridad. Las coordenadas son `48.857068505377086, 2.3777099711634446`
 
 En `VOC2.wav` en el segundo 0.16s, podemos escuchar el audio de llegada de una estación mediante megafonía. Sabemos que este se encuentra en el metro, más concretamente en la parada `Arrêt Saouzelong (Toulouse)` por tanto ya tenemos otra ubicación. Las coordenadas son `43.57948487109401, 1.4594888588220065`
 
 En `VOC3.wav` podemos encontrar que se encuentra en un sitio con mucha gente. Según los grandes desarrolladores, en este audio se escucha de fondo el himno del equipo de futbol [Olimpique Linnois](https://www.youtube.com/watch?v=dqrc5Q_CyNc&t=80s) Y POR ENDE hay que intuir que se encuentra en el estadio de dicho equipo. La ubicación es `Stade Groupama (Lyon)`. Las coordenadas son `45.76520378075497, 4.9820253206900595`
 
-Una vez obtenidas las tres ubicaciones, podemos realizar la triangulación mediante la página [CacheSleuth](https://www.cachesleuth.com/centeroftriangle.html) la cual se basa en calcular el punto medio en base a 3 coordenadas dadas.
+Una vez obtenidas las tres ubicaciones, podemos realizar la triangulación mediante la página [CacheSleuth](https://www.cachesleuth.com/centeroftriangle.html) que se basa en calcular el punto medio en base a 3 coordenadas dadas.
 
 ![Interseccion](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/interseccion.png)
 
@@ -285,7 +286,7 @@ En uno de los correos, concretamente en el fichero `logs.txt` se encuentra el hi
 
 En este punto tenemos dos vías para realizar el siguiente paso. Según el creador del reto, en el propio perfil de blusky de `Zephi`, podemos encontrar una relación directa entre `Zephi` y el creador del programa que se ejecutó.
 
-Si vamos mirando los posts de `Zephi` en blusky además de ir mirando a las personas etiquetadas en cada imágen podemos ver que el siguiente post, se menciona a un tal "@thenetworkwalker"
+Si vamos mirando los posts de `Zephi` en blusky además de ir mirando a las personas etiquetadas en cada imagen podemos ver que el siguiente post, se menciona a un tal "@thenetworkwalker"
 
 ![post_quedad](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/post_etiqueta.png)
 
@@ -303,7 +304,7 @@ Ahora solo nos queda averigurar dónde reside. Justamente hay post en el que men
 
 ![post_imagen](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/post%20laturbie.png)
 
-Si buscamos justo esa imágen en google, podemos obtener de manera sencilla su ubiación.
+Si buscamos justo esa imagen en Google, podemos obtener de manera sencilla su ubicación.
 
 ![Imagen_completa](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/img/laturbie.png)
 

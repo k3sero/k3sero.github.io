@@ -1,7 +1,7 @@
 ---
 title: Attack of the Pentium 4 - UmassCTF2025
 author: Kesero
-description: Reto basado en encontrar a una persona en base a una información
+description: Reto basado en encontrar a una persona en base a una información.
 date: 2025-04-22 20:01:00 +0000
 categories: [Writeups Competiciones Internacionales, Osint]
 tags: [Dificultad - Media, Osint, Osint - Research, Writeups]
@@ -17,7 +17,7 @@ comments: true
 
 Autor del reto: `Posco`
 
-Dificultad: <font color=orange>Medio</font>
+Dificultad: <font color=orange>Media</font>
 
 ## Enunciado
 
@@ -27,7 +27,7 @@ Flag format: UMASS{name of the game in English}, for example UMASS{Elden Ring}"
 
 ## Archivos
 
-Este reto nos da el siguiente archivo.
+En este reto, tenemos el siguiente archivo.
 
 - `image.jpeg` : Contiene la 1º localización
 
@@ -37,7 +37,7 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Com
 
 ## Analizando el reto
 
-Tenemos que encontrar el primer juego que desarrolló una persona que compró un ordenador en la tienda que muestra la imágen. La información que podemos extraer del enunciado es la siguiente.
+Tenemos que encontrar el primer juego que desarrolló una persona que compró un ordenador en la tienda que muestra la imagen. La información que podemos extraer del enunciado es la siguiente.
 
 ```
 Hay tiendas de ordenadores en ese edificio en concreto
@@ -48,11 +48,11 @@ Buscamos a alguien que una vez compró de esa tienda un ordenador
 
 ## Solver
 
-Para comenzar con este reto tenemos que ir por partes. Primero vamos a encontar la ubiación exacta de la imágen. La imágen muestra un lugar en Tokio, en esta ubicación.
+Para comenzar con este reto, tenemos que ir por partes. Primero vamos a encontrar la ubiación exacta de la imagen que tenemos. La imagen muestra un lugar en Tokio, en esta ubicación.
 
 ![ubi](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/ubicacion.png)
 
-Si miramos justo en el edificio donde enfocan, podemos observar que dentro de ese departamento, se encuentra una tienda de ordenadores genérica. Dicha tienda alberga unas 4 tiendas distintas llamadas `acharge`, `hercules`, `vspec` y `zeus`.
+Si observamos justo en el edificio donde enfocan, podemos observar que dentro de ese edificio, se encuentra una tienda de ordenadores genérica. Dicha tienda alberga unas 4 tiendas distintas llamadas `acharge`, `hercules`, `vspec` y `zeus`.
 
 ![pag](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/pagina.png)
 
@@ -61,13 +61,15 @@ Si miramos justo en el edificio donde enfocan, podemos observar que dentro de es
 ![zeus](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/zeus.png)
 ![vspec](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/vspec.png)
 
-Llegados a este punto tenemos que mirar en las reseñas de cada página, una opinión experta que relacione los conceptos que se hablan en el enunciado. Después de muchas búsquedas y reseñas, podemos decir que la opinión experta es la [siguiente](https://pc-zeus.com/example_13.html).
+Llegados a este punto tenemos que mirar en las reseñas de cada página, una opinión experta que relacione los conceptos que se hablan en el enunciado. 
+
+Después de muchas búsquedas y reseñas, podemos decir que la opinión experta es la [siguiente](https://pc-zeus.com/example_13.html).
 
 ![reseña](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/rese%C3%B1a.png)
 
 ![japones](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/japones.jpg)
 
-Sabemos que es la que se menciona por que en la propia reseña incluye una mini entrevista, la cual detalla su trabajo.
+Sabemos que es la que se menciona porque en la propia reseña incluye una mini entrevista, la cual detalla su trabajo.
 
 Si buscamos por la imagen adjunta a la reseña, podemos saber que su nombre es "Shouhei Tsuchiya" además en su [fanpage](https://www.mobygames.com/person/333977/shouhei-tsuchiya/credits/) se listan los juegos a los cuales ha ayudado a desarrollar. En este caso su primera participación en un juego es en 2003 y pertenece al título "Otogi 2: Immortal Warriors"
 

@@ -25,23 +25,21 @@ Dificultad: <font color=green>Fácil</font>
 
 ## Archivos
 
-Este reto nos da el siguiente archivo.
+En este reto, tenemos el siguiente archivo.
 
-- `debugging_interface_signal.sal` : Contiene las señales de depuración.
+- `debugging_interface_signal.sal`: Contiene las señales de depuración.
 
 Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/HackTheBox/Hardware/Debugging%20Interface).
 
 ## Analizando el reto
 
-En este reto nos da el archivo `debugging_interface_signal.sal`.
+Los archivos con extensión `.sal` suelen estar relacionados con señales de depuración en sistemas electrónicos o en la emulación de interfaces de comunicación. Este tipo de archivo generalmente contiene información de depuración o trazas de señales en formato específico de un sistema de depuración.
 
-Los archivos con extensión .sal suelen estar relacionados con señales de depuración en sistemas electrónicos o en la emulación de interfaces de comunicación. Este tipo de archivo generalmente contiene información de depuración o trazas de señales en formato específico de un sistema de depuración.
-
-Este tipo de archivos, podrían estar relacionados con señales en tiempo real que se registran durante la depuración de un dispositivo, como las señales de puertos de comunicación (UART, SPI, I2C, etc.) o los registros de transacciones entre el hardware y el software.
+Este tipo de archivos podrían estar relacionados con señales en tiempo real que se registran durante la depuración de un dispositivo, como las señales de puertos de comunicación (UART, SPI, I2C, etc.) o los registros de transacciones entre el hardware y el software.
 
 En algunos casos, .sal se utiliza para guardar trace logs de herramientas como Logic Analyzers, Osciloscopios o Emuladores que capturan señales digitales y analógicas.
 
-Generalmente se necesitan herramientas de depuración o un analizador de señales que soporte ese formato específico (como herramientas de depuración proporcionadas por fabricantes o programas como Sigrok, Saleae Logic, etc.).
+Generalmente, se necesitan herramientas de depuración o analizadores de señales que soporten ese formato específico (como herramientas de depuración proporcionadas por fabricantes o programas como Sigrok, Saleae Logic, etc.).
 
 ## Solver
 
@@ -114,10 +112,10 @@ Lo siguiente como siempre, será ejecutar un `strings` con el binario `digital-0
 
 (...)
 ```
-Si nos fijamos en la salida, podemos observar que la primera línea se encuentra la cadena `SALEAE` (como la herramienta que mencionamos anteriormente), esto se corresponde con software que se basa en analizar información capturada de dispositivos embebidos.
+En la salida, podemos observar que la primera línea se encuentra la cadena `SALEAE` que corresponde a la herramienta mencionada anteriormente. Dicho software se basa en analizar información capturada de dispositivos embebidos.
 
 A partir de este momento, tenemos que descargarnos dicha herramienta y analizar la señal capturada.
-Para ello nos iremos a la página oficial de [Saleae](https://www.saleae.com/es/pages/descargas) y nos descargaremos su programa.
+Para ello, nos iremos a la página oficial de [Saleae](https://www.saleae.com/es/pages/descargas) y nos descargaremos su programa.
 
 Le daremos permisos de ejecución y lo ejecutaremos.
 
@@ -127,15 +125,15 @@ Ahora, tenemos que cargar nuestro archivo principal con extensión `.sal` y se n
 
 ![senal](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/HackTheBox/Hardware/Debugging%20Interface/senal.png)
 
-El "bloque" en blanco que observamos, se corresponde con la señal codificada. Si la ampliamos podemos ver 
+El "bloque" en blanco que observamos se corresponde con la señal codificada. Si la ampliamos podemos ver 
 
 ![senal_ampliada](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/HackTheBox/Hardware/Debugging%20Interface/senal_ampliada.png)
 
-Si nos fijamos detenidamente, podemos observar la `frecuencia`, `el ancho de banda` y la `Duty` de cada estímulo. Además podemos ver como la frecuencia de reloj se corresponde con aproximadamente 31.211 kHz.
+Si nos fijamos detenidamente, podemos observar la frecuencia, el ancho de banda y la Duty de cada estímulo. Además podemos ver como la frecuencia de reloj se corresponde con aproximadamente 31.211 kHz.
 
 A partir de este momento, tenemos que crear un canal asíncrono en el que establezcamos un bit rate de 31211 para poder leer la información de nuestra señal.
 
-Par ello nos iremos a `Add Analyzer > Async Serial` y pondremos el bit rate obtenido (de todas maneras se pone automáticamente, pero está bien saberlo de antemano en caso de señal difusa). 
+Par ello, nos iremos a `Add Analyzer > Async Serial` y pondremos el bit rate obtenido (aunque se configura automáticamente, es bueno conocerlo de antemano en caso de contar con una señal difusa). 
 
 Una vez realizado los pasos anteriores, en la sección de la derecha llamda `Analyzers`, podemos ver la información en hexadecimal de la señal. Se corresponde con el siguiente reporte.
 

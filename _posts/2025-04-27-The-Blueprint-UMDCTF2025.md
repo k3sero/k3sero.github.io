@@ -26,9 +26,9 @@ flag will look like: UMDCTF{Campus Dr, College Park, MD 20742}"
 
 ## Archivos
 
-Este reto nos da el siguiente archivo.
+Este reto, tenemos el siguiente archivo.
 
-- `the-blueprint.jpg` : Contiene la imágen 360º del reto en formato .jpg
+- `the-blueprint.jpg`: Contiene la imagen 360º del reto en formato .jpg
 
 Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img).
 
@@ -38,17 +38,17 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Com
 
 En la imagen proporcionada podemos distinguir que se trata de una zona residencial en Ohio la cual presenta elementos verdes provenientes de las zonas alejadas a los suburbios urbanos y además podemos intuir que se trata de una zona lujosa, debido a la arquitectura de las casas de alrededor.
 
-Los elementos de la imagen que más llaman la atención es la siguiente.
+Los elementos de la imagen que más llaman la atención son los siguientes.
 
 ![valla](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/signal.png)
 
 ![casa](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/casa.png)
 
-Además como esta imagen se corresponde a una imagen tomada en Google Maps y además nos dan la imagen panorámica, con visualizadores como [Renderstuff](https://renderstuff.com/tools/360-panorama-web-viewer/) podemos visualizarla de forma completa. De este modo entenderemos al 100% la morfología urbana del lugar.
+Como esta imagen se corresponde a una imagen tomada en Google Maps y además nos dan la imagen panorámica, con visualizadores como [Renderstuff](https://renderstuff.com/tools/360-panorama-web-viewer/) podemos visualizarla de forma completa. De este modo entenderemos al 100% la morfología urbana del lugar.
 
 ## Solver
 
-Para resolver este reto podemos realizarlo de dos maneras, con un script en `Overpass-Turbo` que filtre por calles cortadas o mediante métodos manuales.
+Para resolver este reto podemos hacerlo de dos maneras, con un script en `Overpass-Turbo` que filtre por calles cortadas o mediante métodos manuales.
 
 ### Script en Overpass-Turbo
 
@@ -85,7 +85,7 @@ Después de una larga búsqueda, encontramos el nodo que coincide a la perfecci�
 
 ### De manera manual
 
-Si buscamos de manera manual, podemos ir probando con Chatgpt y por búsquedas de Google Lens, pero no encontrábamos nada certero solo suposiciones. A una desesperada, si buscabamos justo por la colina del lugar, encontramos la solución.
+Si buscamos de manera manual, podemos ir probando con Chatgpt y por búsquedas de Google Lens, pero no encontrábamos nada certero solo suposiciones. A una desesperada, si buscábamos justo por la colina del lugar, encontramos la solución.
 
 ![img_a_buscar](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/Busq_final.png)
 

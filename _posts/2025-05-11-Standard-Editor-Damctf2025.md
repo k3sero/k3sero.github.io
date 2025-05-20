@@ -24,9 +24,9 @@ Dificultad: <font color=orange>Media</font>
 
 ## Archivos
 
-Este reto nos da el siguiente archivo.
+En este reto, tenemos el siguiente archivo.
 
-- `conexión por netcat` : Contiene la conexión directa con el servidor del reto.
+- `conexión por netcat`: Contiene la conexión directa con el servidor del reto.
 
 Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/Damctf2025/Misc/Standard-Editor).
 
@@ -56,11 +56,11 @@ Al conectarnos por netcat podemos ver el siguiente mensaje.
 
 En este reto tendremos que realizar un command injection a través del editor simulado que nos dan en el reto. Para ello como siempre en estos casos, tendremos que probar, probar y probar todo lo posible para observar cómo se comporta el servidor.
 
-La primera suposición que podemos realizar es que el editor se trata de un editor de línea de comandos personalizados emulando algo parecido a el programa `ed`.
+La primera suposición que podemos realizar es que el editor mencionado se trata de un editor de línea de comandos personalizado, emulando algo parecido al programa `ed`.
 
-Por ejemplo, si queremos añadir líneas en este tipo de editores, con el comando `a` significa `append` y podemos añadir líneas al editor. Además si queremos finalizar la entrada de líneas, lo realizaremos mediante `.`. Ocurre de forma parecida con el comando `w` el cual nos permite ejecutar comandos.
+Por ejemplo, si queremos añadir líneas en este tipo de editores, con el comando `a` significa `append` y podemos añadir líneas al editor. Además si queremos finalizar la entrada de líneas, lo realizaremos mediante `.`. De forma parecida, el comando `w` el cual nos permite ejecutar comandos.
 
-Además, realizando pruebas podemos observar que las expresiones regulares están permitidas ya que observaremos que estamos habilitados para evaluar expresiones de sustitución.
+Además, al probar, observamos que las expresiones regulares están permitidas ya que observaremos que estamos habilitados para evaluar expresiones de sustitución.
 
 Después de muchos intentos damos con el código para leer la flag. 
 

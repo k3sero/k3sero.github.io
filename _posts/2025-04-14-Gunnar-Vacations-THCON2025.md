@@ -1,7 +1,7 @@
 ---
 title: Gunnar´s Vacation Pictures[1-7] - THCON2025
 author: Kesero
-description: Compilación de retos asociados a la búsqueda de posición en base a imágenes en Google Maps
+description: Compilación de retos asociados a la búsqueda de posición en base a imágenes en Google Maps.
 date: 2025-04-14 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Osint]
 tags: [Osint, Osint - Geo, Herramientas, Writeups, Dificultad - Difícil]

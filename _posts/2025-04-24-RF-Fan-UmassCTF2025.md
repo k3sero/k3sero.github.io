@@ -1,7 +1,7 @@
 ---
 title: RF Fan - UmassCTF2025
 author: Kesero
-description: Reto basado en recuperar una señal infraroja a partir de un archivo de señales
+description: Reto basado en recuperar una señal infraroja a partir de un archivo de señales.
 date: 2025-04-24 12:30:00 +0000
 categories: [Writeups Competiciones Internacionales, Hardware]
 tags: [Dificultad - Difícil, Hardware,  Hardware - Infrarojo, Writeups]
@@ -25,7 +25,7 @@ Dificultad: <font color=red>Difícil</font>
 
 ## Archivos
 
-Este reto nos da el siguiente archivo.
+En este reto, tenemos el siguiente archivo.
 
 - `signal.zip` : Contiene el archivo de señales.iq en su interior
 
@@ -39,13 +39,13 @@ En este reto, nos dicen que tenemos una captura de señales infrarojas en el fic
 
 ## Solver
 
-Este tipo de retos podemos solucionarlos de varías formas.
+Este tipo de retos podemos solucionarlos de varias formas.
 
 1. Con herramientas automatizadas como scripts en python para obtener los valores en binario (demodulación automática)
 
 2. De manera manual mediante el espectograma (si es posible realizar la visualización de las señales)
 
-En nuestro caso, Nacho decidió realizar la manera manual y yo la automatizada. (El ganó)
+En nuestro caso, Nacho decidió realizar la manera manual y yo la automatizada. (Él ganó)
 
 El procedimiento que el siguió fue muy simple:
 
@@ -57,7 +57,7 @@ El procedimiento que el siguió fue muy simple:
     ┌──(kesero㉿kali)-[~]
     └─$ sox -e float -t raw -r 192000 -b 32 -c 2 signal.iq -t wav -e float -b 32 -c 2 -r 192000 signal.wav
 
-2. Con el `signal.wav` creado, utilizó audiacity para visualizar las señales y efectivamente se podían notar claramente los 7 mensajes captados.
+2. Con el `signal.wav` creado, utilizó Audiacity para visualizar las señales y efectivamente se podían distinguir claramente los 7 mensajes captados.
 
 ![onda_completa](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/RF%20Fan/img/onda_completa.png)
 
@@ -65,7 +65,7 @@ Si ampliamos cada mensaje, podemos obtener los mensajes individuales y su repres
 
 ![onda_mensaje](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/RF%20Fan/img/unico_mensaje.png)
 
-3. Una vez que tenemos la representación, podemos intuir que los picos altos equivalen al bit 1 y la ausencia de picos al bit 0. De esta manera reconstruimos la secuencia infraroja de cada mensaje.
+3. Una vez que tenemos la representación, podemos intuir que los picos pronunciados equivalen al bit 1 y la ausencia de picos al bit 0. De esta manera reconstruimos la secuencia infraroja de cada mensaje.
 Realizando este procedimiento en los 7 mensajes, obtenemos las siguientes cadenas.
 
 ![cadenas](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/RF%20Fan/img/Sin%20t%C3%ADtulo.png)
@@ -95,32 +95,31 @@ Si analizamos las cadenas podemos segmentaras en varios elementos
 
 2. Los siguientes 3 bits representan el número del mensaje a indicar. Podemos observar como incrementa en 1 bit por cada mensaje y volviendo a 0 cuando existe acarreo.
 
-3. El cuarto bit corresonde a un bit en blanco.
+3. El cuarto bit corresponde a un bit en blanco.
 
 4. La última parte corresponde a una asociación directa de bits a los bits de la sección 2, como si fuese una tabla.
 
-Por tanto lo que nos piden en el ejercicio es predecir el octavo mensaje que se enviaría, para ello lo crearemos por partes:
+Por tanto, lo que nos piden en el ejercicio es predecir el octavo mensaje que se enviaría, para ello lo crearemos por partes:
 
-1. El identificador es igual en cada mensaje
+1. El identificador es igual en cada mensaje.
 
-2. El siguiente mensaje tendrá `010` al ser secuancial.
+2. El siguiente mensaje tendrá `010` al ser secuencial.
 
-3. El siguiente bit estará a 0
+3. El siguiente bit será 0.
 
 4. Tenemos que encontrar la asociación de `010` que resulta en los bits `011`
 
-Por tanto, la cadena final es la siguiente.
+La cadena final es la siguiente.
 
 ```
 0101000100111111101110000 010 0 011
 ```
 
-
 ## PD
 
 Créditos a el dueño [yun](https://yun.ng/c/ctf/2025-umass-ctf/hardware/rf-fan).
 
-Una manera automatizada de este proceso sería la siguiente.
+Una manera automatizada para este proceso sería la siguiente.
 
     ┌──(kesero㉿kali)-[~]
     └─$ python3 hmm.py --input signal.iq --bits-out bits.bin --frames-out frames.txt --dtype complex64 --decim 800 --min-gap 50 --use-squared

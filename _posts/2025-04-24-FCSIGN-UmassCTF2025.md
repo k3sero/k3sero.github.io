@@ -30,7 +30,7 @@ This chip is a bit quiet. I wonder if I could get it to talk..."
 
 ## Archivos
 
-Este reto nos da el siguiente archivo.
+Este reto, tenemos los siguientes archivos.
 
 - `client.py` : Contiene el archivo de conexión al reto.
 - `datasheet.md` : Contiene el datashet del empotrado en formato markdown.
@@ -40,13 +40,13 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Com
 
 ## Analizando el reto
 
-En este reto, tenemos un dispositivo en específico el cual tenemos que leer su contenido. Primero tenemos que leeernos el datasheet para saber en especifico su operatoria.
+En este reto, tenemos un dispositivo en específico el cual tenemos que leer su contenido. Primero tenemos que leer el datasheet para saber en especifico su operatoria.
 
 ## Solver
 
-Leyendo el contenido de `datasheet.pdf` nos daremos cuenta de que para poder leer su contenido, tenemos que ingresr un identificador `ID` de 16 bytes formado por dígitos de la A a la Z. En caso de fallar, su contenido se eliminará por lo que sería imposible resolver el reto en esa ejecución.
+Leyendo el contenido de `datasheet.pdf` nos daremos cuenta de que para poder leer su contenido, tenemos que ingresar un identificador `ID` de 16 bytes formado por dígitos de la A a la Z. En caso de fallar, su contenido se eliminará por lo que sería imposible resolver el reto en esa ejecución.
 
-Los ataques de fuerza bruta en este aspecto son inviables ya que el rango es enorme a demás de solo contar con una iteración y después de abrir un ticket, el desarrollador me comentó que el ID en cada iteración era random, por lo que debe de habe otro método.
+Los ataques de fuerza bruta en este aspecto son inviables ya que el rango es enorme además de solo contar con una iteración y después de abrir un ticket, el desarrollador me comentó que el ID en cada iteración era random, por lo que debe haber otro método.
 
 En procesadores RISC existe una vulnerabilidad por la cual a través de los ciclos del procesador, podemos intuir información, casi como si fuese una SQLInjection a ciegas.
 
@@ -65,7 +65,7 @@ En este caso, las variaciones en los ciclos de ejecución también pueden abrir 
 [!] Byte encontrado: d (3850 ciclos)
 ```
 
-Montando un script sofisticado en el que introduciendo posibles caracteres y recibiendo los ciclos por parte del empotrado, podemos obervar variaciones.
+Montando un script sofisticado que, introduciendo posibles caracteres y recibiendo los ciclos por parte del empotrado, nos permite observar variaciones de dichos ciclos.
 
 El script final que yo utilicé pero funcionaba a medias es el siguiente.
 
@@ -344,9 +344,9 @@ def decode_packet(pkt: bytes) -> dict:
 
 Además siguiendo el datasheet, podemos observar que si pedimos información en la dirección `0x400` esta entra en conflicto y la lectura se para.
 
-Una vez tenemos la extración completa, simplemente realizando un xxd a el binario podemos encontrar que hay distintas cabeceras en su interior.
+Una vez tenemos la extracción completa, simplemente realizando un `xxd` a el binario podemos encontrar que hay distintas cabeceras en su interior.
 
-Este script en python permite buscar de manera automatizada por cabeceras comunes, en este caso lo ejecuté y encontré en su interior una imágen `.png`.
+Este script en python permite buscar de manera automatizada por cabeceras comunes, en este caso lo ejecuté y encontré en su interior una imagen `.png`.
 
 ```py
 import os
@@ -426,7 +426,7 @@ if extract_files and found_headers:
             f.write(extracted_data)
         print(f"Extraído: {output_file} (tamaño: {len(extracted_data)} bytes)")
 ```
-Por último en la imágen se encuentra la flag.
+Por último en la imagen se encuentra la flag.
 
 ![ima](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/FCSign/img/png.png)
 

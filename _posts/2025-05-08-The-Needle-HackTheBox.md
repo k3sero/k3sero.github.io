@@ -1,7 +1,7 @@
 ---
 title: The Needle - Hardware HackThebox
 author: Kesero
-description: Reto Hardware basado en extraer archivos provenientes de un firmware
+description: Reto Hardware basado en extraer archivos provenientes de un firmware.
 date: 2025-05-08 10:00:00 +0000
 categories: [Hack The Box, Hardware - HTB]
 tags: [Writeups, Dificultad - Muy Fácil, Hardware, Hardware - Firmware, HTB, HTB - Hardware]
@@ -25,9 +25,9 @@ Dificultad: <font color=green>Muy Fácil</font>
 
 ## Archivos
 
-Este reto nos da el siguiente archivo.
+En este reto, nos dan los siguientes archivos.
 
-- `Firmware.bin` : Contiene el firmware mencionado en el enunciado.
+- `firmware.bin`: Contiene el firmware mencionado en el enunciado.
 - `Conexión por nc`: Contiene la conexión por nc del servidor.
 
 Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/HackTheBox/Hardware/The-needle).
@@ -45,12 +45,12 @@ Primero, vamos a lanzarle un `file` al binario para ver de qué se trata.
 
 En este reto, tenemos que encontrar las credenciales de acceso para acceder al servidor mediante la conexión por netcat proporcionada. Antes de nada, vamos a investigar el archivo `firwmare.bin`
 
-Cuando tratamos con archivos `.bin` podemos extraer todos los archivos de su interior con el comando `binwalk - e`
+Cuando tratamos con archivos `.bin` podemos extraer todos los archivos de su interior con el comando `binwalk -e`
 
     ┌──(kesero㉿kali)-[~]
     └─$ binwalk -e firmware.bin
 
-Como hemos podido observar en el output, se nos creará una carpeta llamada `_firmware.bin.extracted` con todo el contenido extraido.
+Como hemos podido observar en el output, se nos creará una carpeta llamada `_firmware.bin.extracted` con todo el contenido extraído.
 
 ![Contenido](https://marcocampione.com/posts/202304-write-up-the-needle-htb/images/inside_folder.png)
 
@@ -61,7 +61,7 @@ Como podemos ver, tenemos muchos archivos que mirar. Para amenizar la búsqueda,
 
 ![filtrado](https://marcocampione.com/posts/202304-write-up-the-needle-htb/images/grep.png)
 
-Si entramos en detalle, podemos observar que existe un usuario llamado `Device_Admin` por tanto tendremos que encontrar su contraseña. Para ello lanzamos el siguiente comando.
+Si entramos en detalle, podemos observar que existe un usuario llamado `Device_Admin`, por tanto tendremos que encontrar su contraseña. Para ello lanzamos el siguiente comando.
 
     ┌──(kesero㉿kali)-[~]
     └─$ find ./ -name sign
@@ -69,14 +69,14 @@ Si entramos en detalle, podemos observar que existe un usuario llamado `Device_A
     ./sign
     ./squashfs-root/etc/config/sign
 
-Como tenemos dos potenciales archivos, realizamos un `cat` de ambos y observamos la contraseña.
+Como tenemos dos archivos potenciales, visualizamos el contenido de ambos archivos con `cat` y observamos la contraseña.
 
     ┌──(kesero㉿kali)-[~]
     └─$ cat ./squashfs-root/etc/config/sign
 
     qS6-X/n]u>fVfAt!
 
-Listo! Mandamos las credenciales obtenidas a la instancia del reto, obtenemos una shell como `Device_Admin` y obtenemos la flag.
+¡Listo! Introducimos las credenciales obtenidas a la instancia del reto y obtenemos una shell como `Device_Admin` y obtenemos la flag.
 
     ┌──(kesero㉿kali)-[~]
     └─$ nc 83.136.252.123 37357

@@ -49,13 +49,13 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Com
 
 ## Analizando el reto
 
-En este reto, tenemos que leer la EPROM CAT24C64B EEPROM para poder conseguir el juego flash en su interior y obtener la flag. Para ello tenemos un script de conexión `client.py`
+En este reto, tenemos que leer la EPROM CAT24C64B para poder conseguir el juego flash en su interior y obtener la flag. Para ello tenemos un script de conexión `client.py`
 
 ## Solver
 
 Primero que nada tenemos que encontrar el esquemático oficial de la EPROM `CAT24C64B EEPROM` para ello una búsqueda rápida en internet y encontramos su [datasheet](https://www.onsemi.com/download/data-sheet/pdf/cat24c64bac4-d.pdf).
 
-Para leer la EPROM a través del servidor, tenemos primero que encontrar la dirección de memoria donde comienza el I2C. Según el datasheet la direción de comienzo se encuentra entre la dirección `0x50` y `0x57`. Para encontrarla exactamente utilicé el siguiente script.
+Para leer la EPROM a través del servidor, primero que encontrar la dirección de memoria donde comienza el I2C. Según el datasheet la dirección de comienzo se encuentra entre la dirección `0x50` y `0x57`. Para encontrarla exactamente utilicé el siguiente script.
 
 ```c
 #include <avr/io.h>
@@ -234,7 +234,7 @@ with socket.socket(socket.AF_INET, socket.SocketKind.SOCK_STREAM) as s:
 
 Listo! Una vez tenemos la dirección de comienzo, partiremos de ahí para comenzar a dumpear toda la información en su interior.
 
-Antes que nada, volveremos a modificar el script `client.py` para ir leyendo cada 4.096B hasta que llege al final y reconstruir el firwmare en cada iteración.
+Antes que nada, volveremos a modificar el script `client.py` para ir leyendo cada 4.096B hasta que llegue al final y reconstruir el firwmare en cada iteración.
 
 El script es el siguiente. (El código perteneciente a [yun](https://yun.ng/c/ctf/2025-umass-ctf/hardware/hidden-in-flash) es mucho mejor y está más optimizado que el mío propio)
 
@@ -361,7 +361,7 @@ if __name__ == '__main__':
     main()
 ```
 
-Por último, tenemos que crear un código de extración, para ello podemos hacerlo en `c` o en `.ino` directamente. En este caso el script es el siguiente.
+Por último, tenemos que crear un código de extracción, para ello podemos hacerlo en `c` o en `.ino` directamente. En este caso el script es el siguiente.
 
 ```c
 #include <Wire.h>
@@ -393,7 +393,7 @@ void loop() {
 }
 ```
 
-Una vez extraida el binario perteneciente a la rom, con un file podemos comprobar que tipo de archivo es.
+Una vez extraida el binario perteneciente a la rom, con elcomando `file` podemos comprobar que tipo de archivo es.
 
     ┌──(kesero㉿kali)-[~]
     └─$ file dump.bin
@@ -413,11 +413,11 @@ Si le lanzamos un `xxd` a dicho binario encontramos lo siguiente.
 
     (...)
 
-Como podemos observar, los magic bytes son CWS, este tipo de archivo corresponde a un archivo `flash.swf`.
+Como podemos observar, los magic bytes son `CWS`, este tipo de archivo corresponde a un archivo `flash.swf`.
 
 Ahora solo tenemos que decompilarlo, para ello hay herramientas como [jpexs-decompiler](https://github.com/jindrapetrik/jpexs-decompiler) que realizan decompilados en formato `.swf`.
 
-Introducimos el binario y podemos leer la flag en texto claro.
+Al introducir el binario en el decompilador, podemos leer la flag en texto claro.
 
 ![decompiled](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/Hidden%20in%20Flash/decompiled.png)
 

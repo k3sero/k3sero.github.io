@@ -27,7 +27,7 @@ Flag format: UMASS{Address as on Google Maps}, e.g. UMASS{650 N Pleasant St, Amh
 
 ## Archivos
 
-Este reto nos dan  los siguiente archivos.
+Este reto, nos dan los siguiente archivos.
 
 - `Multiplayer 1` : Contiene la 1º localización
 - `Multiplayer 2` : Contiene la 2º localización
@@ -50,13 +50,13 @@ El nombre del lugar comparte el nombre de la calle donde viven.
 
 ## Solver
 
-Primero que todo, tenemos que encontrar los lugares pertenecientes a ambas imágenes. Para ello utilizaremos las herramientas mencionadas [aquí](https://k3sero.github.io/posts/Gunnar-Vacations-THCON2025/) para encontrar realizar Geolocalizar los lugares.
+Primero, debemos encontrar los lugares pertenecientes a ambas imágenes. Para ello utilizaremos las herramientas mencionadas [aquí](https://k3sero.github.io/posts/Gunnar-Vacations-THCON2025/) para encontrar realizar Geolocalizar los lugares.
 
-Para la imagen `multiplayer1` podemos encontar que su ubicación es ["19th at Pennsylvania SB"](https://www.google.com/maps/@40.6130276,-75.5048425,3a,81.2y,41.12h,83.17t/data=!3m7!1e1!3m5!1sUlfcq5EKgG2V9LRTbLxfnQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D6.829999999999998%26panoid%3DUlfcq5EKgG2V9LRTbLxfnQ%26yaw%3D41.12!7i16384!8i8192?authuser=0&hl=es&entry=ttu&g_ep=EgoyMDI1MDQyMC4wIKXMDSoASAFQAw%3D%3D)
+Para la imagen `multiplayer1` podemos encontrar que su ubicación es ["19th at Pennsylvania SB"](https://www.google.com/maps/@40.6130276,-75.5048425,3a,81.2y,41.12h,83.17t/data=!3m7!1e1!3m5!1sUlfcq5EKgG2V9LRTbLxfnQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D6.829999999999998%26panoid%3DUlfcq5EKgG2V9LRTbLxfnQ%26yaw%3D41.12!7i16384!8i8192?authuser=0&hl=es&entry=ttu&g_ep=EgoyMDI1MDQyMC4wIKXMDSoASAFQAw%3D%3D)
 
 ![ubi1](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Multiplayer/img/ubi1.png)
 
-Para la imagen `multiplayer2` podemos encontar que su ubicación es ["Pennsylvania Ave & Norfolk St"](https://www.google.com/maps/@37.6496951,-77.4639334,3a,75y,352.11h,86.41t/data=!3m7!1e1!3m5!1slmKLvrETVqPuVByjzdpsBw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D3.5900000000000034%26panoid%3DlmKLvrETVqPuVByjzdpsBw%26yaw%3D352.11!7i16384!8i8192?hl=es&entry=ttu&g_ep=EgoyMDI1MDQyMC4wIKXMDSoASAFQAw%3D%3D)
+Para la imagen `multiplayer2` podemos encontrar que su ubicación es ["Pennsylvania Ave & Norfolk St"](https://www.google.com/maps/@37.6496951,-77.4639334,3a,75y,352.11h,86.41t/data=!3m7!1e1!3m5!1slmKLvrETVqPuVByjzdpsBw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D3.5900000000000034%26panoid%3DlmKLvrETVqPuVByjzdpsBw%26yaw%3D352.11!7i16384!8i8192?hl=es&entry=ttu&g_ep=EgoyMDI1MDQyMC4wIKXMDSoASAFQAw%3D%3D)
 
 ![ubi2](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Multiplayer/img/ubi2.png)
 
@@ -64,9 +64,9 @@ Si ponemos los puntos en un mapa, veremos lo siguiente.
 
 ![mid](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Multiplayer/img/ubi_media.png)
 
-Como en el enunciado del reto nos dicen que la ubiación se encuentra en el punto medio de ambos, sabemos que la ubiación que nos piden debe de estar en `Baltimore`. Además si miramos sus direcciones, llegamos a la conclusión de que sus calles se llaman igual "Pennsylvania Ave Street" por lo que sabemos que el lugar va a contener la palabra `Pennsylvania`
+Como en el enunciado del reto nos dicen que la ubicación se encuentra en el punto medio de ambos, sabemos que la ubicación que nos piden debe estar en `Baltimore`. Además si miramos sus direcciones, llegamos a la conclusión de que sus calles se llaman igual "Pennsylvania Ave Street" por lo que sabemos que el lugar va a contener la palabra `Pennsylvania`
 
-Buscando por Baltimore, finalmente encontramos la ubicación.
+Tras buscar en Baltimore, finalmente encontramos la ubicación.
 
 ![ubi_final](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Multiplayer/img/ubi_final.png)
 
@@ -77,9 +77,9 @@ Buscando por Baltimore, finalmente encontramos la ubicación.
 
 ## PD
 
-Créditos a [sumurazmirzayev](https://medium.com/@sumurazmirzayev/multiplayer-umassctf-2025-osint-3638afb867f8)
+Créditos a [sumurazmirzayev](https://medium.com/@sumurazmirzayev/multiplayer-umassctf-2025-osint-3638afb867f8).
 
-Mirando soluciones he visto una técnica muy buena. Normalmente hay imágenes que suelen tener en metadatos su la ubicación de donde se tomaron, para ello es muy recomendable siempre utilizar `exiftool` para intentar extraer esa información.
+Al revisasr las soluciones, he visto una técnica muy buena. Normalmente hay imágenes que suelen tener en metadatos su la ubicación de donde se tomaron, para ello es muy recomendable siempre utilizar `exiftool` para intentar extraer esa información.
 
 En este caso, estas imágenes pertenecen a "Street View 360" y por tanto tienen un identificador único llamado "Panorama ID" el cual identifica la ubicación exacta.
 

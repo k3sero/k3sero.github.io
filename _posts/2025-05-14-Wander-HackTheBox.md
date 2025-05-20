@@ -25,9 +25,9 @@ Dificultad: <font color=green>Fácil</font>
 
 ## Archivos
 
-Este reto nos da el siguiente enlace.
+En este reto, tenemos el siguiente enlace.
 
-- `instancia vía web` : Contiene la instancia del reto web.
+- `instancia vía web`: Contiene la instancia del reto web.
 
 Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/HackTheBox/Hardware/Wander).
 
@@ -37,7 +37,7 @@ Si introducimos la dirección dada en el reto, podemos observar la siguiente pá
 
 ![portada](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/HackTheBox/Hardware/Wander/portada.png)
 
-En ella se listan opciones como `Dashboard`, `Network`, `Job Controls` y `Help` pero realmente solo están disponible la sección de Job Controls.
+En ella se listan opciones como `Dashboard`, `Network`, `Job Controls` y `Help` pero realmente solo está disponible la sección de Job Controls.
 
 Si nos adentramos en ella podemos observar el siguiente apartado.
 
@@ -59,7 +59,7 @@ Los comandos PJL (Printer Job Language) son un conjunto de instrucciones desarro
 
 5. Ejecutar comandos de red o incluso, en algunos casos, acceder al sistema de archivos de la impresora.
 
-Un ejemplo detalladao de cómo funcionaría sería el siguiente, en el cual primero se inicia la secuencia, se indica el inicio del trabajo, acto seguido se configura los parámetros de impresión y por último se cambia el lenguaje de impresión.
+Un ejemplo detallado de cómo funcionaría sería el siguiente, el cual primero se inicia la secuencia, se indica el inicio del trabajo, acto seguido se configura los parámetros de impresión y por último se cambia el lenguaje de impresión.
 
 ```
 <ESC>%-12345X@PJL JOB
@@ -70,7 +70,7 @@ Un ejemplo detalladao de cómo funcionaría sería el siguiente, en el cual prim
 <ESC>%-12345X
 ```
 
-Además,recomiendo visitar la [página oficial de HP](https://developers.hp.com/hp-printer-command-languages-pcl/doc/print-job-language-pjl) donde explican más en detalle el lenguaje. También si estás aburrido, te dejo la [documentación oficial](https://developers.hp.com/system/files/attachments/PJLReference%282003%29_0.pdf) de más de 300 páginas por si quieres profundizar en el tema.
+Además, recomiendo visitar la [página oficial de HP](https://developers.hp.com/hp-printer-command-languages-pcl/doc/print-job-language-pjl) donde explican más en detalle el lenguaje. También si estás aburrido, te dejo la [documentación oficial](https://developers.hp.com/system/files/attachments/PJLReference%282003%29_0.pdf) de más de 300 páginas por si quieres profundizar en el tema.
 
 Una vez comprendido lo que son los comandos `PJL`, ¿qué toca hacer ahora?
 
@@ -89,7 +89,7 @@ FSQUERY
 FSUPLOAD
 ```
 
-Por ejemplo, si queremos ver el directorio actual, utilizaremos `FSDIRLIST` con el siguiente comando.
+Por ejemplo, para ver el directorio actual utilizaremos `FSDIRLIST` con el siguiente comando.
 
 ```
 @PJL FSDIRLIST NAME="0:" ENTRY=1
@@ -97,7 +97,7 @@ Por ejemplo, si queremos ver el directorio actual, utilizaremos `FSDIRLIST` con 
 
 ![dirlist](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/HackTheBox/Hardware/Wander/dirlist.png)
 
-Mediante este comando, también podemos listar contenido no solo del directorio actual, si no de cualquier ruta del sistema. Para ello utilizaremos la siguiente sintaxis.
+Mediante este comando, también podemos listar contenido no solo del directorio actual, sino de cualquier ruta del sistema. Para ello utilizaremos la siguiente sintaxis.
 
 ```
 @PJL FSDIRLIST NAME="0:/../" ENTRY=1
@@ -107,7 +107,7 @@ Mediante este comando, también podemos listar contenido no solo del directorio 
 
 Si seguimos listando contenido mediante el anterior comando, podemos observar como en la carpeta `home` se encuentra un directorio `default` con un archivo `readyjob`.
 
-En este caso para leer dicho archivo, tenemos que utilizar el comando `FSUPLOAD` mediante la siguiente sintaxis.
+En este caso, para leer dicho archivo, tenemos que utilizar el comando `FSUPLOAD` mediante la siguiente sintaxis.
 
 ```
 @PJL FSUPLOAD NAME="0:/../home/default/readyjob" ENTRY=1

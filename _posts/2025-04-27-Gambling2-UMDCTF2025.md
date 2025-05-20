@@ -1,7 +1,7 @@
 ---
 title: Gambling2 - UMDCTF2025
 author: Kesero
-description: Reto pwn basado en explotar la vulnerabilidad Out of Band en un binario (OOB)
+description: Reto pwn basado en explotar la vulnerabilidad Out of Bound en un binario compilado en C (OOB).
 date: 2025-04-27 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Pwn]
 tags: [Pwn, Pwn - OOB, Writeups, Dificultad - Fácil]
@@ -20,18 +20,18 @@ Dificultad: <font color=green>Fácil</font>
 
 ## Enunciado
 
-"i gambled all of my life savings in this program (i have no life savings)
+"I gambled all of my life savings in this program (i have no life savings)
 
 nc challs.umdctf.io 31005"
 
 ## Archivos
 
-Este reto nos da el siguiente archivo.
+En este reto, nos dan los siguientes archivos.
 
-- `Dockerfile` : Contiene el contenedor desplegado del reto. 
-- `gambling` : Contiene el binario compilado de `gambling.c`
-- `gambling.c` : Contiene el código principal en `C`
-- `Makefile` : Contiene las instrucciones de compilación del código en `C`
+- `Dockerfile`: Contiene el contenedor desplegado del reto. 
+- `gambling`: Contiene el binario compilado de `gambling.c`.
+- `gambling.c`: Contiene el código principal en `C`.
+- `Makefile`: Contiene las instrucciones de compilación del código en `C`.
 
 Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/pwn).
 
@@ -95,11 +95,11 @@ Además se pasan 7 punteros definidos como `f`, `f+1`, `f+2`, `f+3`, `f+4`, `f+5
 
 Esto degenera en una vulnerabilidad `Out of Bound (OOB)` la cual ocurre cuando un programa accede a memoria fuera de los límites de un arreglo o buffer. En nuestro caso lo aprovecharemos para poder llegar a la función `print_money()` la cual nos dará una consola interactiva en el servidor.
 
-Para ello, primero tenemos que compreder cómo se sobreescribe en la pila.
+Para ello, primero tenemos que comprender cómo se sobreescribe en la pila.
 
 El binario `gambling` está compilado en 32 bits, por tanto la pila local se organiza aproximadamente de la siguiente manera.
 
-```c
+```
 [ f[0] ]  bytes 0x00–0x03
 [ f[1] ]         0x04–0x07
 [ f[2] ]         0x08–0x0B
@@ -155,7 +155,7 @@ Para ello ejecutamos `objdump` y dumpeamos las direcciones de memoria de cada in
     80492f3:	d8 0d 70 a0 04 08    	fmuls  0x804a070
     80492f9:	d9 5c 24 14          	fstps  0x14(%esp)
 
-Listo! Sabemos que tenemos que saltar a la dirección `0x080492c0` para llegar a ejecutar la función `print_money()` la cual nos dará la consola interactiva, pero antes que nada tenemos que Construir el valor `double` a enviar con la dirección obtenida.
+Listo! Sabemos que tenemos que saltar a la dirección `0x080492c0` para llegar a ejecutar la función `print_money()` la cual nos dará la consola interactiva, pero antes que nada tenemos que construir el valor `double` a enviar con la dirección obtenida.
 
 Para ello queremos que esos 8 bytes que se imprimen en la posición de `f+6` contengan, en su mitad alta (los 4 bytes de más peso), la dirección de `print_money` (0x080492c0). Para ello construiremos la siguiente lógica.
 
@@ -166,7 +166,7 @@ payload_bytes = struct.pack('<Q', bits64)
 payload_double = struct.unpack('<d', payload_bytes)[0]
 payload_str   = payload_double.hex()
 ```
-Esa direción en 64 bits corresponde a `0x080492c000000000` y en little-endian, esos 8 bytes se almacenan como:
+Esa dirección en 64 bits corresponde a `0x080492c000000000` y en little-endian, esos 8 bytes se almacenan como:
 
     00 00 00 00   c0 92 04 08
     ^—low—^       ^—high—^
@@ -175,7 +175,7 @@ Por tanto, cuando scanf hace la séptima lectura `i=6`, escribe esos 8 bytes en 
 – Los 4 bytes más bajos (todos ceros) se van “más allá” pero no nos importan.
 – Los 4 bytes más altos (c0 92 04 08) acaban justo en saved EIP, convirtiéndolo en `0x080492c0`.
 
-Por último pero importante, el salto a la función `print_money()` se ejecuta al terminal la función principal `gamble()` ya que el ensamblador genera el siguiente código:
+Por último pero importante, el salto a la función `print_money()` se ejecuta al terminar la función principal `gamble()`, ya que el ensamblador genera el siguiente código:
 
     leave   ; equivale a “mov esp, ebp; pop ebp”
     ret     ; pop [esp] → EIP
@@ -225,7 +225,7 @@ Una vez tenemos la `shell` interactiva, leemos la flag.
 
 ## P.D
 
-Agradecido por el manqueo de Víctor eb ek último momento para carrilear Pwn.
+Agradecido por el manqueo de Víctor en el último momento para llegar y carrilear Pwn.
 
 ![skill_issue](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/pwn/img/skill_issue.png)
 

@@ -1,7 +1,7 @@
 ---
 title: NeoPrivesc - THCON2025
 author: Kesero
-description: Reto basado en la obtención de privilegios para leer un fichero flag.txt
+description: Reto basado en la obtención de privilegios para leer un fichero flag.txt.
 date: 2025-04-14 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Miscelánea]
 tags: [Misc, Misc - Jail, Writeups, Dificultad - Fácil]

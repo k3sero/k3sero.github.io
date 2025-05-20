@@ -1,7 +1,7 @@
 ---
 title: RFlag - Hardware HackThebox
 author: Kesero
-description: Reto basado en decodificar una señal .cf32 capturada
+description: Reto basado en decodificar una señal .cf32 capturada.
 date: 2025-05-14 10:00:00 +0000
 categories: [Hack The Box, Hardware - HTB]
 tags: [Writeups, Dificultad - Muy Fácil, Hardware, Hardware - Signal, HTB, HTB - Hardware]
@@ -25,9 +25,9 @@ Dificultad: <font color=green>Muy Fácil</font>
 
 ## Archivos
 
-Este reto nos da el siguiente archivo.
+En este reto, tenemos el siguiente archivo.
 
-- `signal.cf32` : Contiene las señales capturas del garaje.
+- `signal.cf32`: Contiene las señales capturas del garaje.
 
 Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/HackTheBox/Hardware/RFlag).
 
@@ -35,7 +35,7 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Hac
 
 En este reto nos da el archivo `signal.cf32` con una extensión particular la cual es `.cf32`.
 
-Este tipo de archivos en resumidas cuentas, cuenta con información en punto flotante de 32 bits. Es por ello que para poder analizar la señal capturada, necesitamos un programa que sea capaz de decodificar este tipo de archivos.
+Este tipo de archivos, contienen información en punto flotante de 32 bits. Es por ello que para poder analizar la señal capturada, necesitamos un programa que sea capaz de decodificar este tipo de archivos.
 
 ## Solver
 
@@ -49,7 +49,7 @@ Primero como siempre, vamos a lanzarle un `file` al archivo para ver de qué se 
     signal.cf32: Adobe Photoshop Color swatch, version 0, 49212 colors; 1st RGB space (0), w 0xc0bc, x 0, y 0x803c, z 0; 2nd space (32956), w 0, x 0xc03c, y 0, z 0xc0bc
 ```
 
-En este caso, el `file` no nos arroja mucha información. Como hemos dicho anteriormente, para poder leer la información que se transmite en esta captura, tendremos que decodificarla en información legible.
+En este caso, el `file` no nos arroja mucha información. Como he mencionado anteriormente, para poder leer los datos transmitidos en esta captura, tendremos que decodificarla en información legible.
 
 Para ello voy a utilizar la herramienta `rtl_433` que además de permitirnos con el parámetro `-A` decodificar una señal proveniente de `.cf32`, tambíen permite capturar y decodificar señales RF emitidas por una gran variedad de dispositivos inalámbricos de consumo.
 
@@ -100,7 +100,7 @@ En este reporte, podemos observar que la información que se trasmite es la sigu
 AA AA AA AA 0C 4E 48 54 42 7B 52 46 5F 48 34 63 6B 31 6E 36 5F 31 73 5F 63 30 30 6C 21 21 21 7D
 ```
 
-Para obtener el mensaje en texto claro legible, simplemente tenemos que transformar la información en hexadecimal a caracteers ASCII.
+Para obtener el mensaje en texto claro legible, simplemente tenemos que transformar la información en hexadecimal a caracteres ASCII.
 
 ```
     ┌──(kesero㉿kali)-[~]

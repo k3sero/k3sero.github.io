@@ -25,12 +25,12 @@ Dificultad: <font color=orange>Media</font>
 
 ## Archivos
 
-En reto nos dan los siguientes archivo.
+En este reto, nos dan los siguientes archivos.
 
-- `message.txt` : Contiene el mensaje cifrado.
-- `2025-05-09\_AlicevsBob.pgn` : Contiene la partida de ajedrez que se ha jugado.
+- `message.txt`: Contiene el mensaje cifrado.
+- `2025-05-09\_AlicevsBob.pgn`: Contiene la partida de ajedrez que se ha jugado.
 
-Archivos utilizados [aquí](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/Damctf2025/Cripto/Hidden%20Orangutan/img/4.png).
+Archivos utilizados [aquí](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/Damctf2025/Cripto/Hidden%20Orangutan).
 
 ## Analizando el código
 
@@ -99,7 +99,7 @@ En este caso, podemos observar como justo el mensaje contiene 64 caracteres, el 
   +---+---+---+---+---+---+---+---+
 ```
 
-Por lo que para obtener el mensaje en claro, debemos obtener la posición inicial del tablero ya que esta se corresponderían con los caracteres originales y en su sitio. Pero, ¿cómo conseguimos esto?
+Por lo que para obtener el mensaje en claro, debemos obtener la posición inicial del tablero, ya que esta se correspondería con los caracteres originales y en su sitio. Pero, ¿cómo conseguimos esto?
 
 Básicamente tenemos que revertir el cifrado, es decir, tenemos que mirar las jugadas de atrás para adelante, de esta manera los cambios se van deshaciendo poco a poco hasta obtener dicho estado.
 

@@ -25,7 +25,7 @@ Dificultad: <font color=orange>Media</font>
 
 ## Archivos
 
-Este reto nos da el siguiente archivo.
+En este reto, nos dan los siguientes archivos.
 
 - `nc challs.umdctf.io 31601` : Conexión por netcat al servidor
 - `evaldle.py` : Contiene la lógica del servidor.
@@ -65,7 +65,7 @@ while True:
 
 En resumidas cuentas, este código implementa un juego tipo Wordle que compara adivinanzas con la palabra secreta `SIGMA` dando pistas con emojis. Posteriormente, la cadena introducida por parte del usuario entra en la función `exec()`. Además podemos observar que tiene un bug en la lógica de pistas, ya que `target[j]` es una letra y no una colección, por eso solo se evalúa como verdadera si ambas letras son iguales (cubierto por la primera condición)
 
-Hay un factor muy importante y es que el usuario está limitado a la cadena  a introducir, ya que esta debe de ser de 5 caracteres para que se ejecute la función `exec()`, en caso contrario saltará el try.
+Hay un factor muy importante y es que el usuario está limitado a la cadena a introducir, ya que esta debe de ser de 5 caracteres para que se ejecute la función `exec()`, en caso contrario saltará el try.
 
 ## Solver
 
@@ -126,7 +126,7 @@ Para ello, sabemos que `exec(guess)` va a ejecutar todo lo que escribamos como i
 
 2. Nuestro principal objetivo es leer `f` que contiene la bandera, así que lo que tenemos que hacer es reconstruir la bandera carácter por carácter, comprobando realizando comprobaciones de si cierta letra está antes o después que otra en orden alfabético.
 
-En python podemos comparar strings de la siguiente forma.
+En Python podemos comparar strings de la siguiente forma.
 
 ```py
 "abc" < "acd"  # True
@@ -151,11 +151,11 @@ Si `d = False`, entonces `1 / d` = `1 / False` = `1 / 0` = No válido, lanza err
 
 Además, como el juego muestra 🟩🟩🟩🟩🟩 cuando no hay error, y 🟥🟥🟥🟥🟥 cuando sí hay error, podemos saber si `f < a`.
 
-5. Por último, tenemos que relizar la operatoria anterior para todo el rango de caracteres y mediante un algoritmo de búsqueda eficiente, para ello utilizamos la `binary search` para encontrar el caracter correcto.
+5. Por último, tenemos que realizar la operatoria anterior para todo el rango de caracteres y mediante un algoritmo de búsqueda eficiente, para ello utilizamos la `binary search` para encontrar el caracter correcto.
 
 ### P.D
 
-Script original de `clam`, es muy potente para futuros scripts basados en restricciones de caracteres.
+Script original de `clam`. Es muy potente para futuros scripts basados en restricciones de caracteres.
 
 ## Flag
 
