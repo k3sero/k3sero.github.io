@@ -128,10 +128,6 @@ Por último, abrimos la cmd en modo administrador y ejecutamos los siguientes co
     python3 vol.py --info
 ```
 
-Claro, aquí tienes la parte que me pasaste adaptada y agregada a tu artículo, justo después de la sección de dumpeos con AVML para que quede ordenado y completo. Te lo dejo listo para que lo insertes donde quieras o directamente lo puedas usar:
-
----
-
 ## Instalación en Docker
 
 Para quienes prefieren usar Volatility mediante contenedores Docker y evitar instalaciones complejas, aquí dejo un resumen muy útil para trabajar con Volatility 2 y Volatility 3 usando Docker.
@@ -169,7 +165,7 @@ Descarga la imagen con:
 docker pull sk4la/volatility3
 ```
 
-Y define un alias para facilitar su uso, por ejemplo (adaptar rutas según tu sistema):
+Y define un alias para facilitar su uso, por ejemplo:
 
 ```bash
 vol3='docker run -v /home/yoshl:/data -v /opt/vol_plugings/vol3/:/plugins sk4la/volatility3'
