@@ -171,8 +171,6 @@ Y define un alias para facilitar su uso, por ejemplo:
 vol3='docker run -v /home/yoshl:/data -v /opt/vol_plugings/vol3/:/plugins sk4la/volatility3'
 ```
 
----
-
 ### Extra: Cómo copiar archivos desde el contenedor Docker
 
 Gracias a la comunidad, una forma sencilla de sacar archivos desde el contenedor sin tener que realizar dumpeos repetitivos es usando:
@@ -180,8 +178,6 @@ Gracias a la comunidad, una forma sencilla de sacar archivos desde el contenedor
 ```bash
 docker cp <containerId>:/path/docker/file.ext /path/host/file.exe
 ```
-
----
 
 ### Uso típico con Volatility 3 y Docker
 
