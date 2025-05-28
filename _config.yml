@@ -230,9 +230,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-sitemap:
-  filename: "sitemap/sitemap.xml"
-
 title: "Kesero"
 description: "Blog dedicado a la resolución de retos CTFs y Writeups"
 url: "https://k3sero.github.io"
