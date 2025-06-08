@@ -9,7 +9,7 @@ pin: false
 math: true
 mermaid: true
 image:
-  path: 
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/tjctf2025/osint/airport/8.png
   lqip: 
   alt: 
 comments: true
