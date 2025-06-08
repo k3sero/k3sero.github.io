@@ -14,7 +14,7 @@ image:
   alt: 
 comments: true
 ---
-Autor del reto: `Segal`
+Autor del reto: `2027aliu`
 
 Dificultad: <font color=orange>Fácil</font>
 
