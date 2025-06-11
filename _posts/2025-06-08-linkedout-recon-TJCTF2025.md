@@ -1,5 +1,5 @@
 ---
-title: inkedout-recon - TJCTF2025
+title: Linkedout-recon - TJCTF2025
 author: Kesero
 description: Reto basado en encontrar a la persona indicada y descubrir cuales son sus planes
 date: 2025-06-08 17:00:00 +0000
