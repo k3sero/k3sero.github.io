@@ -1,7 +1,7 @@
 ---
 title: Linkedout-recon - TJCTF2025
 author: Kesero
-description: Reto basado en encontrar a la persona indicada y descubrir cuales son sus planes
+description: Reto basado en encontrar a la persona indicada y descubrir cuáles son sus planes
 date: 2025-06-08 17:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Miscelánea]
 tags: [Misc, Writeups, Dificultad - Media, Osint, Osint - Research]
@@ -26,14 +26,14 @@ Dificultad: <font color=orange>Media</font>
 
 En este reto tenemos el siguiente archivo.
 
-- `resume.pdf`: Contiene un pdf con la información de un curriculum de una persona.
+- `resume.pdf`: Contiene un PDF con la información de un currículum de una persona.
 
 Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/tjctf2025/osint/linkedout).
 
 
 ## Analizando el reto
 
-En `resume.pdf` tenemos un curriculum perteneciente a `Alex Marmaduke`.
+En `resume.pdf` tenemos un currículum perteneciente a `Alex Marmaduke`.
 
 ![cv](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/tjctf2025/osint/linkedout/cvimage.png)
 
@@ -42,7 +42,7 @@ Los detalles más relevantes que obtenemos de dicho cv son los siguientes:
 1. Tenemos su dirección `6560 Braddock Rd, Alexandria, VA 22312 | ctf.tjctf.org | thisisafakeemail@tjctf.org`
 
 2. Experiencia sólida (3+ años) en funciones administrativas y de coordinación con enfoque en entornos sensibles y de alta seguridad.
-Perfil orientado al manejo de datos, logística y comunicaciones seguras, ideal para roles con requerimientos de confidencialidad, cumplimiento y soporte ejecutivo.
+Perfil orientado al manejo de datos, logística y comunicaciones seguras, ideal para roles con requisitos de confidencialidad, cumplimiento y soporte ejecutivo.
 
 3. Ha trabajado en eventos clasificados, revisiones internas y entornos de alta presión como DEFCON-2023 (clave si buscas perfil con orientación ciber o técnico).
 
@@ -63,13 +63,13 @@ Como sabemos que `Aelx Marmaduke` es un perfil tecnológico, podemos suponer que
 Además podemos encontrar su perfil utilizando herramientas como [Sherlock](https://github.com/sherlock-project/sherlock), [instantusername](https://instantusername.com/), [DuckDuckGo](https://duckduckgo.com/) o Google dorks.
 
 
-Una vez en su perfil de github, podemos ver un proyecto llamado `ctf-researcher-alex`. Si leemos dicho `Readme.md` adjunto, podemos ver como al final del todo, hay una sección referente a `Defcon 2023 Notes` tal cual se mencióno en el cv.
+Una vez en su perfil de github, podemos ver un proyecto llamado `ctf-researcher-alex`. Si leemos dicho `Readme.md` adjunto, podemos ver como al final del todo, hay una sección referente a `Defcon 2023 Notes` tal cual se menciono en el cv.
 
 Entrando en dicha sección, encontramos la siguiente página web.
 
 ![pagina_web](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/tjctf2025/osint/linkedout/pagina_web.png)
 
-El archivo adjuntado es un comprimido `.zip` con contraseña. Este archivo contiene una imágen llamada `encoded.png`
+El archivo adjuntado es un comprimido `.zip` con contraseña. Este archivo contiene una imagen llamada `encoded.png`
 
 Para poder obtener la contraseña de dicho archivo comprimido, vamos a crackearla utilizando `john` junto con el diccionario `rockyou.txt`. Para ello seguiremos los siguientes comandos.
 
@@ -96,7 +96,7 @@ Listo, sabemos que la contraseña es `princess`. Si abrimos la imagen encontramo
 
 ![imagen_zip](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/tjctf2025/osint/linkedout/encoded.png)
 
-Dicha imagen no tiene nada de especial, sabemos que hay información oculta por que el título de la imagen lo sugiere. Es por ello que vamos a utilizar la herramienta `zsteg` para poder encontrar posibles `lsb` ocultos.
+Dicha imagen no tiene nada de especial, sabemos que hay información oculta porque el título de la imagen lo sugiere. Es por ello que vamos a utilizar la herramienta `zsteg` para poder encontrar posibles `LSB` ocultos.
 
 ```
     ┌──(kesero㉿kali)-[~]
