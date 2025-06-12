@@ -1,20 +1,40 @@
 ---
 layout: page
-# All the Tags of posts.
+title: Tags
 ---
 
-<div id="tags" class="d-flex flex-wrap mx-xl-2">
-  {% assign tags = '' | split: '' %}
+<h2>Competiciones</h2>
+<div id="tags" class="d-flex flex-wrap mx-xl-2 mb-4">
+  {% assign comp_tags = '' | split: '' %}
   {% for t in site.tags %}
-    {% assign tags = tags | push: t[0] %}
+    {% if t[0] contains 'comp-' %}
+      {% assign comp_tags = comp_tags | push: t[0] %}
+    {% endif %}
   {% endfor %}
-
-  {% assign sorted_tags = tags | sort_natural %}
-
-  {% for t in sorted_tags %}
+  {% assign sorted_comp_tags = comp_tags | sort_natural %}
+  {% for t in sorted_comp_tags %}
     <div>
       <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
-        {{ t -}}
+        {{ t | remove: 'comp-' }}
+        <span class="text-muted">{{ site.tags[t].size }}</span>
+      </a>
+    </div>
+  {% endfor %}
+</div>
+
+<h2>Otros Tags</h2>
+<div id="tags" class="d-flex flex-wrap mx-xl-2">
+  {% assign other_tags = '' | split: '' %}
+  {% for t in site.tags %}
+    {% unless t[0] contains 'comp-' %}
+      {% assign other_tags = other_tags | push: t[0] %}
+    {% endunless %}
+  {% endfor %}
+  {% assign sorted_other_tags = other_tags | sort_natural %}
+  {% for t in sorted_other_tags %}
+    <div>
+      <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
+        {{ t }}
         <span class="text-muted">{{ site.tags[t].size }}</span>
       </a>
     </div>
