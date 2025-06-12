@@ -3,19 +3,92 @@ layout: page
 title: Tags
 ---
 
-<!-- Sección: Competiciones -->
-<h2>Competiciones</h2>
-<div class="d-flex flex-wrap mx-xl-2 mb-4">
-  {% assign tags = '' | split: '' %}
-  {% for t in site.tags %}
-    {% if t[0] contains 'comp-' %}
-      {% assign tags = tags | push: t[0] %}
+{% assign ordered_categories = 
+  "Cripto,Esteganografía,Forense,Hardware,Misc,Osint,GamePwn,Dificultad,Otros,Pwn,Reversing,Competiciones" | split: ',' %}
+
+{% assign comp_tags = '' | split: '' %}
+{% assign non_comp_tags = '' | split: '' %}
+{% for t in site.tags %}
+  {% if t[0] contains 'comp-' %}
+    {% assign comp_tags = comp_tags | push: t[0] %}
+  {% else %}
+    {% assign non_comp_tags = non_comp_tags | push: t[0] %}
+  {% endif %}
+{% endfor %}
+
+{% assign sorted_tags = non_comp_tags | sort_natural %}
+
+{% assign categories = '' | split: '' %}
+{% assign tags_by_category = '' | split: '' %}
+
+<!-- Agrupamos tags por categoría -->
+{% assign category_map = '' | split: '' %}
+{% for tag in sorted_tags %}
+  {% if tag contains ' - ' %}
+    {% assign prefix = tag | split: ' - ' | first %}
+    {% assign name = tag | split: ' - ' | last %}
+  {% else %}
+    {% assign prefix = tag %}
+    {% assign name = tag %}
+  {% endif %}
+
+  {% capture key %}{{ prefix }}::{% endcapture %}
+  {% capture value %}{{ tag }}::{% endcapture %}
+  
+  {% assign category_map = category_map | push: key | push: value %}
+{% endfor %}
+
+<!-- Mostrar categorías en orden definido -->
+<h2 class="mt-4">Categorías</h2>
+{% for cat in ordered_categories %}
+  {% assign has_subtags = false %}
+  {% assign all_tags = '' | split: '' %}
+
+  {% for tag in sorted_tags %}
+    {% if tag contains ' - ' %}
+      {% assign prefix = tag | split: ' - ' | first %}
+      {% assign name = tag | split: ' - ' | last %}
+    {% else %}
+      {% assign prefix = tag %}
+      {% assign name = tag %}
+    {% endif %}
+
+    {% if prefix == cat %}
+      {% assign has_subtags = true %}
+      {% assign all_tags = all_tags | push: tag %}
     {% endif %}
   {% endfor %}
 
-  {% assign sorted_tags = tags | sort_natural %}
+  {% if has_subtags %}
+    <h3 class="mt-4">{{ cat }}</h3>
+    <div class="d-flex flex-wrap mx-xl-2 mb-2">
+      {% for t in sorted_tags %}
+        {% if t contains ' - ' %}
+          {% assign prefix = t | split: ' - ' | first %}
+          {% assign name = t | split: ' - ' | last %}
+        {% else %}
+          {% assign prefix = t %}
+          {% assign name = t %}
+        {% endif %}
 
-  {% for t in sorted_tags %}
+        {% if prefix == cat %}
+          <div>
+            <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
+              {{ name }}
+              <span class="text-muted">{{ site.tags[t].size }}</span>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endfor %}
+
+<!-- Mostrar sección de Competiciones al final -->
+<h3 class="mt-4">Competiciones</h3>
+<div class="d-flex flex-wrap mx-xl-2 mb-4">
+  {% assign sorted_comp_tags = comp_tags | sort_natural %}
+  {% for t in sorted_comp_tags %}
     <div>
       <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
         {{ t | remove: 'comp-' }}
@@ -24,53 +97,3 @@ title: Tags
     </div>
   {% endfor %}
 </div>
-
-<!-- Sección: Otros Tags agrupados -->
-<h2>Otros Tags</h2>
-{% assign all_tags = '' | split: '' %}
-{% for t in site.tags %}
-  {% unless t[0] contains 'comp-' %}
-    {% assign all_tags = all_tags | push: t[0] %}
-  {% endunless %}
-{% endfor %}
-
-{% assign sorted_all = all_tags | sort_natural %}
-{% assign categories = '' | split: '' %}
-
-{% for tag in sorted_all %}
-  {% if tag contains ' - ' %}
-    {% assign prefix = tag | split: ' - ' | first %}
-  {% else %}
-    {% assign prefix = 'Otros' %}
-  {% endif %}
-
-  {% unless categories contains prefix %}
-    {% assign categories = categories | push: prefix %}
-  {% endunless %}
-{% endfor %}
-
-{% assign sorted_categories = categories | sort_natural %}
-
-{% for cat in sorted_categories %}
-  <h3 class="mt-4">{{ cat }}</h3>
-  <div class="d-flex flex-wrap mx-xl-2 mb-4">
-    {% for tag in sorted_all %}
-      {% if tag contains ' - ' %}
-        {% assign prefix = tag | split: ' - ' | first %}
-        {% assign name = tag | split: ' - ' | last %}
-      {% else %}
-        {% assign prefix = 'Otros' %}
-        {% assign name = tag %}
-      {% endif %}
-
-      {% if prefix == cat %}
-        <div>
-          <a class="tag" href="{{ tag | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
-            {{ name }}
-            <span class="text-muted">{{ site.tags[tag].size }}</span>
-          </a>
-        </div>
-      {% endif %}
-    {% endfor %}
-  </div>
-{% endfor %}
