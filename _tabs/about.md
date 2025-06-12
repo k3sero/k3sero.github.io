@@ -32,25 +32,18 @@ En este 2024, seguimos demostrando nuestro desempeño rozando las primeras posic
 
 Este blog personal está dedicado a tratar distintos temas sobre la ciberseguridad y hacking ético, realizando diversas investigaciones sobre las ramas que la conforman. A su vez, también está enfocado en la resolución de retos CTF (Capture the Flag) que abordamos en las competiciones nacionales e internacionales, con el fin de aportar soluciones a las distintas categorías para contribuir conocimiento a la comunidad.
 
-## Marcadores Personales
-
-• **First Bloods** --> [Hohoho3 Continue - WarGames2024](https://k3sero.github.io/posts/Hohoho3-Continue-WarGamesCTF2024/), [Pederson - HackOn2025](https://k3sero.github.io/posts/Pederson-HackOn2025/)
-
-• **THCON2025** --> Competición de CTFs a nivel internacional, en la que obtuvimos el primer podio con la 3º posición en grupos de 5 personas.
-
-• **HackOn2025** --> Competición de CTFs a nivel nacional, en la que obtuve 9º posición participando en solitario contra equipos de 3 personas.
-
-• **WarGamesCTF2024** --> Competición de CTFs a nivel internacional, en la cual obtuvimos la 6º posición de 233 equipos.
-
-• **SpookyCTF2024** --> Competición de CTFs a nivel internacional, en la cual obtuvimos la 40º posición de 831 equipos participantes.
-
-• **Talent4Cyber** --> Competición de CTFs a nivel nacional, organizada por La Universidad de Granada, el TRUST Lab de la Universidad Politécnica de Cartagena y el Mando Conjunto del Ciberespacio con el fin de poner a prueba las habilidades y conocimientos de los mejores talentos universitarios con desafíos técnicos y simulaciones realistas. Nuestro equipo conformado por cuatro personas logró adentrarse en la cuarta posición del ranking, resolviendo un total de 6 de 10 en total.
-
-• **HackademicsForumCTF2024** --> Competición de CTFs impulsada por el Aula de Ciberseguridad y Redes con el fin de acercar la metodología de resolución de retos CTFs en el sector provincial. En dicha competición, conseguí obtener la segunda posición del ranking.
-
-• **NCL2023** --> Evento referente en la cultura de la ciberseguridad Española enfocándose en la resolución de retos CTFs de distintas categorias (principalmente forense). Nuestro equipo de 4 participantes compitió en la categoría amateour logró clasificar a la fase semifinal y se quedó a 50 puntos de clasificar a la fase final, obteniendo la plaza número 16 del ranking.
-
-• **CTFs Learning Path Hacking Web 2023** --> Talleres impulsados por el Aula de Ciberseguridad y Redes en el que conseguí obtener la tercera posición en el ranking basado en retos CTFs enfocados en vulnerabilidades web.
+| **Competición / Evento**                | **Descripción**                                                                                                                                                                                                                               |
+| --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **First Bloods**                        | Primera resolución de retos en competiciones CTFs: [Hohoho3 Continue - WarGames2024](https://k3sero.github.io/posts/Hohoho3-Continue-WarGamesCTF2024/) y [Pederson - HackOn2025](https://k3sero.github.io/posts/Pederson-HackOn2025/). |
+| **JNIC2025**                            | Competición nacional de CTFs. Obtuve 4ª posición como parte del equipo "3 Monos y 1 Teclado" (3 jugadores).                                                                                                                                   |
+| **THCON2025**                           | CTF internacional. Logramos la 3ª posición en grupo de 5 personas.                                                                                                                                                                            |
+| **HackOn2025**                          | CTF nacional. Obtuve la 9ª posición participando en solitario contra equipos de 3 personas.                                                                                                                                                   |
+| **WarGamesCTF2024**                     | CTF internacional. Obtuvimos la 6ª posición entre 233 equipos.                                                                                                                                                                                |
+| **SpookyCTF2024**                       | CTF internacional. Finalizamos en la 40ª posición de un total de 831 equipos.                                                                                                                                                                 |
+| **Talent4Cyber**                        | CTF nacional organizado por universidades y el Mando Conjunto del Ciberespacio. Nuestro equipo de 4 personas logró la 4ª posición resolviendo 6 de 10 retos.                                                                                  |
+| **HackademicsForumCTF2024**             | CTF organizado por el Aula de Ciberseguridad y Redes. Obtuve la 2ª posición del ranking.                                                                                                                                                      |
+| **NCL2023**                             | Evento de ciberseguridad en España. Competimos en la categoría amateur, quedamos en la 16ª posición, a 50 puntos de clasificar a la final.                                                                                                    |
+| **CTFs Learning Path Hacking Web 2023** | Talleres centrados en CTFs de vulnerabilidades web. Obtuve la 3ª posición en el ranking.                                                                                                                                                      |
 
 ## Competiciones Participadas
 
@@ -127,19 +120,15 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 ## Eventos Asistidos
 
-• **HackademicsForum2025** (Organizador)
-
-• **DanaCon2024**
-
-• **NavajaNegra2024**
-
-• **HackademicsForum2024**
-
-• **Oportunidades en el Sector de la Defensa para Empresas Tecnológicas e Innovadoras 2024**
-
-• **Hack&Beers Vol.15 2024**
-
-• **HackademicsForum2023**
+| **Evento**                                                                 | **Rol / Participación**                    |
+|----------------------------------------------------------------------------|---------------------------------------------|
+| **HackademicsForum2025**                                                   | Organizador                                 |
+| **DanaCon2024**                                                            | Asistente                                   |
+| **NavajaNegra2024**                                                        | Asistente                                   |
+| **HackademicsForum2024**                                                   | Asistente                                   |
+| **Oportunidades en el Sector de la Defensa para Empresas Tecnológicas e Innovadoras 2024** | Asistente                                   |
+| **Hack&Beers Vol.15 2024**                                                 | Asistente                                   |
+| **HackademicsForum2023**                                                   | Asistente                                   |
 
 ## Charlas sobre Ciberseguridad Asistidas
  
