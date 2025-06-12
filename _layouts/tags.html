@@ -3,55 +3,53 @@ layout: page
 title: Tags
 ---
 
-<!-- Agrupar todas las tags según el prefijo antes de ' - ', o 'Competiciones' si tiene 'comp-' -->
+{% assign grouped = {} %}
 {% assign categories = "" | split: "" %}
-{% assign categorized_tags = {} %}
 
-{% for tag_data in site.tags %}
-  {% assign tag_name = tag_data[0] %}
-  
+{% for tag in site.tags %}
+  {% assign tag_name = tag[0] %}
+  {% assign posts = tag[1] %}
+
   {% if tag_name contains 'comp-' %}
     {% assign category = 'Competiciones' %}
-    {% assign display_name = tag_name | remove: 'comp-' %}
+    {% assign display = tag_name | remove: 'comp-' %}
   {% elsif tag_name contains ' - ' %}
-    {% assign category = tag_name | split: ' - ' | first %}
-    {% assign display_name = tag_name | split: ' - ' | last %}
+    {% assign parts = tag_name | split: ' - ' %}
+    {% assign category = parts[0] %}
+    {% assign display = parts[1] %}
   {% else %}
     {% assign category = 'Otros' %}
-    {% assign display_name = tag_name %}
+    {% assign display = tag_name %}
   {% endif %}
+
+  {% capture entry %}
+    {{ tag_name }}::{{ display }}::{{ posts | size }}
+  {% endcapture %}
+
+  {% assign category_list = grouped[category] | default: "" %}
+  {% assign category_list = category_list | append: "|" | append: entry %}
+  {% assign grouped = grouped | merge: category: category_list %}
 
   {% unless categories contains category %}
     {% assign categories = categories | push: category %}
   {% endunless %}
-
-  {% capture tag_entry %}
-    {{ tag_name }}:::{{ display_name }}
-  {% endcapture %}
-
-  {% if categorized_tags[category] %}
-    {% assign temp = categorized_tags[category] | push: tag_entry %}
-    {% assign categorized_tags = categorized_tags | merge: {{ category | jsonify }}: temp %}
-  {% else %}
-    {% assign categorized_tags = categorized_tags | merge: {{ category | jsonify }}: tag_entry | split: "|" %}
-  {% endif %}
 {% endfor %}
 
-<!-- Ordenar categorías -->
 {% assign sorted_categories = categories | sort_natural %}
 
-<!-- Mostrar cada categoría -->
-{% for category in sorted_categories %}
-  <h2 class="mt-4">{{ category }}</h2>
+<!-- Mostrar todas las categorías -->
+{% for cat in sorted_categories %}
+  <h2 class="mt-4">{{ cat }}</h2>
   <div class="d-flex flex-wrap mb-4">
-    {% assign tags = categorized_tags[category] | sort_natural %}
-    {% for entry in tags %}
-      {% assign parts = entry | split: ':::' %}
+    {% assign entries = grouped[cat] | remove_first: "|" | split: "|" | sort_natural %}
+    {% for e in entries %}
+      {% assign parts = e | split: "::" %}
       {% assign tag_slug = parts[0] %}
-      {% assign tag_display = parts[1] %}
+      {% assign tag_name = parts[1] %}
+      {% assign tag_count = parts[2] %}
       <a class="tag" href="{{ '/tags/' | append: tag_slug | slugify | append: '/' | relative_url }}">
-        {{ tag_display }}
-        <span class="text-muted">{{ site.tags[tag_slug].size }}</span>
+        {{ tag_name }}
+        <span class="text-muted">{{ tag_count }}</span>
       </a>
     {% endfor %}
   </div>
