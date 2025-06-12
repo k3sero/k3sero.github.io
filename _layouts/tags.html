@@ -3,34 +3,9 @@ layout: page
 title: Tags
 ---
 
-<style>
-.tag {
-  display: inline-block;
-  padding: 4px 10px;
-  margin: 4px 6px 4px 0;
-  font-size: 0.85rem;
-  border: 1px solid var(--text-muted-color);
-  border-radius: 999px;
-  background-color: var(--tag-bg, #f2f2f2);
-  color: var(--text-color);
-  text-decoration: none;
-  transition: background-color 0.2s ease;
-}
-
-.tag:hover {
-  background-color: var(--tag-hover-bg, #e2e2e2);
-  text-decoration: none;
-}
-
-.tag .text-muted {
-  font-size: 0.75rem;
-  margin-left: 4px;
-}
-</style>
-
 <!-- Sección: Competiciones -->
 <h2>Competiciones</h2>
-<div id="tags-comp" class="d-flex flex-wrap mx-xl-2 mb-4">
+<div class="d-flex flex-wrap mx-xl-2 mb-4">
   {% assign tags = '' | split: '' %}
   {% for t in site.tags %}
     {% if t[0] contains 'comp-' %}
@@ -62,7 +37,6 @@ title: Tags
 {% assign sorted_all = all_tags | sort_natural %}
 {% assign categories = '' | split: '' %}
 
-<!-- Recoger prefijos únicos como categorías -->
 {% for tag in sorted_all %}
   {% if tag contains ' - ' %}
     {% assign prefix = tag | split: ' - ' | first %}
@@ -75,10 +49,11 @@ title: Tags
   {% endunless %}
 {% endfor %}
 
-<!-- Mostrar cada categoría -->
-{% for cat in categories %}
+{% assign sorted_categories = categories | sort_natural %}
+
+{% for cat in sorted_categories %}
   <h3 class="mt-4">{{ cat }}</h3>
-  <div class="d-flex flex-wrap mb-4">
+  <div class="d-flex flex-wrap mx-xl-2 mb-4">
     {% for tag in sorted_all %}
       {% if tag contains ' - ' %}
         {% assign prefix = tag | split: ' - ' | first %}
@@ -89,10 +64,12 @@ title: Tags
       {% endif %}
 
       {% if prefix == cat %}
-        <a class="tag" href="{{ tag | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
-          {{ name }}
-          <span class="text-muted">{{ site.tags[tag].size }}</span>
-        </a>
+        <div>
+          <a class="tag" href="{{ tag | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
+            {{ name }}
+            <span class="text-muted">{{ site.tags[tag].size }}</span>
+          </a>
+        </div>
       {% endif %}
     {% endfor %}
   </div>
