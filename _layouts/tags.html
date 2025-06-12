@@ -17,28 +17,34 @@ title: Tags
 {% endfor %}
 
 {% assign sorted_tags = non_comp_tags | sort_natural %}
-
 {% assign categories = '' | split: '' %}
-{% assign tags_by_category = '' | split: '' %}
 
-<!-- Agrupamos tags por categoría -->
-{% assign category_map = '' | split: '' %}
+<!-- Recolectar categorías únicas según orden definido -->
 {% for tag in sorted_tags %}
   {% if tag contains ' - ' %}
     {% assign prefix = tag | split: ' - ' | first %}
-    {% assign name = tag | split: ' - ' | last %}
   {% else %}
     {% assign prefix = tag %}
-    {% assign name = tag %}
   {% endif %}
 
-  {% capture key %}{{ prefix }}::{% endcapture %}
-  {% capture value %}{{ tag }}::{% endcapture %}
-  
-  {% assign category_map = category_map | push: key | push: value %}
+  {% assign is_known = false %}
+  {% for cat in ordered_categories %}
+    {% if cat == prefix %}
+      {% assign is_known = true %}
+    {% endif %}
+  {% endfor %}
+
+  {% if is_known %}
+    {% unless categories contains prefix %}
+      {% assign categories = categories | push: prefix %}
+    {% endunless %}
+  {% else %}
+    {% unless categories contains 'Otros' %}
+      {% assign categories = categories | push: 'Otros' %}
+    {% endunless %}
+  {% endif %}
 {% endfor %}
 
-<!-- Mostrar categorías en orden definido -->
 <h2 class="mt-4">Categorías</h2>
 {% for cat in ordered_categories %}
   {% assign has_subtags = false %}
@@ -53,7 +59,14 @@ title: Tags
       {% assign name = tag %}
     {% endif %}
 
-    {% if prefix == cat %}
+    {% assign is_known = false %}
+    {% for c in ordered_categories %}
+      {% if c == prefix %}
+        {% assign is_known = true %}
+      {% endif %}
+    {% endfor %}
+
+    {% if prefix == cat or (cat == 'Otros' and is_known == false) %}
       {% assign has_subtags = true %}
       {% assign all_tags = all_tags | push: tag %}
     {% endif %}
@@ -62,23 +75,18 @@ title: Tags
   {% if has_subtags %}
     <h3 class="mt-4">{{ cat }}</h3>
     <div class="d-flex flex-wrap mx-xl-2 mb-2">
-      {% for t in sorted_tags %}
+      {% for t in all_tags %}
         {% if t contains ' - ' %}
-          {% assign prefix = t | split: ' - ' | first %}
           {% assign name = t | split: ' - ' | last %}
         {% else %}
-          {% assign prefix = t %}
           {% assign name = t %}
         {% endif %}
-
-        {% if prefix == cat %}
-          <div>
-            <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
-              {{ name }}
-              <span class="text-muted">{{ site.tags[t].size }}</span>
-            </a>
-          </div>
-        {% endif %}
+        <div>
+          <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
+            {{ name }}
+            <span class="text-muted">{{ site.tags[t].size }}</span>
+          </a>
+        </div>
       {% endfor %}
     </div>
   {% endif %}
