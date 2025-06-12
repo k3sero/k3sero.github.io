@@ -4,39 +4,26 @@ title: Tags
 ---
 
 <h2>Competiciones</h2>
-<div id="tags" class="d-flex flex-wrap mx-xl-2 mb-4">
-  {% assign comp_tags = '' | split: '' %}
-  {% for t in site.tags %}
-    {% if t[0] contains 'comp-' %}
-      {% assign comp_tags = comp_tags | push: t[0] %}
-    {% endif %}
-  {% endfor %}
-  {% assign sorted_comp_tags = comp_tags | sort_natural %}
-  {% for t in sorted_comp_tags %}
-    <div>
-      <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
-        {{ t | remove: 'comp-' }}
-        <span class="text-muted">{{ site.tags[t].size }}</span>
-      </a>
-    </div>
+<div class="d-flex flex-wrap">
+  {% assign comp_tags = site.tags | map: 'first' | where_exp: "tag", "tag contains 'comp-'" | sort_natural %}
+  {% for t in comp_tags %}
+    <a class="tag" href="{{ '/tags/' | append: t | slugify | append: '/' | relative_url }}">
+      {{ t | remove: 'comp-' }}
+      <span class="text-muted">{{ site.tags[t].size }}</span>
+    </a>
   {% endfor %}
 </div>
 
+<hr>
+
 <h2>Otros Tags</h2>
-<div id="tags" class="d-flex flex-wrap mx-xl-2">
-  {% assign other_tags = '' | split: '' %}
-  {% for t in site.tags %}
-    {% unless t[0] contains 'comp-' %}
-      {% assign other_tags = other_tags | push: t[0] %}
-    {% endunless %}
-  {% endfor %}
-  {% assign sorted_other_tags = other_tags | sort_natural %}
-  {% for t in sorted_other_tags %}
-    <div>
-      <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
-        {{ t }}
-        <span class="text-muted">{{ site.tags[t].size }}</span>
-      </a>
-    </div>
+<div class="d-flex flex-wrap">
+  {% assign other_tags = site.tags | map: 'first' | where_exp: "tag", "tag contains 'comp-'" | map: "first" | then: nil %}
+  {% assign other_tags = site.tags | map: 'first' | where_exp: "tag", "tag contains 'comp-'" | inverse | sort_natural %}
+  {% for t in other_tags %}
+    <a class="tag" href="{{ '/tags/' | append: t | slugify | append: '/' | relative_url }}">
+      {{ t }}
+      <span class="text-muted">{{ site.tags[t].size }}</span>
+    </a>
   {% endfor %}
 </div>
