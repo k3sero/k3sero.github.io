@@ -1,12 +1,16 @@
 ---
 layout: page
-# All the Tags of posts.
+title: Tags
 ---
 
-<div id="tags" class="d-flex flex-wrap mx-xl-2">
+<!-- Sección: Competiciones -->
+<h2>Competiciones</h2>
+<div id="tags-comp" class="d-flex flex-wrap mx-xl-2 mb-4">
   {% assign tags = '' | split: '' %}
   {% for t in site.tags %}
-    {% assign tags = tags | push: t[0] %}
+    {% if t[0] contains 'comp-' %}
+      {% assign tags = tags | push: t[0] %}
+    {% endif %}
   {% endfor %}
 
   {% assign sorted_tags = tags | sort_natural %}
@@ -14,7 +18,29 @@ layout: page
   {% for t in sorted_tags %}
     <div>
       <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
-        {{ t -}}
+        {{ t | remove: 'comp-' }}
+        <span class="text-muted">{{ site.tags[t].size }}</span>
+      </a>
+    </div>
+  {% endfor %}
+</div>
+
+<!-- Sección: Otros Tags -->
+<h2>Otros Tags</h2>
+<div id="tags-others" class="d-flex flex-wrap mx-xl-2">
+  {% assign tags = '' | split: '' %}
+  {% for t in site.tags %}
+    {% unless t[0] contains 'comp-' %}
+      {% assign tags = tags | push: t[0] %}
+    {% endunless %}
+  {% endfor %}
+
+  {% assign sorted_tags = tags | sort_natural %}
+
+  {% for t in sorted_tags %}
+    <div>
+      <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
+        {{ t }}
         <span class="text-muted">{{ site.tags[t].size }}</span>
       </a>
     </div>
