@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Miscelánea basado en la interpretación de una cadena supuestamente codificada.
 date: 2024-11-09 12:47:00 +0800
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Dificultad - Muy Fácil, Misc, Otros - Writeups, UmassCTF2024]
+tags: [Dificultad - Muy Fácil, Misc, Otros - Writeups, UmassCTF]
 pin: false
 math: true
 mermaid: true
