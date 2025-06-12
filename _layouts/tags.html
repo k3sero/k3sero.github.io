@@ -3,54 +3,72 @@ layout: page
 title: Tags
 ---
 
-{% assign grouped = {} %}
-{% assign categories = "" | split: "" %}
+<!-- Sección: Competiciones -->
+<h2>Competiciones</h2>
+<div id="tags-comp" class="d-flex flex-wrap mx-xl-2 mb-4">
+  {% assign tags = '' | split: '' %}
+  {% for t in site.tags %}
+    {% if t[0] contains 'comp-' %}
+      {% assign tags = tags | push: t[0] %}
+    {% endif %}
+  {% endfor %}
 
-{% for tag in site.tags %}
-  {% assign tag_name = tag[0] %}
-  {% assign posts = tag[1] %}
+  {% assign sorted_tags = tags | sort_natural %}
 
-  {% if tag_name contains 'comp-' %}
-    {% assign category = 'Competiciones' %}
-    {% assign display = tag_name | remove: 'comp-' %}
-  {% elsif tag_name contains ' - ' %}
-    {% assign parts = tag_name | split: ' - ' %}
-    {% assign category = parts[0] %}
-    {% assign display = parts[1] %}
-  {% else %}
-    {% assign category = 'Otros' %}
-    {% assign display = tag_name %}
-  {% endif %}
+  {% for t in sorted_tags %}
+    <div>
+      <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
+        {{ t | remove: 'comp-' }}
+        <span class="text-muted">{{ site.tags[t].size }}</span>
+      </a>
+    </div>
+  {% endfor %}
+</div>
 
-  {% capture entry %}
-    {{ tag_name }}::{{ display }}::{{ posts | size }}
-  {% endcapture %}
-
-  {% assign category_list = grouped[category] | default: "" %}
-  {% assign category_list = category_list | append: "|" | append: entry %}
-  {% assign grouped = grouped | merge: category: category_list %}
-
-  {% unless categories contains category %}
-    {% assign categories = categories | push: category %}
+<!-- Sección: Otros Tags agrupados -->
+<h2>Otros Tags</h2>
+{% assign all_tags = '' | split: '' %}
+{% for t in site.tags %}
+  {% unless t[0] contains 'comp-' %}
+    {% assign all_tags = all_tags | push: t[0] %}
   {% endunless %}
 {% endfor %}
 
-{% assign sorted_categories = categories | sort_natural %}
+{% assign sorted_all = all_tags | sort_natural %}
+{% assign categories = '' | split: '' %}
 
-<!-- Mostrar todas las categorías -->
-{% for cat in sorted_categories %}
-  <h2 class="mt-4">{{ cat }}</h2>
+<!-- Recoger prefijos únicos como categorías -->
+{% for tag in sorted_all %}
+  {% if tag contains ' - ' %}
+    {% assign prefix = tag | split: ' - ' | first %}
+  {% else %}
+    {% assign prefix = 'Otros' %}
+  {% endif %}
+
+  {% unless categories contains prefix %}
+    {% assign categories = categories | push: prefix %}
+  {% endunless %}
+{% endfor %}
+
+<!-- Mostrar cada categoría -->
+{% for cat in categories %}
+  <h3 class="mt-4">{{ cat }}</h3>
   <div class="d-flex flex-wrap mb-4">
-    {% assign entries = grouped[cat] | remove_first: "|" | split: "|" | sort_natural %}
-    {% for e in entries %}
-      {% assign parts = e | split: "::" %}
-      {% assign tag_slug = parts[0] %}
-      {% assign tag_name = parts[1] %}
-      {% assign tag_count = parts[2] %}
-      <a class="tag" href="{{ '/tags/' | append: tag_slug | slugify | append: '/' | relative_url }}">
-        {{ tag_name }}
-        <span class="text-muted">{{ tag_count }}</span>
-      </a>
+    {% for tag in sorted_all %}
+      {% if tag contains ' - ' %}
+        {% assign prefix = tag | split: ' - ' | first %}
+        {% assign name = tag | split: ' - ' | last %}
+      {% else %}
+        {% assign prefix = 'Otros' %}
+        {% assign name = tag %}
+      {% endif %}
+
+      {% if prefix == cat %}
+        <a class="tag" href="{{ tag | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
+          {{ name }}
+          <span class="text-muted">{{ site.tags[tag].size }}</span>
+        </a>
+      {% endif %}
     {% endfor %}
   </div>
 {% endfor %}
