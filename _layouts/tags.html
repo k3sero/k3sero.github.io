@@ -3,6 +3,25 @@ layout: page
 title: Tags
 ---
 
+<style>
+/* Estilo solo para las etiquetas en tags.html */
+.tag {
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.85rem;
+  border-radius: 0.5rem;
+  background-color: #e6f4ea; /* verde pálido */
+  color: #1b5e20; /* verde oscuro para mejor contraste */
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.tag:hover {
+  background-color: #c8e6c9; /* verde claro más saturado */
+  color: #000;
+}
+</style>
+
 {% assign ordered_categories = 
   "Cripto,Estego,Forense,Hardware,Misc,Osint,GamePwn,Pwn,Reversing,Dificultad,Otros,Competiciones" | split: ',' %}
 
