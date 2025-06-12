@@ -4,46 +4,10 @@ title: Tags
 ---
 
 {% assign ordered_categories = 
-  "Cripto,Esteganografía,Forense,Hardware,Misc,Osint,GamePwn,Pwn,Reversing,Dificultad,Otros,Competiciones" | split: ',' %}
+  "Cripto,Esteganografía,Forense,Hardware,Misc,Osint,GamePwn,Pwn,Reversing,Dificultad,Otros" | split: ',' %}
 
-{% assign comp_tags = '' | split: '' %}
-{% assign non_comp_tags = '' | split: '' %}
-{% for t in site.tags %}
-  {% if t[0] contains 'comp-' %}
-    {% assign comp_tags = comp_tags | push: t[0] %}
-  {% else %}
-    {% assign non_comp_tags = non_comp_tags | push: t[0] %}
-  {% endif %}
-{% endfor %}
-
-{% assign sorted_tags = non_comp_tags | sort_natural %}
+{% assign sorted_tags = site.tags | map: "first" | sort_natural %}
 {% assign categories = '' | split: '' %}
-
-<!-- Recolectar categorías únicas según orden definido -->
-{% for tag in sorted_tags %}
-  {% if tag contains ' - ' %}
-    {% assign prefix = tag | split: ' - ' | first %}
-  {% else %}
-    {% assign prefix = tag %}
-  {% endif %}
-
-  {% assign is_known = false %}
-  {% for cat in ordered_categories %}
-    {% if cat == prefix %}
-      {% assign is_known = true %}
-    {% endif %}
-  {% endfor %}
-
-  {% if is_known %}
-    {% unless categories contains prefix %}
-      {% assign categories = categories | push: prefix %}
-    {% endunless %}
-  {% else %}
-    {% unless categories contains 'Otros' %}
-      {% assign categories = categories | push: 'Otros' %}
-    {% endunless %}
-  {% endif %}
-{% endfor %}
 
 <h2 class="mt-4">Categorías</h2>
 {% for cat in ordered_categories %}
@@ -55,18 +19,11 @@ title: Tags
       {% assign prefix = tag | split: ' - ' | first %}
       {% assign name = tag | split: ' - ' | last %}
     {% else %}
-      {% assign prefix = tag %}
+      {% assign prefix = '' %}
       {% assign name = tag %}
     {% endif %}
 
-    {% assign is_known = false %}
-    {% for c in ordered_categories %}
-      {% if c == prefix %}
-        {% assign is_known = true %}
-      {% endif %}
-    {% endfor %}
-
-    {% if prefix == cat or (cat == 'Otros' and is_known == false) %}
+    {% if prefix == cat %}
       {% assign has_subtags = true %}
       {% assign all_tags = all_tags | push: tag %}
     {% endif %}
@@ -76,11 +33,7 @@ title: Tags
     <h3 class="mt-4">{{ cat }}</h3>
     <div class="d-flex flex-wrap mx-xl-2 mb-2">
       {% for t in all_tags %}
-        {% if t contains ' - ' %}
-          {% assign name = t | split: ' - ' | last %}
-        {% else %}
-          {% assign name = t %}
-        {% endif %}
+        {% assign name = t | split: ' - ' | last %}
         <div>
           <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
             {{ name }}
@@ -92,16 +45,32 @@ title: Tags
   {% endif %}
 {% endfor %}
 
-<!-- Mostrar sección de Competiciones al final -->
-<h3 class="mt-4">Competiciones</h3>
-<div class="d-flex flex-wrap mx-xl-2 mb-4">
-  {% assign sorted_comp_tags = comp_tags | sort_natural %}
-  {% for t in sorted_comp_tags %}
-    <div>
-      <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
-        {{ t | remove: 'comp-' }}
-        <span class="text-muted">{{ site.tags[t].size }}</span>
-      </a>
-    </div>
-  {% endfor %}
-</div>
+<!-- Sección: Competiciones (tags sin ' - ' y no en categorías definidas) -->
+{% assign comp_tags = '' | split: '' %}
+{% for tag in sorted_tags %}
+  {% unless tag contains ' - ' %}
+    {% assign is_category = false %}
+    {% for cat in ordered_categories %}
+      {% if tag == cat %}
+        {% assign is_category = true %}
+      {% endif %}
+    {% endfor %}
+    {% unless is_category %}
+      {% assign comp_tags = comp_tags | push: tag %}
+    {% endunless %}
+  {% endunless %}
+{% endfor %}
+
+{% if comp_tags.size > 0 %}
+  <h3 class="mt-4">Competiciones</h3>
+  <div class="d-flex flex-wrap mx-xl-2 mb-4">
+    {% for t in comp_tags %}
+      <div>
+        <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
+          {{ t }}
+          <span class="text-muted">{{ site.tags[t].size }}</span>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
