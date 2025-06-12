@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Cripto basado en el Algoritmo TEA.
 date: 2024-11-07 11:30:00 +0800
 categories: [Writeups Competiciones Internacionales, Criptografía]
-tags: [Cripto, Cripto - Algoritmos, Dificultad - Fácil, Writeups]
+tags: [Cripto, Cripto - Algoritmos, Dificultad - Fácil, Otros - Writeups, CyberApocalypseCTF]
 pin: false
 math: true
 mermaid: true

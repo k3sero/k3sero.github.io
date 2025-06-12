@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en Geolocalizar un aeropuerto y obtener su identificación ICAO
 date: 2025-06-08 17:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Osint]
-tags: [Osint, Osint - Geo, Writeups, Dificultad - Fácil]
+tags: [Osint, Osint - Geo, Otros - Writeups, Dificultad - Fácil, TJCTF]
 pin: false
 math: true
 mermaid: true

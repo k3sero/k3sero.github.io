@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en encontrar el avión fantasma dentro de un reporte de radio mediante una captura en ADS-B.
 date: 2025-05-11 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Misc, Writeups, Dificultad - Media, Osint, Osint - Research]
+tags: [Misc, Otros - Writeups, Dificultad - Media, Osint, Osint - Research, DAMCTF]
 pin: false
 math: true
 mermaid: true

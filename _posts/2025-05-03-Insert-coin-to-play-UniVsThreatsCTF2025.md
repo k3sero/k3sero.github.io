@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en hackear videojuegos para cambiar registros a nuestra voluntad.
 date: 2025-05-03 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, GamePwn]
-tags: [GamePwn, Writeups, Dificultad - Fácil]
+tags: [GamePwn, Otros - Writeups, Dificultad - Fácil, UnivsthreatsCTF]
 pin: false
 math: true
 mermaid: true

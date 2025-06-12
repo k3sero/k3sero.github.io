@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en encontrar a la persona indicada y descubrir cuáles son sus planes
 date: 2025-06-08 17:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Misc, Writeups, Dificultad - Media, Osint, Osint - Research]
+tags: [Misc, Otros - Writeups, Dificultad - Media, Osint, Osint - Research, TJCTF]
 pin: false
 math: true
 mermaid: true

@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Cripto basado en el esquema de compromiso Pedersen.
 date: 2025-02-24 00:00:00 +0000
 categories: [Writeups Competiciones Nacionales, Criptografía N]
-tags: [Cripto, Cripto - Matemáticas, Writeups, Dificultad - Fácil]
+tags: [Cripto, Cripto - Matemáticas, Otros - Writeups, Dificultad - Fácil, HackOn]
 pin: false
 math: true
 mermaid: true

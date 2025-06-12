@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en decodificar una señal .cf32 capturada.
 date: 2025-05-14 10:00:00 +0000
 categories: [Hack The Box, Hardware - HTB]
-tags: [Writeups, Dificultad - Muy Fácil, Hardware, Hardware - Signal, HTB, HTB - Hardware]
+tags: [Otros - Writeups, Dificultad - Muy Fácil, Hardware, Hardware - Signal, Otros - HTB, HTB - Hardware]
 pin: false
 math: true
 mermaid: true

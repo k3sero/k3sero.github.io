@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Cripto basado en la explotación de Verificación de un CRC-128.
 date: 2024-12-30 11:04:00 +0800
 categories: [Writeups Competiciones Internacionales, Criptografía]
-tags: [Cripto, Cripto - Algoritmos, Dificultad - Media, Writeups]
+tags: [Cripto, Cripto - Algoritmos, Dificultad - Media, Otros - Writeups, WarGamesCTF]
 pin: false
 math: true
 mermaid: true

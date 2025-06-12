@@ -4,7 +4,7 @@ author: Kesero
 description: Reto hardware basado en una PCB.
 date: 2025-04-06 15:00:00 +0000
 categories: [Writeups Competiciones Nacionales, Hardware N]
-tags: [Hardware, Hardware - PCB, Writeups, Dificultad - Fácil]
+tags: [Hardware, Hardware - PCB, Otros - Writeups, Dificultad - Fácil, HackademicsForum]
 pin: false
 math: true
 mermaid: true

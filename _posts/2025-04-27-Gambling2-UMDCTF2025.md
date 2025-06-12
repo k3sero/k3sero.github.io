@@ -4,7 +4,7 @@ author: Kesero
 description: Reto pwn basado en explotar la vulnerabilidad Out of Bound en un binario compilado en C (OOB).
 date: 2025-04-27 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Pwn]
-tags: [Pwn, Pwn - OOB, Writeups, Dificultad - Fácil]
+tags: [Pwn, Pwn - OOB, Otros - Writeups, Dificultad - Fácil, UMDCTF]
 pin: false
 math: true
 mermaid: true

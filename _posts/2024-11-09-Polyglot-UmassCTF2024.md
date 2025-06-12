@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Miscelánea basado en la utilización de diversos protocolos distintos del HTTP.
 date: 2024-11-09 12:01:00 +0800
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Dificultad - Fácil, Misc, Writeups]
+tags: [Dificultad - Fácil, Misc, Otros - Writeups, UmassCTF]
 pin: false
 math: true
 mermaid: true

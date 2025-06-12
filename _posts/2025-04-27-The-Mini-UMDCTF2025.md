@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en descifrar un crucigrama basado en el juego The Crossword.
 date: 2025-04-27 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Misc, Writeups, Dificultad - Fácil]
+tags: [Misc, Otros - Writeups, Dificultad - Fácil, UMDCTF]
 pin: false
 math: true
 mermaid: true

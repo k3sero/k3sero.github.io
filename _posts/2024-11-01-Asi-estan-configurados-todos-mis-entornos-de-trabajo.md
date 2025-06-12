@@ -4,7 +4,7 @@ author: Kesero
 description: Explicación de cómo tengo configurados todos mis entornos profesionales de trabajo enfocados en el hacking.
 date: 2024-11-1 20:42:30 +0800
 categories: [Herramientas, Entornos]
-tags: [Herramientas]
+tags: [Otros - Herramientas]
 pin: true
 math: true
 mermaid: true

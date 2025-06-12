@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Hardware basado en extraer archivos provenientes de un firmware.
 date: 2025-05-08 10:00:00 +0000
 categories: [Hack The Box, Hardware - HTB]
-tags: [Writeups, Dificultad - Muy Fácil, Hardware, Hardware - Firmware, HTB, HTB - Hardware]
+tags: [Otros - Writeups, Dificultad - Muy Fácil, Hardware, Hardware - Firmware, Otros - HTB, HTB - Hardware]
 pin: false
 math: true
 mermaid: true

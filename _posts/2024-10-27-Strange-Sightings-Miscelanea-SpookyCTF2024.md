@@ -4,7 +4,7 @@ author: Kesero
 description: Reto miscelánea basado en analizar un video de YT.
 date: 2024-10-27 19:47:00 +0800
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Misc, Dificultad - Media, Writeups]
+tags: [Misc, Dificultad - Media, Otros - Writeups, SpookyCTF]
 pin: false
 math: true
 mermaid: true

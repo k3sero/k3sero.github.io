@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Forense basado en un dump de un proceso LSASS.
 date: 2024-10-27 22:09:00 +0800
 categories: [Writeups Competiciones Internacionales, Forense]
-tags: [Forense, Forense - LSASS, Writeups, Dificultad - Fácil]
+tags: [Forense, Forense - LSASS, Otros - Writeups, Dificultad - Fácil, SpookyCTF]
 pin: false
 math: true
 mermaid: true

@@ -4,7 +4,7 @@ author: Kesero
 description: Reto de Criptografía basado en el reto Hohoho3 anterior, pero con restricciones.
 date: 2024-12-30 12:30:00 +0800
 categories: [Writeups Competiciones Internacionales, Criptografía]
-tags: [Cripto, Cripto - Algoritmos, Dificultad - Media, Writeups]
+tags: [Cripto, Cripto - Algoritmos, Dificultad - Media, Otros - Writeups, WarGamesCTF]
 pin: false
 math: true
 mermaid: true

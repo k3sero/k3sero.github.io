@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado escapar de un programa de apuntes por terminal mediante command injections.
 date: 2025-05-11 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Misc, Writeups, Dificultad - Media, Misc - Jail]
+tags: [Misc, Otros - Writeups, Dificultad - Media, Misc - Jail, DAMCTF]
 pin: false
 math: true
 mermaid: true

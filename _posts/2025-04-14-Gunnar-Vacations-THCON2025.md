@@ -4,7 +4,7 @@ author: Kesero
 description: Compilación de retos asociados a la búsqueda de posición en base a imágenes en Google Maps.
 date: 2025-04-14 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Osint]
-tags: [Osint, Osint - Geo, Herramientas, Writeups, Dificultad - Difícil]
+tags: [Osint, Osint - Geo, Herramientas, Otros - Writeups, Dificultad - Difícil, THCONCTF]
 pin: false
 math: true
 mermaid: true

@@ -4,7 +4,7 @@ author: Kesero
 description: Guía completa para instalar SageMath compilando desde código fuente en Kali Linux y Parrot OS.
 date: 2025-05-20 17:00:01 +0000
 categories: [Herramientas, SageMath]
-tags: [Herramientas]
+tags: [Otros - Herramientas]
 pin: false
 math: true
 mermaid: true

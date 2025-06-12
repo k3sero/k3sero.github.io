@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Miscelánea basado en hacer un breve script de conexión por nc.
 date: 2024-11-08 21:54:00 +0800
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Dificultad - Muy Fácil, Writeups, Misc]
+tags: [Dificultad - Muy Fácil, Otros - Writeups, Misc, CyberApocalypseCTF]
 pin: false
 math: true
 mermaid: true

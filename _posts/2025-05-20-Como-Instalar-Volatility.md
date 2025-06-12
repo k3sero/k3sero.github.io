@@ -4,7 +4,7 @@ author: Kesero
 description: Instrucciones necesarias para poder instalar Volatility 2 y Volatility 3 en sistemas Linux, Windows y en Docker.
 date: 2025-05-20 17:00:00 +0000
 categories: [Herramientas, Volatility]
-tags: [Herramientas]
+tags: [Otros - Herramientas]
 pin: false
 math: true
 mermaid: true

@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Miscelánea basado en la creación de un script para automatizar órdenes.
 date: 2024-11-09 13:22:00 +0800
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Dificultad - Fácil, Misc, Misc - Scripts, Writeups]
+tags: [Dificultad - Fácil, Misc, Misc - Scripts, Otros - Writeups, UmassCTF]
 pin: false
 math: true
 mermaid: true

@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Cripto basado en la resolución de un sistema congruente por medio del Teorema Chino del Resto.
 date: 2024-11-09 13:43:00 +0800
 categories: [Writeups Competiciones Internacionales, Criptografía]
-tags: [Cripto, Cripto - Matemáticas, Dificultad - Fácil, Writeups]
+tags: [Cripto, Cripto - Matemáticas, Dificultad - Fácil, Otros - Writeups, UmassCTF]
 pin: false
 math: true
 mermaid: true

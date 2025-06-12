@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Cripto basado en revertir una función de cifrado sencilla.
 date: 2024-11-6 20:31:00 +0800
 categories: [Writeups Competiciones Internacionales, Criptografía]
-tags: [Cripto, Cripto - Algoritmos, Dificultad - Muy Fácil, Writeups]
+tags: [Cripto, Cripto - Algoritmos, Dificultad - Muy Fácil, Otros - Writeups, CyberApocalypseCTF]
 pin: false
 math: true
 mermaid: true

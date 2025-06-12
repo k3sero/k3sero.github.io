@@ -4,7 +4,7 @@ author: Kesero
 description: Reto hardware basado decodificar los estímulos de un esquemático.
 date: 2025-04-06 15:00:00 +0000
 categories: [Writeups Competiciones Nacionales, Hardware N]
-tags: [Hardware, Hardware - Esquemático, Writeups, Dificultad - Media]
+tags: [Hardware, Hardware - Esquemático, Otros - Writeups, Dificultad - Media, HackademicsForum]
 pin: false
 math: true
 mermaid: true

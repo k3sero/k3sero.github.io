@@ -4,7 +4,7 @@ author: Kesero
 description: Compilación de retos asociados a la búsqueda de los responsables del ciberataque en un Hospital.
 date: 2025-04-14 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Osint]
-tags: [Osint, Osint - Research, Writeups, Dificultad - Difícil]
+tags: [Osint, Osint - Research, Otros - Writeups, Dificultad - Difícil, THCONCTF]
 pin: false
 math: true
 mermaid: true

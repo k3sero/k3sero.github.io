@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Binario basado en la colisión de hashes en MD5.
 date: 2024-11-09 15:27:00 +0800
 categories: [Writeups Competiciones Nacionales, Criptografía N]
-tags: [Cripto, Cripto - MD5, Dificultad - Media, Writeups]
+tags: [Cripto, Cripto - MD5, Dificultad - Media, Otros - Writeups, HackademicsForumCTF]
 pin: false
 math: true
 mermaid: true

@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Cripto basado en curvas elípticas para recuperar el exponente privado del intercambio de claves.
 date: 2024-11-08 21:16:00 +0800
 categories: [Writeups Competiciones Internacionales, Criptografía]
-tags: [Dificultad - Media, Cripto - Curvas Elípticas, Cripto - Matemáticas, Writeups, Cripto]
+tags: [Dificultad - Media, Cripto - Curvas Elípticas, Cripto - Matemáticas, Otros - Writeups, Cripto, CyberApocalypseCTF]
 pin: false
 math: true
 mermaid: true

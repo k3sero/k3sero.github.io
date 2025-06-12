@@ -4,7 +4,7 @@ author: Kesero
 description: Reto OSINT basado en búsqueda de una charla del Aula de Ciberseguridad y Redes.
 date: 2025-04-06 15:00:00 +0000
 categories: [Writeups Competiciones Nacionales, Osint N]
-tags: [Osint, Osint - Research, Writeups, Dificultad - Fácil]
+tags: [Osint, Osint - Research, Otros - Writeups, Dificultad - Fácil, HackademicsForum]
 pin: false
 math: true
 mermaid: true

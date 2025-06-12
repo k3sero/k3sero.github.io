@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en decodificar una cadena basada en "Petals Around the Rose" y posteriormente en base 3.
 date: 2025-04-14 12:30:00 +0000
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Dificultad - Fácil, Writeups, Misc]
+tags: [Dificultad - Fácil, Otros - Writeups, Misc, THCONCTF]
 pin: false
 math: true
 mermaid: true

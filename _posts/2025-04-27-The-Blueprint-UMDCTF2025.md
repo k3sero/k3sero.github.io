@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en Geolocalizar una ubicación en base a una colina en Ohio.
 date: 2025-04-27 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Osint]
-tags: [Osint, Osint - Geo, Writeups, Dificultad - Media]
+tags: [Osint, Osint - Geo, Otros - Writeups, Dificultad - Media, UMDCTF]
 pin: false
 math: true
 mermaid: true

@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Cripto basado OTP y Xoshiro256, como generador de números pseudoaleatorios.
 date: 2025-02-24 00:00:00 +0000
 categories: [Writeups Competiciones Nacionales, Criptografía N]
-tags: [Cripto, Cripto - PRNGs, Writeups, Dificultad - Media]
+tags: [Cripto, Cripto - PRNGs, Otros - Writeups, Dificultad - Media, HackOn]
 pin: false
 math: true
 mermaid: true

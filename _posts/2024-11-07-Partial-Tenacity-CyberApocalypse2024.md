@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Cripto basado en recuperar los primos p y q partiendo de bits alternos.
 date: 2024-11-07 18:42:00 +0800
 categories: [Writeups Competiciones Internacionales, Criptografía]
-tags: [Dificultad - Media, Cripto, Cripto - información Parcial, Writeups]
+tags: [Dificultad - Media, Cripto, Cripto - información Parcial, Otros - Writeups, CyberApocalypseCTF]
 pin: false
 math: true
 mermaid: true

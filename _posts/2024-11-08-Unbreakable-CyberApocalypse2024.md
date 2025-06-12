@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Binario basado en escapar de una pyjail.
 date: 2024-11-08 21:54:00 +0800
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Dificultad - Fácil, Misc, Misc - Pyjail, Writeups]
+tags: [Dificultad - Fácil, Misc, Misc - Pyjail, Otros - Writeups, CyberApocalypseCTF]
 pin: false
 math: true
 mermaid: true

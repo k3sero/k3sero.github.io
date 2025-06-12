@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Estego basado en la extracción de información oculta de un archivo.gif.
 date: 2024-12-30 15:15:00 +0800
 categories: [Writeups Competiciones Internacionales, Esteganografía]
-tags: [Estego, Dificultad - Fácil, Writeups]
+tags: [Estego, Dificultad - Fácil, Otros - Writeups, WarGamesCTF]
 pin: false
 math: true
 mermaid: true

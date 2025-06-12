@@ -4,7 +4,7 @@ author: Kesero
 description: Reto de Esteganografía basado en recuperar datos incrustados de diferentes archivos.
 date: 2024-11-16 19:55:00 +0800
 categories: [Writeups Competiciones Internacionales, Esteganografía]
-tags: [Estego, Writeups, Dificultad - Fácil]
+tags: [Estego, Otros - Writeups, Dificultad - Fácil, 337UPLIVECTF]
 pin: false
 math: true
 mermaid: true

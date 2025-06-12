@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en encontrar un punto medio en base a 2 coordenadas.
 date: 2025-04-22 20:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Osint]
-tags: [Dificultad - Fácil, Osint, Osint - Geo, Writeups]
+tags: [Dificultad - Fácil, Osint, Osint - Geo, Otros - Writeups, UmassCTF]
 pin: false
 math: true
 mermaid: true

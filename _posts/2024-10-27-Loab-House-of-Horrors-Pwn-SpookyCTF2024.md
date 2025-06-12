@@ -4,7 +4,7 @@ author: Kesero
 description: Reto Binario basado en una Pyjail.
 date: 2024-10-27 15:30:00 +0800
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Misc, Misc - Pyjail, Writeups, Dificultad - Media]
+tags: [Misc, Misc - Pyjail, Otros - Writeups, Dificultad - Media, SpookyCTF]
 pin: false
 math: true
 mermaid: true
