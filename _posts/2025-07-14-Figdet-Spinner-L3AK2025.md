@@ -32,7 +32,7 @@ Este reto nos dan un enlace a una imagen panorámica del lugar.
 
 Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/L3AKCTF2025/Osint/fidget_spinner).
 
-## Analizando el reto![alt text](image.png)
+## Analizando el reto
 
 Si analizamos la imagen panorámica, podemos observar una carretera rural estrecha y asfaltada que atraviesa un paisaje principalmente plano, con vegetación baja y algunos árboles dispersos. A un costado del camino hay un muro de piedra bajo que separa la vía de zonas de matorral y pastizales.
 
