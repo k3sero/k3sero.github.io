@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en Geolocalizar un paisaje con un molino de fondo
 date: 2025-07-14 15:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Osint]
-tags: [Osint, Osint - Geo, Otros - Writeups, Dificultad - Difícil, L3AKCTF2025]
+tags: [Osint, Osint - Geo, Otros - Writeups, Dificultad - Difícil, L3AKCTF]
 pin: false
 math: true
 mermaid: true
