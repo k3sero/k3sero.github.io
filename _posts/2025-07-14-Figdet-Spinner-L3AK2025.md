@@ -2,7 +2,7 @@
 title: Fidget Spinner - L3AK2025
 author: Kesero
 description: Reto basado en Geolocalizar un paisaje basado en un molino
-date: 2025-06-08 17:00:00 +0000
+date: 2025-07-14 15:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Osint]
 tags: [Osint, Osint - Geo, Otros - Writeups, Dificultad - Difícil, L3AKCTF2025]
 pin: false
