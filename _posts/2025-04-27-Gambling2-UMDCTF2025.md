@@ -1,7 +1,7 @@
 ---
 title: Gambling2 - UMDCTF2025
 author: Kesero
-description: Reto pwn basado en explotar la vulnerabilidad Out of Bound en un binario compilado en C (OOB).
+description: Reto pwn basado en explotar la vulnerabilidad de Out of Bound en un binario compilado en C (OOB).
 date: 2025-04-27 10:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Pwn]
 tags: [Pwn, Pwn - OOB, Otros - Writeups, Dificultad - Fácil, UMDCTF]
