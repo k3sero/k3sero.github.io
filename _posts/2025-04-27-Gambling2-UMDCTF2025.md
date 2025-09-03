@@ -32,6 +32,7 @@ En este reto, nos dan los siguientes archivos.
 - `gambling`: Contiene el binario compilado de `gambling.c`.
 - `gambling.c`: Contiene el código principal en `C`.
 - `Makefile`: Contiene las instrucciones de compilación del código en `C`.
+- `nc challs.umdctf.io 31005`: Conexión por netcat.
 
 Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/pwn).
 
