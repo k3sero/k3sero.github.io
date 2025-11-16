@@ -9,7 +9,7 @@ pin: false
 math: true
 mermaid: true
 image:
-  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/research/Run%2C_Forest%2C_Run/10.png
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/research/Run%2C_Forest%2C_Run/12.png
   lqip: 
   alt: 
 comments: true
