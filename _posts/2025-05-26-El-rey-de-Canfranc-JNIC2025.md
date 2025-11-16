@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en obtener el código principal de un binario y simular el PRNG generado con rand() y srand() fijos proveniente de la fecha correcta del viajero en el tiempo.
 date: 2025-05-25 20:00:00 +0000
 categories: [Writeups Competiciones Nacionales, Reversing N]
-tags: [Otros - Writeups, Dificultad - Media, Reversing, Reversing - srand(), JNICCTF2025]
+tags: [Otros - Writeups, Dificultad - Media, Reversing, Reversing - srand(), JNICTF]
 pin: false
 math: true
 mermaid: true

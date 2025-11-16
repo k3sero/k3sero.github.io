@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en decodificar una señal digital y obtener la información que transmite.
 date: 2025-05-12 17:00:00 +0000
 categories: [Hack The Box, Hardware - HTB]
-tags: [Otros - Writeups, Dificultad - Fácil, Hardware, Hardware - Signal, Otros - HTB, HTB - Hardware]
+tags: [Otros - Writeups, Dificultad - Fácil, Hardware, Hardware - Radiofrecuencia, Otros - HTB, HTB - Hardware]
 pin: false
 math: true
 mermaid: true
