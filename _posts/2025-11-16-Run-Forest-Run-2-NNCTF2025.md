@@ -63,7 +63,7 @@ En los archivos del pendrive, se encuentra un mod de GTA SA desarrollado por `Ae
 
 En la parte inferior de la documentación justo en el apartado de `instalación` podemos observar el enlace [https://challs.caliphalhounds.com:11920/viewtopic.php?t=5](https://challs.caliphalhounds.com:11920/viewtopic.php?t=5)
 
-![mod_foro](images/mod/mod_foro.png)
+![mod_foro](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/research/Run%2C_Forest%2C_Run/solver/images/mod/mod_foro.png)
 
 ### Foro GTA SA
 
@@ -143,7 +143,7 @@ Si traducimos la conversación en turco, descubrimos el entramado delictivo entr
 
 ### Geolocalización de ubicaciones 
 
-Al final de la conversación, `Fatma_T` proporciona un enlace codificado en `base64`. Al decodificarlo encontramos un enlace a la siguiente página web [http://challs.caliphalhounds.com:44234/](http://challs.caliphalhounds.com:44234/). 
+Al final de la conversación, `Fatma_T` proporciona enlace codificado en `base64`. Al decodificarlo encontramos un enlace a la página web `http://challs.caliphalhounds.com:44234/`.
 
 ![web_geosint](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/research/Run%2C_Forest%2C_Run/solver/images/2/web_geosint.png)
 
