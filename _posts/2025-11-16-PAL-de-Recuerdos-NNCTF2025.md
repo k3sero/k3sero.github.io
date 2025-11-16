@@ -68,6 +68,9 @@ $enddefinitions $end
 (...)
 ```
 
+Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/hardware_rf/PAL_de_Recuerdos).
+
+
 ## Solución
 
 El archivo `video_capture.vcd` contiene una captura digitalizada de una señal de vídeo analógica `PAL` (768x576i, 50 Hz) que debemos de transformar en contenido visual.

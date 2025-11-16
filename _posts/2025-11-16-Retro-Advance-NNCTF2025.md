@@ -37,6 +37,8 @@ Dificultad: <font color=green>Fácil</font>
 
     sound.wav
 
+Archivos utilizados [Aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/hardware_rf/Retro_Advance).
+
 ## Analizando el reto
 
 Al abrir el archivo `sound.wav` con programas de audio como `Audacity` se encuentra lo siguiente:

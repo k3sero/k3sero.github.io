@@ -57,6 +57,8 @@ A,B,C,D,E,F,G,H
 ...
 ```
 
+Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/hardware_rf/Convocatoria_Extraordinaria).
+
 ## Solución
 
 Este esquemático está compuesto por transistores, organizados en ciertos conjuntos que forman las puertas lógicas `AND`, `OR` y `NOT`, representando así la lógica combinacional del esquemático.
