@@ -1,5 +1,5 @@
 ---
-title: Run Forest Run 1 - NNCTF2025
+title: Run Forest Run 2 - NNCTF2025
 author: Kesero
 description: Reto basado en investigar un caso policial basado en GTA San Andreas (Segunda Parte).
 date: 2025-11-16 18:40:00 +0000
