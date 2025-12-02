@@ -2,7 +2,7 @@
   color-scheme: dark;
 
   /* Framework color */
-  --main-bg: rgb(30, 30, 30);
+  --main-bg: #000000;
   --mask-bg: rgb(68, 69, 70);
   --main-border-color: rgb(44, 45, 45);
 
@@ -142,11 +142,11 @@
   #archives li:nth-child(odd) {
     background-image: linear-gradient(
       to left,
-      rgb(30, 30, 30),
+      #000000,
       rgb(44, 44, 44), /* Un gris oscuro que se mezcla mejor con el nuevo fondo */
       rgb(44, 44, 44),
       rgb(44, 44, 44),
-      rgb(30, 30, 30)
+      #000000
     );
   }
 
