@@ -67,7 +67,7 @@ header {
     }
   } /* .license-wrapper */
 
-  .post-meta a:not(:hover) {
+  .post-meta a {
     @extend %link-underline;
   }
 
