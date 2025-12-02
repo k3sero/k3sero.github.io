@@ -172,8 +172,9 @@
   .highlight,
   .highlight .w {
     color: #d0d0d0;
-    background-color: #ff0404;
+    background-color: #151515;
   }
+
   .highlight .err {
     color: #151515;
     background-color: #ac4142;
@@ -300,4 +301,10 @@
   .highlight .ss {
     color: #90a959;
   }
+}
+
+// _dark.scss
+.rounded-circle {
+  background-color: #151515; // define tu variable o color
+  border-color: #151515; // si tiene borde
 }
