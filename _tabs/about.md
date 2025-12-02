@@ -17,12 +17,15 @@ Además, para complementar dichos conocimientos, actualmente estoy estudiando va
 
 ![Logo](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/prompt.png)
 
-Caliphal Hounds es un equipo de ciberseguridad enfocado en la resolución de desafíos CTF (Capture the Flag) a nivel nacional e internacional.
+Somos Caliphal Hounds, el equipo de CTFs nº1 de España actual según [CTFTime](https://ctftime.org/stats/2024/ES). En 2025 y en 2024 obtuvimos la segunda posición únicamente por detrás de la selección española.
 
-En dichas competiciones, tocamos retos basados en distintas categorías como exploiting, criptografía, ingeniería inversa, forense digital, seguridad web, blockchain, radiofrecuencia, hardware, etc.
+Actualmente estamos formados por 25 miembros que compiten semanalmente en las mejores competiciones CTF del mundo, habiendo participado en más de 70 competiciones internacionales en los últimos 2 años. Contamos con perfiles especializados en todas las categorías CTF Jeopardy (criptografía, hacking web, reversing, pwn, forense, hardware, OSINT, GamePwn...).
 
-En 2023, logramos posicionarnos en el top 7 de España en CTFTime. (Ranking Internacional)
-En este 2024, seguimos demostrando nuestro desempeño rozando las primeras posiciones, ubicándonos actualmente en el top 3 de España.
+En este último año y medio el equipo se ha expandido para, además de competir, organizar competiciones CTFs. Entre nuestros proyectos, contamos con la organización de la competición de CTFs de "NavajaNegraCTF 2025" en la cual hemos desarrollado 24 retos de categorías como criptografía, web, reversing, pwn, gamepwn, hardware/RF, research y miscelánea en formato por equipos y con más de 350 participantes.
+
+Otro de nuestros proyectos es la organización anual de "HackademicsForum" para la Universidad de Córdoba, abierta para personas de toda España, en la que hemos gestionado desde la creación de retos hasta la gestión del servidor, personalización del CTFd y soporte por tickets a tiempo real y hemos recibido en nuestra encuesta de satisfacción una valoración de 9.5 sobre 10 puntos totales.
+
+A continuación os añado un pequeño portfolio de los últimos retos que hemos diseñado en [Caliphal Hounds Creations](https://github.com/CaliphalHounds/caliphal_hounds_creations).
 
 
 ### **Blog Kesero** 
@@ -154,68 +157,7 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 | TJCTF 2023                   | 170,0000  | 1,396 |
 | Cryptoverse CTF 2023         | 3452,0000 | 7,245 |
 
-## Eventos Asistidos
-
-• **HackademicsForum2025** (Organizador)
-
-• **DanaCon2024**
-
-• **NavajaNegra2024**
-
-• **HackademicsForum2024**
-
-• **Oportunidades en el Sector de la Defensa para Empresas Tecnológicas e Innovadoras 2024**
-
-• **Hack&Beers Vol.15 2024**
-
-• **HackademicsForum2023**
-
-## Charlas sobre Ciberseguridad Asistidas
- 
-### 2025
-
-• **"ACR -  CTFs y Criptografía. Del juego al escenario real."**
-
-### 2024
-
-• **"ACR - Vulnerabilidades en infraestructuras de Active Directory (AD)"**
-
-• **"ACR - Taller OSINT: Surface, Deep, Dark web - Francisco Rodríguez"**
-
-• **"ACR - Mitos, debilidades y crímenes imperfectos. 10 años de investigaciones en Darknets - Francisco Rodríguez"**
-
-• **"ACR - Cómo llegar a ser perito forense (CNIJP) Actuaciones Forenses"**
-
-### 2023
-
-• **"ACR - El mundo de las competiciones CTFs"**
-
-• **"ACR - Tunel DNS"**
-
-• **"ACR - Taller de OSINT"**
-
-• **"ACR - XSS Injection"**
-
-• **"ACR - File Related Vulnerabilities"**
-
-• **"ACR - SQL Injection"**
-
-• **"ACR - CSRF SSRF "**
-
-### 2022
-
-• **"ACR - Hackeando nuestra primera maquina"**
-
-• **"ACR - Introducción a los CTFs"**
-
-• **"ACR - Cómo empezar en ciberseguridad"**
-
-• **"ACR - RFID"**
-
-• **"ACR - BadUSB"**
-
-
-## Cursos completados
+## Certificaciones
 
 • **"Hack4u - Python Ofensivo"**
 
