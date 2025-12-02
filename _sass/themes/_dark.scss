@@ -42,7 +42,7 @@
   --sidebar-hover-bg: #262626;
   --sidebar-btn-bg: #232328;
   --sidebar-btn-color: #787878;
-  --avatar-border-color: rgba(0, 0, 0, 0.95);
+  --avatar-border-color: rgb(255, 255, 255, 0.95);
 
   /* Topbar */
   --topbar-bg: rgba(30, 30, 30, 0.8);
@@ -66,7 +66,7 @@
   --footnote-target-bg: #8ac41b;
   --btn-share-color: #6c757d;
   --btn-share-hover-color: #bfc1ca;
-  --card-bg: #ff0404;
+  --card-bg: #1e1e1e;
   --card-hovor-bg: #464d51;
   --card-shadow: rgb(21, 21, 21, 0.72) 0 6px 18px 0,
     rgb(137, 135, 135, 0.24) 0 0 0 1px;
@@ -302,3 +302,4 @@
     color: #90a959;
   }
 }
+
