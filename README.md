@@ -1,6 +1,6 @@
 # 🛡️ Kesero — Blog de Ciberseguridad y CTFs
 
-![logo](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/Logo_mod.png)
+![logo](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/Logo.png)
 
 Bienvenido al repositorio de [Kesero](https://k3sero.github.io), un blog dedicado al aprendizaje, resolución y documentación de retos de ciberseguridad, con un enfoque especial en CTFs (Capture The Flag), análisis técnico y divulgación de conocimientos sobre hacking ético.
 
