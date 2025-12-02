@@ -34,7 +34,7 @@
   /* Sidebar */
   --site-title-color: #8ac41b;
   --site-subtitle-color: #868686;
-  --sidebar-bg: #000000;
+  --sidebar-bg: #1e1e1e;
   --sidebar-border-color: #292929;
   --sidebar-muted-color: #868686;
   --sidebar-active-color: rgb(255, 255, 255, 0.95);
@@ -65,7 +65,7 @@
   --footnote-target-bg: #8ac41b;
   --btn-share-color: #6c757d;
   --btn-share-hover-color: #bfc1ca;
-  --card-bg: #000000;
+  --card-bg: #1e1e1e;
   --card-hovor-bg: #464d51;
   --card-shadow: rgb(21, 21, 21, 0.72) 0 6px 18px 0,
     rgb(137, 135, 135, 0.24) 0 0 0 1px;
@@ -141,11 +141,11 @@
   #archives li:nth-child(odd) {
     background-image: linear-gradient(
       to left,
-      rgb(0, 0, 0),
+      rgb(30, 30, 30),
       rgb(44, 44, 44), /* Un gris oscuro que se mezcla mejor con el nuevo fondo */
       rgb(44, 44, 44),
       rgb(44, 44, 44),
-      rgb(0, 0, 0)
+      rgb(30, 30, 30)
     );
   }
 
