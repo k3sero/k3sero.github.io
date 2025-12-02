@@ -42,7 +42,7 @@
   --sidebar-hover-bg: #262626;
   --sidebar-btn-bg: #232328;
   --sidebar-btn-color: #787878;
-  --avatar-border-color: rgb(255, 255, 255, 0.95);
+  --avatar-border-color: rgba(0, 0, 0, 0.95);
 
   /* Topbar */
   --topbar-bg: rgba(30, 30, 30, 0.8);
@@ -301,10 +301,4 @@
   .highlight .ss {
     color: #90a959;
   }
-}
-
-// _dark.scss
-.rounded-circle {
-  background-color: #151515; // define tu variable o color
-  border-color: #151515; // si tiene borde
 }
