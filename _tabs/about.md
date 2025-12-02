@@ -54,9 +54,6 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 ## Competiciones Participadas
 
-![competiciones](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/competiciones_participadas.png)
-
-
 ### 2025
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |
