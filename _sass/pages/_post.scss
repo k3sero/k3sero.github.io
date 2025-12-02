@@ -17,11 +17,11 @@
 
 header {
   .post-desc {
-    @extend %heading;
-
+    color: var(--subtitle-color); // define tu color
+    font-weight: 300; // fw-light
     font-size: 1.125rem;
-    line-height: 1.6;
   }
+  
 
   .post-meta {
     span + span::before {
@@ -132,7 +132,7 @@ header {
   --wc-stm-form-button-border: 1px solid var(--btn-border-color);
   --wc-stm-form-submit-background-color: var(--sidebar-btn-bg);
   --wc-stm-form-cancel-background-color: var(--sidebar-btn-bg);
-  --wc-stm-form-button-background-color-hover: #007bff;
+  --wc-stm-form-button-background-color-hover: #8ac41b;
   --wc-stm-form-button-color-hover: white;
 
   font-size: 1rem;
