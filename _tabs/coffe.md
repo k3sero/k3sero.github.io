@@ -7,9 +7,8 @@ order: 5               # 1-4 ya los utilizan Categorías, Tags, Archives y About
 
 ## ¿Me invitas a un café?
 
-En tal caso, que sea doble americano, o expreso, o un carajillo...
+En tal caso, que sea doble americano, o expreso, o un carajillo... [Buy me a coffe](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/buy_me_coffe.png)
 
-[Buy me a coffe](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/buy_me_coffe.png)
 
 <div style="text-align: center;">
   <iframe width="315" height="560"
