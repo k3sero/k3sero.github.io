@@ -57,6 +57,10 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 ![competiciones](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/competiciones_participadas.png)
 
 ### 2025
+<details>
+<summary>Tabla de eventos (41 elementos)</summary>
+
+<br>
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |
 |--------------------------------------------------|-----------------|-------|
@@ -102,8 +106,13 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 | Srdnlen CTF 2025                                 |	210,0000     | 1,660 |
 | UofTCTF 2025                                     |	1764,0000    | 3,632 |
 | IrisCTF 2025                                     |	1697,0000    | 6,097 |
+</details>
 
 ### 2024
+<details>
+<summary>Tabla de eventos (31 elementos)</summary>
+
+<br>
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |
 |-----------------------------------------------------|-------------|--------|
@@ -138,8 +147,13 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 | BraekerCTF                                          | 800,0000	| 5,575  |
 | DiceCTF 2024 Quals                                  |	332,0000	| 3,428  |
 | Insomni'hack teaser 2024                            | 61,0000     | 1,040  |
+</details>
 
 ### 2023
+<details>
+<summary>Tabla de eventos (11 elementos)</summary>
+
+<br>
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |
 |----------------------------|------------|-------|
@@ -154,6 +168,7 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 | Break the Syntax CTF 2023    | 1305,0000 | 8,184 |
 | TJCTF 2023                   | 170,0000  | 1,396 |
 | Cryptoverse CTF 2023         | 3452,0000 | 7,245 |
+</details>
 
 ## Eventos Asistidos
 
