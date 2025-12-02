@@ -1,5 +1,4 @@
 ---
-# the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
 ---
@@ -26,11 +25,12 @@ En 2023, logramos posicionarnos en el top 7 de España en CTFTime. (Ranking Inte
 En este 2024, seguimos demostrando nuestro desempeño rozando las primeras posiciones, ubicándonos actualmente en el top 3 de España.
 
 
-### **Blog k3sero** 
+### **Blog Kesero** 
 
 ![Logok](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/Logo.png)
 
 Este blog personal está dedicado a tratar distintos temas sobre la ciberseguridad y hacking ético, realizando diversas investigaciones sobre las ramas que la conforman. A su vez, también está enfocado en la resolución de retos CTF (Capture the Flag) que abordamos en las competiciones nacionales e internacionales, con el fin de aportar soluciones a las distintas categorías para contribuir conocimiento a la comunidad.
+
 
 ## Marcadores Personales
 
@@ -54,10 +54,44 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 ## Competiciones Participadas
 
+![competiciones](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/imgages/about/competiciones_participadas.png)
+
 ### 2025
+<details>
+<summary>Tabla de eventos (41 elementos)</summary>
+
+<br>
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |
 |--------------------------------------------------|-----------------|-------|
+|LakeCTF Quals 25-26|	1842,0000|	35,051
+|PwnSec CTF 2025|	1000,0000|	2,866
+|saarCTF 2025|	35815,4332|	21,109
+|N1CTF 2025|	33,0000|	1,306
+|DEADFACE CTF 2025|	4041,0000|	14,810
+|m0leCon CTF 2026 Teaser|	381,0000|	15,349
+|LINE CTF 2025|	1,0000|	0,958
+|Hack.lu CTF 2025|	1360,0000|	27,292
+|SunshineCTF 2025|	224,0000|	1,599
+|HITCON CTF 2025|	196,0000|	4,825
+|SekaiCTF 2025|	378,0000|	3,829
+|WHY2025 CTF|	2000,0000|	0,000
+|idekCTF 2025|	528,0000|	3,402
+|World Wide CTF 2025|	3338,0000|	6,021
+|ToH CTF 2025|	1362,0000|	9,683
+|Crypto CTF 2025|	27,0000|	0,668
+|L3akCTF 2025|	1670,0000|	3,045
+|No Hack No CTF 2025|	5990,0000|	14,719
+|R3CTF 2025|	400,0000|	0,573
+|MaltaCTF 2025 Quals|	410,0000|	2,266
+|smileyCTF 2025|	545,0000|	3,612
+|bi0sCTF 2025|	110,0000|	1,403
+|TJCTF 2025|	10346,0000|	41,911
+|Grey Cat The Flag| 2025	600,0000|	1,251
+|SAS CTF 2025 Quals|	100,0000|	0,371
+|Midnight Sun CTF| 2025 Quals	233,0000|	6,243
+|DamCTF 2025|	2298,0000|	18,352
+|DevSecOps CTF 2025|	177,0000|	10,182
 | UniVsThreats2025                                 |    864,0000	 | 0,000*|
 | UMDCTF2025	                                   |    6623,0000	 | 29,700|
 | UMassCTF2025	                                   |    5572,0000	 | 25,134|
@@ -72,8 +106,13 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 | Srdnlen CTF 2025                                 |	210,0000     | 1,660 |
 | UofTCTF 2025                                     |	1764,0000    | 3,632 |
 | IrisCTF 2025                                     |	1697,0000    | 6,097 |
+</details>
 
 ### 2024
+<details>
+<summary>Tabla de eventos (31 elementos)</summary>
+
+<br>
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |
 |-----------------------------------------------------|-------------|--------|
@@ -108,22 +147,28 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 | BraekerCTF                                          | 800,0000	| 5,575  |
 | DiceCTF 2024 Quals                                  |	332,0000	| 3,428  |
 | Insomni'hack teaser 2024                            | 61,0000     | 1,040  |
+</details>
 
 ### 2023
+<details>
+<summary>Tabla de eventos (11 elementos)</summary>
+
+<br>
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |
 |----------------------------|------------|-------|
-|GlacierCTF 2023             |	410,0000  |	2,341 |
-|ASIS CTF Quals 2023         |	23,0000   |	0,768 |
-|SECCON CTF 2023 Quals       |	50,0000   |	1,306 |
-|SekaiCTF 2023               |	239,0000  |	0,641 |
-|CTFZone 2023 Quals          |	306,0000  |	3,903 |
-|ImaginaryCTF 2023           |	1300,0000 |	3,280 |
-|Crypto CTF 2023             |	23,0000   |	0,671 |
-|Google Capture The Flag 2023|	286,0000  |	4,219 |
-|Break the Syntax CTF 2023   |	1305,0000 |	8,184 |
-|TJCTF 2023                  |	170,0000  |	1,396 |
-|Cryptoverse CTF 2023        | 3452,0000  |	7,245 |
+| GlacierCTF 2023              | 410,0000  | 2,341 |
+| ASIS CTF Quals 2023          | 23,0000   | 0,768 |
+| SECCON CTF 2023 Quals        | 50,0000   | 1,306 |
+| SekaiCTF 2023                | 239,0000  | 0,641 |
+| CTFZone 2023 Quals           | 306,0000  | 3,903 |
+| ImaginaryCTF 2023            | 1300,0000 | 3,280 |
+| Crypto CTF 2023              | 23,0000   | 0,671 |
+| Google Capture The Flag 2023 | 286,0000  | 4,219 |
+| Break the Syntax CTF 2023    | 1305,0000 | 8,184 |
+| TJCTF 2023                   | 170,0000  | 1,396 |
+| Cryptoverse CTF 2023         | 3452,0000 | 7,245 |
+</details>
 
 ## Eventos Asistidos
 
