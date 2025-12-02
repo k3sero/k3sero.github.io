@@ -5,7 +5,7 @@ icon: fas fa-coffee    # Font Awesome ya viene incluido
 order: 5               # 1-4 ya los utilizan Categorías, Tags, Archives y About
 ---
 
-¿Me invitas a un café? En tal caso, que sea doble americano o expreso, o un carajillo... [Buy me a coffe](https://buymeacoffee.com/kesero)
+¿Me invitas a un café? En tal caso, que sea doble americano o expreso, o un carajillo... [Buy me a coffee](https://buymeacoffee.com/kesero)
 
 <div style="text-align: center;">
   <iframe width="315" height="560"
