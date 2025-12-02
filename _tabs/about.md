@@ -231,6 +231,7 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 • **"ACR - BadUSB"**
 
 
+
 ## Cursos completados
 
 • **"Hack4u - Python Ofensivo"**
