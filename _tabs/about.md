@@ -17,7 +17,7 @@ Además, para complementar dichos conocimientos, actualmente estoy estudiando va
 
 ![Logo](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/prompt.png)
 
-Somos Caliphal Hounds, el equipo de CTFs nº1 de España actual según [CTFTime](https://ctftime.org/stats/2024/ES). En 2025 y en 2024 obtuvimos la segunda posición únicamente por detrás de la selección española.
+Somos [Caliphal Hounds](https://ctftime.org/team/225933), el equipo de CTFs nº1 de España actual según [CTFTime](https://ctftime.org/stats/ES). En 2025 y en 2024 obtuvimos la segunda posición únicamente por detrás de la selección española.
 
 Actualmente estamos formados por 25 miembros que compiten semanalmente en las mejores competiciones CTF del mundo, habiendo participado en más de 70 competiciones internacionales en los últimos 2 años. Contamos con perfiles especializados en todas las categorías CTF Jeopardy (criptografía, hacking web, reversing, pwn, forense, hardware, OSINT, GamePwn...).
 
