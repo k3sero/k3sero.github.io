@@ -2,17 +2,17 @@
   color-scheme: dark;
 
   /* Framework color */
-  --main-bg: rgb(30, 30, 30);
-  --mask-bg: rgb(68, 69, 70);
-  --main-border-color: rgb(44, 45, 45);
+  --main-bg: #1e1e1e;
+  --mask-bg: #444546;
+  --main-border-color: #2c2d2d;
   
   /* Common color */
-  --text-color: rgb(211, 211, 211);
+  --text-color: #d3d3d3;
   --text-muted-color: #868686;
   --text-muted-highlight-color: #aeaeae;
   --heading-color: #8ac41b;
   --label-color: #a7a7a7;
-  --blockquote-border-color: rgb(66, 66, 66);
+  --blockquote-border-color: #424242;
   --blockquote-text-color: #868686;
   --link-color: #8ac41b;
   --link-underline-color: #8ac41b;
@@ -21,9 +21,9 @@
   --btn-backtotop-color: var(--text-color);
   --btn-backtotop-border-color: #212122;
   --card-header-bg: #292929;
-  --checkbox-color: rgb(118, 120, 121);
+  --checkbox-color: #767879;
   --checkbox-checked-color: var(--link-color);
-  --img-bg: radial-gradient(circle, rgb(22, 22, 24) 0%, rgb(21, 21, 21) 100%);
+  --img-bg: radial-gradient(circle, #161618 0%, #151515 100%);
   --shimmer-bg: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0) 0%,
@@ -90,12 +90,12 @@
 
   /* Categories */
   --categories-border: rgb(64, 66, 69, 0.5);
-  --categories-hover-bg: rgb(73, 75, 76);
+  --categories-hover-bg: #494b4c;
   --categories-icon-hover-color: white;
 
   /* Archive */
   --timeline-node-bg: rgba(40, 40, 40, 0.9);
-  --timeline-color: rgb(80, 80, 80);
+  --timeline-color: #505050;
   --timeline-year-dot-color: var(--timeline-color);
 
   /* Code highlight colors */
@@ -141,11 +141,11 @@
   #archives li:nth-child(odd) {
     background-image: linear-gradient(
       to left,
-      rgb(30, 30, 30),
-      rgb(44, 44, 44), /* Un gris oscuro que se mezcla mejor con el nuevo fondo */
-      rgb(44, 44, 44),
-      rgb(44, 44, 44),
-      rgb(30, 30, 30)
+      	#1e1e1e,
+      	#2c2c2c, /* Un gris oscuro que se mezcla mejor con el nuevo fondo */
+      	#2c2c2c,
+      	#2c2c2c,
+      	#1e1e1e
     );
   }
 
