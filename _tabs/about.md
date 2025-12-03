@@ -5,11 +5,9 @@ order: 4
 
 ![Presentacion](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/Presentacion.jpg)
 
-Hola muy buenas, me presento, mi nombre es Carlos Marín (aka **k3sero**), actualmente soy un estudiante universitario cursando la carrera de Ingeniería Informática a quien le apasiona el mundo de la ciberseguridad, CTFs, ciberinteligencia y demás áreas que conforman dicha rama. Es por ello que me ha llevado a formarme de manera autodidacta compaginándolo con mis estudios prácticamente desde que empecé la misma.
+Mi nombre es Carlos Marín (aka **k3sero**), actualmente soy un estudiante universitario cursando la carrera de Ingeniería Informática a quien le apasiona el mundo de la ciberseguridad y CTFs (Capture the Flag). Es por ello que me ha llevado a formarme de manera autodidacta compaginándolo con mis estudios prácticamente desde que empecé la misma.
 
-Con este blog, pretendo aportar mi granito de arena con los conocimientos que voy adquiriendo a lo largo de mi travesía con el fin de compartir a la comunidad diversas metodologías de trabajo, formas de resolver ejercicios, conocimientos poco tratados por la comunidad, herramientas personales de cualquier índole o simplemente abordar cualquier tema de la misma. Es por ello que estoy abierto a cualquier fuente de conocimiento.
-
-Además, para complementar dichos conocimientos, actualmente estoy estudiando varias certificaciones como la eJPT de lado ofensivo junto la eCIR por el lado defensivo. 
+Con este blog, pretendo aportar mi granito de arena con los conocimientos que voy adquiriendo a lo largo de mi travesía con el fin de compartir a la comunidad diversas metodologías de trabajo, resolución de retos, conocimientos poco tratados por la comunidad, herramientas personales de cualquier índole o simplemente abordar cualquier tema sobre ciberseguridad. Es por ello que estoy abierto a cualquier fuente de conocimiento.
 
 ## Proyectos Personales
 
@@ -19,25 +17,30 @@ Además, para complementar dichos conocimientos, actualmente estoy estudiando va
 
 Somos [Caliphal Hounds](https://ctftime.org/team/225933), el equipo de CTFs nº1 de España actual según [CTFTime](https://ctftime.org/stats/ES). En 2025 y en 2024 obtuvimos la segunda posición únicamente por detrás de la selección española.
 
-Actualmente estamos formados por 25 miembros que compiten semanalmente en las mejores competiciones CTF del mundo, habiendo participado en más de 70 competiciones internacionales en los últimos 2 años. Contamos con perfiles especializados en todas las categorías CTF Jeopardy (criptografía, hacking web, reversing, pwn, forense, hardware, OSINT, GamePwn...).
+Actualmente estamos formados por 25 miembros que compiten semanalmente en las mejores competiciones CTF del mundo, habiendo participado en más de 85 competiciones internacionales en los últimos 2 años. Contamos con perfiles especializados en todas las categorías CTF Jeopardy (criptografía, hacking web, reversing, pwn, forense, hardware, OSINT, GamePwn...).
 
-En este último año y medio el equipo se ha expandido para, además de competir, organizar competiciones CTFs. Entre nuestros proyectos, contamos con la organización de la competición de CTFs de "NavajaNegraCTF 2025" en la cual hemos desarrollado 24 retos de categorías como criptografía, web, reversing, pwn, gamepwn, hardware/RF, research y miscelánea en formato por equipos y con más de 350 participantes.
+En este último año y medio el equipo se ha expandido para, además de competir, organizar competiciones CTFs. Entre nuestros proyectos, contamos con la organización de la competición de CTFs de [NavajaNegraCTF 2025](https://www.navajanegra.com/2025/ctf-2/index.html) en la cual hemos desarrollado 24 retos de categorías como criptografía, web, reversing, pwn, gamepwn, hardware/RF, research y miscelánea en formato por equipos y con más de 350 participantes.
 
-Otro de nuestros proyectos es la organización anual de "HackademicsForum" para la Universidad de Córdoba, abierta para personas de toda España, en la que hemos gestionado desde la creación de retos hasta la gestión del servidor, personalización del CTFd y soporte por tickets a tiempo real y hemos recibido en nuestra encuesta de satisfacción una valoración de 9.5 sobre 10 puntos totales.
+Actualmente, estamos organizando [El Bug de la Semana](https://www.eventbrite.com/e/el-bug-de-la-semana-tickets-1784006805379) en colaboración con INCIBE Emprende y Secur0 en el que emanalmente diseñamos CTFs enfocados en Bug Bounty, en los cuales se explotan vulnerabilidades y metodologías de pentesting web.
 
-A continuación os añado un pequeño portfolio de los últimos retos que hemos diseñado en [Caliphal Hounds Creations](https://github.com/CaliphalHounds/caliphal_hounds_creations).
+Otro de nuestros proyectos es la organización anual de [HackademicsForum](https://hackademics-forum.com/) para la Universidad de Córdoba, abierta para personas de toda España, en la que hemos gestionado desde la creación de retos hasta la gestión del servidor, personalización y creación de plugins en CTFd, además de contar con soporte por tickets a tiempo real; hemos recibido en nuestra encuesta de satisfacción una valoración de 9.5 sobre 10 puntos totales.
+
+Todos los retos que hemos diseñado están disponibles en la plataforma de [Caliphal Hounds Creations](https://github.com/CaliphalHounds/caliphal_hounds_creations).
 
 
 ### **Blog Kesero** 
 
 ![Logok](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/Logo.png)
 
-Este blog personal está dedicado a tratar distintos temas sobre la ciberseguridad y hacking ético, realizando diversas investigaciones sobre las ramas que la conforman. A su vez, también está enfocado en la resolución de retos CTF (Capture the Flag) que abordamos en las competiciones nacionales e internacionales, con el fin de aportar soluciones a las distintas categorías para contribuir conocimiento a la comunidad.
+Blog Kesero está dedicado a tratar distintos temas sobre la ciberseguridad y hacking ético, realizando diversas investigaciones sobre las ramas que la conforman. A su vez, también está enfocado en la resolución de retos CTF (Capture the Flag) que abordamos en las competiciones nacionales e internacionales, con el fin de aportar soluciones a las distintas categorías para contribuir conocimiento a la comunidad.
 
 
 ## Marcadores Personales
 
 • **First Bloods** --> [Hohoho3 Continue - WarGames2024](https://k3sero.github.io/posts/Hohoho3-Continue-WarGamesCTF2024/), [Pederson - HackOn2025](https://k3sero.github.io/posts/Pederson-HackOn2025/)
+
+• **SnakeCTF 2025 Quals / Finals** --> Clasificamos top 10 equipos de 532 en la fase clasificatoria, permitiendonos entrar dentro de los 15 primeros equipos, asistir de manera presencial a la final organizada en Lignano Sabbiadoro. En ella, obtuvimos la 9º posición del ranking global, conformada por una competición jeopardy online junto a una competición CTF IRL.
+
 
 • **THCON2025** --> Competición de CTFs a nivel internacional, en la que obtuvimos el primer podio con la 3º posición en grupos de 5 personas.
 
@@ -55,40 +58,70 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 
 • **CTFs Learning Path Hacking Web 2023** --> Talleres impulsados por el Aula de Ciberseguridad y Redes en el que conseguí obtener la tercera posición en el ranking basado en retos CTFs enfocados en vulnerabilidades web.
 
+## Eventos Organizados
+
+### Bug de la Semana
+
+![bdls](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/bdls.jpg)
+
+Cada viernes a las 17:00 lanzamos un nuevo reto de Bug Bounty en formato CTF, diseñado para que mejores tus habilidades en ciberseguridad mediante la explotación de vulnerabilidades y metodologías reales de pentesting web. Nos reunimos en Zoom para resolver el desafío de la semana anterior y presentar el nuevo, en una sesión dinámica de unos 60 minutos. Después, podrás seguir investigando a tu ritmo desde nuestra plataforma online. Esta iniciativa forma parte de El Bug de la Semana, un programa que desarrollamos junto a INCIBE Emprende y Secur0 con CTFs semanales enfocados en Bug Bounty.
+
+### NavajaNegraCTF 2025
+
+![nnctf2025](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/nn2025.gif)
+
+Organizamos el NavajaNegraCTF 2025, una competición CTF jeopardy por equipos compuesta por 24 retos de categorías variadas como reversing, pwn, criptografía, hardware/RF, web, miscelánea y OSINT alojados en CTFd personalizado. El evento se desarrolló del 2 al 4 de octubre junto a la edición anual de Navaja Negra, con participación tanto presencial como online y soporte continuo mediante un sistema de tickets 24/7. Según las encuestas de satisfacción, la competición obtuvo una valoración general media de 9/10.
+
+### HackademicsForum 2025
+
+![hfctf2025](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/hfct2025.jpg)
+
+HackademicsForum es un congreso de ciberseguridad organizado por el Aula de Cibersegurdiad y Redes en colaboración con la Unviersidad de Cordoba. HackademicsForum está formado por una serie de ponenencias que pretente reunir a grandes personalidades del sector para compartir nuevas ideas, fomentar sinergias y continuar aprendiendo en un área cada vez más necesaria en la vida cotidiana y empresarial, motivando y concienciando la necesidad de investigadores y profesionales frente a las nuevas amenazas, así como potenciar la colaboración público-privada.
+
+En la edición de 2025, organizamos nuevamente una competición de CTFs que expandimos a nivel nacional, contando con un total de 113 participantes, contando con un total de 20 retos repartidos en las categorías más importantes alojados en CTFd. A su vez, contamos con premios tanto en presencial como online, para las primeras personas que quedaron en las posiciones más altas de la tabla.
+
+### HackademicsForum 2024
+
+![hfctf2024](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/hfct2024.jpg)
+
+HackademicsForum es un congreso de ciberseguridad organizado por el Aula de Cibersegurdiad y Redes en colaboración con la Unviersidad de Cordoba. HackademicsForum está formado por una serie de ponenencias que pretente reunir a grandes personalidades del sector para compartir nuevas ideas, fomentar sinergias y continuar aprendiendo en un área cada vez más necesaria en la vida cotidiana y empresarial, motivando y concienciando la necesidad de investigadores y profesionales frente a las nuevas amenazas, así como potenciar la colaboración público-privada.
+
+En la edición de 2024, impulsamos el conocimiento en ciberseguridad mediante la creción de una competición local formada por un total de 15 retos, repartidos en las principales categorías. Contando con premios para el top 5º.
+
 ## Competiciones Participadas
 
-### 2025
+### 2025 (41 Competiciones)
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |
 |--------------------------------------------------|-----------------|-------|
-|LakeCTF Quals 25-26|	1842,0000|	35,051
-|PwnSec CTF 2025|	1000,0000|	2,866
-|saarCTF 2025|	35815,4332|	21,109
-|N1CTF 2025|	33,0000|	1,306
-|DEADFACE CTF 2025|	4041,0000|	14,810
-|m0leCon CTF 2026 Teaser|	381,0000|	15,349
-|LINE CTF 2025|	1,0000|	0,958
-|Hack.lu CTF 2025|	1360,0000|	27,292
-|SunshineCTF 2025|	224,0000|	1,599
-|HITCON CTF 2025|	196,0000|	4,825
-|SekaiCTF 2025|	378,0000|	3,829
-|WHY2025 CTF|	2000,0000|	0,000
-|idekCTF 2025|	528,0000|	3,402
-|World Wide CTF 2025|	3338,0000|	6,021
-|ToH CTF 2025|	1362,0000|	9,683
-|Crypto CTF 2025|	27,0000|	0,668
-|L3akCTF 2025|	1670,0000|	3,045
-|No Hack No CTF 2025|	5990,0000|	14,719
-|R3CTF 2025|	400,0000|	0,573
-|MaltaCTF 2025 Quals|	410,0000|	2,266
-|smileyCTF 2025|	545,0000|	3,612
-|bi0sCTF 2025|	110,0000|	1,403
-|TJCTF 2025|	10346,0000|	41,911
-|Grey Cat The Flag| 2025	600,0000|	1,251
-|SAS CTF 2025 Quals|	100,0000|	0,371
-|Midnight Sun CTF| 2025 Quals	233,0000|	6,243
-|DamCTF 2025|	2298,0000|	18,352
-|DevSecOps CTF 2025|	177,0000|	10,182
+| LakeCTF Quals 25-26|	1842,0000|	35,051
+| PwnSec CTF 2025|	1000,0000|	2,866
+| saarCTF 2025|	35815,4332|	21,109
+| N1CTF 2025|	33,0000|	1,306
+| DEADFACE CTF 2025|	4041,0000|	14,810
+| m0leCon CTF 2026 Teaser|	381,0000|	15,349
+| LINE CTF 2025|	1,0000|	0,958
+| Hack.lu CTF 2025|	1360,0000|	27,292
+| SunshineCTF 2025|	224,0000|	1,599
+| HITCON CTF 2025|	196,0000|	4,825
+| SekaiCTF 2025|	378,0000|	3,829
+| WHY2025 CTF|	2000,0000|	0,000
+| idekCTF 2025|	528,0000|	3,402
+| World Wide CTF 2025|	3338,0000|	6,021
+| ToH CTF 2025|	1362,0000|	9,683
+| Crypto CTF 2025|	27,0000|	0,668
+| L3akCTF 2025|	1670,0000|	3,045
+| No Hack No CTF 2025|	5990,0000|	14,719
+| R3CTF 2025|	400,0000|	0,573
+| MaltaCTF 2025 Quals|	410,0000|	2,266
+| smileyCTF 2025|	545,0000|	3,612
+| bi0sCTF 2025|	110,0000|	1,403
+| TJCTF 2025|	10346,0000|	41,911
+| Grey Cat The Flag| 2025	600,0000|	1,251
+| SAS CTF 2025 Quals|	100,0000|	0,371
+| Midnight Sun CTF| 2025 Quals	233,0000|	6,243
+| DamCTF 2025|	2298,0000|	18,352
+| DevSecOps CTF 2025|	177,0000|	10,182
 | UniVsThreats2025                                 |    864,0000	 | 0,000*|
 | UMDCTF2025	                                   |    6623,0000	 | 29,700|
 | UMassCTF2025	                                   |    5572,0000	 | 25,134|
@@ -104,15 +137,15 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 | UofTCTF 2025                                     |	1764,0000    | 3,632 |
 | IrisCTF 2025                                     |	1697,0000    | 6,097 |
 
-### 2024
+### 2024 (31 Competiciones)
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |
 |-----------------------------------------------------|-------------|--------|
 | Wargames.MY CTF 2024                                |	7179,0000   | 16,036 |
 | 0CTF 2024                                           |	70,0000	    | 1,389  |
-| TSG CTF 2024	                                      |703,0000	    | 4,121  |
-| LakeCTF Quals 24-25	                              |380,0000	    | 3,083  |
-| World Wide CTF 2024	                              |1232,0000	| 3,943  |
+| TSG CTF 2024	                                      | 703,0000    | 4,121  |
+| LakeCTF Quals 24-25	                              | 380,0000    | 3,083  |
+| World Wide CTF 2024	                              | 1232,0000	| 3,943  |
 | SECCON CTF 13 Quals                                 |	141,0000    | 3,888  |
 | 1337UP LIVE CTF                                     |	600,0000    | 1,755  |
 | Hackers N' Hops                                     |	920,0000    | 12,407 |
@@ -141,7 +174,7 @@ Este blog personal está dedicado a tratar distintos temas sobre la cibersegurid
 | Insomni'hack teaser 2024                            | 61,0000     | 1,040  |
 
 
-### 2023
+### 2023 (11 Competiciones)
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |
 |----------------------------|------------|-------|
