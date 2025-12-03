@@ -3,9 +3,9 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-![Presentacion](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/Presentacion.jpg)
+![Presentacion](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/about.jpg)
 
-Mi nombre es Carlos Marín (aka **k3sero**), actualmente soy un estudiante universitario cursando la carrera de Ingeniería Informática a quien le apasiona el mundo de la ciberseguridad y CTFs (Capture the Flag). Es por ello que me ha llevado a formarme de manera autodidacta compaginándolo con mis estudios prácticamente desde que empecé la misma.
+Mi nombre es Carlos Marín (aka **k3sero**), actualmente soy un estudiante universitario cursando la carrera de Ingeniería Informática a quien le apasiona el mundo de la ciberseguridad y CTFs (Capture the Flag). Es por ello que me ha llevado a formarme de manera autodidacta compaginándolo con mis estudios prácticamente desde que empecé el grado.
 
 Con este blog, pretendo aportar mi granito de arena con los conocimientos que voy adquiriendo a lo largo de mi travesía con el fin de compartir a la comunidad diversas metodologías de trabajo, resolución de retos, conocimientos poco tratados por la comunidad, herramientas personales de cualquier índole o simplemente abordar cualquier tema sobre ciberseguridad. Es por ello que estoy abierto a cualquier fuente de conocimiento.
 
@@ -15,13 +15,13 @@ Con este blog, pretendo aportar mi granito de arena con los conocimientos que vo
 
 ![Logo](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/prompt.png)
 
-Somos [Caliphal Hounds](https://ctftime.org/team/225933), el equipo de CTFs nº1 de España actual según [CTFTime](https://ctftime.org/stats/ES). En 2025 y en 2024 obtuvimos la segunda posición únicamente por detrás de la selección española.
+Somos [Caliphal Hounds](https://ctftime.org/team/225933), actualmente el equipo de CTFs nº1 de España según [CTFTime](https://ctftime.org/stats/ES). En 2025 y en 2024 obtuvimos la segunda posición únicamente por detrás de la selección española.
 
 Actualmente estamos formados por 25 miembros que compiten semanalmente en las mejores competiciones CTF del mundo, habiendo participado en más de 85 competiciones internacionales en los últimos 2 años. Contamos con perfiles especializados en todas las categorías CTF Jeopardy (criptografía, hacking web, reversing, pwn, forense, hardware, OSINT, GamePwn...).
 
 En este último año y medio el equipo se ha expandido para, además de competir, organizar competiciones CTFs. Entre nuestros proyectos, contamos con la organización de la competición de CTFs de [NavajaNegraCTF 2025](https://www.navajanegra.com/2025/ctf-2/index.html) en la cual hemos desarrollado 24 retos de categorías como criptografía, web, reversing, pwn, gamepwn, hardware/RF, research y miscelánea en formato por equipos y con más de 350 participantes.
 
-Actualmente, estamos organizando [El Bug de la Semana](https://www.eventbrite.com/e/el-bug-de-la-semana-tickets-1784006805379) en colaboración con INCIBE Emprende y Secur0 en el que emanalmente diseñamos CTFs enfocados en Bug Bounty, en los cuales se explotan vulnerabilidades y metodologías de pentesting web.
+Actualmente, estamos organizando [El Bug de la Semana](https://www.eventbrite.com/e/el-bug-de-la-semana-tickets-1784006805379) en colaboración con INCIBE Emprende y Secur0 en el que semanalmente diseñamos CTFs enfocados en Bug Bounty, en los cuales se explotan vulnerabilidades y metodologías de pentesting web.
 
 Otro de nuestros proyectos es la organización anual de [HackademicsForum](https://hackademics-forum.com/) para la Universidad de Córdoba, abierta para personas de toda España, en la que hemos gestionado desde la creación de retos hasta la gestión del servidor, personalización y creación de plugins en CTFd, además de contar con soporte por tickets a tiempo real; hemos recibido en nuestra encuesta de satisfacción una valoración de 9.5 sobre 10 puntos totales.
 
@@ -30,33 +30,74 @@ Todos los retos que hemos diseñado están disponibles en la plataforma de [Cali
 
 ### **Blog Kesero** 
 
-![Logok](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/Logo.png)
+![Logo](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/Logo.png)
 
 Blog Kesero está dedicado a tratar distintos temas sobre la ciberseguridad y hacking ético, realizando diversas investigaciones sobre las ramas que la conforman. A su vez, también está enfocado en la resolución de retos CTF (Capture the Flag) que abordamos en las competiciones nacionales e internacionales, con el fin de aportar soluciones a las distintas categorías para contribuir conocimiento a la comunidad.
 
 
 ## Marcadores Personales
 
-• **First Bloods** --> [Hohoho3 Continue - WarGames2024](https://k3sero.github.io/posts/Hohoho3-Continue-WarGamesCTF2024/), [Pederson - HackOn2025](https://k3sero.github.io/posts/Pederson-HackOn2025/)
+### First Bloods CTFs 🩸
 
-• **SnakeCTF 2025 Quals / Finals** --> Clasificamos top 10 equipos de 532 en la fase clasificatoria, permitiendonos entrar dentro de los 15 primeros equipos, asistir de manera presencial a la final organizada en Lignano Sabbiadoro. En ella, obtuvimos la 9º posición del ranking global, conformada por una competición jeopardy online junto a una competición CTF IRL.
+|  **Reto** |**Categoría**|  **Competición** |
+|---------------------|-|-----------------|
+| [Hohoho3 Continue](https://k3sero.github.io/posts/Hohoho3-Continue-WarGamesCTF2024)    |Criptografía| WarGames 2024 |
+| [Pederson](https://k3sero.github.io/posts/Pederson-HackOn2025/)            |Criptografía| HackOn 2025 |
+
+### Writeups Galardonados 🏅
+
+|  **Reto** | **Categoría**     | **Competición** | **Institución** |
+|---------------------|------------------|-----------------|-------------------------------|
+| [Gambling2](https://k3sero.github.io/posts/Gambling2-UMDCTF2025/) | PWN - OOB | UMDCTF 2025     | Universidad de Maryland                            |
+| [FCSIGN](https://k3sero.github.io/posts/FCSIGN-UmassCTF2025/)   | Hardware - RISC | UMassCTF 2025    | Universidad de Massachusetts                             |
 
 
-• **THCON2025** --> Competición de CTFs a nivel internacional, en la que obtuvimos el primer podio con la 3º posición en grupos de 5 personas.
+### SnakeCTF 2025 Quals / Finals
 
-• **HackOn2025** --> Competición de CTFs a nivel nacional, en la que obtuve 9º posición participando en solitario contra equipos de 3 personas.
+![snakectf](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/snakectf2025.jpg)
 
-• **WarGamesCTF2024** --> Competición de CTFs a nivel internacional, en la cual obtuvimos la 6º posición de 233 equipos.
+Durante la fase clasificatoria de [SnakeCTF 2025](https://snakectf.org/), nuestro equipo logró posicionarse en el top 10 entre 532 participantes, asegurando así una plaza entre los 15 equipos que competirían presencialmente en la final celebrada en Lignano Sabbiadoro, Italia.
 
-• **SpookyCTF2024** --> Competición de CTFs a nivel internacional, en la cual obtuvimos la 40º posición de 831 equipos participantes.
+La final presencial estaba formada por dos competiciones, una al estilo clásico jeopardy online caracterizada por retos de muy buena calidad. Por el otro lado estaba formada por una competición IRL distribuidos por las calles de Lignano. Finalmente en el marcador global, alcanzamos la 9.ª posición.
 
-• **Talent4Cyber** --> Competición de CTFs a nivel nacional, organizada por La Universidad de Granada, el TRUST Lab de la Universidad Politécnica de Cartagena y el Mando Conjunto del Ciberespacio con el fin de poner a prueba las habilidades y conocimientos de los mejores talentos universitarios con desafíos técnicos y simulaciones realistas. Nuestro equipo conformado por cuatro personas logró adentrarse en la cuarta posición del ranking, resolviendo un total de 6 de 10 en total.
+### THCON2025
 
-• **HackademicsForumCTF2024** --> Competición de CTFs impulsada por el Aula de Ciberseguridad y Redes con el fin de acercar la metodología de resolución de retos CTFs en el sector provincial. En dicha competición, conseguí obtener la segunda posición del ranking.
+![THCON](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/thcon2025.jpg)
 
-• **NCL2023** --> Evento referente en la cultura de la ciberseguridad Española enfocándose en la resolución de retos CTFs de distintas categorias (principalmente forense). Nuestro equipo de 4 participantes compitió en la categoría amateour logró clasificar a la fase semifinal y se quedó a 50 puntos de clasificar a la fase final, obteniendo la plaza número 16 del ranking.
+[THCON2025](https://thcon.party/) (Toulouse Hacking Convention) es una competición internacional de alto nivel que reunió a más de 240 equipos de todo el mundo. Tras dos días de competición, logramos alcanzar la 3.ª posición, consiguiendo así nuestro primer podio internacional como equipo Caliphal Hounds. Este resultado refleja el esfuerzo, la actitud y la dedicación que cada uno de nosotros aportó durante toda la competición.
 
-• **CTFs Learning Path Hacking Web 2023** --> Talleres impulsados por el Aula de Ciberseguridad y Redes en el que conseguí obtener la tercera posición en el ranking basado en retos CTFs enfocados en vulnerabilidades web.
+|  **Reto** | **Categoría**     | **Competición** | 
+|---------------------|------------------|-----------------|
+| [Roses Crypto Game](https://k3sero.github.io/posts/Crypto-Roses-Game-THCON2025/) | Cripto | THCON2025|
+| [Randsomware on Hospital (Recopilación)](https://k3sero.github.io/posts/Randsomware-Hospital-THCON2025/)   | Osint - Research | THCON2025 |
+| [NeoPrivesc](https://k3sero.github.io/posts/NeoPrivSec-THC2025/) | Miscelánea | THCON2025|
+| [Gunnar´s Vacation Pictures[1-7]](https://k3sero.github.io/posts/Gunnar-Vacations-THCON2025/) | Geosint | THCON2025|
+
+
+### Hack0n2025
+
+![Hack0n](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/hack0n2025.jpg)
+
+En competición CTF nacional HackOn2025 competí en solitario frente a equipos formados por tres personas, obteniendo la 9.ª posición entre 52 equipos. Durante esta competición conseguí obtener una primera resolución (First Blood) en el reto Pederson.
+
+|  **Reto** | **Categoría**     | **Competición** | 
+|---------------------|------------------|-----------------|
+| [SandBox](https://k3sero.github.io/posts/Sandbox-HackOn2025/) | Miscelánea | Hack0n2025|
+| [Play Time](https://k3sero.github.io/posts/Play-Time-HackOn2025/)   | Criptografía | Hack0n2025 |
+| [Pederson](https://k3sero.github.io/posts/Pederson-HackOn2025/) | Criptografía | Hack0n2025|
+
+
+### Otras Competiciones Relevantes
+
+| **Competición** | **Ámbito** | **Resultado** | **Organización** |
+|--------------------|---------------|------------------|-------------------------------------|
+| **WarGamesCTF2024** | Internacional | 6.º puesto de 233 equipos | Wargames MY |
+| **SpookyCTF2024** | Internacional | 40.º puesto de 831 equipos | NICC |
+| **Talent4Cyber** | Nacional | 4.º puesto (equipo de 4) | Univ. de Granada / Cartagena y Mando Conjunto del Ciberespacio |
+| **HackademicsForumCTF2024** | Provincial | 2.º puesto (Individual) | Aula de Ciberseguridad y Redes UCO |
+| **NCL2023** | Nacional | 16.º puesto (categoría amateur, equipo de 4) | Guardia Civil y Mando Conjunto del Ciberespacio |
+| **CTFs Learning Path – Hacking Web 2023** | Provincial / Formativo | 3.º puesto (Individual) | Aula de Ciberseguridad y Redes |
+
 
 ## Eventos Organizados
 
@@ -64,29 +105,33 @@ Blog Kesero está dedicado a tratar distintos temas sobre la ciberseguridad y ha
 
 ![bdls](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/bdls.jpg)
 
-Cada viernes a las 17:00 lanzamos un nuevo reto de Bug Bounty en formato CTF, diseñado para que mejores tus habilidades en ciberseguridad mediante la explotación de vulnerabilidades y metodologías reales de pentesting web. Nos reunimos en Zoom para resolver el desafío de la semana anterior y presentar el nuevo, en una sesión dinámica de unos 60 minutos. Después, podrás seguir investigando a tu ritmo desde nuestra plataforma online. Esta iniciativa forma parte de El Bug de la Semana, un programa que desarrollamos junto a INCIBE Emprende y Secur0 con CTFs semanales enfocados en Bug Bounty.
+Cada viernes a las 17:00 lanzamos un nuevo reto de Bug Bounty en formato CTF, diseñado para que mejores tus habilidades en ciberseguridad mediante la explotación de vulnerabilidades y metodologías reales de pentesting web. Nos reunimos en Zoom para resolver el desafío de la semana anterior y presentar el nuevo, en una sesión dinámica de unos 60 minutos. Después, podrás seguir investigando a tu ritmo desde nuestra plataforma online. Esta iniciativa forma parte de El Bug de la Semana, un programa que desarrollamos junto a [INCIBE Emprende](https://www.incibe.es/emprendimiento) y [Secur0](https://secur0.com/es) con CTFs semanales enfocados en Bug Bounty.
+
+Las inscripciones semanales se encuentran en [EventWrite](https://www.eventbrite.es/e/el-bug-de-la-semana-tickets-1784006805379).
+
+Únete a nuestro [discord](https://discord.gg/Tactyce2WA) para no perderte de las novedades!
 
 ### NavajaNegraCTF 2025
 
 ![nnctf2025](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/nn2025.gif)
 
-Organizamos el NavajaNegraCTF 2025, una competición CTF jeopardy por equipos compuesta por 24 retos de categorías variadas como reversing, pwn, criptografía, hardware/RF, web, miscelánea y OSINT alojados en CTFd personalizado. El evento se desarrolló del 2 al 4 de octubre junto a la edición anual de Navaja Negra, con participación tanto presencial como online y soporte continuo mediante un sistema de tickets 24/7. Según las encuestas de satisfacción, la competición obtuvo una valoración general media de 9/10.
+Organizamos NavajaNegraCTF 2025, una competición CTF jeopardy por equipos compuesta por 24 retos de categorías variadas como reversing, pwn, criptografía, hardware/RF, web, miscelánea y OSINT alojados en CTFd personalizado. El evento se desarrolló del 2 al 4 de octubre junto a la edición anual de [Navaja Negra](https://www.navajanegra.com/2025/index.html), con participación tanto presencial como online y soporte continuo mediante un sistema de tickets 24/7. Según las encuestas de satisfacción, la competición obtuvo una valoración general media de 9/10.
 
 ### HackademicsForum 2025
 
-![hfctf2025](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/hfct2025.jpg)
+![hfctf2025](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/hfctf2025.jpg)
 
-HackademicsForum es un congreso de ciberseguridad organizado por el Aula de Cibersegurdiad y Redes en colaboración con la Unviersidad de Cordoba. HackademicsForum está formado por una serie de ponenencias que pretente reunir a grandes personalidades del sector para compartir nuevas ideas, fomentar sinergias y continuar aprendiendo en un área cada vez más necesaria en la vida cotidiana y empresarial, motivando y concienciando la necesidad de investigadores y profesionales frente a las nuevas amenazas, así como potenciar la colaboración público-privada.
+[HackademicsForum](https://hackademics-forum.com/) es un congreso de ciberseguridad organizado por el [Aula de Ciberseguridad y Redes](https://www.uco.es/aulaRedesSeguridad/) en colaboración con la Universidad de Córdoba. HackademicsForum está formado por una serie de ponencias que pretende reunir a grandes personalidades del sector para compartir nuevas ideas, fomentar sinergias y continuar aprendiendo en un área cada vez más necesaria en la vida cotidiana y empresarial, motivando y concienciando la necesidad de investigadores y profesionales frente a las nuevas amenazas, así como potenciar la colaboración público-privada.
 
-En la edición de 2025, organizamos nuevamente una competición de CTFs que expandimos a nivel nacional, contando con un total de 113 participantes, contando con un total de 20 retos repartidos en las categorías más importantes alojados en CTFd. A su vez, contamos con premios tanto en presencial como online, para las primeras personas que quedaron en las posiciones más altas de la tabla.
+En la [edición de 2025](https://hackademics-forum.com/), organizamos nuevamente una competición de CTFs que expandimos a nivel nacional, contando con un total de 113 participantes, contando con un total de 20 retos repartidos en las categorías más importantes alojados en CTFd. A su vez, contamos con premios tanto en presencial como online, para las primeras personas que quedaron en las posiciones más altas de la tabla.
 
 ### HackademicsForum 2024
 
-![hfctf2024](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/hfct2024.jpg)
+![hfctf2024](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/hfctf2024.jpg)
 
-HackademicsForum es un congreso de ciberseguridad organizado por el Aula de Cibersegurdiad y Redes en colaboración con la Unviersidad de Cordoba. HackademicsForum está formado por una serie de ponenencias que pretente reunir a grandes personalidades del sector para compartir nuevas ideas, fomentar sinergias y continuar aprendiendo en un área cada vez más necesaria en la vida cotidiana y empresarial, motivando y concienciando la necesidad de investigadores y profesionales frente a las nuevas amenazas, así como potenciar la colaboración público-privada.
+[HackademicsForum](https://hackademics-forum.com/) es un congreso de ciberseguridad organizado por el [Aula de Ciberseguridad y Redes](https://www.uco.es/aulaRedesSeguridad/) en colaboración con la Universidad de Córdoba. HackademicsForum está formado por una serie de ponencias que pretende reunir a grandes personalidades del sector para compartir nuevas ideas, fomentar sinergias y continuar aprendiendo en un área cada vez más necesaria en la vida cotidiana y empresarial, motivando y concienciando la necesidad de investigadores y profesionales frente a las nuevas amenazas, así como potenciar la colaboración público-privada.
 
-En la edición de 2024, impulsamos el conocimiento en ciberseguridad mediante la creción de una competición local formada por un total de 15 retos, repartidos en las principales categorías. Contando con premios para el top 5º.
+En la [edición de 2024](https://hackademics-forum.com/2024-edition/), impulsamos el conocimiento en ciberseguridad mediante la creación de una competición local formada por un total de 15 retos, repartidos en las principales categorías. Contando con premios para el top 5º.
 
 ## Competiciones Participadas
 
@@ -204,6 +249,6 @@ En la edición de 2024, impulsamos el conocimiento en ciberseguridad mediante la
 
 • **"Mastermind - Introducción al Hacking Ético"**
 
-• **"Mastermind - Hacking de Redes Inalámbricas (Hacking Wifi)"**
+• **"Mastermind - Hacking de Redes Inalámbricas (Hacking WiFi)"**
 
-• **"Mastermind - Hacking de Radiofrecuenca (Hacking RFID)"**
+• **"Mastermind - Hacking de Radiofrecuencia (Hacking RFID)"**
