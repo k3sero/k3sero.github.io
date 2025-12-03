@@ -98,7 +98,7 @@ En competición CTF nacional HackOn2025 competí en solitario frente a equipos f
 | **SpookyCTF2024** | Internacional | 40.º puesto de 831 equipos |
 | **Talent4Cyber** | Nacional | 4.º puesto (equipo de 4) |
 | **HackademicsForumCTF2024** | Provincial | 2.º puesto (Individual) |
-| **NCL2023** | Nacional | 16.º puesto (categoría amateur, equipo de 4) |
+| **NCL2023** | Nacional | 16.º puesto (equipo de 4) |
 | **CTFs Learning Path – Hacking Web 2023** | Provincial / Formativo | 3.º puesto (Individual) |
 
 ## Eventos Organizados
