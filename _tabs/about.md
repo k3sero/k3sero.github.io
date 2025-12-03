@@ -13,7 +13,7 @@ Con este blog, pretendo aportar mi granito de arena con los conocimientos que vo
 
 ### **Caliphal Hounds** 
 
-![Logo](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/CH.png)
+![Logo](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/CH.png)
 
 Somos [Caliphal Hounds](https://ctftime.org/team/225933), actualmente el equipo de CTFs nº1 de España según [CTFTime](https://ctftime.org/stats/ES). En 2025 y en 2024 obtuvimos la segunda posición únicamente por detrás de la selección española.
 
