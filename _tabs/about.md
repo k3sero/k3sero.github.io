@@ -13,7 +13,7 @@ Con este blog, pretendo aportar mi granito de arena con los conocimientos que vo
 
 ### **Caliphal Hounds** 
 
-![Logo](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/prompt.png)
+![Logo](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/CH.png)
 
 Somos [Caliphal Hounds](https://ctftime.org/team/225933), actualmente el equipo de CTFs nº1 de España según [CTFTime](https://ctftime.org/stats/ES). En 2025 y en 2024 obtuvimos la segunda posición únicamente por detrás de la selección española.
 
@@ -89,14 +89,14 @@ En competición CTF nacional HackOn2025 competí en solitario frente a equipos f
 
 ### Otras Competiciones Relevantes
 
-| **Competición** | **Ámbito** | **Resultado** | **Organización** |
-|--------------------|---------------|------------------|-------------------------------------|
-| **WarGamesCTF2024** | Internacional | 6.º puesto de 233 equipos | Wargames MY |
-| **SpookyCTF2024** | Internacional | 40.º puesto de 831 equipos | NICC |
-| **Talent4Cyber** | Nacional | 4.º puesto (equipo de 4) | Univ. de Granada / Cartagena y Mando Conjunto del Ciberespacio |
-| **HackademicsForumCTF2024** | Provincial | 2.º puesto (Individual) | Aula de Ciberseguridad y Redes UCO |
-| **NCL2023** | Nacional | 16.º puesto (categoría amateur, equipo de 4) | Guardia Civil y Mando Conjunto del Ciberespacio |
-| **CTFs Learning Path – Hacking Web 2023** | Provincial / Formativo | 3.º puesto (Individual) | Aula de Ciberseguridad y Redes |
+| **Competición** | **Ámbito** | **Resultado** |
+|--------------------|---------------|------------------|
+| **WarGamesCTF2024** | Internacional | 6.º puesto de 233 equipos |
+| **SpookyCTF2024** | Internacional | 40.º puesto de 831 equipos |
+| **Talent4Cyber** | Nacional | 4.º puesto (equipo de 4) |
+| **HackademicsForumCTF2024** | Provincial | 2.º puesto (Individual) |
+| **NCL2023** | Nacional | 16.º puesto (categoría amateur, equipo de 4) |
+| **CTFs Learning Path – Hacking Web 2023** | Provincial / Formativo | 3.º puesto (Individual) |
 
 
 ## Eventos Organizados
@@ -135,7 +135,7 @@ En la [edición de 2024](https://hackademics-forum.com/2024-edition/), impulsamo
 
 ## Competiciones Participadas
 
-### 2025 (41 Competiciones)
+### 2025 - 41 Competiciones
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |
 |--------------------------------------------------|-----------------|-------|
@@ -182,7 +182,7 @@ En la [edición de 2024](https://hackademics-forum.com/2024-edition/), impulsamo
 | UofTCTF 2025                                     |	1764,0000    | 3,632 |
 | IrisCTF 2025                                     |	1697,0000    | 6,097 |
 
-### 2024 (31 Competiciones)
+### 2024 - 31 Competiciones
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |
 |-----------------------------------------------------|-------------|--------|
@@ -195,7 +195,7 @@ En la [edición de 2024](https://hackademics-forum.com/2024-edition/), impulsamo
 | 1337UP LIVE CTF                                     |	600,0000    | 1,755  |
 | Hackers N' Hops                                     |	920,0000    | 12,407 |
 | SpookyCTF 2024                                      |	7152,0000   | 9,924  |
-| TCP1P CTF 2024: Exploring Nusantara's Digital Realm |	600,0000    | 1,571  |
+| TCP1P CTF 2024:  |	600,0000    | 1,571  |
 | DefCamp Capture the Flag (D-CTF) 2024 Quals         |	1682,0000   | 17,339 |
 | ASIS CTF Quals 2024                                 |	235,0000	| 3,773  |
 | CSAW CTF Qualification Round 2024                   |	2847,0000	| 9,888  |
@@ -219,7 +219,7 @@ En la [edición de 2024](https://hackademics-forum.com/2024-edition/), impulsamo
 | Insomni'hack teaser 2024                            | 61,0000     | 1,040  |
 
 
-### 2023 (11 Competiciones)
+### 2023 - 11 Competiciones
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |
 |----------------------------|------------|-------|
