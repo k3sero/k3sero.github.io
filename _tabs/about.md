@@ -91,9 +91,9 @@ En competición CTF nacional HackOn2025 competí en solitario frente a equipos f
 
 | **Competición** | **Ámbito** | **Resultado** |
 |--------------------|---------------|------------------|
-| **ToHCTF2025** | Internacional | 13.º puesto de 393 |
-| **NoHackNoCTF2025** | Internacional | 10.º puesto de 473  |
-| **UMassCTF 2025** | Internacional | 14.º puesto de 558 |
+| **ToHCTF2025** | Internacional | 13.º puesto de 393 equipos |
+| **NoHackNoCTF2025** | Internacional | 10.º puesto de 473 equipos  |
+| **UMassCTF 2025** | Internacional | 14.º puesto de 558 equipos |
 | **WarGamesCTF2024** | Internacional | 6.º puesto de 233 equipos |
 | **SpookyCTF2024** | Internacional | 40.º puesto de 831 equipos |
 | **Talent4Cyber** | Nacional | 4.º puesto (equipo de 4) |
