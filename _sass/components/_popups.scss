@@ -27,6 +27,8 @@
   .toast-body {
     font-family: Lato, sans-serif;
     line-height: 1.25rem;
+    background-color: var(--main-bg);
+    color: var(--text-color);
 
     button {
       font-size: 90%;
