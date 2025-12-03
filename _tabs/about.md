@@ -166,7 +166,7 @@ En la [edición de 2024](https://hackademics-forum.com/2024-edition/), impulsamo
 | TJCTF 2025|	10346,0000|	41,911
 | Grey Cat The Flag| 2025	600,0000|	1,251
 | SAS CTF 2025 Quals|	100,0000|	0,371
-| Midnight Sun CTF| 2025 Quals	233,0000|	6,243
+| Midnight Sun CTF2025 Quals | 	233,0000|	6,243
 | DamCTF 2025|	2298,0000|	18,352
 | DevSecOps CTF 2025|	177,0000|	10,182
 | UniVsThreats2025                                 |    864,0000	 | 0,000*|
