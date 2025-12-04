@@ -150,7 +150,7 @@ En la [edición de 2024](https://hackademics-forum.com/2024-edition/), impulsamo
 
 ## Competiciones Participadas
 
-### 2025 - 41 Competiciones
+### 2025 - 42 Competiciones
 
 | Evento | Puntos totales CTF | Puntos obtenidos  |
 |--------------------------------------------------|-----------------|-------|
@@ -181,7 +181,7 @@ En la [edición de 2024](https://hackademics-forum.com/2024-edition/), impulsamo
 | SAS CTF 2025 Quals|	100,0000|	0,371
 | Midnight Sun CTF2025 Quals | 	233,0000|	6,243
 | DamCTF 2025|	2298,0000|	18,352
-| DevSecOps CTF 2025|	177,0000|	10,182
+| DevSecOps CTF 2025                               |	177,0000     |10,182 |
 | UniVsThreats2025                                 |    864,0000	 | 0,000*|
 | UMDCTF2025	                                   |    6623,0000	 | 29,700|
 | UMassCTF2025	                                   |    5572,0000	 | 25,134|
@@ -210,7 +210,7 @@ En la [edición de 2024](https://hackademics-forum.com/2024-edition/), impulsamo
 | 1337UP LIVE CTF                                     |	600,0000    | 1,755  |
 | Hackers N' Hops                                     |	920,0000    | 12,407 |
 | SpookyCTF 2024                                      |	7152,0000   | 9,924  |
-| TCP1P CTF 2024:  |	600,0000    | 1,571  |
+| TCP1P CTF 2024                                      |	600,0000    | 1,571  |
 | DefCamp Capture the Flag (D-CTF) 2024 Quals         |	1682,0000   | 17,339 |
 | ASIS CTF Quals 2024                                 |	235,0000	| 3,773  |
 | CSAW CTF Qualification Round 2024                   |	2847,0000	| 9,888  |
@@ -236,8 +236,8 @@ En la [edición de 2024](https://hackademics-forum.com/2024-edition/), impulsamo
 
 ### 2023 - 11 Competiciones
 
-| Evento | Puntos totales CTF | Puntos obtenidos  |
-|----------------------------|------------|-------|
+| Evento |  Puntos totales CTF | Puntos obtenidos  |
+|------------------------------|-----------|-------|
 | GlacierCTF 2023              | 410,0000  | 2,341 |
 | ASIS CTF Quals 2023          | 23,0000   | 0,768 |
 | SECCON CTF 2023 Quals        | 50,0000   | 1,306 |
