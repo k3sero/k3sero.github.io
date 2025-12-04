@@ -84,7 +84,7 @@ En competición CTF nacional HackOn2025 competí en solitario frente a equipos f
 | [Pederson](https://k3sero.github.io/posts/Pederson-HackOn2025/) | Criptografía | Hack0n2025|
 
 
-## Otras Podios Relevantes
+## Otros Podios Relevantes
 
 | **Competición** | **Ámbito** | **Resultado** |
 |--------------------|---------------|------------------|
