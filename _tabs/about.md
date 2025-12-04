@@ -34,10 +34,7 @@ Todos los retos que hemos diseñado están disponibles en la plataforma de [Cali
 
 Blog Kesero está dedicado a tratar distintos temas sobre la ciberseguridad y hacking ético, realizando diversas investigaciones sobre las ramas que la conforman. A su vez, también está enfocado en la resolución de retos CTF (Capture the Flag) que abordamos en las competiciones nacionales e internacionales, con el fin de aportar soluciones a las distintas categorías para contribuir conocimiento a la comunidad.
 
-
-## Marcadores Personales
-
-### First Bloods CTFs 🩸
+## First Bloods CTFs 🩸
 
 |  **Reto** |**Categoría**|  **Competición** |
 |---------------------|-|-----------------|
@@ -52,7 +49,7 @@ Blog Kesero está dedicado a tratar distintos temas sobre la ciberseguridad y ha
 | [FCSIGN](https://k3sero.github.io/posts/FCSIGN-UmassCTF2025/)   | Hardware - RISC | UMassCTF 2025    | Universidad de Massachusetts                             |
 
 
-### SnakeCTF 2025 Quals / Finals
+## SnakeCTF 2025 Quals / Finals
 
 ![snakectf](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/snakectf2025.jpg)
 
@@ -60,7 +57,7 @@ Durante la fase clasificatoria de [SnakeCTF 2025](https://snakectf.org/), nuestr
 
 La final presencial estaba formada por dos competiciones, una al estilo clásico jeopardy online caracterizada por retos de muy buena calidad. Por el otro lado estaba formada por una competición IRL distribuidos por las calles de Lignano. Finalmente en el marcador global, alcanzamos la 9.ª posición.
 
-### THCON2025
+## THCON2025
 
 ![THCON](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/thcon2025.jpg)
 
@@ -68,13 +65,13 @@ La final presencial estaba formada por dos competiciones, una al estilo clásico
 
 |  **Reto** | **Categoría**     | **Competición** | 
 |---------------------|------------------|-----------------|
-| [Roses Crypto Game](https://k3sero.github.io/posts/Crypto-Roses-Game-THCON2025/) | Cripto | THCON2025|
+| [Roses Crypto Game](https://k3sero.github.io/posts/Crypto-Roses-Game-THCON2025/) | Criptografía | THCON2025|
 | [Randsomware on Hospital (Recopilación)](https://k3sero.github.io/posts/Randsomware-Hospital-THCON2025/)   | Osint - Research | THCON2025 |
 | [NeoPrivesc](https://k3sero.github.io/posts/NeoPrivSec-THC2025/) | Miscelánea | THCON2025|
 | [Gunnar´s Vacation Pictures[1-7]](https://k3sero.github.io/posts/Gunnar-Vacations-THCON2025/) | Geosint | THCON2025|
 
 
-### Hack0n2025
+## Hack0n2025
 
 ![Hack0n](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/hack0n2025.jpg)
 
@@ -87,7 +84,7 @@ En competición CTF nacional HackOn2025 competí en solitario frente a equipos f
 | [Pederson](https://k3sero.github.io/posts/Pederson-HackOn2025/) | Criptografía | Hack0n2025|
 
 
-### Otras Competiciones Relevantes
+## Otras Podios Relevantes
 
 | **Competición** | **Ámbito** | **Resultado** |
 |--------------------|---------------|------------------|
@@ -103,7 +100,7 @@ En competición CTF nacional HackOn2025 competí en solitario frente a equipos f
 
 ## Eventos Organizados
 
-### Bug de la Semana
+### El Bug de la Semana
 
 ![bdls](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/bdls.jpg)
 
@@ -134,6 +131,22 @@ En la [edición de 2025](https://hackademics-forum.com/), organizamos nuevamente
 [HackademicsForum](https://hackademics-forum.com/) es un congreso de ciberseguridad organizado por el [Aula de Ciberseguridad y Redes](https://www.uco.es/aulaRedesSeguridad/) en colaboración con la Universidad de Córdoba. HackademicsForum está formado por una serie de ponencias que pretende reunir a grandes personalidades del sector para compartir nuevas ideas, fomentar sinergias y continuar aprendiendo en un área cada vez más necesaria en la vida cotidiana y empresarial, motivando y concienciando la necesidad de investigadores y profesionales frente a las nuevas amenazas, así como potenciar la colaboración público-privada.
 
 En la [edición de 2024](https://hackademics-forum.com/2024-edition/), impulsamos el conocimiento en ciberseguridad mediante la creación de una competición local formada por un total de 15 retos, repartidos en las principales categorías. Contando con premios para el top 5º.
+
+## Retos Creados
+
+|  **Reto** | **Categoría**     | **Competición** | 
+|---------------------|------------------|-----------------|
+| [DigiKitcat](https://k3sero.github.io/posts/DigiKitcat-HackademicsForum2025/) | Hardware | HackademicsForum2025 |
+| [Laberinto Lógico](https://k3sero.github.io/posts/Laberinto_Logico-HackademicsForum2025/) | Hardware | HackademicsForum2025|
+| [Viejas Raíces](https://k3sero.github.io/posts/Viejas_raices-HackademicsForum2025/) | OSINT | HackademicsForum2025|
+| [Nuevas Raíces](https://k3sero.github.io/posts/Nuevas_raices-HackademicsForum2025/) | OSINT | HackademicsForum2025|
+| [Urgencia Espacial](https://k3sero.github.io/posts/Urgencia-Espacial-NNCTF2025/) | Miscelánea | NavajaNegraCTF2025|
+| [Retro Advance](https://k3sero.github.io/posts/Retro-Advance-NNCTF2025/) | RF | NavajaNegraCTF2025|
+| [Convocatoria Extraordinaria](https://k3sero.github.io/posts/Convocatoria-Extraordinaria-NNCTF2025/) | Hardware | NavajaNegraCTF2025|
+| [PAL de Recuerdos](https://k3sero.github.io/posts/PAL-de-Recuerdos-NNCTF2025/) | Hardware / RF | NavajaNegraCTF2025|
+| [Run Forest 1](https://k3sero.github.io/posts/Run-Forest-Run-1-NNCTF2025/) | Research | NavajaNegraCTF2025|
+| [Run Forest 2](https://k3sero.github.io/posts/Run-Forest-Run-2-NNCTF2025/) | Research | NavajaNegraCTF2025|
+
 
 ## Competiciones Participadas
 

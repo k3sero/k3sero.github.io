@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en la decodificación de esquemático complejo basado en transistores los cuales forman una función de paridad y una función de votación por mayoría.
 date: 2025-11-16 18:12:00 +0000
 categories: [Writeups Competiciones Nacionales, Hardware N]
-tags: [Hardware, Hardware - Esquemático, Otros - Writeups, Dificultad - Media, NNCTF]
+tags: [Hardware, Hardware - Esquemático, Otros - Writeups, Dificultad - Media, NavajaNegraCTF]
 pin: false
 math: true
 mermaid: true

@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en la decodificación de una señal PAL estándar para obtener una grabación antigua.
 date: 2025-11-16 18:30:00 +0000
 categories: [Writeups Competiciones Nacionales, Hardware N]
-tags: [Hardware, Hardware - Radiofrecuencia, Otros - Writeups, Dificultad - Difícil, NNCTF]
+tags: [Hardware, Hardware - Radiofrecuencia, Otros - Writeups, Dificultad - Difícil, NavajaNegraCTF]
 pin: false
 math: true
 mermaid: true

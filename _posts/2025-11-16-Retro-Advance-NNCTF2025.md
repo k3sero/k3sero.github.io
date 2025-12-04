@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en la transmisión de una ROM de GBA a través de ondas de radio siguiendo el estándar FSK Bell 202.
 date: 2025-11-16 18:10:00 +0000
 categories: [Writeups Competiciones Nacionales, Hardware N]
-tags: [Hardware, Hardware - Radiofrecuencia, Otros - Writeups, Dificultad - Fácil, NNCTF]
+tags: [Hardware, Hardware - Radiofrecuencia, Otros - Writeups, Dificultad - Fácil, NavajaNegraCTF]
 pin: false
 math: true
 mermaid: true

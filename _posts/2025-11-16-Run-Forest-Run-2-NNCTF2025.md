@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en investigar un caso policial basado en GTA San Andreas (Segunda Parte).
 date: 2025-11-16 18:40:00 +0000
 categories: [Writeups Competiciones Nacionales, OSINT N]
-tags: [Osint, Osint - Research, Otros - Writeups, Dificultad - Fácil, NNCTF]
+tags: [Osint, Osint - Research, Otros - Writeups, Dificultad - Fácil, NavajaNegraCTF]
 pin: false
 math: true
 mermaid: true

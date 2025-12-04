@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en la decodificación mediante un análisis de frecuencia sobre Reed Solomon.
 date: 2025-11-16 18:00:00 +0000
 categories: [Writeups Competiciones Nacionales, Miscelánea N]
-tags: [Misc, Misc - Scripts, Otros - Writeups, Dificultad - Fácil, NNCTF]
+tags: [Misc, Misc - Scripts, Otros - Writeups, Dificultad - Fácil, NavajaNegraCTF]
 pin: false
 math: true
 mermaid: true
