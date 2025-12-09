@@ -17,7 +17,7 @@ comments: true
 
 Nombre del reto: `Run Forest Run 2`
 
-Autor del reto: `Kesero` (Creado por mí)
+Autor del reto: `Kesero`
 
 Dificultad: <font color=orange>Media</font>
 

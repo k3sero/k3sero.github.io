@@ -17,7 +17,7 @@ comments: true
 
 Nombre del reto: `Urgencia Espacial`
 
-Autor del reto: `Kesero` (Creado por mí)
+Autor del reto: `Kesero`
 
 Dificultad: <font color=green>Fácil</font>
 

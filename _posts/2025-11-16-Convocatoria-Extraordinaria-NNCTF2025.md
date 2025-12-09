@@ -17,7 +17,7 @@ comments: true
 
 Nombre del reto: `Convocatoria Extraordinaria`
 
-Autor del reto: `Kesero` (Creado por mí)
+Autor del reto: `Kesero`
 
 Dificultad: <font color=green>Media</font>
 
