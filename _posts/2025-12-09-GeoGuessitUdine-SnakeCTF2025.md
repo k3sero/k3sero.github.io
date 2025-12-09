@@ -1,5 +1,5 @@
 ---
-title: GeoGuessitUdine - SnakeCTF2025
+title: GeoGuessitUdine - SnakeCTF2025 Final
 author: Kesero
 description: Reto basado en geolocalizar un pueblo con una subestación eléctrica especial en Udine
 date: 2025-12-09 17:30:00 +0000

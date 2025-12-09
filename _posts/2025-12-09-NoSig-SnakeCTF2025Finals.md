@@ -1,5 +1,5 @@
 ---
-title: GeoGuessitFVG - SnakeCTF2025 Quals
+title: GeoGuessitFVG - SnakeCTF2025 Final
 author: Kesero
 description: Reto basado en geolocalizar una carretera con un poste de luz en la región de FVG
 date: 2025-12-09 17:00:00 +0000
