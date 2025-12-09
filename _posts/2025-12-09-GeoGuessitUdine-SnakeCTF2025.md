@@ -45,6 +45,7 @@ pic2.png
 Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/GeoGuessitUdine).
 
 
+
 ## Analizando el reto
 
 La zona mostrada se corresponde con un pueblo rural que posee una subestación eléctrica compacta vertical característica de la zona de `Udine`. Además, se observa una fuente especial dentro de una especie de plaza en la zona.
