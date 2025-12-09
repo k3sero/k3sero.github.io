@@ -16,7 +16,7 @@ comments: true
 ---
 Autor del reto: `2027aliu`
 
-Dificultad: <font color=orange>Fácil</font>
+Dificultad: <font color=green>Fácil</font>
 
 ## Enunciado
 
