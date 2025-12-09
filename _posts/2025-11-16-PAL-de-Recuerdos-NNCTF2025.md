@@ -43,7 +43,7 @@ Dificultad: <font color=red>Difícil</font>
     
     video_capture.vcd
 
-```vcd
+```
 $timescale 1ns $end
 $scope module logic $end
 $var wire 1 ! D0 $end
