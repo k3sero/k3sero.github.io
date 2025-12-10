@@ -1,7 +1,7 @@
 ---
 title: PAL de Recuerdos - NNCTF2025
 author: Kesero
-description: Reto basado en la decodificación de una señal PAL estándar para obtener una grabación antigua.
+description: Reto basado en la decodificación de una señal PAL estándar para obtener una grabación antigua
 date: 2025-11-16 18:30:00 +0000
 categories: [Writeups Competiciones Nacionales, Hardware N]
 tags: [Hardware, Hardware - Radiofrecuencia, Otros - Writeups, Dificultad - Difícil, NavajaNegraCTF]

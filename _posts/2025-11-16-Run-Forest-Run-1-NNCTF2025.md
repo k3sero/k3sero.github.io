@@ -1,7 +1,7 @@
 ---
 title: Run Forest Run 1 - NNCTF2025
 author: Kesero
-description: Reto basado en investigar un caso policial basado en GTA San Andreas (Primera Parte).
+description: Reto basado en investigar un caso policial basado en GTA San Andreas (Primera Parte)
 date: 2025-11-16 18:40:00 +0000
 categories: [Writeups Competiciones Nacionales, OSINT N]
 tags: [Osint, Osint - Research, Otros - Writeups, Dificultad - Fácil, NavajaNegraCTF]
@@ -23,12 +23,22 @@ Dificultad: <font color=green>Fácil</font>
 
 ## Enunciado
 
-    Un joven campestre ha detectado disparos y quejidos constantes de animales procedentes del interior del bosque. El joven decidido se adentró en el bosque para saber qué estaba ocurriendo y descubre a dos hombres armados y encapuchados, que al verse sorprendidos, comienzan a huir para no ser detectados.
-    Durante la persecución, el joven alcanza el coche de los cazadores, pero estos logran escapar. Sin embargo, en la huida a uno de ellos se le cae un pendrive del bolsillo justo antes de subir al vehículo.
+    Un joven campestre ha detectado disparos y quejidos constantes de animales procedentes del 
+    interior del bosque. El joven decidido se adentró en el bosque para saber qué estaba ocurriendo 
+    y descubre a dos hombres armados y encapuchados, que al verse sorprendidos, comienzan a huir 
+    para no ser detectados.
 
-    Nuestro joven campestre, conmovido por la situación, decide dar parte a la policía sobre lo ocurrido y entrega tanto su relato como el pendrive obtenido en la persecución.
+    Durante la persecución, el joven alcanza el coche de los cazadores, pero estos logran escapar.
+    Sin embargo, en la huida a uno de ellos se le cae un pendrive del bolsillo justo antes de subir
+    al vehículo.
 
-    El jefe de policía, tras relacionar aquel caso con antiguos informes, decidió abrir una investigación. Deberás ayudar al jefe a cerrar el caso. Para ello, te han dado acceso a los archivos que contenía dicho pendrive. La tarea es sencilla, encontrar el nombre completo del líder que hay detrás de todo esto.
+    Nuestro joven campestre, conmovido por la situación, decide dar parte a la policía sobre lo 
+    ocurrido y entrega tanto su relato como el pendrive obtenido en la persecución.
+
+    El jefe de policía, tras relacionar aquel caso con antiguos informes, decidió abrir una 
+    investigación. Deberás ayudar al jefe a cerrar el caso. Para ello, te han dado acceso a los 
+    archivos que contenía dicho pendrive. La tarea es sencilla, encontrar el nombre completo del 
+    líder que hay detrás de todo esto.
 
     Nota: Si el nombre completo es Marco Aurelio Méndez la flag es nnctf{Marco_Aurelio_Méndez}
 
@@ -124,7 +134,7 @@ Despacho (Chat voz)
 En el canal de `bienvenida` podemos encontrar el orden de llegada de cada uno de ellos al grupo, incluyendo una breve presentación sobre cada uno de ellos.
 
 ![bienvenida1](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/research/Run%2C_Forest%2C_Run/solver/images/discord/bienvenida1.png)
-![bienvenida2](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/research/Run%2C_Forest%2C_Run/solver/images/discord/bienvenida2.png)
+![bienvenida2](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/research/Run%2C_Forest%2C_Run/solver/images/discord/bienvenida2.png)
 
 En el canal de `reglas`, no encontraremos nada útil, solo las reglas del grupo.
 
@@ -132,7 +142,7 @@ En el canal de `reclutamiento`, encontraremos dos secciones dedicadas tanto a `A
 
 ![reclutamiento](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/research/Run%2C_Forest%2C_Run/solver/images/discord/reclutamiento.png)
 
-![reclutamiento_hilos](https://github.com/k3sero/Blog_Content/blob/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/research/Run%2C_Forest%2C_Run/solver/images/discord/reclutamiento_hilos.png)
+![reclutamiento_hilos](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/research/Run%2C_Forest%2C_Run/solver/images/discord/reclutamiento_hilos.png)
 
 En `General` podremos observar que una vez que los 4 integrantes ya se encontraban dentro del grupo, `Weber` los convocó en una reunión para que se conocieran más y para dar los siguientes pasos dentro del grupo.
 

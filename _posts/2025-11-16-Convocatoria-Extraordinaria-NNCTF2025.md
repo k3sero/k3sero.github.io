@@ -1,7 +1,7 @@
 ---
 title: Convocatoria Extraordinaria - NNCTF2025
 author: Kesero
-description: Reto basado en la decodificación de esquemático complejo basado en transistores los cuales forman una función de paridad y una función de votación por mayoría.
+description: Reto basado en la decodificación de esquemático complejo basado en transistores los cuales forman una función de paridad y una función de votación por mayoría
 date: 2025-11-16 18:12:00 +0000
 categories: [Writeups Competiciones Nacionales, Hardware N]
 tags: [Hardware, Hardware - Esquemático, Otros - Writeups, Dificultad - Media, NavajaNegraCTF]
@@ -24,13 +24,17 @@ Dificultad: <font color=green>Media</font>
 
 ## Enunciado
     
-    Mientras seguíamos desempolvando cajas del desván, encontramos un sobre arrugado con un título en letras rojas:
-    "Ejercicio de Admisión – Convocatoria Extraordinaria 2002”.
+    Mientras seguíamos desempolvando cajas del desván, encontramos un sobre arrugado con un título en
+    letras rojas: "Ejercicio de Admisión – Convocatoria Extraordinaria 2002”.
 
-    Dentro había un diagrama extraño: un circuito hecho con transistores, cables y ocho entradas, como si formara un auténtico laberinto electrónico. Al final del esquema, una única salida.
-    Me contó que cuando era joven, este circuito se usaba como ejercicio base para superar la asignatura de "Fundamentos y Estructura de Computadores". Según él, resolverlo era casi un hito de superación, ya que conseguías superar una de las peores asignaturas de la carrera.
+    Dentro había un diagrama extraño: un circuito hecho con transistores, cables y ocho entradas, 
+    como si formara un auténtico laberinto electrónico. Al final del esquema, una única salida.
+
+    Me contó que cuando era joven, este circuito se usaba como ejercicio base para superar la 
+    asignatura de "Fundamentos y Estructura de Computadores". Según él, resolverlo era casi 
+    un hito de superación, ya que conseguías superar una de las peores asignaturas 
+    de la carrera.
     Como mi tío sabe que tengo el título de ingeniero informático recién sacado, me dijo:
-
     "¿Te atreves con esto? A mí me costó 3 convocatorias..."
 
     Junto al esquema, venía una hoja de estímulos con varias combinaciones de entrada.
@@ -187,7 +191,12 @@ if __name__ == "__main__":
 ```
 ❯ python script.py
 
-[!] Mensaje final: Beep, beeep, beeeeeeep ¡Enhorabuena! Has demostrado ser capaz de aprobar la asignatura de "Fundamentos y Estructura de Computadores". Espero que al menos hayas repasado qué son y cómo funcionan las puertas lógicas, la paridad de bits y la importancia de las funciones de mayoría. Has pasado la prueba, la flag es tuya nnctf{D3s3mp0lv4ndo_aPunt3s_M1l3nAr10s!!!} beeeeeeep, beeep, beep.
+[!] Mensaje final: Beep, beeep, beeeeeeep ¡Enhorabuena! Has demostrado ser capaz de aprobar la 
+asignatura de "Fundamentos y Estructura de Computadores". Espero que al menos hayas repasado 
+qué son y cómo funcionan las puertas lógicas, la paridad de bits y la importancia de las 
+funciones de mayoría. Has pasado la prueba, la flag es tuya: 
+
+nnctf{D3s3mp0lv4ndo_aPunt3s_M1l3nAr10s!!!} beeeeeeep, beeep, beep.
 ```
 
 ## Flag

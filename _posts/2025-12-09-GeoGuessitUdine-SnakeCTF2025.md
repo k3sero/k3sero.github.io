@@ -1,7 +1,7 @@
 ---
 title: GeoGuessitUdine - SnakeCTF2025 Final
 author: Kesero
-description: Reto basado en geolocalizar un pueblo con una subestación eléctrica especial en Udine
+description: Reto basado en geolocalizar un pueblo con una subestacióneléctrica especial en Udine
 date: 2025-12-09 17:30:00 +0000
 categories: [Writeups Competiciones Internacionales, Osint]
 tags: [Osint, Osint - Geo, Otros - Writeups, Dificultad - Fácil, SnakeCTF]
@@ -51,7 +51,7 @@ Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Com
 La zona mostrada se corresponde con un pueblo rural que posee una subestación eléctrica compacta vertical característica de la zona de `Udine`. Además, se observa una fuente especial dentro de una especie de plaza en la zona.
 
 
-## Solver equipo
+## Solver del equipo
 
 En este caso, el reto se resolvió buscando ocurrencias de la fuente en Google Images. Al hacerlo, se mostraban imágenes del pueblo en cuestión. Una vez se encontró el pueblo, se buscó el lugar exacto de las imágenes para establecer la localización.
 
@@ -59,7 +59,7 @@ En este caso, el reto se resolvió buscando ocurrencias de la fuente en Google I
 
 ![final](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/GeoGuessitUdine/final1.png)
 
-## Solver desarrolladores
+## Solver de los desarrolladores
 
 En este caso, haciendo uso de la herramienta online [Overpass](https://overpass-turbo.eu/) para el filtrado masivo de lugares en específico, se puede resolver el reto filtrando por fuentes especiales y por estaciones eléctricas en la región de `Udine`.
 
@@ -110,8 +110,6 @@ out skel qt;
 ```
 
 ![final_overpass](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/GeoGuessitUdine/loc.png)
-
-## P.D
 
 En la página oficial de [SnakeCTF](https://snakectf.org/writeups), podrás encontrar todas las resoluciones oficiales.
 

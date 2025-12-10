@@ -5,7 +5,7 @@ order: 4
 
 ![Presentacion](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/about.jpg)
 
-Mi nombre es Carlos Marín (aka **k3sero**), actualmente soy un estudiante universitario cursando la carrera de Ingeniería Informática a quien le apasiona el mundo de la ciberseguridad y CTFs (Capture the Flag). Es por ello que me ha llevado a formarme de manera autodidacta compaginándolo con mis estudios prácticamente desde que empecé el grado.
+Mi nombre es Carlos Marín (aka **kesero**), actualmente soy un estudiante universitario cursando la carrera de Ingeniería Informática a quien le apasiona el mundo de la ciberseguridad y CTFs (Capture the Flag). Es por ello que me ha llevado a formarme de manera autodidacta compaginándolo con mis estudios prácticamente desde que empecé el grado.
 
 Con este blog, pretendo aportar mi granito de arena con los conocimientos que voy adquiriendo a lo largo de mi travesía con el fin de compartir a la comunidad diversas metodologías de trabajo, resolución de retos, conocimientos poco tratados por la comunidad, herramientas personales de cualquier índole o simplemente abordar cualquier tema sobre ciberseguridad. Es por ello que estoy abierto a cualquier fuente de conocimiento.
 
@@ -59,7 +59,7 @@ La final presencial estaba formada por dos competiciones, una al estilo clásico
 
 Gracias a esta experiencia, el Diario Córdoba nos realizó una entrevista. En ella, Hablamos de nuestros inicios en la Universidad de Córdoba, gracias al Aula de Ciberseguridad y Redes, de nuestras primeras finales presenciales en Lignano Sabbiadoro (Italia) y de los próximos pasos del equipo, ampliando nuestra actividad hacia la formación y la divulgación mediante la metodología CTF.
 
-Os dejo el enlace a la noticia [aquí](https://www.diariocordoba.com/cordoba-ciudad/2025/12/09/uco-elite-ciberseguridad-cordoba-124576603.html).
+Os dejo el enlace a la noticia del DiarioCórdoba [aquí](https://www.diariocordoba.com/cordoba-ciudad/2025/12/09/uco-elite-ciberseguridad-cordoba-124576603.html).
 
 ![Portada_DiarioCordoba](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/Portada_DiarioCordoba.png)
 
@@ -116,11 +116,15 @@ Las inscripciones semanales se encuentran en [EventWrite](https://www.eventbrite
 
 Únete a nuestro [discord](https://discord.gg/Tactyce2WA) para no perderte de las novedades!
 
+Los retos creados junto con su resolución se encuentran disponibles en [Caliphal Hounds Creations](https://github.com/CaliphalHounds/caliphal_hounds_creations/tree/master).
+
 ### NavajaNegraCTF 2025
 
 ![nnctf2025](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/nn2025.gif)
 
 Organizamos NavajaNegraCTF 2025, una competición CTF jeopardy por equipos compuesta por 24 retos de categorías variadas como reversing, pwn, criptografía, hardware/RF, web, miscelánea y OSINT alojados en CTFd personalizado. El evento se desarrolló del 2 al 4 de octubre junto a la edición anual de [Navaja Negra](https://www.navajanegra.com/2025/index.html), con participación tanto presencial como online y soporte continuo mediante un sistema de tickets 24/7. Según las encuestas de satisfacción, la competición obtuvo una valoración general media de 9/10.
+
+Los retos creados junto con su resolución se encuentran disponibles en [Caliphal Hounds Creations](https://github.com/CaliphalHounds/nnctf2025_writeups).
 
 ### HackademicsForum 2025
 
@@ -130,6 +134,8 @@ Organizamos NavajaNegraCTF 2025, una competición CTF jeopardy por equipos compu
 
 En la [edición de 2025](https://hackademics-forum.com/), organizamos nuevamente una competición de CTFs que expandimos a nivel nacional, contando con un total de 113 participantes, contando con un total de 20 retos repartidos en las categorías más importantes alojados en CTFd. A su vez, contamos con premios tanto en presencial como online, para las primeras personas que quedaron en las posiciones más altas de la tabla.
 
+Los retos creados junto con su resolución se encuentran disponibles en [Caliphal Hounds Creations](https://github.com/CaliphalHounds/caliphal_hounds_creations/tree/master).
+
 ### HackademicsForum 2024
 
 ![hfctf2024](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/hfctf2024.jpg)
@@ -137,6 +143,8 @@ En la [edición de 2025](https://hackademics-forum.com/), organizamos nuevamente
 [HackademicsForum](https://hackademics-forum.com/) es un congreso de ciberseguridad organizado por el [Aula de Ciberseguridad y Redes](https://www.uco.es/aulaRedesSeguridad/) en colaboración con la Universidad de Córdoba. HackademicsForum está formado por una serie de ponencias que pretende reunir a grandes personalidades del sector para compartir nuevas ideas, fomentar sinergias y continuar aprendiendo en un área cada vez más necesaria en la vida cotidiana y empresarial, motivando y concienciando la necesidad de investigadores y profesionales frente a las nuevas amenazas, así como potenciar la colaboración público-privada.
 
 En la [edición de 2024](https://hackademics-forum.com/2024-edition/), impulsamos el conocimiento en ciberseguridad mediante la creación de una competición local formada por un total de 15 retos, repartidos en las principales categorías. Contando con premios para el top 5º.
+
+Los retos creados junto con su resolución se encuentran disponibles en [Caliphal Hounds Creations](https://github.com/CaliphalHounds/caliphal_hounds_creations/tree/master).
 
 ## Retos Creados
 

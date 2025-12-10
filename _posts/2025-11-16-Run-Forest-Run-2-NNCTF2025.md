@@ -1,10 +1,10 @@
 ---
 title: Run Forest Run 2 - NNCTF2025
 author: Kesero
-description: Reto basado en investigar un caso policial basado en GTA San Andreas (Segunda Parte).
+description: Reto basado en investigar un caso policial basado en GTA San Andreas (Segunda Parte)
 date: 2025-11-16 18:40:00 +0000
 categories: [Writeups Competiciones Nacionales, OSINT N]
-tags: [Osint, Osint - Research, Otros - Writeups, Dificultad - Fácil, NavajaNegraCTF]
+tags: [Osint, Osint - Research, Otros - Writeups, Dificultad - Media, NavajaNegraCTF]
 pin: false
 math: true
 mermaid: true
@@ -23,14 +23,25 @@ Dificultad: <font color=orange>Media</font>
 
 ## Enunciado
 
-    Un joven campestre ha detectado disparos y quejidos constantes de animales procedentes del interior del bosque. El joven decidido se adentró en el bosque para saber qué estaba ocurriendo y descubre a dos hombres armados y encapuchados, que al verse sorprendidos, comienzan a huir para no ser detectados.
-    Durante la persecución, el joven alcanza el coche de los cazadores, pero estos logran escapar. Sin embargo, en la huida a uno de ellos se le cae un pendrive del bolsillo justo antes de subir al vehículo.
+    Un joven campestre ha detectado disparos y quejidos constantes de animales procedentes del 
+    interior del bosque. El joven decidido se adentró en el bosque para saber qué estaba 
+    ocurriendo y descubre a dos hombres armados y encapuchados, que al verse sorprendidos, 
+    comienzan a huir para no ser detectados.
 
-    Nuestro joven campestre, conmovido por la situación, decide dar parte a la policía sobre lo ocurrido y entrega tanto su relato como el pendrive obtenido en la persecución.
+    Durante la persecución, el joven alcanza el coche de los cazadores, pero estos logran escapar.
+    Sin embargo, en la huida a uno de ellos se le cae un pendrive del bolsillo justo antes de 
+    subir al vehículo.
 
-    El jefe de policía, tras relacionar aquel caso con antiguos informes, decidió abrir una investigación. Deberás ayudar al jefe a cerrar el caso. Para ello, te han dado acceso a los archivos que contenía dicho pendrive. La tarea es sencilla, identificar la ubicación clave de su siguiente movimiento.
+    Nuestro joven campestre, conmovido por la situación, decide dar parte a la policía sobre 
+    lo ocurrido y entrega tanto su relato como el pendrive obtenido en la persecución.
 
-    Nota: Si las coordenadas son 41.9169226, -0.1852837 la flag será nnctf{41.916,-0.185} (Sin redondeos).
+    El jefe de policía, tras relacionar aquel caso con antiguos informes, decidió abrir una 
+    investigación. Deberás ayudar al jefe a cerrar el caso. Para ello, te han dado acceso a 
+    los archivos que contenía dicho pendrive. La tarea es sencilla, identificar la ubicación 
+    clave de su siguiente movimiento.
+
+    Nota: Si las coordenadas son 41.9169226, -0.1852837 la flag será nnctf{41.916,-0.185} 
+    (Sin redondeos).
 
 ## Archivos
     

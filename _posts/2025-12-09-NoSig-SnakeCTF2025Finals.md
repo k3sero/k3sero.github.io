@@ -1,75 +1,79 @@
 ---
-title: GeoGuessitFVG - SnakeCTF2025 Final
+title: NoSig - SnakeCTF2025 Final
 author: Kesero
-description: Reto basado en geolocalizar una carretera con un poste de luz en la región de FVG
-date: 2025-12-09 17:00:00 +0000
+description: Reto basado en geolocalizar un camino de paso abandonado sin salida en la región de Friuli-Venezia Giulia
+date: 2025-12-10 12:00:00 +0000
 categories: [Writeups Competiciones Internacionales, Osint]
-tags: [Osint, Osint - Geo, Otros - Writeups, Dificultad - Fácil, SnakeCTF]
+tags: [Osint, Osint - Geo, Otros - Writeups, Dificultad - Difícil, SnakeCTF]
 pin: false
 math: true
 mermaid: true
 image:
-  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/GeoGuessitFVG/13.png
+  path: https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/NoSig/15.png
   lqip: 
   alt: 
 comments: true
 ---
-Autor del reto: `Desconocido`
+Autor del reto: `Michele Lizzit`
 
-Dificultad: <font color=green>Fácil</font>
+Dificultad: <font color=red>Difícil</font>
 
 ## Enunciado
 
 ```
-"Geoguess it. It's easy. It's in the FVG special administrative region.
-
-Our friend got lost while driving back home with his snake friends. He recorded this video and then stopped the car shortly after ending the recording. Can you help us locate him now?"
+"Hic sunt leones," ancient Roman maps warned where knowledge ran out.
+Today, your map ends here - hic sunt serpentes.
+These two screenshots were taken from Google Maps on Oct 2025.
+Find this location.
 ```
 
 ## Archivos
 
-En este reto tenemos el siguiente archivo:
+```
+img1.png
+```
 
-- `geoguessitFVG.mp4`: Contiene un vídeo del lugar.
+![img1](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/NoSig/img1.png)
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/GeoGuessitFVG).
+```
+img2.png
+```
+
+![img2](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/NoSig/img2.png)
 
 
 ## Analizando el reto
 
-En el vídeo proporcionado, se observa cómo el conductor circula por una carretera rural, rodeada de maizales, con montañas visibles a lo lejos.
+Analizando las imágenes se observa un camino de paso abandonado rodeado de árboles altos en ambas partes. Además se observa una cerca de piedra rodeando la curva junto a una valla metálica en la parte interior.
 
-Hay dos elementos especialmente distintivos:
+Además, se sabe que las fotos fueron tomadas en alguna parte de `Friuli-Venezia Giulia` en Agosto del 2011, incluso tenemos la orientación de las imágenes gracias a la brújula de Google Maps.
 
-1. Los postes de alta tensión
+Por otro lado, si analizamos el enunciado del reto, se sabe que el camino en cuestión pertenece a una vía sin salida.
 
-![poste](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/GeoGuessitFVG/post.png)
 
-Los postes que aparecen en el vídeo son característicos de Italia.
-El diseño coincide con los típicos elettrodotti aerei de media/alta tensión utilizados en Friuli-Venezia Giulia.
-Consultando documentación oficial sobre líneas eléctricas en la región, encontramos exactamente el mismo tipo de infraestructuras.
+## Solver del equipo
 
-De hecho, los postes eléctricos del lugar están registrados y mapeados independientemente de su tamaño y capacidad voltaica en la [página oficial de arpa](https://www.arpa.fvg.it/temi/temi/campi-elettromagnetici/sezioni-principali/linee-elettriche/#open-modal-elettrodotti).
+En nuestro caso, este reto se resolvió entre 4 personas, buscando constantemente por caminos en Google Maps con dichas características. La zona por la que estábamos buscando se resumía en caminos entre pueblos designados para senderismo, cuyo trazado no se uniese con otra vía, buscando por zonas montañosas pero justo en la parte inferior de ellas.
 
-![arpa_page](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/GeoGuessitFVG/page.png)
+La dificultad de este reto reside en encontrar el lugar exacto, ya que hay miles de caminos con estas características que coinciden tanto en localización, fecha y orientación.
 
-2. La señalización de carretera
+![mapa_1000](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/NoSig/mapa_1000.png)
 
-![road](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/GeoGuessitFVG/road.png)
+Después de varias horas buscando, finalmente encontramos la [localización designada](https://www.google.com/maps/place/SR646,+Ente+di+decentramento+regionale+di+Udine,+Italia/@46.2807885,13.2265755,3a,75y,284.3h,77.05t/data=!3m10!1e1!3m8!1s71CVKRUPhaVKO_sxdlQ1Vw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D12.946618029024364%26panoid%3D71CVKRUPhaVKO_sxdlQ1Vw%26yaw%3D284.30131069723905!7i13312!8i6656!9m2!1b1!2i37!4m6!3m5!1s0x477a396cb5f9ec75:0x24169c00eefa3fe5!8m2!3d46.2644022!4d13.2600219!16s%2Fg%2F122zk2h1?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D).
 
-Los delineadores laterales son los típicos reflectores blancos con rectángulo rojo, estándar en carreteras secundarias italianas.
-La carretera además es demasiado estrecha para ser una SP principal, lo que sugiere que dicha carretera es un camino agrícola o una carretera comunal.
+![final](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/NoSig/final.png)
 
-## Solver
+## Solver de los desarrolladores
 
-Si se observa el vídeo, se encuentran dos líneas eléctricas de alto voltaje que cruzan la carretera por la cual el conductor circula. Gracias a este detalle, podemos filtrar en el mapa interactivo por líneas eléctricas paralelas de gran voltaje que cruzan una carretera las cuales cuentan con torres eléctricas de gran tamaño. Además, se sabe que los campos de alrededor pertenecen a maizales de gran tamaño, por lo que las zonas colindantes forman parte de zonas agrícolas de gran tamaño.
+En la solución final de los desarrolladores viene dada por el uso de un filtrado masivo con los datos mencionados anteriormente en páginas como [map-degen](https://map-degen.vercel.app/).
 
-Filtrando por la zona de FVG, se encuentra el lugar mencionado.
+![map-generator](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/NoSig/map-generator.png)
 
-![find](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/GeoGuessitFVG/find.png)
+En la página anterior, podemos filtrar por miles de parámetros, en este caso, lo útil es filtrar por la fecha Agosto de 2011, con el rumbo de la brújula en cuestión junto con el tipo de vía sin salida.
 
-![flag](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/GeoGuessitFVG/final.png)
+Una vez establecidos los filtros correctos, se obtienen nodos potenciales los cuales se tendrán que procesar hasta dar con el camino en cuestión.
 
+En la página oficial de [SnakeCTF](https://snakectf.org/writeups), podrás encontrar todas las resoluciones oficiales.
 
 ## Flag
-`snakeCTF{Ov3r_9000_v0lts_71b0b94bcb1b03bf}`
+`snakeCTF{46.280, 13.226}`

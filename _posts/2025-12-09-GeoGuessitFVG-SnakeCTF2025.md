@@ -23,7 +23,10 @@ Dificultad: <font color=green>Fácil</font>
 ```
 "Geoguess it. It's easy. It's in the FVG special administrative region.
 
-Our friend got lost while driving back home with his snake friends. He recorded this video and then stopped the car shortly after ending the recording. Can you help us locate him now?"
+Our friend got lost while driving back home with his snake friends. He recorded this video 
+and then stopped the car shortly after ending the recording.
+
+Can you help us locate him now?"
 ```
 
 ## Archivos
@@ -70,6 +73,7 @@ Filtrando por la zona de FVG, se encuentra el lugar mencionado.
 
 ![flag](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/GeoGuessitFVG/final.png)
 
+En la página oficial de [SnakeCTF](https://snakectf.org/writeups), podrás encontrar todas las resoluciones oficiales.
 
 ## Flag
 `snakeCTF{Ov3r_9000_v0lts_71b0b94bcb1b03bf}`

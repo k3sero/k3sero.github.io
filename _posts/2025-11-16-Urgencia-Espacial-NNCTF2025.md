@@ -1,7 +1,7 @@
 ---
 title: Urgencia Espacial - NNCTF2025
 author: Kesero
-description: Reto basado en la decodificación mediante un análisis de frecuencia sobre Reed Solomon.
+description: Reto basado en la decodificación mediante un análisis de frecuencia sobre Reed Solomon
 date: 2025-11-16 18:00:00 +0000
 categories: [Writeups Competiciones Nacionales, Miscelánea N]
 tags: [Misc, Misc - Scripts, Otros - Writeups, Dificultad - Fácil, NavajaNegraCTF]
@@ -23,13 +23,18 @@ Dificultad: <font color=green>Fácil</font>
 
 ## Enunciado
     
-    Hace unas horas, el equipo de comunicaciones terrestres detectó una transmisión urgente desde la Estación Espacial Internacional (ISS). Sin embargo, el mensaje llega corrupto e ilegible.
+    Hace unas horas, el equipo de comunicaciones terrestres detectó una transmisión urgente desde la 
+    Estación Espacial Internacional (ISS). Sin embargo, el mensaje llega corrupto e ilegible.
 
-    El sistema de la ISS tiene un fallo conocido: el mensaje se envía con ráfagas de ruido que corrompen partes de la información. Cada vez que intentamos recibirlo, obtenemos una versión diferente y distorsionada.
+    El sistema de la ISS tiene un fallo conocido: el mensaje se envía con ráfagas de ruido que 
+    corrompen partes de la información. Cada vez que intentamos recibirlo, obtenemos una versión 
+    diferente y distorsionada.
 
-    Tienes acceso a la consola de recepción y solo a un número limitado de intentos antes de que el canal se bloquee.
+    Tienes acceso a la consola de recepción y solo a un número limitado de intentos antes de que el 
+    canal se bloquee.
 
-    Necesitamos reconstruir el mensaje que la tripulación intenta enviarnos. Puede tratarse de una advertencia vital para la seguridad de la Tierra.
+    Necesitamos reconstruir el mensaje que la tripulación intenta enviarnos. Puede tratarse de una 
+    advertencia vital para la seguridad de la Tierra.
 
 
 ## Archivos
@@ -263,7 +268,10 @@ Al ejecutarlo obtenemos lo siguiente:
 
 [+] Cadena original reconstruida.
 
-[!] Flag recuperada: Beeep beep bep... Sabemos que NavajaNegra2025 acaba de comenzar. Por motivos obvios, nuestro equipo no podra asistir en esta edicion. De todas formas, queremos enviaros un regalo muy espacial: nnctf{M4nd4dn0s_Un_p4r_d3_M1gu3l1tOs_3n_l4_Pr0x1ma_M1sioN!!}
+[!] Flag recuperada: Beeep beep bep... Sabemos que NavajaNegra2025 acaba de comenzar. 
+Por motivos obvios, nuestro equipo no podra asistir en esta edicion. De todas formas,
+queremos enviaros un regalo muy espacial:
+nnctf{M4nd4dn0s_Un_p4r_d3_M1gu3l1tOs_3n_l4_Pr0x1ma_M1sioN!!}
 ```
 
 ## Flag

@@ -1,10 +1,10 @@
 ---
 title: Retro Advance - NNCTF2025
 author: Kesero
-description: Reto basado en la transmisión de una ROM de GBA a través de ondas de radio siguiendo el estándar FSK Bell 202.
+description: Reto basado en la transmisión de una ROM de GBA a través de ondas de radio siguiendo el estándar FSK Bell 202
 date: 2025-11-16 18:10:00 +0000
 categories: [Writeups Competiciones Nacionales, Hardware N]
-tags: [Hardware, Hardware - Radiofrecuencia, Otros - Writeups, Dificultad - Fácil, NavajaNegraCTF]
+tags: [Hardware, GamePwn, Hardware - Radiofrecuencia, Otros - Writeups, Dificultad - Fácil, NavajaNegraCTF]
 pin: false
 math: true
 mermaid: true
@@ -23,11 +23,17 @@ Dificultad: <font color=green>Fácil</font>
 
 ## Enunciado
     
-    El pasado fin de semana estuve con mi tío revisando algunos de sus viejos recuerdos. Entre anécdotas y risas, me contó algo que me dejó sin palabras. En su época, algunos videojuegos se distribuían por radio o venían escondidos en paquetes de cereales. Pensé que me estaba tomando el pelo, hasta que me enseñó un par de antiguos casetes que tenía guardados.
+    El pasado fin de semana estuve con mi tío revisando algunos de sus viejos recuerdos. Entre anécdotas 
+    y risas, me contó algo que me dejó sin palabras. En su época, algunos videojuegos se distribuían por 
+    radio o venían escondidos en paquetes de cereales. Pensé que me estaba tomando el pelo, hasta que me 
+    enseñó un par de antiguos casetes que tenía guardados.
 
-    Resulta que mi tío había capturado una transmisión hace años: una ROM de Game Boy Advance emitida por la radio. Nunca supo cómo decodificarla, pero guardó la grabación "por si acaso".
+    Resulta que mi tío había capturado una transmisión hace años: una ROM de Game Boy Advance emitida por 
+    la radio. Nunca supo cómo decodificarla, pero guardó la grabación "por si acaso".
 
-    Como sabe que me interesan estas cosas, me la pasó y me dijo: "A ver si tú puedes hacer algo con esto."
+    Como sabe que me interesan estas cosas, me la pasó y me dijo: 
+    "A ver si tú puedes hacer algo con esto."
+    
     La verdad... yo no tengo ni idea de por dónde empezar.
 
     ¿Te animas a echarme una mano y ver si hay algo jugable en esa señal?
