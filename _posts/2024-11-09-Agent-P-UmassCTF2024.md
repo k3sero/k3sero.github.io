@@ -29,7 +29,7 @@ En este reto solo tenemos el siguiente archivo.
 
 - `a.txt` : Contiene una cadena de texto.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Agent_P).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Agent_P).
 
 ## Analizando el código
 

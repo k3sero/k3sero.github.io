@@ -43,7 +43,7 @@ Dificultad: <font color=green>Fácil</font>
 
     sound.wav
 
-Archivos utilizados [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/hardware_rf/Retro_Advance).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/hardware_rf/Retro_Advance).
 
 ## Analizando el reto
 

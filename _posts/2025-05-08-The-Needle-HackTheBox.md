@@ -30,7 +30,7 @@ En este reto, nos dan los siguientes archivos.
 - `firmware.bin`: Contiene el firmware mencionado en el enunciado.
 - `Conexión por nc`: Contiene la conexión por nc del servidor.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/HackTheBox/Hardware/The-needle).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/HackTheBox/Hardware/The-needle).
 
 ## Analizando el reto
 

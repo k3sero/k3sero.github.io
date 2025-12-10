@@ -29,7 +29,7 @@ En este reto, solo nos dan el siguiente archivo.
 
 - `meow.jpg` : Fichero de imagen.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Estego/1337UpCTF2024/In_Plain_Sight).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Estego/1337UpCTF2024/In_Plain_Sight).
 
 
 ## Analizando la imagen

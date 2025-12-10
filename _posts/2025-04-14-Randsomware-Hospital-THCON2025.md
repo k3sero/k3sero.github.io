@@ -26,7 +26,7 @@ Sound engineer
 Is this secure?
 Is that guy really just *walking*?
 ```
-Todos los archivos pertenecientes a estos retos los puedes encontrar [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital).
+Todos los archivos pertenecientes a estos retos los puedes encontrar en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital).
 
 
 ## Intrusion at THCity Hospital ! (Easy)
@@ -53,7 +53,7 @@ En este reto, nos dan los correos que han sido recuperarados pertenecientes al C
 
 En dichos correos podemos obtener información muy relevante en nuestra investigación, como los reportes de asistencia semanales del hospital, los logs provenientes del sistema así como un subentramado de lore basado en la confidencialidad del alcalde en sus instalaciones entre otros correos sin relevancia.
 
-[Aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/correos/img) puedes encontrar capturas de todos los correos así como sus archivos.
+En mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/THCON2025/Osint/Randsomware%20Hospital/correos/img) puedes encontrar capturas de todos los correos así como sus archivos.
 
 
 ### Solver

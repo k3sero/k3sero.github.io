@@ -29,7 +29,7 @@ En este reto, tenemos el siguiente archivo.
 
 - `debugging_interface_signal.sal`: Contiene las señales de depuración.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/HackTheBox/Hardware/Debugging%20Interface).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/HackTheBox/Hardware/Debugging%20Interface).
 
 ## Analizando el reto
 

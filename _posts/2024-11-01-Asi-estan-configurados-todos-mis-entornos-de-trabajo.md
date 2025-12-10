@@ -42,7 +42,7 @@ El siguiente esquema muestra la estructura de cada entorno de trabajo.
 
 Gracias a que desde hace un par de meses contamos con `VMware Workstation` de manera gratuita, podemos obtener los beneficios que nos aporta Vmware a nuestras máquinas sin costo. Antiguamente utilizaba `VirtualBox`, pero decidí migrar todo mi sistema de entornos a Vmware para observar diferencias y definitivamente, me quedo con VMware.
 
-Para instalarlo, simplemente os dejo un tutorial en Youtube de ContandoBits el cual explica el proceso de manera muy detallada y sencilla. Tutorial [aquí](https://www.youtube.com/watch?v=jFzQUsnlof0&t=1s) 
+Para instalarlo, simplemente os dejo un tutorial en Youtube de ContandoBits el cual explica el proceso de manera muy detallada y sencilla. Tutorial en este enlace de [youtube](https://www.youtube.com/watch?v=jFzQUsnlof0&t=1s) 
 
 
 ### Hyper-V
@@ -76,9 +76,9 @@ Al ingresar nuevamente, escribimos en el buscador `"Hyper-V"` y tendremos acceso
 
 Como he mencionado anteriormente, este sistema operativo está enfocado principalmente en la programación. Es por ello que esta máquina tendrá una instalación básica de Debian, además de contar con las herramientas y suites IDE de programación pertinentes. Por último, instalaremos programas como `zshrc` y `powerlevel10k` para contar con un manejo fluido y cómodo en la terminal.
 
-Página Oficial de Debian. [aquí](https://www.debian.org/download.es.html).
+Página Oficial de [Debian](https://www.debian.org/download.es.html).
 
-Tutorial para la instalación de la zshrc y powerlevel10k [aquí](https://www.youtube.com/watch?v=vyRXgfDEudI).
+Tutorial para la instalación de la zshrc y powerlevel10k en [youtube](https://www.youtube.com/watch?v=vyRXgfDEudI).
 
 ## Windows_temp
 
@@ -659,7 +659,7 @@ xsetroot -cursor_name left_ptr &
 ```
 
 Además, os dejaré todo mi carpeta .conf con otros archivos de configuración como picom, kitty, powerlevel10k, rofi y fichero de la polybar para que podáis tener todos mis archivos de configuración en caso de que queráis tener mi entorno en específico.
-Archivos de configuración [aquí](https://github.com/k3sero/Blog_Content/tree/main/Herramientas/Entorno/Entornos_Profesionales/config).
+Archivos de configuración en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Herramientas/Entorno/Entornos_Profesionales/config).
 
 La clave de todo esto es que gracias a la sencillez de la instalación del entorno profesional, podemos levantar y tumbar entornos basados en Kali a nuestra voluntad. Como `consejo`, os recomiendo que una vez tenéis todo el entorno personalizado, hagáis una `snapshot` del estado actual del entorno para que si en un futuro vuestra máquina deja de funcionar, podais volver al estado inicial donde todo funcione sin problema.
 

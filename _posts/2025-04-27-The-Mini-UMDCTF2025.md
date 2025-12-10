@@ -28,7 +28,7 @@ En este reto, tenemos el siguiente archivo.
 
 - `the-mini.puz`: Contiene el crucigrama en formato `.puz`
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Misc/the-mini).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Misc/the-mini).
 
 
 ## Analizando el reto

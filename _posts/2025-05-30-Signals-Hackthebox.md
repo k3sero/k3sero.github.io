@@ -29,7 +29,7 @@ En este reto, tenemos el siguiente archivo.
 
 - `signal.wav`: Contiene un audio de la señal capturada.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/HackTheBox/Hardware/Signals).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/HackTheBox/Hardware/Signals).
 
 ## Analizando el reto
 

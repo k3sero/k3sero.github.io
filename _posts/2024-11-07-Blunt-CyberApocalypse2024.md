@@ -31,7 +31,7 @@ Este reto nos da los siguientes archivos.
 - `source.py` : Contiene el código fuente que procesa la flag.
 - `output.txt` : Contiene los valores de p, g, A, B en hexadecimal y un texto cifrado en bytes.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Blunt).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Blunt).
 
 
 ## Analizando el código

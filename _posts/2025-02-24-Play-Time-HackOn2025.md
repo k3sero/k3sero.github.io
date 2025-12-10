@@ -31,7 +31,7 @@ En este reto, nos dan los siguientes archivos.
 - `xorshiro256.py` : Contiene la lógica del PRNG Xoshiro256.
 - `output.txt` : Contiene la flag cifrada.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2025/HackOn2025/Cripto/Play_Time).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2025/HackOn2025/Cripto/Play_Time).
 
 ## Analizando el código
 

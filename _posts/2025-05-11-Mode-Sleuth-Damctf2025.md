@@ -32,7 +32,7 @@ En este reto, tenemos el siguiente archivo.
 
 - `captura.txt`: Contiene la captura de radio de los logs de aviones.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/Damctf2025/Misc/Mode%20Sleuth).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/Damctf2025/Misc/Mode%20Sleuth).
 
 
 ## Analizando el reto

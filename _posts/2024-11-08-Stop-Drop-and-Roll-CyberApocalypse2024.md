@@ -43,7 +43,7 @@ En este reto, únicamente nos dan una conexión por netcat, al conectarnos encon
     In this case, you need to send back STOP-ROLL-DROP!
     Are you ready? (y/n) 
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Misc/CyberApocalypse2024/Stop_Drop_and_Roll).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Misc/CyberApocalypse2024/Stop_Drop_and_Roll).
 
 ## Analizando el código
 

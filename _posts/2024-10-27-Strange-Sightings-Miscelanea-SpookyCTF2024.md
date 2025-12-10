@@ -31,7 +31,7 @@ En este reto solo nos dan un enlace a un video de YouTube.
 
 - `https://www.youtube.com/watch?v=4Xv8pLoDVP0`: "Strange Sightings"
 
-Video [aquí](https://drive.google.com/file/d/1lCyRp8TWrhw3XPwhtGK6F317hfYmq0fz/view?usp=sharing).
+Video en mi [repositorio de Drive](https://drive.google.com/file/d/1lCyRp8TWrhw3XPwhtGK6F317hfYmq0fz/view?usp=sharing).
 
 ## Analizando el reto
 

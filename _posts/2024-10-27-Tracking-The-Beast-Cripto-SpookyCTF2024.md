@@ -28,7 +28,7 @@ NICC is hot on the trail of bigfoot! He has been following a path equivalent to 
 
 En este reto no nos dan ningún archivo, solamente el enunciado.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/Spookyctf2024/Tracking_The_Best)
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/Spookyctf2024/Tracking_The_Best)
 
 ## Analizando el Enunciado
 

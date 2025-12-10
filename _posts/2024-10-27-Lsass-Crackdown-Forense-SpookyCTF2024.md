@@ -32,7 +32,7 @@ En este reto nos dan el siguiente archivo.
 
 - `dump.DMP`: Archivo que contiene el dumpeo de un proceso en Windows.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Forensics/Spookyctf2024/Lsass_Crackdown).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Forensics/Spookyctf2024/Lsass_Crackdown).
 
 
 ## Analizando el Código

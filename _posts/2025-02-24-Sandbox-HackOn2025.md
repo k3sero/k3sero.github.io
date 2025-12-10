@@ -29,7 +29,7 @@ En este reto, solo tenemos una conexión.
 
 - `Servidor en remoto` : Conexión por ncat.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2025/HackOn2025/Misc/SandBox).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2025/HackOn2025/Misc/SandBox).
 
 ## Entrando al reto.
 

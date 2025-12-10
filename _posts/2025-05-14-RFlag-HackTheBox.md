@@ -29,7 +29,7 @@ En este reto, tenemos el siguiente archivo.
 
 - `signal.cf32`: Contiene las señales capturas del garaje.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/HackTheBox/Hardware/RFlag).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/HackTheBox/Hardware/RFlag).
 
 ## Analizando el reto
 

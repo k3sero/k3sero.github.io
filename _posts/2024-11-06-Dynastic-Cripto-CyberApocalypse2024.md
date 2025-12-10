@@ -30,7 +30,7 @@ En este reto nos dan dos archivos:
 - `source.py` : Contiene el código fuente que procesa la flag.
 - `output.txt` : Contiene la flag encriptada
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Dynastic).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Dynastic).
 
 ## Analizando el código
 

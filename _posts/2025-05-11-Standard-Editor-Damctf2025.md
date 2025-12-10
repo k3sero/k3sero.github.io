@@ -28,7 +28,7 @@ En este reto, tenemos el siguiente archivo.
 
 - `conexión por netcat`: Contiene la conexión directa con el servidor del reto.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/Damctf2025/Misc/Standard-Editor).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/Damctf2025/Misc/Standard-Editor).
 
 ## Analizando el reto
 

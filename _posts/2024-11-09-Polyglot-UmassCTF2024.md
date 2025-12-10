@@ -29,7 +29,7 @@ En este reto sólo tenemos un enlace.
 
 - `http://polygot.ctf.umasscybersec.org` : Enlace a la página web.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Polyglot).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Polyglot).
 
 ## Analizando el código
 

@@ -29,7 +29,7 @@ En este reto solo tenemos el siguiente archivo.
 
 - `image.jpg` : Contiene una imagen un tanto borrosa.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Magic_the_Ungathering).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Magic_the_Ungathering).
 
 ## Analizando el código
 

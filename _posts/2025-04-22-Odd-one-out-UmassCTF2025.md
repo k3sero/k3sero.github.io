@@ -35,7 +35,7 @@ En este reto, tenemos el siguiente archivo.
 
 - `OddOneOut.png` : Imagen con QRs en su interior.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Misc/Odd%20one%20out).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Misc/Odd%20one%20out).
 
 ## Analizando el reto
 

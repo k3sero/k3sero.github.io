@@ -28,7 +28,7 @@ Este reto tenemos el siguiente archivo.
 
 - `lost.png`: Contiene la imagen del aeropuerto.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/tjctf2025/osint/airport).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/tjctf2025/osint/airport).
 
 ![lost](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/tjctf2025/osint/airport/lost.png)
 

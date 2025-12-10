@@ -30,7 +30,7 @@ Este reto, tenemos el siguiente archivo.
 
 - `the-blueprint.jpg`: Contiene la imagen 360º del reto en formato .jpg
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img).
 
 ![blueprint](https://raw.githubusercontent.com/k3sero/Blog_Content/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Osint/The%20Blueprint/img/the-blueprint.jpg)
 

@@ -30,7 +30,7 @@ Este reto nos dan un enlace a una imagen panorámica del lugar.
 ![imagen2](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/L3AKCTF2025/Osint/fidget_spinner/images/imagen2.png)
 ![imagen3](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/L3AKCTF2025/Osint/fidget_spinner/images/imagen%203.png)
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/L3AKCTF2025/Osint/fidget_spinner).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/L3AKCTF2025/Osint/fidget_spinner).
 
 ## Analizando el reto
 

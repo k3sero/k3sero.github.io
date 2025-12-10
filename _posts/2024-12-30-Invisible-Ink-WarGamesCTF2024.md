@@ -29,7 +29,7 @@ En este reto, solo nos dan el siguiente archivo.
 
 - `challenge.gif` : Contiene un archivo .gif.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Estego/WarGamesCTF2024/Invisible-Ink).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Estego/WarGamesCTF2024/Invisible-Ink).
 
 ## Analizando el código
 

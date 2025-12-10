@@ -30,7 +30,7 @@ En este reto nos dan dos archivos:
 - `source.py` : Contiene el script de incriptación principal
 - `output.txt` : El archivo de salida el cual contiene la flag rotada
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Makeshift).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Makeshift).
 
 ## Analizando el código
 

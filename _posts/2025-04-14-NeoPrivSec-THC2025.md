@@ -34,7 +34,7 @@ Este reto, nos dan los siguientes archivos.
 - `server.py` : Contiene el código que se ejecuta en el servidor.
 - `nc` : Instancia con netcat para acceder al reto.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/WarGamesCTF2024/Hohoho3_Continue).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/WarGamesCTF2024/Hohoho3_Continue).
 
 
 ## Analizando el reto

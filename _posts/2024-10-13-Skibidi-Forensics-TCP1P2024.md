@@ -35,7 +35,7 @@ En este reto nos dan dos archivos:
 - `suisei.skibidi`: Contiene los datos encriptados.
 - `spec.html`: Contiene la documentación necesaria de la extensión .skibidi.
 
-Archivos utilizados [aquí](https://github.com/MaestroKesero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Forensics/TCP1P2024/Skibidi).
+Archivos utilizados en mi [repositorio de Github](https://github.com/MaestroKesero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Forensics/TCP1P2024/Skibidi).
 
 ## Analizando el reto
 

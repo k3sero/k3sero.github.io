@@ -25,7 +25,7 @@ Es por ello que comparto con vosotros todos los códigos desarrollados para que 
 
 ![Cap](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Teoria/Mochilas/img/Portada_teoria.png)
 
-En cuanto a teoría respecta, os dejo adjuntada la presentación utilizada para enteder y comprender el cifrado mediante mochilas en este [enlace](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Teoria/Mochilas/Mochilas.pdf).
+En cuanto a teoría respecta, os dejo adjuntada la presentación utilizada para enteder y comprender el cifrado mediante mochilas en este [repositorio de Github](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Teoria/Mochilas/Mochilas.pdf).
 
 ## Relación de ejercicios
 

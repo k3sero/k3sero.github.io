@@ -35,7 +35,7 @@ Este reto, tenemos el siguiente archivo.
 
 - `Insert coin to play - Part 1.rar` : Carpeta de archivos necesarios para ejecutar el juego.
 
-Archivos utilizados [aquí](https://drive.google.com/drive/folders/1zl7a9cuc_UhSyukWFGzUdot7X18UY0e7?usp=sharing).
+Archivos utilizados en mi [repositorio de Github](https://drive.google.com/drive/folders/1zl7a9cuc_UhSyukWFGzUdot7X18UY0e7?usp=sharing).
 
 ### Analizando el reto
 

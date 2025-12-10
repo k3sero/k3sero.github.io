@@ -30,7 +30,7 @@ En este reto, tenemos los siguientes archivos.
 - `chall.zip --> samples/` : Carpeta que contiene 400 imágenes png.
 - `chall.zip --> generator.py` : Contiene la lógica del programa.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Estego/UmassCTF2024/Stop_The_Voices).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Estego/UmassCTF2024/Stop_The_Voices).
 
 ## Analizando el código
 

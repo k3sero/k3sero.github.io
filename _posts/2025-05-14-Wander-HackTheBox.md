@@ -29,7 +29,7 @@ En este reto, tenemos el siguiente enlace.
 
 - `instancia vía web`: Contiene la instancia del reto web.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/HackTheBox/Hardware/Wander).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/HackTheBox/Hardware/Wander).
 
 ## Analizando el reto
 

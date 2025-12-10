@@ -31,7 +31,7 @@ En este reto, tenemos los siguientes archivos.
 - `original.png` : Imagen original.
 - `beauty.png` : Imagen alterada.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2024/Estego/HackademicsForumCTF2024/Beauty).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2024/Estego/HackademicsForumCTF2024/Beauty).
 
 
 ## Analizando el código

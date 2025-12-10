@@ -45,7 +45,7 @@ Este reto nos da el siguiente archivo.
 
 - `client.py` : Contiene el archivo de conexión a la EPROM.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/Hidden%20in%20Flash).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/Hidden%20in%20Flash).
 
 ## Analizando el reto
 

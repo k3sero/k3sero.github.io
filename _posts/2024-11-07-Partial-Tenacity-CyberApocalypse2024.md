@@ -32,7 +32,7 @@ Este reto nos da los siguientes archivos.
 - `source.py` : Contiene el script principal del reto.
 - `output.txt` : Contiene los valores de $n$, $ct$ y por último $p$ y $q$ incompletos.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Partial_Tenacity).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Partial_Tenacity).
 
 
 ## Analizando el código

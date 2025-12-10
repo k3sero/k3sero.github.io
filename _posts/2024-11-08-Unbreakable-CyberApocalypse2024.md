@@ -30,7 +30,7 @@ En este reto, tenemos una conexión por netcat y los siguientes archivos para pr
 - `main.py` : Contiene el código fuente principal.
 - `flag.txt` : Contiene la flag de prueba en texto claro.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Pwn/CyberApocalypse2024/Unbreakable).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Pwn/CyberApocalypse2024/Unbreakable).
 
 
 ## Analizando el main.py

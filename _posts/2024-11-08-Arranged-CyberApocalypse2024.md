@@ -31,7 +31,7 @@ En este reto, nos dan dos archivos:
 - `main.sage` : Contiene el código fuente que procesa la flag.
 - `output.txt` : Contiene los valores del punto A y B de la curva elíptica y el texto cifrado.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Arranged).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Arranged).
 
 ## Analizando el código
 

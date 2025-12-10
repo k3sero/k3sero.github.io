@@ -46,7 +46,7 @@ En este reto, tenemos el siguiente archivo.
 
 - `Instancia Netcat` : Instancia de conexión con netcat.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/THCON2025/misc/Roses%20Crypto%20Game/img).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/THCON2025/misc/Roses%20Crypto%20Game/img).
 
 ## Analizando el reto
 

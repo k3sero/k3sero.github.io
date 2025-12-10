@@ -31,7 +31,7 @@ En este reto, tenemos el siguiente archivo.
 
 - `image.jpeg` : Contiene la 1º localización
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204).
 
 ![image.jpeg](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Attack%20of%20the%20Pentium%204/img/image.jpeg)
 

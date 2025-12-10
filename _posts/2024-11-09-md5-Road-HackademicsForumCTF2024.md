@@ -30,7 +30,7 @@ En este reto, tenemos una conexión por netcat y los siguientes archivos para pr
 - `server.py` : Contiene el código fuente principal.
 - `nc 143.47.58.184" 37001` : Conexión por netcat.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2024/Cripto/HackademicsForumCTF2024/Md5_road).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2024/Cripto/HackademicsForumCTF2024/Md5_road).
 
 
 ## Analizando el código

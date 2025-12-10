@@ -30,7 +30,7 @@ En este reto, nos dan los siguientes archivos.
 - `nc challs.umdctf.io 31601` : Conexión por netcat al servidor
 - `evaldle.py` : Contiene la lógica del servidor.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Misc/evaldle).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UMDCTF2025/Misc/evaldle).
 
 
 ## Analizando el reto

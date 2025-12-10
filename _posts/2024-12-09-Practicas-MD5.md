@@ -29,7 +29,7 @@ En cuanto a teoría respecta, os dejo adjuntada la presentación sobre métodos 
 
 ![MD5](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Teoria/Md5/img/portada.png)
 
-Presentación [aquí](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Teoria/Md5/MD5.pdf).
+Presentación en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Teoria/Md5/MD5.pdf).
 
 
 ## Ejercicios

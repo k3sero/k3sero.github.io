@@ -32,7 +32,7 @@ Este reto, nos dan los siguiente archivos.
 - `Multiplayer 1` : Contiene la 1º localización
 - `Multiplayer 2` : Contiene la 2º localización
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Multiplayer).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Multiplayer).
 
 ![Mul1](https://raw.githubusercontent.com/k3sero/Blog_Content/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Osint/Multiplayer/img/multiplayer1.jpeg)
 

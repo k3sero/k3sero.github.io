@@ -31,7 +31,7 @@ En este reto tenemos los siguientes archivos.
 - `source.py` : Contiene el script de cifrado principal
 - `output.txt` : El archivo de salida, el cual contiene la llave de cifrado junto la flag cifrada, ambas en formato hexadecimal.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/IcedTEA).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/IcedTEA).
 
 
 ## Analizando el código

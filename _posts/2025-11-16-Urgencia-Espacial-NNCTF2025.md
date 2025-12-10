@@ -41,7 +41,7 @@ Dificultad: <font color=green>Fácil</font>
 
     server.py
 
-Archivos utilizados [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/misc/Urgencia_Espacial).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/misc/Urgencia_Espacial).
 
 ## Analizando el reto
 

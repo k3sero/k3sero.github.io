@@ -29,7 +29,7 @@ En cuanto a teoría respecta, os dejo adjuntada la presentación de la autentica
 
 ![RSA](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Teoria/RSA/img/Autenticacion_RSA.png)
 
-Presentación RSA y autentiación [aquí](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Teoria/RSA/RSA.pdf).
+Presentación RSA y autentiación en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Teoria/RSA/RSA.pdf).
 
 ![ElGamal](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Teoria/RSA/img/ElGammal.png)
 

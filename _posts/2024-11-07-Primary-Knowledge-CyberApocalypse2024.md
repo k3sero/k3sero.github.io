@@ -31,7 +31,7 @@ En este reto, nos dan dos archivos:
 - `source.py` : Contiene el código fuente que procesa la flag.
 - `output.txt` : Contiene el valor de la flag encriptada, el módulo n y el exponente e.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Primary_Knowledge).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/CyberApocalypse2024/Primary_Knowledge).
 
 ## Analizando el código
 

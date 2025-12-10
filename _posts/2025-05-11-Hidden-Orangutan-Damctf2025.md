@@ -30,7 +30,7 @@ En este reto, nos dan los siguientes archivos.
 - `message.txt`: Contiene el mensaje cifrado.
 - `2025-05-09\_AlicevsBob.pgn`: Contiene la partida de ajedrez que se ha jugado.
 
-Archivos utilizados [aquí](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/Damctf2025/Cripto/Hidden%20Orangutan).
+Archivos utilizados en mi [repositorio de Github](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/Damctf2025/Cripto/Hidden%20Orangutan).
 
 ## Analizando el código
 

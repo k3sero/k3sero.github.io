@@ -30,7 +30,7 @@ En este reto, tenemos los siguientes archivos.
 - `nc third-times-the-charm.ctf.umasscybersec.org 1337` : Conexión por netcat.
 - `main.py` : Script principal del programa.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/UmassCTF2024/Third_Times_The_Charm).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Cripto/UmassCTF2024/Third_Times_The_Charm).
 
 ## Analizando el código
 

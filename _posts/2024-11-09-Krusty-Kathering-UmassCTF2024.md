@@ -29,7 +29,7 @@ En este reto, solo tenemos una conexión por netcat.
 
 - `nc krusty-katering.ctf.umasscybersec.org 1337` : Conexión por netcat.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Krusty_Kathering).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Misc/UmassCTF2024/Krusty_Kathering).
 
 ## Analizando el código
 

@@ -29,7 +29,7 @@ En cuanto a teoría respecta, os dejo adjuntada la presentación sobre dichos m�
 
 ![Estego](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Criptografia/Teoria/Esteganografia/img/portada.png)
 
-Presentación [aquí](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Teoria/Esteganografia/Esteganografia.pdf).
+Presentación en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/blob/main/Criptografia/Teoria/Esteganografia/Esteganografia.pdf).
 
 
 ## Relación de ejercicios

@@ -29,7 +29,7 @@ La relación de ejercicios utilizada para la realización de las prácticas es l
 
 ## Ejercicios
 
-Tendréis todos los códigos desarrollados en mi Github, más concretamente [aquí](https://github.com/k3sero/Blog_Content/tree/main/Criptografia/Codigos_Practicas/Afin_Hill).
+Tendréis todos los códigos desarrollados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Criptografia/Codigos_Practicas/Afin_Hill).
 
 Al final de los ejercicios, contaréis con los menús `menuHill` y `menuAfin` para comprobar de manera interactiva el cifrado y descifrado de ambos procedimientos. Recordad que necesitáis tener en local todos los archivos para poder ejecutar las funcionalidades de dichos menús.
 

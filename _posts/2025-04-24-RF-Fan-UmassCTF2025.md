@@ -31,7 +31,7 @@ En este reto, tenemos el siguiente archivo.
 
 Archivos pesados como  `signal.zip` [aquí](https://drive.google.com/drive/folders/1Tej2_FVHD60dMDcY0HE9wycL4RW4mj1f?usp=sharing).
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/RF%20Fan).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/RF%20Fan).
 
 ## Analizando el reto
 

@@ -34,7 +34,7 @@ En este reto, tenemos un `fichero.zip` con los siguientes archivos:
 - `flag.enc`: Contiene la flag cifrada.
 - `mensaje.txt`: Contiene el mensaje de alerta.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2025/JNIC2025/El_rey_de_Canfranc).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2025/JNIC2025/El_rey_de_Canfranc).
 
 ## Analizando el reto
 

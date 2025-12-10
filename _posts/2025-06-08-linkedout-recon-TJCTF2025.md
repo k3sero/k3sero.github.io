@@ -28,7 +28,7 @@ En este reto tenemos el siguiente archivo.
 
 - `resume.pdf`: Contiene un PDF con la información de un currículum de una persona.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/tjctf2025/osint/linkedout).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/tjctf2025/osint/linkedout).
 
 
 ## Analizando el reto

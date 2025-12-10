@@ -36,7 +36,7 @@ Este reto, tenemos los siguientes archivos.
 - `datasheet.md` : Contiene el datashet del empotrado en formato markdown.
 - `datasheet.pdf` : Contiene el datashet del empotrado en formato pdf.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/FCSign).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/UmassCTF2025/Hardware/FCSign).
 
 ## Analizando el reto
 

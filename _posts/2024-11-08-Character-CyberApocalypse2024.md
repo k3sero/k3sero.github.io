@@ -33,7 +33,7 @@ $ nc <ip> <port>
 Which character of the flag do you want? Enter an index: 
 ```
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Misc/CyberApocalypse2024/Character).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2024/Misc/CyberApocalypse2024/Character).
 
 Si introducimos números de forma consecutiva por ejemplo `0`, `1` etc, podemos ver que ocurre lo siguiente.
 
