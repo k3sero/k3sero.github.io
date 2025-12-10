@@ -11,6 +11,17 @@
   <meta name="robots" content="all">
   <meta name="disclaimer" content="Este blog es exclusivamente educativo. Ninguna entrada promueve el uso indebido de herramientas o técnicas de hacking.">
 
+<!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6RNTKMY4HS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6RNTKMY4HS');
+  </script>
+
+
   <title>
     {%- unless page.layout == 'home' -%}
       {{ page.title | append: ' | ' }}
