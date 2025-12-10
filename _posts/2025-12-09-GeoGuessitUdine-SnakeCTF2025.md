@@ -42,7 +42,7 @@ pic2.png
 ![pic2.png](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/GeoGuessitUdine/pic2.png)
 
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/GeoGuessitUdine).
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/GeoGuessitUdine).
 
 
 
