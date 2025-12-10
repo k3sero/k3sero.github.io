@@ -41,6 +41,8 @@ img2.png
 
 ![img2](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/NoSig/img2.png)
 
+Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/NoSig).
+
 
 ## Analizando el reto
 

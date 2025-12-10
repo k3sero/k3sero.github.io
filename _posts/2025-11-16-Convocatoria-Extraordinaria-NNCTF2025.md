@@ -61,7 +61,7 @@ A,B,C,D,E,F,G,H
 ...
 ```
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/hardware_rf/Convocatoria_Extraordinaria).
+Archivos utilizados [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/hardware_rf/Convocatoria_Extraordinaria).
 
 ## Solución
 

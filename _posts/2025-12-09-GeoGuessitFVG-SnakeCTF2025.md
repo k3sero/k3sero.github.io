@@ -35,7 +35,7 @@ En este reto tenemos el siguiente archivo:
 
 - `geoguessitFVG.mp4`: Contiene un vídeo del lugar.
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/GeoGuessitFVG).
+Archivos utilizados [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Internacionales_Writeups/2025/SnakeCTF2025/GEOSINT/GeoGuessitFVG).
 
 
 ## Analizando el reto

@@ -59,7 +59,7 @@ Reporte_02343.zip
 
 ![mod](https://raw.githubusercontent.com/k3sero/Blog_Content/refs/heads/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/research/Run%2C_Forest%2C_Run/solver/images/mod/mod.png)
 
-Archivos utilizados [aquí](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/research/Run%2C_Forest%2C_Run).
+Archivos utilizados [repositorio de Github](https://github.com/k3sero/Blog_Content/tree/main/Competiciones_Nacionales_Writeups/2025/NNCTF2025/research/Run%2C_Forest%2C_Run).
 
 ## Solución
 
