@@ -59,7 +59,7 @@ La final presencial estaba formada por dos competiciones, una al estilo clásico
 
 Gracias a esta experiencia, el Diario Córdoba nos realizó una entrevista. En ella, Hablamos de nuestros inicios en la Universidad de Córdoba, gracias al Aula de Ciberseguridad y Redes, de nuestras primeras finales presenciales en Lignano Sabbiadoro (Italia) y de los próximos pasos del equipo, ampliando nuestra actividad hacia la formación y la divulgación mediante la metodología CTF.
 
-Os dejo el enlace a la noticia del DiarioCórdoba [aquí](https://www.diariocordoba.com/cordoba-ciudad/2025/12/09/uco-elite-ciberseguridad-cordoba-124576603.html).
+Os dejo el enlace a la noticia del [Diario Córdoba](https://www.diariocordoba.com/cordoba-ciudad/2025/12/09/uco-elite-ciberseguridad-cordoba-124576603.html).
 
 ![Portada_DiarioCordoba](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/images/about/Portada_DiarioCordoba.png)
 
