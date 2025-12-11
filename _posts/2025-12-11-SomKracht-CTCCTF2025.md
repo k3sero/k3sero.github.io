@@ -1,7 +1,7 @@
 ---
 title: Somkracht 65537 - ChallengetheCyberCTF2025
 author: Kesero
-description: Reto basado en un esquema RSA vulnerable a sum of primes leakage attack.
+description: Reto basado en un esquema RSA vulnerable a sum of primes leakage attack
 date: 2025-12-11 19:30:00 +0000
 categories: [Writeups Competiciones Internacionales, Criptografía]
 tags: [Cripto, Cripto - RSA, Otros - Writeups, Dificultad - Fácil, ChallengetheCyberCTF]
