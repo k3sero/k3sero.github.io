@@ -59,7 +59,7 @@ Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog
 
 ## Analizando el reto
 
-De forma muy resumida, el código anterior está basado en un sistema que genera claves RSA, las cuales son usadas para cifrar la flag `ct1`. Posteriormente, se vuelve a cifrar usando `p+q` generando `ct2`
+De forma muy resumida, el código anterior está basado en un sistema que genera claves RSA, las cuales son usadas para cifrar la flag `ct1`. Posteriormente, se vuelve a cifrar usando `p+q` generando `ct2`.
 
 ## Solver
 
