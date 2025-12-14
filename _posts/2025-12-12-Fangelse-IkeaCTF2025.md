@@ -37,7 +37,7 @@ Archivos utilizados en mi [repositorio de Github](https://github.com/k3sero/Blog
 
 ## Analizando el reto
 
-En `fangelse.py` se encuentra el siguiente código:
+En el archivo `fangelse.py` se encuentra el siguiente código:
 
 ```py
 flagbuf = open("flag.txt", "r").read()
