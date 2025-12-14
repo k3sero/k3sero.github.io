@@ -1,10 +1,10 @@
 ---
-title: Kottbulle Encode - IkeaCTF2025
+title: Kottbulle Encode - Hack.luCTF2025
 author: Kesero
 description: Reto basado en revertir una codificación basada en imágenes de albóndigas y perritos calientes
 date: 2025-12-14 13:56:00 +0100
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Dificultad - Fácil, Misc, Misc - Scripts, Otros - Writeups, IkeaCTF]
+tags: [Dificultad - Fácil, Misc, Misc - Scripts, Otros - Writeups, Hack.luCTF]
 pin: false
 math: true
 mermaid: true
@@ -15,14 +15,15 @@ image:
 comments: true
 ---
 
-Autor del reto: `Desconocido`
+Autor del reto: `toerbi`
 
 Dificultad: <font color=green>Fácil</font>
 
 ## Enunciado
 
 ```
-Meatball or Hot dog?
+FLUX offers some culinary delights to ensure that not only your
+shopping cart, but also your belly is full...
 ```
 
 ## Archivos

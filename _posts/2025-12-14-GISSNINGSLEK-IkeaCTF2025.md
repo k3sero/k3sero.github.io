@@ -1,10 +1,10 @@
 ---
-title: Gissningslek - IkeaCTF2025
+title: Gissningslek - Hack.luCTF2025
 author: Kesero
 description: Reto basado en vulnerar un código en bash mediante el uso de variables mal sanitizadas
 date: 2025-12-14 15:06:00 +0100
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Dificultad - Fácil, Misc, Misc - Bash, Otros - Writeups, IkeaCTF]
+tags: [Dificultad - Fácil, Misc, Misc - Bash, Otros - Writeups, Hack.luCTF]
 pin: false
 math: true
 mermaid: true
@@ -15,14 +15,14 @@ image:
 comments: true
 ---
 
-Autor del reto: `Desconocido`
+Autor del reto: `msanft`
 
 Dificultad: <font color=green>Fácil</font>
 
 ## Enunciado
 
 ```
-Let's gamble!
+Casino? CS cases? Pff. Now this game is really unfair.
 ```
 
 ## Archivos

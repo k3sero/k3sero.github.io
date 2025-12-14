@@ -1,10 +1,10 @@
 ---
-title: Fangelse - IkeaCTF2025
+title: Fangelse - Hack.luCTF2025
 author: Kesero
 description: Reto basado en escapar de una pyjail mediante builtins y la función all con restricción de 5 caracteres
 date: 2025-12-12 14:56:00 +0100
 categories: [Writeups Competiciones Internacionales, Miscelánea]
-tags: [Misc, Misc - Pyjail, Otros - Writeups, Dificultad - Fácil, IkeaCTF]
+tags: [Misc, Misc - Pyjail, Otros - Writeups, Dificultad - Fácil, Hack.luCTF]
 pin: false
 math: true
 mermaid: true
