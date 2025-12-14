@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en escapar de una pyjail mediante el uso del carácter unicode exit
 date: 2025-12-14 16:11:00 +0100
 categories: [Writeups Competiciones Nacionales, Miscelánea]
-tags: [Misc, Misc - Pyjail, Otros - Writeups, Dificultad - Media, Talent4Cyber]
+tags: [Misc, Misc - Pyjail, Otros - Writeups, Dificultad - Media, Talent4CyberCTF]
 pin: false
 math: true
 mermaid: true

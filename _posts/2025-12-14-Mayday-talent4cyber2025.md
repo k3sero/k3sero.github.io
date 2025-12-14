@@ -4,7 +4,7 @@ author: Kesero
 description: Reto basado en recuperar un sistema de archivos UBI sobre UBIFS, analizar logs y descifrar una señal de radiofrecuencia 2-FSK
 date: 2025-12-14 15:48:00 +0100
 categories: [Writeups Competiciones Nacionales, Forense]
-tags: [Forense, Forense - Recovery, Otros - Writeups, Dificultad - Media, Talent4Cyber]
+tags: [Forense, Forense - Recovery, Otros - Writeups, Dificultad - Media, Talent4CyberCTF]
 pin: false
 math: true
 mermaid: true
